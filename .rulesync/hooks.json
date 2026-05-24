@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "hooks": {
+    "postToolUse": [
+      {
+        "type": "command",
+        "command": "pnpm format",
+        "matcher": "Edit|Write"
+      },
+      {
+        "type": "command",
+        "command": "pnpm lint:fix",
+        "matcher": "Edit|Write"
+      }
+    ]
+  }
+}
