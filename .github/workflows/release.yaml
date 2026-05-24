@@ -1,8 +1,9 @@
+name: release
 on:
   release:
     types: [published]
 concurrency:
-  group: release-${{ github.event.release.tag_name }}
+  group: ${{ github.workflow }}-${{ github.event.release.tag_name }}
   cancel-in-progress: false
 jobs:
   verify:
