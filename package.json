@@ -1,7 +1,13 @@
 {
   "name": "@asa1984/configs",
   "version": "0.0.0",
-  "description": "Shared configs for oxlint, oxfmt, and TypeScript.",
+  "description": "asa1984's configurations",
+  "license": "MIT",
+  "author": "asa1984 <me@asa1984.dev>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asa1984/configs.git"
+  },
   "files": [
     "dist",
     "src/tsconfig"
@@ -19,6 +25,10 @@
     "./tsconfig": "./src/tsconfig/base.json",
     "./package.json": "./package.json"
   },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
   "scripts": {
     "build": "tsgo -p tsconfig.build.json",
     "format": "oxfmt",
@@ -29,6 +39,7 @@
   },
   "devDependencies": {
     "@typescript/native-preview": "7.0.0-dev.20260523.1",
+    "jsr": "0.14.3",
     "oxfmt": "0.51.0",
     "oxlint": "1.66.0",
     "oxlint-tsgolint": "0.23.0",
@@ -46,5 +57,5 @@
       "optional": true
     }
   },
-  "packageManager": "pnpm@10.33.0"
+  "packageManager": "pnpm@11.2.2"
 }

@@ -17,6 +17,7 @@
           sharedPackages = with pkgs; [
             nodejs-slim
             corepack
+            pinact
           ];
         in
         {

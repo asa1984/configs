@@ -1,1 +1,3 @@
+allowBuilds:
+  tldjs: false # dependency of rulesync, but we don't require it to be built
 saveExact: true
