@@ -5,18 +5,13 @@ concurrency:
   group: release-${{ github.event.release.tag_name }}
   cancel-in-progress: false
 jobs:
-  publish:
+  verify:
     runs-on: ubuntu-slim
-    permissions:
-      contents: read
-      id-token: write
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
           ref: ${{ github.event.release.tag_name }}
       - uses: ./.github/actions/setup
-      - name: Configure npm auth
-        run: echo "//registry.npmjs.org/:_authToken=\${NODE_AUTH_TOKEN}" >> ~/.npmrc
       - name: Verify release tag matches package versions
         run: |
           set -euo pipefail
@@ -32,9 +27,33 @@ jobs:
       - run: pnpm build
       - run: pnpm typecheck
       - run: pnpm lint
+  publish-npm:
+    needs: verify
+    runs-on: ubuntu-slim
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: ${{ github.event.release.tag_name }}
+      - uses: ./.github/actions/setup
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
       - name: Publish to npm
         run: pnpm publish --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+  publish-jsr:
+    needs: verify
+    runs-on: ubuntu-slim
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          ref: ${{ github.event.release.tag_name }}
+      - uses: ./.github/actions/setup
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm build
       - name: Publish to JSR
         run: pnpm jsr publish
