@@ -35,36 +35,36 @@ const tsEslintRecommendedOverrides = (tseslint.configs["eslint-recommended"]?.ov
   ?.rules ?? {}) as RuleMap;
 
 const sources: Array<{ from: string; rules: RuleMap; to: string }> = [
-  { from: "", rules: (js.configs.recommended.rules ?? {}) as RuleMap, to: "" },
+  { from: "", rules: js.configs.recommended.rules as RuleMap, to: "" },
   {
     from: "import",
-    rules: (importPlugin.configs.recommended.rules ?? {}) as RuleMap,
+    rules: importPlugin.configs.recommended.rules as RuleMap,
     to: "import",
   },
   {
     from: "jsdoc",
-    rules: (jsdocPlugin.configs["flat/recommended"].rules ?? {}) as RuleMap,
+    rules: jsdocPlugin.configs["flat/recommended"].rules as RuleMap,
     to: "jsdoc",
   },
   {
     from: "promise",
-    rules: (promise.configs["flat/recommended"].rules ?? {}) as RuleMap,
+    rules: (promise.configs["flat/recommended"]?.rules ?? {}) as RuleMap,
     to: "promise",
   },
   { from: "", rules: tsEslintRecommendedOverrides, to: "" },
   {
     from: "@typescript-eslint",
-    rules: (tseslint.configs["recommended"]?.rules ?? {}) as RuleMap,
+    rules: (tseslint.configs["strict-type-checked"]?.rules ?? {}) as RuleMap,
     to: "typescript",
   },
   {
     from: "unicorn",
-    rules: (unicorn.configs.recommended.rules ?? {}) as RuleMap,
+    rules: unicorn.configs.recommended.rules as RuleMap,
     to: "unicorn",
   },
   {
     from: "vitest",
-    rules: (vitest.configs.recommended.rules ?? {}) as RuleMap,
+    rules: vitest.configs.recommended.rules as RuleMap,
     to: "vitest",
   },
 ];
@@ -82,8 +82,9 @@ const dummyRuleMapBody = /interface DummyRuleMap \{([\s\S]*?)\n\}/.exec(oxlintDt
 const knownRules = new Set<string>();
 for (const line of dummyRuleMapBody.split("\n")) {
   const match = /^\s*(?:"([^"]+)"|([a-zA-Z_$][\w$-]*))\?:/.exec(line);
-  if (match) {
-    knownRules.add(match[1] ?? match[2]!);
+  const name = match?.[1] ?? match?.[2];
+  if (name) {
+    knownRules.add(name);
   }
 }
 
@@ -143,6 +144,6 @@ const dts = rawDts.replace(/^import type \{ Linter \} from ['"]eslint['"]\n?/m, 
 
 await writeFile(resolve(outDir, "rules.generated.ts"), `${banner}\n// @ts-nocheck\n${dts}`, "utf8");
 
-console.log(`✔ wrote recommended.generated.ts (${sortedKeys.length} rules)`);
+console.log(`✔ wrote recommended.generated.ts (${String(sortedKeys.length)} rules)`);
 console.log(`✔ wrote rules.generated.ts`);
-console.log(`  skipped ${skipped.length} rules not implemented by oxlint`);
+console.log(`  skipped ${String(skipped.length)} rules not implemented by oxlint`);

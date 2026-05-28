@@ -14,5315 +14,8481 @@ export interface RuleOptions {
    * Enforce or ban the use of inline type-only markers for named imports.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/consistent-type-specifier-style.md
    */
-  'import/consistent-type-specifier-style'?: Linter.RuleEntry<ImportConsistentTypeSpecifierStyle>
+  "import/consistent-type-specifier-style"?: Linter.RuleEntry<ImportConsistentTypeSpecifierStyle>;
   /**
    * Ensure a default export is present, given a default import.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/default.md
    */
-  'import/default'?: Linter.RuleEntry<[]>
+  "import/default"?: Linter.RuleEntry<[]>;
   /**
    * Enforce a leading comment with the webpackChunkName for dynamic imports.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/dynamic-import-chunkname.md
    */
-  'import/dynamic-import-chunkname'?: Linter.RuleEntry<ImportDynamicImportChunkname>
+  "import/dynamic-import-chunkname"?: Linter.RuleEntry<ImportDynamicImportChunkname>;
   /**
    * Enforce either using, or omitting, the `node:` protocol when importing Node.js builtin modules.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/enforce-node-protocol-usage.md
    */
-  'import/enforce-node-protocol-usage'?: Linter.RuleEntry<ImportEnforceNodeProtocolUsage>
+  "import/enforce-node-protocol-usage"?: Linter.RuleEntry<ImportEnforceNodeProtocolUsage>;
   /**
    * Forbid any invalid exports, i.e. re-export of the same name.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/export.md
    */
-  'import/export'?: Linter.RuleEntry<[]>
+  "import/export"?: Linter.RuleEntry<[]>;
   /**
    * Ensure all exports appear after other statements.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/exports-last.md
    */
-  'import/exports-last'?: Linter.RuleEntry<[]>
+  "import/exports-last"?: Linter.RuleEntry<[]>;
   /**
    * Ensure consistent use of file extension within the import path.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/extensions.md
    */
-  'import/extensions'?: Linter.RuleEntry<ImportExtensions>
+  "import/extensions"?: Linter.RuleEntry<ImportExtensions>;
   /**
    * Ensure all imports appear before other statements.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/first.md
    */
-  'import/first'?: Linter.RuleEntry<ImportFirst>
+  "import/first"?: Linter.RuleEntry<ImportFirst>;
   /**
    * Prefer named exports to be grouped together in a single export declaration
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/group-exports.md
    */
-  'import/group-exports'?: Linter.RuleEntry<[]>
+  "import/group-exports"?: Linter.RuleEntry<[]>;
   /**
    * Replaced by `import/first`.
    * @see https://github.com/import-js/eslint-plugin-import/blob/7b25c1cb95ee18acc1531002fd343e1e6031f9ed/docs/rules/imports-first.md
    * @deprecated
    */
-  'import/imports-first'?: Linter.RuleEntry<ImportImportsFirst>
+  "import/imports-first"?: Linter.RuleEntry<ImportImportsFirst>;
   /**
    * Enforce the maximum number of dependencies a module can have.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/max-dependencies.md
    */
-  'import/max-dependencies'?: Linter.RuleEntry<ImportMaxDependencies>
+  "import/max-dependencies"?: Linter.RuleEntry<ImportMaxDependencies>;
   /**
    * Ensure named imports correspond to a named export in the remote file.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/named.md
    */
-  'import/named'?: Linter.RuleEntry<ImportNamed>
+  "import/named"?: Linter.RuleEntry<ImportNamed>;
   /**
    * Ensure imported namespaces contain dereferenced properties as they are dereferenced.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/namespace.md
    */
-  'import/namespace'?: Linter.RuleEntry<ImportNamespace>
+  "import/namespace"?: Linter.RuleEntry<ImportNamespace>;
   /**
    * Enforce a newline after import statements.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/newline-after-import.md
    */
-  'import/newline-after-import'?: Linter.RuleEntry<ImportNewlineAfterImport>
+  "import/newline-after-import"?: Linter.RuleEntry<ImportNewlineAfterImport>;
   /**
    * Forbid import of modules using absolute paths.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-absolute-path.md
    */
-  'import/no-absolute-path'?: Linter.RuleEntry<ImportNoAbsolutePath>
+  "import/no-absolute-path"?: Linter.RuleEntry<ImportNoAbsolutePath>;
   /**
    * Forbid AMD `require` and `define` calls.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-amd.md
    */
-  'import/no-amd'?: Linter.RuleEntry<[]>
+  "import/no-amd"?: Linter.RuleEntry<[]>;
   /**
    * Forbid anonymous values as default exports.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-anonymous-default-export.md
    */
-  'import/no-anonymous-default-export'?: Linter.RuleEntry<ImportNoAnonymousDefaultExport>
+  "import/no-anonymous-default-export"?: Linter.RuleEntry<ImportNoAnonymousDefaultExport>;
   /**
    * Forbid CommonJS `require` calls and `module.exports` or `exports.*`.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-commonjs.md
    */
-  'import/no-commonjs'?: Linter.RuleEntry<ImportNoCommonjs>
+  "import/no-commonjs"?: Linter.RuleEntry<ImportNoCommonjs>;
   /**
    * Forbid a module from importing a module with a dependency path back to itself.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-cycle.md
    */
-  'import/no-cycle'?: Linter.RuleEntry<ImportNoCycle>
+  "import/no-cycle"?: Linter.RuleEntry<ImportNoCycle>;
   /**
    * Forbid default exports.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-default-export.md
    */
-  'import/no-default-export'?: Linter.RuleEntry<[]>
+  "import/no-default-export"?: Linter.RuleEntry<[]>;
   /**
    * Forbid imported names marked with `@deprecated` documentation tag.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-deprecated.md
    */
-  'import/no-deprecated'?: Linter.RuleEntry<[]>
+  "import/no-deprecated"?: Linter.RuleEntry<[]>;
   /**
    * Forbid repeated import of the same module in multiple places.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-duplicates.md
    */
-  'import/no-duplicates'?: Linter.RuleEntry<ImportNoDuplicates>
+  "import/no-duplicates"?: Linter.RuleEntry<ImportNoDuplicates>;
   /**
    * Forbid `require()` calls with expressions.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-dynamic-require.md
    */
-  'import/no-dynamic-require'?: Linter.RuleEntry<ImportNoDynamicRequire>
+  "import/no-dynamic-require"?: Linter.RuleEntry<ImportNoDynamicRequire>;
   /**
    * Forbid empty named import blocks.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-empty-named-blocks.md
    */
-  'import/no-empty-named-blocks'?: Linter.RuleEntry<[]>
+  "import/no-empty-named-blocks"?: Linter.RuleEntry<[]>;
   /**
    * Forbid the use of extraneous packages.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-extraneous-dependencies.md
    */
-  'import/no-extraneous-dependencies'?: Linter.RuleEntry<ImportNoExtraneousDependencies>
+  "import/no-extraneous-dependencies"?: Linter.RuleEntry<ImportNoExtraneousDependencies>;
   /**
    * Forbid import statements with CommonJS module.exports.
    */
-  'import/no-import-module-exports'?: Linter.RuleEntry<ImportNoImportModuleExports>
+  "import/no-import-module-exports"?: Linter.RuleEntry<ImportNoImportModuleExports>;
   /**
    * Forbid importing the submodules of other modules.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-internal-modules.md
    */
-  'import/no-internal-modules'?: Linter.RuleEntry<ImportNoInternalModules>
+  "import/no-internal-modules"?: Linter.RuleEntry<ImportNoInternalModules>;
   /**
    * Forbid the use of mutable exports with `var` or `let`.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-mutable-exports.md
    */
-  'import/no-mutable-exports'?: Linter.RuleEntry<[]>
+  "import/no-mutable-exports"?: Linter.RuleEntry<[]>;
   /**
    * Forbid use of exported name as identifier of default export.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-named-as-default.md
    */
-  'import/no-named-as-default'?: Linter.RuleEntry<[]>
+  "import/no-named-as-default"?: Linter.RuleEntry<[]>;
   /**
    * Forbid use of exported name as property of default export.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-named-as-default-member.md
    */
-  'import/no-named-as-default-member'?: Linter.RuleEntry<[]>
+  "import/no-named-as-default-member"?: Linter.RuleEntry<[]>;
   /**
    * Forbid named default exports.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-named-default.md
    */
-  'import/no-named-default'?: Linter.RuleEntry<[]>
+  "import/no-named-default"?: Linter.RuleEntry<[]>;
   /**
    * Forbid named exports.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-named-export.md
    */
-  'import/no-named-export'?: Linter.RuleEntry<[]>
+  "import/no-named-export"?: Linter.RuleEntry<[]>;
   /**
    * Forbid namespace (a.k.a. "wildcard" `*`) imports.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-namespace.md
    */
-  'import/no-namespace'?: Linter.RuleEntry<ImportNoNamespace>
+  "import/no-namespace"?: Linter.RuleEntry<ImportNoNamespace>;
   /**
    * Forbid Node.js builtin modules.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-nodejs-modules.md
    */
-  'import/no-nodejs-modules'?: Linter.RuleEntry<ImportNoNodejsModules>
+  "import/no-nodejs-modules"?: Linter.RuleEntry<ImportNoNodejsModules>;
   /**
    * Forbid importing packages through relative paths.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-relative-packages.md
    */
-  'import/no-relative-packages'?: Linter.RuleEntry<ImportNoRelativePackages>
+  "import/no-relative-packages"?: Linter.RuleEntry<ImportNoRelativePackages>;
   /**
    * Forbid importing modules from parent directories.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-relative-parent-imports.md
    */
-  'import/no-relative-parent-imports'?: Linter.RuleEntry<ImportNoRelativeParentImports>
+  "import/no-relative-parent-imports"?: Linter.RuleEntry<ImportNoRelativeParentImports>;
   /**
    * Enforce which files can be imported in a given folder.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-restricted-paths.md
    */
-  'import/no-restricted-paths'?: Linter.RuleEntry<ImportNoRestrictedPaths>
+  "import/no-restricted-paths"?: Linter.RuleEntry<ImportNoRestrictedPaths>;
   /**
    * Forbid a module from importing itself.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-self-import.md
    */
-  'import/no-self-import'?: Linter.RuleEntry<[]>
+  "import/no-self-import"?: Linter.RuleEntry<[]>;
   /**
    * Forbid unassigned imports
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-unassigned-import.md
    */
-  'import/no-unassigned-import'?: Linter.RuleEntry<ImportNoUnassignedImport>
+  "import/no-unassigned-import"?: Linter.RuleEntry<ImportNoUnassignedImport>;
   /**
    * Ensure imports point to a file/module that can be resolved.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-unresolved.md
    */
-  'import/no-unresolved'?: Linter.RuleEntry<ImportNoUnresolved>
+  "import/no-unresolved"?: Linter.RuleEntry<ImportNoUnresolved>;
   /**
    * Forbid modules without exports, or exports without matching import in another module.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-unused-modules.md
    */
-  'import/no-unused-modules'?: Linter.RuleEntry<ImportNoUnusedModules>
+  "import/no-unused-modules"?: Linter.RuleEntry<ImportNoUnusedModules>;
   /**
    * Forbid unnecessary path segments in import and require statements.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-useless-path-segments.md
    */
-  'import/no-useless-path-segments'?: Linter.RuleEntry<ImportNoUselessPathSegments>
+  "import/no-useless-path-segments"?: Linter.RuleEntry<ImportNoUselessPathSegments>;
   /**
    * Forbid webpack loader syntax in imports.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/no-webpack-loader-syntax.md
    */
-  'import/no-webpack-loader-syntax'?: Linter.RuleEntry<[]>
+  "import/no-webpack-loader-syntax"?: Linter.RuleEntry<[]>;
   /**
    * Enforce a convention in module import order.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/order.md
    */
-  'import/order'?: Linter.RuleEntry<ImportOrder>
+  "import/order"?: Linter.RuleEntry<ImportOrder>;
   /**
    * Prefer a default export if module exports a single name or multiple names.
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/prefer-default-export.md
    */
-  'import/prefer-default-export'?: Linter.RuleEntry<ImportPreferDefaultExport>
+  "import/prefer-default-export"?: Linter.RuleEntry<ImportPreferDefaultExport>;
   /**
    * Forbid potentially ambiguous parse goal (`script` vs. `module`).
    * @see https://github.com/import-js/eslint-plugin-import/blob/v2.32.0/docs/rules/unambiguous.md
    */
-  'import/unambiguous'?: Linter.RuleEntry<[]>
+  "import/unambiguous"?: Linter.RuleEntry<[]>;
   /**
    * Checks that `@access` tags have a valid value.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-access.md#repos-sticky-header
    */
-  'jsdoc/check-access'?: Linter.RuleEntry<[]>
+  "jsdoc/check-access"?: Linter.RuleEntry<[]>;
   /**
    * Reports invalid alignment of JSDoc block asterisks.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-alignment.md#repos-sticky-header
    */
-  'jsdoc/check-alignment'?: Linter.RuleEntry<JsdocCheckAlignment>
+  "jsdoc/check-alignment"?: Linter.RuleEntry<JsdocCheckAlignment>;
   /**
    * @deprecated - Use `getJsdocProcessorPlugin` processor; ensures that (JavaScript) samples within `@example` tags adhere to ESLint rules.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-examples.md#repos-sticky-header
    */
-  'jsdoc/check-examples'?: Linter.RuleEntry<JsdocCheckExamples>
+  "jsdoc/check-examples"?: Linter.RuleEntry<JsdocCheckExamples>;
   /**
    * Reports invalid padding inside JSDoc blocks.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-indentation.md#repos-sticky-header
    */
-  'jsdoc/check-indentation'?: Linter.RuleEntry<JsdocCheckIndentation>
+  "jsdoc/check-indentation"?: Linter.RuleEntry<JsdocCheckIndentation>;
   /**
    * Reports invalid alignment of JSDoc block lines.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-line-alignment.md#repos-sticky-header
    */
-  'jsdoc/check-line-alignment'?: Linter.RuleEntry<JsdocCheckLineAlignment>
+  "jsdoc/check-line-alignment"?: Linter.RuleEntry<JsdocCheckLineAlignment>;
   /**
    * Checks for dupe `@param` names, that nested param names have roots, and that parameter names in function declarations match JSDoc param names.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-param-names.md#repos-sticky-header
    */
-  'jsdoc/check-param-names'?: Linter.RuleEntry<JsdocCheckParamNames>
+  "jsdoc/check-param-names"?: Linter.RuleEntry<JsdocCheckParamNames>;
   /**
    * Ensures that property names in JSDoc are not duplicated on the same block and that nested properties have defined roots.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-property-names.md#repos-sticky-header
    */
-  'jsdoc/check-property-names'?: Linter.RuleEntry<JsdocCheckPropertyNames>
+  "jsdoc/check-property-names"?: Linter.RuleEntry<JsdocCheckPropertyNames>;
   /**
    * Reports against syntax not valid for the mode (e.g., Google Closure Compiler in non-Closure mode).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-syntax.md#repos-sticky-header
    */
-  'jsdoc/check-syntax'?: Linter.RuleEntry<[]>
+  "jsdoc/check-syntax"?: Linter.RuleEntry<[]>;
   /**
    * Reports invalid block tag names.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-tag-names.md#repos-sticky-header
    */
-  'jsdoc/check-tag-names'?: Linter.RuleEntry<JsdocCheckTagNames>
+  "jsdoc/check-tag-names"?: Linter.RuleEntry<JsdocCheckTagNames>;
   /**
    * Checks that any `@template` names are actually used in the connected `@typedef` or type alias.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-template-names.md#repos-sticky-header
    */
-  'jsdoc/check-template-names'?: Linter.RuleEntry<[]>
+  "jsdoc/check-template-names"?: Linter.RuleEntry<[]>;
   /**
    * Reports types deemed invalid (customizable and with defaults, for preventing and/or recommending replacements).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-types.md#repos-sticky-header
    */
-  'jsdoc/check-types'?: Linter.RuleEntry<JsdocCheckTypes>
+  "jsdoc/check-types"?: Linter.RuleEntry<JsdocCheckTypes>;
   /**
    * This rule checks the values for a handful of tags: `@version`, `@since`, `@license` and `@author`.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/check-values.md#repos-sticky-header
    */
-  'jsdoc/check-values'?: Linter.RuleEntry<JsdocCheckValues>
+  "jsdoc/check-values"?: Linter.RuleEntry<JsdocCheckValues>;
   /**
    * Converts non-JSDoc comments preceding or following nodes into JSDoc ones
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/convert-to-jsdoc-comments.md#repos-sticky-header
    */
-  'jsdoc/convert-to-jsdoc-comments'?: Linter.RuleEntry<JsdocConvertToJsdocComments>
+  "jsdoc/convert-to-jsdoc-comments"?: Linter.RuleEntry<JsdocConvertToJsdocComments>;
   /**
    * Checks tags that are expected to be empty (e.g., `@abstract` or `@async`), reporting if they have content
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/empty-tags.md#repos-sticky-header
    */
-  'jsdoc/empty-tags'?: Linter.RuleEntry<JsdocEmptyTags>
+  "jsdoc/empty-tags"?: Linter.RuleEntry<JsdocEmptyTags>;
   /**
    * Reports use of JSDoc tags in non-tag positions (in the default "typescript" mode).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/escape-inline-tags.md#repos-sticky-header
    */
-  'jsdoc/escape-inline-tags'?: Linter.RuleEntry<JsdocEscapeInlineTags>
+  "jsdoc/escape-inline-tags"?: Linter.RuleEntry<JsdocEscapeInlineTags>;
   /**
    * Prohibits use of `@implements` on non-constructor functions (to enforce the tag only being used on classes/constructors).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/implements-on-classes.md#repos-sticky-header
    */
-  'jsdoc/implements-on-classes'?: Linter.RuleEntry<JsdocImplementsOnClasses>
+  "jsdoc/implements-on-classes"?: Linter.RuleEntry<JsdocImplementsOnClasses>;
   /**
    * Reports if JSDoc `import()` statements point to a package which is not listed in `dependencies` or `devDependencies`
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/imports-as-dependencies.md#repos-sticky-header
    */
-  'jsdoc/imports-as-dependencies'?: Linter.RuleEntry<[]>
+  "jsdoc/imports-as-dependencies"?: Linter.RuleEntry<[]>;
   /**
    * This rule reports doc comments that only restate their attached name.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/informative-docs.md#repos-sticky-header
    */
-  'jsdoc/informative-docs'?: Linter.RuleEntry<JsdocInformativeDocs>
+  "jsdoc/informative-docs"?: Linter.RuleEntry<JsdocInformativeDocs>;
   /**
    * Enforces minimum number of newlines before JSDoc comment blocks
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/lines-before-block.md#repos-sticky-header
    */
-  'jsdoc/lines-before-block'?: Linter.RuleEntry<JsdocLinesBeforeBlock>
+  "jsdoc/lines-before-block"?: Linter.RuleEntry<JsdocLinesBeforeBlock>;
   /**
    * Enforces a regular expression pattern on descriptions.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/match-description.md#repos-sticky-header
    */
-  'jsdoc/match-description'?: Linter.RuleEntry<JsdocMatchDescription>
+  "jsdoc/match-description"?: Linter.RuleEntry<JsdocMatchDescription>;
   /**
    * Reports the name portion of a JSDoc tag if matching or not matching a given regular expression.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/match-name.md#repos-sticky-header
    */
-  'jsdoc/match-name'?: Linter.RuleEntry<JsdocMatchName>
+  "jsdoc/match-name"?: Linter.RuleEntry<JsdocMatchName>;
   /**
    * Controls how and whether JSDoc blocks can be expressed as single or multiple line blocks.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/multiline-blocks.md#repos-sticky-header
    */
-  'jsdoc/multiline-blocks'?: Linter.RuleEntry<JsdocMultilineBlocks>
+  "jsdoc/multiline-blocks"?: Linter.RuleEntry<JsdocMultilineBlocks>;
   /**
    * This rule checks for multi-line-style comments which fail to meet the criteria of a JSDoc block.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-bad-blocks.md#repos-sticky-header
    */
-  'jsdoc/no-bad-blocks'?: Linter.RuleEntry<JsdocNoBadBlocks>
+  "jsdoc/no-bad-blocks"?: Linter.RuleEntry<JsdocNoBadBlocks>;
   /**
    * If tags are present, this rule will prevent empty lines in the block description. If no tags are present, this rule will prevent extra empty lines in the block description.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-blank-block-descriptions.md#repos-sticky-header
    */
-  'jsdoc/no-blank-block-descriptions'?: Linter.RuleEntry<[]>
+  "jsdoc/no-blank-block-descriptions"?: Linter.RuleEntry<[]>;
   /**
    * Removes empty blocks with nothing but possibly line breaks
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-blank-blocks.md#repos-sticky-header
    */
-  'jsdoc/no-blank-blocks'?: Linter.RuleEntry<JsdocNoBlankBlocks>
+  "jsdoc/no-blank-blocks"?: Linter.RuleEntry<JsdocNoBlankBlocks>;
   /**
    * This rule reports defaults being used on the relevant portion of `@param` or `@default`.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-defaults.md#repos-sticky-header
    */
-  'jsdoc/no-defaults'?: Linter.RuleEntry<JsdocNoDefaults>
+  "jsdoc/no-defaults"?: Linter.RuleEntry<JsdocNoDefaults>;
   /**
    * Reports when certain comment structures are always expected.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-missing-syntax.md#repos-sticky-header
    */
-  'jsdoc/no-missing-syntax'?: Linter.RuleEntry<JsdocNoMissingSyntax>
+  "jsdoc/no-missing-syntax"?: Linter.RuleEntry<JsdocNoMissingSyntax>;
   /**
    * Prevents use of multiple asterisks at the beginning of lines.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-multi-asterisks.md#repos-sticky-header
    */
-  'jsdoc/no-multi-asterisks'?: Linter.RuleEntry<JsdocNoMultiAsterisks>
+  "jsdoc/no-multi-asterisks"?: Linter.RuleEntry<JsdocNoMultiAsterisks>;
   /**
    * Reports when certain comment structures are present.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-restricted-syntax.md#repos-sticky-header
    */
-  'jsdoc/no-restricted-syntax'?: Linter.RuleEntry<JsdocNoRestrictedSyntax>
+  "jsdoc/no-restricted-syntax"?: Linter.RuleEntry<JsdocNoRestrictedSyntax>;
   /**
    * This rule reports types being used on `@param` or `@returns` (redundant with TypeScript).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-types.md#repos-sticky-header
    */
-  'jsdoc/no-types'?: Linter.RuleEntry<JsdocNoTypes>
+  "jsdoc/no-types"?: Linter.RuleEntry<JsdocNoTypes>;
   /**
    * Besides some expected built-in types, prohibits any types not specified as globals or within `@typedef`.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/no-undefined-types.md#repos-sticky-header
    */
-  'jsdoc/no-undefined-types'?: Linter.RuleEntry<JsdocNoUndefinedTypes>
+  "jsdoc/no-undefined-types"?: Linter.RuleEntry<JsdocNoUndefinedTypes>;
   /**
    * Prefer `@import` tags to inline `import()` statements.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/prefer-import-tag.md#repos-sticky-header
    */
-  'jsdoc/prefer-import-tag'?: Linter.RuleEntry<JsdocPreferImportTag>
+  "jsdoc/prefer-import-tag"?: Linter.RuleEntry<JsdocPreferImportTag>;
   /**
    * Reports use of `any` or `*` type
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/reject-any-type.md#repos-sticky-header
    */
-  'jsdoc/reject-any-type'?: Linter.RuleEntry<[]>
+  "jsdoc/reject-any-type"?: Linter.RuleEntry<[]>;
   /**
    * Reports use of `Function` type
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/reject-function-type.md#repos-sticky-header
    */
-  'jsdoc/reject-function-type'?: Linter.RuleEntry<[]>
+  "jsdoc/reject-function-type"?: Linter.RuleEntry<[]>;
   /**
    * Requires that each JSDoc line starts with an `*`.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-asterisk-prefix.md#repos-sticky-header
    */
-  'jsdoc/require-asterisk-prefix'?: Linter.RuleEntry<JsdocRequireAsteriskPrefix>
+  "jsdoc/require-asterisk-prefix"?: Linter.RuleEntry<JsdocRequireAsteriskPrefix>;
   /**
    * Requires that all functions (and potentially other contexts) have a description.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description.md#repos-sticky-header
    */
-  'jsdoc/require-description'?: Linter.RuleEntry<JsdocRequireDescription>
+  "jsdoc/require-description"?: Linter.RuleEntry<JsdocRequireDescription>;
   /**
    * Requires that block description, explicit `@description`, and `@param`/`@returns` tag descriptions are written in complete sentences.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-description-complete-sentence.md#repos-sticky-header
    */
-  'jsdoc/require-description-complete-sentence'?: Linter.RuleEntry<JsdocRequireDescriptionCompleteSentence>
+  "jsdoc/require-description-complete-sentence"?: Linter.RuleEntry<JsdocRequireDescriptionCompleteSentence>;
   /**
    * Requires that all functions (and potentially other contexts) have examples.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-example.md#repos-sticky-header
    */
-  'jsdoc/require-example'?: Linter.RuleEntry<JsdocRequireExample>
+  "jsdoc/require-example"?: Linter.RuleEntry<JsdocRequireExample>;
   /**
    * Checks that all files have one `@file`, `@fileoverview`, or `@overview` tag at the beginning of the file.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-file-overview.md#repos-sticky-header
    */
-  'jsdoc/require-file-overview'?: Linter.RuleEntry<JsdocRequireFileOverview>
+  "jsdoc/require-file-overview"?: Linter.RuleEntry<JsdocRequireFileOverview>;
   /**
    * Requires a hyphen before the `@param` description (and optionally before `@property` descriptions).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-hyphen-before-param-description.md#repos-sticky-header
    */
-  'jsdoc/require-hyphen-before-param-description'?: Linter.RuleEntry<JsdocRequireHyphenBeforeParamDescription>
+  "jsdoc/require-hyphen-before-param-description"?: Linter.RuleEntry<JsdocRequireHyphenBeforeParamDescription>;
   /**
    * Checks for presence of JSDoc comments, on functions and potentially other contexts (optionally limited to exports).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-jsdoc.md#repos-sticky-header
    */
-  'jsdoc/require-jsdoc'?: Linter.RuleEntry<JsdocRequireJsdoc>
+  "jsdoc/require-jsdoc"?: Linter.RuleEntry<JsdocRequireJsdoc>;
   /**
    * Requires a description for `@next` tags
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-next-description.md#repos-sticky-header
    */
-  'jsdoc/require-next-description'?: Linter.RuleEntry<[]>
+  "jsdoc/require-next-description"?: Linter.RuleEntry<[]>;
   /**
    * Requires a type for `@next` tags
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-next-type.md#repos-sticky-header
    */
-  'jsdoc/require-next-type'?: Linter.RuleEntry<[]>
+  "jsdoc/require-next-type"?: Linter.RuleEntry<[]>;
   /**
    * Requires that all function parameters are documented with a `@param` tag.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param.md#repos-sticky-header
    */
-  'jsdoc/require-param'?: Linter.RuleEntry<JsdocRequireParam>
+  "jsdoc/require-param"?: Linter.RuleEntry<JsdocRequireParam>;
   /**
    * Requires that each `@param` tag has a `description` value.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-description.md#repos-sticky-header
    */
-  'jsdoc/require-param-description'?: Linter.RuleEntry<JsdocRequireParamDescription>
+  "jsdoc/require-param-description"?: Linter.RuleEntry<JsdocRequireParamDescription>;
   /**
    * Requires that all `@param` tags have names.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-name.md#repos-sticky-header
    */
-  'jsdoc/require-param-name'?: Linter.RuleEntry<JsdocRequireParamName>
+  "jsdoc/require-param-name"?: Linter.RuleEntry<JsdocRequireParamName>;
   /**
    * Requires that each `@param` tag has a type value (in curly brackets).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-param-type.md#repos-sticky-header
    */
-  'jsdoc/require-param-type'?: Linter.RuleEntry<JsdocRequireParamType>
+  "jsdoc/require-param-type"?: Linter.RuleEntry<JsdocRequireParamType>;
   /**
    * Requires that all `@typedef` and `@namespace` tags have `@property` when their type is a plain `object`, `Object`, or `PlainObject`.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-property.md#repos-sticky-header
    */
-  'jsdoc/require-property'?: Linter.RuleEntry<[]>
+  "jsdoc/require-property"?: Linter.RuleEntry<[]>;
   /**
    * Requires that each `@property` tag has a `description` value.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-property-description.md#repos-sticky-header
    */
-  'jsdoc/require-property-description'?: Linter.RuleEntry<[]>
+  "jsdoc/require-property-description"?: Linter.RuleEntry<[]>;
   /**
    * Requires that all `@property` tags have names.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-property-name.md#repos-sticky-header
    */
-  'jsdoc/require-property-name'?: Linter.RuleEntry<[]>
+  "jsdoc/require-property-name"?: Linter.RuleEntry<[]>;
   /**
    * Requires that each `@property` tag has a type value (in curly brackets).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-property-type.md#repos-sticky-header
    */
-  'jsdoc/require-property-type'?: Linter.RuleEntry<[]>
+  "jsdoc/require-property-type"?: Linter.RuleEntry<[]>;
   /**
    * Requires that Promise rejections are documented with `@rejects` tags.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-rejects.md#repos-sticky-header
    */
-  'jsdoc/require-rejects'?: Linter.RuleEntry<JsdocRequireRejects>
+  "jsdoc/require-rejects"?: Linter.RuleEntry<JsdocRequireRejects>;
   /**
    * Requires that returns are documented with `@returns`.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns.md#repos-sticky-header
    */
-  'jsdoc/require-returns'?: Linter.RuleEntry<JsdocRequireReturns>
+  "jsdoc/require-returns"?: Linter.RuleEntry<JsdocRequireReturns>;
   /**
    * Requires a return statement in function body if a `@returns` tag is specified in JSDoc comment(and reports if multiple `@returns` tags are present).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-check.md#repos-sticky-header
    */
-  'jsdoc/require-returns-check'?: Linter.RuleEntry<JsdocRequireReturnsCheck>
+  "jsdoc/require-returns-check"?: Linter.RuleEntry<JsdocRequireReturnsCheck>;
   /**
    * Requires that the `@returns` tag has a `description` value (not including `void`/`undefined` type returns).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-description.md#repos-sticky-header
    */
-  'jsdoc/require-returns-description'?: Linter.RuleEntry<JsdocRequireReturnsDescription>
+  "jsdoc/require-returns-description"?: Linter.RuleEntry<JsdocRequireReturnsDescription>;
   /**
    * Requires that `@returns` tag has type value (in curly brackets).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-returns-type.md#repos-sticky-header
    */
-  'jsdoc/require-returns-type'?: Linter.RuleEntry<JsdocRequireReturnsType>
+  "jsdoc/require-returns-type"?: Linter.RuleEntry<JsdocRequireReturnsType>;
   /**
    * Requires tags be present, optionally for specific contexts
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-tags.md#repos-sticky-header
    */
-  'jsdoc/require-tags'?: Linter.RuleEntry<JsdocRequireTags>
+  "jsdoc/require-tags"?: Linter.RuleEntry<JsdocRequireTags>;
   /**
    * Requires `@template` tags be present when type parameters are used.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-template.md#repos-sticky-header
    */
-  'jsdoc/require-template'?: Linter.RuleEntry<JsdocRequireTemplate>
+  "jsdoc/require-template"?: Linter.RuleEntry<JsdocRequireTemplate>;
   /**
    * Requires a description for `@template` tags
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-template-description.md#repos-sticky-header
    */
-  'jsdoc/require-template-description'?: Linter.RuleEntry<[]>
+  "jsdoc/require-template-description"?: Linter.RuleEntry<[]>;
   /**
    * Requires that throw statements are documented with `@throws` tags.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-throws.md#repos-sticky-header
    */
-  'jsdoc/require-throws'?: Linter.RuleEntry<JsdocRequireThrows>
+  "jsdoc/require-throws"?: Linter.RuleEntry<JsdocRequireThrows>;
   /**
    * Requires a description for `@throws` tags
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-throws-description.md#repos-sticky-header
    */
-  'jsdoc/require-throws-description'?: Linter.RuleEntry<[]>
+  "jsdoc/require-throws-description"?: Linter.RuleEntry<[]>;
   /**
    * Requires a type for `@throws` tags
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-throws-type.md#repos-sticky-header
    */
-  'jsdoc/require-throws-type'?: Linter.RuleEntry<[]>
+  "jsdoc/require-throws-type"?: Linter.RuleEntry<[]>;
   /**
    * Requires yields are documented with `@yields` tags.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-yields.md#repos-sticky-header
    */
-  'jsdoc/require-yields'?: Linter.RuleEntry<JsdocRequireYields>
+  "jsdoc/require-yields"?: Linter.RuleEntry<JsdocRequireYields>;
   /**
    * Ensures that if a `@yields` is present that a `yield` (or `yield` with a value) is present in the function body (or that if a `@next` is present that there is a yield with a return value present).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-yields-check.md#repos-sticky-header
    */
-  'jsdoc/require-yields-check'?: Linter.RuleEntry<JsdocRequireYieldsCheck>
+  "jsdoc/require-yields-check"?: Linter.RuleEntry<JsdocRequireYieldsCheck>;
   /**
    * Requires a description for `@yields` tags
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-yields-description.md#repos-sticky-header
    */
-  'jsdoc/require-yields-description'?: Linter.RuleEntry<[]>
+  "jsdoc/require-yields-description"?: Linter.RuleEntry<[]>;
   /**
    * Requires a type for `@yields` tags
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/require-yields-type.md#repos-sticky-header
    */
-  'jsdoc/require-yields-type'?: Linter.RuleEntry<[]>
+  "jsdoc/require-yields-type"?: Linter.RuleEntry<[]>;
   /**
    * Sorts tags by a specified sequence according to tag name, optionally adding line breaks between tag groups.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/sort-tags.md#repos-sticky-header
    */
-  'jsdoc/sort-tags'?: Linter.RuleEntry<JsdocSortTags>
+  "jsdoc/sort-tags"?: Linter.RuleEntry<JsdocSortTags>;
   /**
    * Enforces lines (or no lines) before, after, or between tags.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/tag-lines.md#repos-sticky-header
    */
-  'jsdoc/tag-lines'?: Linter.RuleEntry<JsdocTagLines>
+  "jsdoc/tag-lines"?: Linter.RuleEntry<JsdocTagLines>;
   /**
    * Auto-escape certain characters that are input within block and tag descriptions.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/text-escaping.md#repos-sticky-header
    */
-  'jsdoc/text-escaping'?: Linter.RuleEntry<JsdocTextEscaping>
+  "jsdoc/text-escaping"?: Linter.RuleEntry<JsdocTextEscaping>;
   /**
    * Prefers either function properties or method signatures
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/ts-method-signature-style.md#repos-sticky-header
    */
-  'jsdoc/ts-method-signature-style'?: Linter.RuleEntry<JsdocTsMethodSignatureStyle>
+  "jsdoc/ts-method-signature-style"?: Linter.RuleEntry<JsdocTsMethodSignatureStyle>;
   /**
    * Warns against use of the empty object type
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/ts-no-empty-object-type.md#repos-sticky-header
    */
-  'jsdoc/ts-no-empty-object-type'?: Linter.RuleEntry<[]>
+  "jsdoc/ts-no-empty-object-type"?: Linter.RuleEntry<[]>;
   /**
    * Catches unnecessary template expressions such as string expressions within a template literal.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/ts-no-unnecessary-template-expression.md#repos-sticky-header
    */
-  'jsdoc/ts-no-unnecessary-template-expression'?: Linter.RuleEntry<JsdocTsNoUnnecessaryTemplateExpression>
+  "jsdoc/ts-no-unnecessary-template-expression"?: Linter.RuleEntry<JsdocTsNoUnnecessaryTemplateExpression>;
   /**
    * Prefers function types over call signatures when there are no other properties.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/ts-prefer-function-type.md#repos-sticky-header
    */
-  'jsdoc/ts-prefer-function-type'?: Linter.RuleEntry<JsdocTsPreferFunctionType>
+  "jsdoc/ts-prefer-function-type"?: Linter.RuleEntry<JsdocTsPreferFunctionType>;
   /**
    * Formats JSDoc type values.
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/type-formatting.md#repos-sticky-header
    */
-  'jsdoc/type-formatting'?: Linter.RuleEntry<JsdocTypeFormatting>
+  "jsdoc/type-formatting"?: Linter.RuleEntry<JsdocTypeFormatting>;
   /**
    * Requires all types/namepaths to be valid JSDoc, Closure compiler, or TypeScript types (configurable in settings).
    * @see https://github.com/gajus/eslint-plugin-jsdoc/blob/main/docs/rules/valid-types.md#repos-sticky-header
    */
-  'jsdoc/valid-types'?: Linter.RuleEntry<JsdocValidTypes>
+  "jsdoc/valid-types"?: Linter.RuleEntry<JsdocValidTypes>;
   /**
    * Require returning inside each `then()` to create readable and reusable Promise chains.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/always-return.md
    */
-  'promise/always-return'?: Linter.RuleEntry<PromiseAlwaysReturn>
+  "promise/always-return"?: Linter.RuleEntry<PromiseAlwaysReturn>;
   /**
    * Disallow creating `new` promises outside of utility libs (use [util.promisify][] instead).
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/avoid-new.md
    */
-  'promise/avoid-new'?: Linter.RuleEntry<[]>
+  "promise/avoid-new"?: Linter.RuleEntry<[]>;
   /**
    * Enforce the use of `catch()` on un-returned promises.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/catch-or-return.md
    */
-  'promise/catch-or-return'?: Linter.RuleEntry<PromiseCatchOrReturn>
+  "promise/catch-or-return"?: Linter.RuleEntry<PromiseCatchOrReturn>;
   /**
    * Disallow calling `cb()` inside of a `then()` (use [util.callbackify][] instead).
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/no-callback-in-promise.md
    */
-  'promise/no-callback-in-promise'?: Linter.RuleEntry<PromiseNoCallbackInPromise>
+  "promise/no-callback-in-promise"?: Linter.RuleEntry<PromiseNoCallbackInPromise>;
   /**
    * Disallow creating new promises with paths that resolve multiple times.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/no-multiple-resolved.md
    */
-  'promise/no-multiple-resolved'?: Linter.RuleEntry<[]>
+  "promise/no-multiple-resolved"?: Linter.RuleEntry<[]>;
   /**
    * Require creating a `Promise` constructor before using it in an ES5 environment.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/no-native.md
    */
-  'promise/no-native'?: Linter.RuleEntry<[]>
+  "promise/no-native"?: Linter.RuleEntry<[]>;
   /**
    * Disallow nested `then()` or `catch()` statements.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/no-nesting.md
    */
-  'promise/no-nesting'?: Linter.RuleEntry<[]>
+  "promise/no-nesting"?: Linter.RuleEntry<[]>;
   /**
    * Disallow calling `new` on a Promise static method.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/no-new-statics.md
    */
-  'promise/no-new-statics'?: Linter.RuleEntry<[]>
+  "promise/no-new-statics"?: Linter.RuleEntry<[]>;
   /**
    * Disallow using promises inside of callbacks.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/no-promise-in-callback.md
    */
-  'promise/no-promise-in-callback'?: Linter.RuleEntry<PromiseNoPromiseInCallback>
+  "promise/no-promise-in-callback"?: Linter.RuleEntry<PromiseNoPromiseInCallback>;
   /**
    * Disallow return statements in `finally()`.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/no-return-in-finally.md
    */
-  'promise/no-return-in-finally'?: Linter.RuleEntry<[]>
+  "promise/no-return-in-finally"?: Linter.RuleEntry<[]>;
   /**
    * Disallow wrapping values in `Promise.resolve` or `Promise.reject` when not needed.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/no-return-wrap.md
    */
-  'promise/no-return-wrap'?: Linter.RuleEntry<PromiseNoReturnWrap>
+  "promise/no-return-wrap"?: Linter.RuleEntry<PromiseNoReturnWrap>;
   /**
    * Enforce consistent param names and ordering when creating new promises.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/param-names.md
    */
-  'promise/param-names'?: Linter.RuleEntry<PromiseParamNames>
+  "promise/param-names"?: Linter.RuleEntry<PromiseParamNames>;
   /**
    * Prefer `async`/`await` to the callback pattern.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/prefer-await-to-callbacks.md
    */
-  'promise/prefer-await-to-callbacks'?: Linter.RuleEntry<[]>
+  "promise/prefer-await-to-callbacks"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `await` to `then()`/`catch()`/`finally()` for reading Promise values.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/prefer-await-to-then.md
    */
-  'promise/prefer-await-to-then'?: Linter.RuleEntry<PromisePreferAwaitToThen>
+  "promise/prefer-await-to-then"?: Linter.RuleEntry<PromisePreferAwaitToThen>;
   /**
    * Prefer `catch` to `then(a, b)`/`then(null, b)` for handling errors.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/prefer-catch.md
    */
-  'promise/prefer-catch'?: Linter.RuleEntry<[]>
+  "promise/prefer-catch"?: Linter.RuleEntry<[]>;
   /**
    * Disallow use of non-standard Promise static methods.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/spec-only.md
    */
-  'promise/spec-only'?: Linter.RuleEntry<PromiseSpecOnly>
+  "promise/spec-only"?: Linter.RuleEntry<PromiseSpecOnly>;
   /**
    * Enforces the proper number of arguments are passed to Promise functions.
    * @see https://github.com/eslint-community/eslint-plugin-promise/blob/main/docs/rules/valid-params.md
    */
-  'promise/valid-params'?: Linter.RuleEntry<PromiseValidParams>
+  "promise/valid-params"?: Linter.RuleEntry<PromiseValidParams>;
   /**
    * Require that function overload signatures be consecutive
    * @see https://typescript-eslint.io/rules/adjacent-overload-signatures
    */
-  'typescript/adjacent-overload-signatures'?: Linter.RuleEntry<[]>
+  "typescript/adjacent-overload-signatures"?: Linter.RuleEntry<[]>;
   /**
    * Require consistently using either `T[]` or `Array<T>` for arrays
    * @see https://typescript-eslint.io/rules/array-type
    */
-  'typescript/array-type'?: Linter.RuleEntry<TypescriptArrayType>
+  "typescript/array-type"?: Linter.RuleEntry<TypescriptArrayType>;
   /**
    * Disallow awaiting a value that is not a Thenable
    * @see https://typescript-eslint.io/rules/await-thenable
    */
-  'typescript/await-thenable'?: Linter.RuleEntry<[]>
+  "typescript/await-thenable"?: Linter.RuleEntry<[]>;
   /**
    * Disallow `@ts-<directive>` comments or require descriptions after directives
    * @see https://typescript-eslint.io/rules/ban-ts-comment
    */
-  'typescript/ban-ts-comment'?: Linter.RuleEntry<TypescriptBanTsComment>
+  "typescript/ban-ts-comment"?: Linter.RuleEntry<TypescriptBanTsComment>;
   /**
    * Disallow `// tslint:<rule-flag>` comments
    * @see https://typescript-eslint.io/rules/ban-tslint-comment
    */
-  'typescript/ban-tslint-comment'?: Linter.RuleEntry<[]>
+  "typescript/ban-tslint-comment"?: Linter.RuleEntry<[]>;
   /**
    * Enforce that literals on classes are exposed in a consistent style
    * @see https://typescript-eslint.io/rules/class-literal-property-style
    */
-  'typescript/class-literal-property-style'?: Linter.RuleEntry<TypescriptClassLiteralPropertyStyle>
+  "typescript/class-literal-property-style"?: Linter.RuleEntry<TypescriptClassLiteralPropertyStyle>;
   /**
    * Enforce that class methods utilize `this`
    * @see https://typescript-eslint.io/rules/class-methods-use-this
    */
-  'typescript/class-methods-use-this'?: Linter.RuleEntry<TypescriptClassMethodsUseThis>
+  "typescript/class-methods-use-this"?: Linter.RuleEntry<TypescriptClassMethodsUseThis>;
   /**
    * Enforce specifying generic type arguments on type annotation or constructor name of a constructor call
    * @see https://typescript-eslint.io/rules/consistent-generic-constructors
    */
-  'typescript/consistent-generic-constructors'?: Linter.RuleEntry<TypescriptConsistentGenericConstructors>
+  "typescript/consistent-generic-constructors"?: Linter.RuleEntry<TypescriptConsistentGenericConstructors>;
   /**
    * Require or disallow the `Record` type
    * @see https://typescript-eslint.io/rules/consistent-indexed-object-style
    */
-  'typescript/consistent-indexed-object-style'?: Linter.RuleEntry<TypescriptConsistentIndexedObjectStyle>
+  "typescript/consistent-indexed-object-style"?: Linter.RuleEntry<TypescriptConsistentIndexedObjectStyle>;
   /**
    * Require `return` statements to either always or never specify values
    * @see https://typescript-eslint.io/rules/consistent-return
    */
-  'typescript/consistent-return'?: Linter.RuleEntry<TypescriptConsistentReturn>
+  "typescript/consistent-return"?: Linter.RuleEntry<TypescriptConsistentReturn>;
   /**
    * Enforce consistent usage of type assertions
    * @see https://typescript-eslint.io/rules/consistent-type-assertions
    */
-  'typescript/consistent-type-assertions'?: Linter.RuleEntry<TypescriptConsistentTypeAssertions>
+  "typescript/consistent-type-assertions"?: Linter.RuleEntry<TypescriptConsistentTypeAssertions>;
   /**
    * Enforce type definitions to consistently use either `interface` or `type`
    * @see https://typescript-eslint.io/rules/consistent-type-definitions
    */
-  'typescript/consistent-type-definitions'?: Linter.RuleEntry<TypescriptConsistentTypeDefinitions>
+  "typescript/consistent-type-definitions"?: Linter.RuleEntry<TypescriptConsistentTypeDefinitions>;
   /**
    * Enforce consistent usage of type exports
    * @see https://typescript-eslint.io/rules/consistent-type-exports
    */
-  'typescript/consistent-type-exports'?: Linter.RuleEntry<TypescriptConsistentTypeExports>
+  "typescript/consistent-type-exports"?: Linter.RuleEntry<TypescriptConsistentTypeExports>;
   /**
    * Enforce consistent usage of type imports
    * @see https://typescript-eslint.io/rules/consistent-type-imports
    */
-  'typescript/consistent-type-imports'?: Linter.RuleEntry<TypescriptConsistentTypeImports>
+  "typescript/consistent-type-imports"?: Linter.RuleEntry<TypescriptConsistentTypeImports>;
   /**
    * Enforce default parameters to be last
    * @see https://typescript-eslint.io/rules/default-param-last
    */
-  'typescript/default-param-last'?: Linter.RuleEntry<[]>
+  "typescript/default-param-last"?: Linter.RuleEntry<[]>;
   /**
    * Enforce dot notation whenever possible
    * @see https://typescript-eslint.io/rules/dot-notation
    */
-  'typescript/dot-notation'?: Linter.RuleEntry<TypescriptDotNotation>
+  "typescript/dot-notation"?: Linter.RuleEntry<TypescriptDotNotation>;
   /**
    * Require explicit return types on functions and class methods
    * @see https://typescript-eslint.io/rules/explicit-function-return-type
    */
-  'typescript/explicit-function-return-type'?: Linter.RuleEntry<TypescriptExplicitFunctionReturnType>
+  "typescript/explicit-function-return-type"?: Linter.RuleEntry<TypescriptExplicitFunctionReturnType>;
   /**
    * Require explicit accessibility modifiers on class properties and methods
    * @see https://typescript-eslint.io/rules/explicit-member-accessibility
    */
-  'typescript/explicit-member-accessibility'?: Linter.RuleEntry<TypescriptExplicitMemberAccessibility>
+  "typescript/explicit-member-accessibility"?: Linter.RuleEntry<TypescriptExplicitMemberAccessibility>;
   /**
    * Require explicit return and argument types on exported functions' and classes' public class methods
    * @see https://typescript-eslint.io/rules/explicit-module-boundary-types
    */
-  'typescript/explicit-module-boundary-types'?: Linter.RuleEntry<TypescriptExplicitModuleBoundaryTypes>
+  "typescript/explicit-module-boundary-types"?: Linter.RuleEntry<TypescriptExplicitModuleBoundaryTypes>;
   /**
    * Require or disallow initialization in variable declarations
    * @see https://typescript-eslint.io/rules/init-declarations
    */
-  'typescript/init-declarations'?: Linter.RuleEntry<TypescriptInitDeclarations>
+  "typescript/init-declarations"?: Linter.RuleEntry<TypescriptInitDeclarations>;
   /**
    * Enforce a maximum number of parameters in function definitions
    * @see https://typescript-eslint.io/rules/max-params
    */
-  'typescript/max-params'?: Linter.RuleEntry<TypescriptMaxParams>
+  "typescript/max-params"?: Linter.RuleEntry<TypescriptMaxParams>;
   /**
    * Require a consistent member declaration order
    * @see https://typescript-eslint.io/rules/member-ordering
    */
-  'typescript/member-ordering'?: Linter.RuleEntry<TypescriptMemberOrdering>
+  "typescript/member-ordering"?: Linter.RuleEntry<TypescriptMemberOrdering>;
   /**
    * Enforce using a particular method signature syntax
    * @see https://typescript-eslint.io/rules/method-signature-style
    */
-  'typescript/method-signature-style'?: Linter.RuleEntry<TypescriptMethodSignatureStyle>
+  "typescript/method-signature-style"?: Linter.RuleEntry<TypescriptMethodSignatureStyle>;
   /**
    * Enforce naming conventions for everything across a codebase
    * @see https://typescript-eslint.io/rules/naming-convention
    */
-  'typescript/naming-convention'?: Linter.RuleEntry<TypescriptNamingConvention>
+  "typescript/naming-convention"?: Linter.RuleEntry<TypescriptNamingConvention>;
   /**
    * Disallow generic `Array` constructors
    * @see https://typescript-eslint.io/rules/no-array-constructor
    */
-  'typescript/no-array-constructor'?: Linter.RuleEntry<[]>
+  "typescript/no-array-constructor"?: Linter.RuleEntry<[]>;
   /**
    * Disallow using the `delete` operator on array values
    * @see https://typescript-eslint.io/rules/no-array-delete
    */
-  'typescript/no-array-delete'?: Linter.RuleEntry<[]>
+  "typescript/no-array-delete"?: Linter.RuleEntry<[]>;
   /**
    * Require `.toString()` and `.toLocaleString()` to only be called on objects which provide useful information when stringified
    * @see https://typescript-eslint.io/rules/no-base-to-string
    */
-  'typescript/no-base-to-string'?: Linter.RuleEntry<TypescriptNoBaseToString>
+  "typescript/no-base-to-string"?: Linter.RuleEntry<TypescriptNoBaseToString>;
   /**
    * Disallow non-null assertion in locations that may be confusing
    * @see https://typescript-eslint.io/rules/no-confusing-non-null-assertion
    */
-  'typescript/no-confusing-non-null-assertion'?: Linter.RuleEntry<[]>
+  "typescript/no-confusing-non-null-assertion"?: Linter.RuleEntry<[]>;
   /**
    * Require expressions of type void to appear in statement position
    * @see https://typescript-eslint.io/rules/no-confusing-void-expression
    */
-  'typescript/no-confusing-void-expression'?: Linter.RuleEntry<TypescriptNoConfusingVoidExpression>
+  "typescript/no-confusing-void-expression"?: Linter.RuleEntry<TypescriptNoConfusingVoidExpression>;
   /**
    * Disallow using code marked as `@deprecated`
    * @see https://typescript-eslint.io/rules/no-deprecated
    */
-  'typescript/no-deprecated'?: Linter.RuleEntry<TypescriptNoDeprecated>
+  "typescript/no-deprecated"?: Linter.RuleEntry<TypescriptNoDeprecated>;
   /**
    * Disallow duplicate class members
    * @see https://typescript-eslint.io/rules/no-dupe-class-members
    */
-  'typescript/no-dupe-class-members'?: Linter.RuleEntry<[]>
+  "typescript/no-dupe-class-members"?: Linter.RuleEntry<[]>;
   /**
    * Disallow duplicate enum member values
    * @see https://typescript-eslint.io/rules/no-duplicate-enum-values
    */
-  'typescript/no-duplicate-enum-values'?: Linter.RuleEntry<[]>
+  "typescript/no-duplicate-enum-values"?: Linter.RuleEntry<[]>;
   /**
    * Disallow duplicate constituents of union or intersection types
    * @see https://typescript-eslint.io/rules/no-duplicate-type-constituents
    */
-  'typescript/no-duplicate-type-constituents'?: Linter.RuleEntry<TypescriptNoDuplicateTypeConstituents>
+  "typescript/no-duplicate-type-constituents"?: Linter.RuleEntry<TypescriptNoDuplicateTypeConstituents>;
   /**
    * Disallow using the `delete` operator on computed key expressions
    * @see https://typescript-eslint.io/rules/no-dynamic-delete
    */
-  'typescript/no-dynamic-delete'?: Linter.RuleEntry<[]>
+  "typescript/no-dynamic-delete"?: Linter.RuleEntry<[]>;
   /**
    * Disallow empty functions
    * @see https://typescript-eslint.io/rules/no-empty-function
    */
-  'typescript/no-empty-function'?: Linter.RuleEntry<TypescriptNoEmptyFunction>
+  "typescript/no-empty-function"?: Linter.RuleEntry<TypescriptNoEmptyFunction>;
   /**
    * Disallow the declaration of empty interfaces
    * @see https://typescript-eslint.io/rules/no-empty-interface
    * @deprecated
    */
-  'typescript/no-empty-interface'?: Linter.RuleEntry<TypescriptNoEmptyInterface>
+  "typescript/no-empty-interface"?: Linter.RuleEntry<TypescriptNoEmptyInterface>;
   /**
    * Disallow accidentally using the "empty object" type
    * @see https://typescript-eslint.io/rules/no-empty-object-type
    */
-  'typescript/no-empty-object-type'?: Linter.RuleEntry<TypescriptNoEmptyObjectType>
+  "typescript/no-empty-object-type"?: Linter.RuleEntry<TypescriptNoEmptyObjectType>;
   /**
    * Disallow the `any` type
    * @see https://typescript-eslint.io/rules/no-explicit-any
    */
-  'typescript/no-explicit-any'?: Linter.RuleEntry<TypescriptNoExplicitAny>
+  "typescript/no-explicit-any"?: Linter.RuleEntry<TypescriptNoExplicitAny>;
   /**
    * Disallow extra non-null assertions
    * @see https://typescript-eslint.io/rules/no-extra-non-null-assertion
    */
-  'typescript/no-extra-non-null-assertion'?: Linter.RuleEntry<[]>
+  "typescript/no-extra-non-null-assertion"?: Linter.RuleEntry<[]>;
   /**
    * Disallow classes used as namespaces
    * @see https://typescript-eslint.io/rules/no-extraneous-class
    */
-  'typescript/no-extraneous-class'?: Linter.RuleEntry<TypescriptNoExtraneousClass>
+  "typescript/no-extraneous-class"?: Linter.RuleEntry<TypescriptNoExtraneousClass>;
   /**
    * Require Promise-like statements to be handled appropriately
    * @see https://typescript-eslint.io/rules/no-floating-promises
    */
-  'typescript/no-floating-promises'?: Linter.RuleEntry<TypescriptNoFloatingPromises>
+  "typescript/no-floating-promises"?: Linter.RuleEntry<TypescriptNoFloatingPromises>;
   /**
    * Disallow iterating over an array with a for-in loop
    * @see https://typescript-eslint.io/rules/no-for-in-array
    */
-  'typescript/no-for-in-array'?: Linter.RuleEntry<[]>
+  "typescript/no-for-in-array"?: Linter.RuleEntry<[]>;
   /**
    * Disallow the use of `eval()`-like functions
    * @see https://typescript-eslint.io/rules/no-implied-eval
    */
-  'typescript/no-implied-eval'?: Linter.RuleEntry<[]>
+  "typescript/no-implied-eval"?: Linter.RuleEntry<[]>;
   /**
    * Enforce the use of top-level import type qualifier when an import only has specifiers with inline type qualifiers
    * @see https://typescript-eslint.io/rules/no-import-type-side-effects
    */
-  'typescript/no-import-type-side-effects'?: Linter.RuleEntry<[]>
+  "typescript/no-import-type-side-effects"?: Linter.RuleEntry<[]>;
   /**
    * Disallow explicit type declarations for variables or parameters initialized to a number, string, or boolean
    * @see https://typescript-eslint.io/rules/no-inferrable-types
    */
-  'typescript/no-inferrable-types'?: Linter.RuleEntry<TypescriptNoInferrableTypes>
+  "typescript/no-inferrable-types"?: Linter.RuleEntry<TypescriptNoInferrableTypes>;
   /**
    * Disallow `this` keywords outside of classes or class-like objects
    * @see https://typescript-eslint.io/rules/no-invalid-this
    */
-  'typescript/no-invalid-this'?: Linter.RuleEntry<TypescriptNoInvalidThis>
+  "typescript/no-invalid-this"?: Linter.RuleEntry<TypescriptNoInvalidThis>;
   /**
    * Disallow `void` type outside of generic or return types
    * @see https://typescript-eslint.io/rules/no-invalid-void-type
    */
-  'typescript/no-invalid-void-type'?: Linter.RuleEntry<TypescriptNoInvalidVoidType>
+  "typescript/no-invalid-void-type"?: Linter.RuleEntry<TypescriptNoInvalidVoidType>;
   /**
    * Disallow function declarations that contain unsafe references inside loop statements
    * @see https://typescript-eslint.io/rules/no-loop-func
    */
-  'typescript/no-loop-func'?: Linter.RuleEntry<[]>
+  "typescript/no-loop-func"?: Linter.RuleEntry<[]>;
   /**
    * Disallow literal numbers that lose precision
    * @see https://typescript-eslint.io/rules/no-loss-of-precision
    * @deprecated
    */
-  'typescript/no-loss-of-precision'?: Linter.RuleEntry<[]>
+  "typescript/no-loss-of-precision"?: Linter.RuleEntry<[]>;
   /**
    * Disallow magic numbers
    * @see https://typescript-eslint.io/rules/no-magic-numbers
    */
-  'typescript/no-magic-numbers'?: Linter.RuleEntry<TypescriptNoMagicNumbers>
+  "typescript/no-magic-numbers"?: Linter.RuleEntry<TypescriptNoMagicNumbers>;
   /**
    * Disallow the `void` operator except when used to discard a value
    * @see https://typescript-eslint.io/rules/no-meaningless-void-operator
    */
-  'typescript/no-meaningless-void-operator'?: Linter.RuleEntry<TypescriptNoMeaninglessVoidOperator>
+  "typescript/no-meaningless-void-operator"?: Linter.RuleEntry<TypescriptNoMeaninglessVoidOperator>;
   /**
    * Enforce valid definition of `new` and `constructor`
    * @see https://typescript-eslint.io/rules/no-misused-new
    */
-  'typescript/no-misused-new'?: Linter.RuleEntry<[]>
+  "typescript/no-misused-new"?: Linter.RuleEntry<[]>;
   /**
    * Disallow Promises in places not designed to handle them
    * @see https://typescript-eslint.io/rules/no-misused-promises
    */
-  'typescript/no-misused-promises'?: Linter.RuleEntry<TypescriptNoMisusedPromises>
+  "typescript/no-misused-promises"?: Linter.RuleEntry<TypescriptNoMisusedPromises>;
   /**
    * Disallow using the spread operator when it might cause unexpected behavior
    * @see https://typescript-eslint.io/rules/no-misused-spread
    */
-  'typescript/no-misused-spread'?: Linter.RuleEntry<TypescriptNoMisusedSpread>
+  "typescript/no-misused-spread"?: Linter.RuleEntry<TypescriptNoMisusedSpread>;
   /**
    * Disallow enums from having both number and string members
    * @see https://typescript-eslint.io/rules/no-mixed-enums
    */
-  'typescript/no-mixed-enums'?: Linter.RuleEntry<[]>
+  "typescript/no-mixed-enums"?: Linter.RuleEntry<[]>;
   /**
    * Disallow TypeScript namespaces
    * @see https://typescript-eslint.io/rules/no-namespace
    */
-  'typescript/no-namespace'?: Linter.RuleEntry<TypescriptNoNamespace>
+  "typescript/no-namespace"?: Linter.RuleEntry<TypescriptNoNamespace>;
   /**
    * Disallow non-null assertions in the left operand of a nullish coalescing operator
    * @see https://typescript-eslint.io/rules/no-non-null-asserted-nullish-coalescing
    */
-  'typescript/no-non-null-asserted-nullish-coalescing'?: Linter.RuleEntry<[]>
+  "typescript/no-non-null-asserted-nullish-coalescing"?: Linter.RuleEntry<[]>;
   /**
    * Disallow non-null assertions after an optional chain expression
    * @see https://typescript-eslint.io/rules/no-non-null-asserted-optional-chain
    */
-  'typescript/no-non-null-asserted-optional-chain'?: Linter.RuleEntry<[]>
+  "typescript/no-non-null-asserted-optional-chain"?: Linter.RuleEntry<[]>;
   /**
    * Disallow non-null assertions using the `!` postfix operator
    * @see https://typescript-eslint.io/rules/no-non-null-assertion
    */
-  'typescript/no-non-null-assertion'?: Linter.RuleEntry<[]>
+  "typescript/no-non-null-assertion"?: Linter.RuleEntry<[]>;
   /**
    * Disallow variable redeclaration
    * @see https://typescript-eslint.io/rules/no-redeclare
    */
-  'typescript/no-redeclare'?: Linter.RuleEntry<TypescriptNoRedeclare>
+  "typescript/no-redeclare"?: Linter.RuleEntry<TypescriptNoRedeclare>;
   /**
    * Disallow members of unions and intersections that do nothing or override type information
    * @see https://typescript-eslint.io/rules/no-redundant-type-constituents
    */
-  'typescript/no-redundant-type-constituents'?: Linter.RuleEntry<[]>
+  "typescript/no-redundant-type-constituents"?: Linter.RuleEntry<[]>;
   /**
    * Disallow invocation of `require()`
    * @see https://typescript-eslint.io/rules/no-require-imports
    */
-  'typescript/no-require-imports'?: Linter.RuleEntry<TypescriptNoRequireImports>
+  "typescript/no-require-imports"?: Linter.RuleEntry<TypescriptNoRequireImports>;
   /**
    * Disallow specified modules when loaded by `import`
    * @see https://typescript-eslint.io/rules/no-restricted-imports
    */
-  'typescript/no-restricted-imports'?: Linter.RuleEntry<TypescriptNoRestrictedImports>
+  "typescript/no-restricted-imports"?: Linter.RuleEntry<TypescriptNoRestrictedImports>;
   /**
    * Disallow certain types
    * @see https://typescript-eslint.io/rules/no-restricted-types
    */
-  'typescript/no-restricted-types'?: Linter.RuleEntry<TypescriptNoRestrictedTypes>
+  "typescript/no-restricted-types"?: Linter.RuleEntry<TypescriptNoRestrictedTypes>;
   /**
    * Disallow variable declarations from shadowing variables declared in the outer scope
    * @see https://typescript-eslint.io/rules/no-shadow
    */
-  'typescript/no-shadow'?: Linter.RuleEntry<TypescriptNoShadow>
+  "typescript/no-shadow"?: Linter.RuleEntry<TypescriptNoShadow>;
   /**
    * Disallow aliasing `this`
    * @see https://typescript-eslint.io/rules/no-this-alias
    */
-  'typescript/no-this-alias'?: Linter.RuleEntry<TypescriptNoThisAlias>
+  "typescript/no-this-alias"?: Linter.RuleEntry<TypescriptNoThisAlias>;
   /**
    * Disallow type aliases
    * @see https://typescript-eslint.io/rules/no-type-alias
    * @deprecated
    */
-  'typescript/no-type-alias'?: Linter.RuleEntry<TypescriptNoTypeAlias>
+  "typescript/no-type-alias"?: Linter.RuleEntry<TypescriptNoTypeAlias>;
   /**
    * Disallow unnecessary equality comparisons against boolean literals
    * @see https://typescript-eslint.io/rules/no-unnecessary-boolean-literal-compare
    */
-  'typescript/no-unnecessary-boolean-literal-compare'?: Linter.RuleEntry<TypescriptNoUnnecessaryBooleanLiteralCompare>
+  "typescript/no-unnecessary-boolean-literal-compare"?: Linter.RuleEntry<TypescriptNoUnnecessaryBooleanLiteralCompare>;
   /**
    * Disallow conditionals where the type is always truthy or always falsy
    * @see https://typescript-eslint.io/rules/no-unnecessary-condition
    */
-  'typescript/no-unnecessary-condition'?: Linter.RuleEntry<TypescriptNoUnnecessaryCondition>
+  "typescript/no-unnecessary-condition"?: Linter.RuleEntry<TypescriptNoUnnecessaryCondition>;
   /**
    * Disallow unnecessary assignment of constructor property parameter
    * @see https://typescript-eslint.io/rules/no-unnecessary-parameter-property-assignment
    */
-  'typescript/no-unnecessary-parameter-property-assignment'?: Linter.RuleEntry<[]>
+  "typescript/no-unnecessary-parameter-property-assignment"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unnecessary namespace qualifiers
    * @see https://typescript-eslint.io/rules/no-unnecessary-qualifier
    */
-  'typescript/no-unnecessary-qualifier'?: Linter.RuleEntry<[]>
+  "typescript/no-unnecessary-qualifier"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unnecessary template expressions
    * @see https://typescript-eslint.io/rules/no-unnecessary-template-expression
    */
-  'typescript/no-unnecessary-template-expression'?: Linter.RuleEntry<[]>
+  "typescript/no-unnecessary-template-expression"?: Linter.RuleEntry<[]>;
   /**
    * Disallow type arguments that are equal to the default
    * @see https://typescript-eslint.io/rules/no-unnecessary-type-arguments
    */
-  'typescript/no-unnecessary-type-arguments'?: Linter.RuleEntry<[]>
+  "typescript/no-unnecessary-type-arguments"?: Linter.RuleEntry<[]>;
   /**
    * Disallow type assertions that do not change the type of an expression
    * @see https://typescript-eslint.io/rules/no-unnecessary-type-assertion
    */
-  'typescript/no-unnecessary-type-assertion'?: Linter.RuleEntry<TypescriptNoUnnecessaryTypeAssertion>
+  "typescript/no-unnecessary-type-assertion"?: Linter.RuleEntry<TypescriptNoUnnecessaryTypeAssertion>;
   /**
    * Disallow unnecessary constraints on generic types
    * @see https://typescript-eslint.io/rules/no-unnecessary-type-constraint
    */
-  'typescript/no-unnecessary-type-constraint'?: Linter.RuleEntry<[]>
+  "typescript/no-unnecessary-type-constraint"?: Linter.RuleEntry<[]>;
   /**
    * Disallow conversion idioms when they do not change the type or value of the expression
    * @see https://typescript-eslint.io/rules/no-unnecessary-type-conversion
    */
-  'typescript/no-unnecessary-type-conversion'?: Linter.RuleEntry<[]>
+  "typescript/no-unnecessary-type-conversion"?: Linter.RuleEntry<[]>;
   /**
    * Disallow type parameters that aren't used multiple times
    * @see https://typescript-eslint.io/rules/no-unnecessary-type-parameters
    */
-  'typescript/no-unnecessary-type-parameters'?: Linter.RuleEntry<[]>
+  "typescript/no-unnecessary-type-parameters"?: Linter.RuleEntry<[]>;
   /**
    * Disallow calling a function with a value with type `any`
    * @see https://typescript-eslint.io/rules/no-unsafe-argument
    */
-  'typescript/no-unsafe-argument'?: Linter.RuleEntry<[]>
+  "typescript/no-unsafe-argument"?: Linter.RuleEntry<[]>;
   /**
    * Disallow assigning a value with type `any` to variables and properties
    * @see https://typescript-eslint.io/rules/no-unsafe-assignment
    */
-  'typescript/no-unsafe-assignment'?: Linter.RuleEntry<[]>
+  "typescript/no-unsafe-assignment"?: Linter.RuleEntry<[]>;
   /**
    * Disallow calling a value with type `any`
    * @see https://typescript-eslint.io/rules/no-unsafe-call
    */
-  'typescript/no-unsafe-call'?: Linter.RuleEntry<[]>
+  "typescript/no-unsafe-call"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unsafe declaration merging
    * @see https://typescript-eslint.io/rules/no-unsafe-declaration-merging
    */
-  'typescript/no-unsafe-declaration-merging'?: Linter.RuleEntry<[]>
+  "typescript/no-unsafe-declaration-merging"?: Linter.RuleEntry<[]>;
   /**
    * Disallow comparing an enum value with a non-enum value
    * @see https://typescript-eslint.io/rules/no-unsafe-enum-comparison
    */
-  'typescript/no-unsafe-enum-comparison'?: Linter.RuleEntry<[]>
+  "typescript/no-unsafe-enum-comparison"?: Linter.RuleEntry<[]>;
   /**
    * Disallow using the unsafe built-in Function type
    * @see https://typescript-eslint.io/rules/no-unsafe-function-type
    */
-  'typescript/no-unsafe-function-type'?: Linter.RuleEntry<[]>
+  "typescript/no-unsafe-function-type"?: Linter.RuleEntry<[]>;
   /**
    * Disallow member access on a value with type `any`
    * @see https://typescript-eslint.io/rules/no-unsafe-member-access
    */
-  'typescript/no-unsafe-member-access'?: Linter.RuleEntry<TypescriptNoUnsafeMemberAccess>
+  "typescript/no-unsafe-member-access"?: Linter.RuleEntry<TypescriptNoUnsafeMemberAccess>;
   /**
    * Disallow returning a value with type `any` from a function
    * @see https://typescript-eslint.io/rules/no-unsafe-return
    */
-  'typescript/no-unsafe-return'?: Linter.RuleEntry<[]>
+  "typescript/no-unsafe-return"?: Linter.RuleEntry<[]>;
   /**
    * Disallow type assertions that narrow a type
    * @see https://typescript-eslint.io/rules/no-unsafe-type-assertion
    */
-  'typescript/no-unsafe-type-assertion'?: Linter.RuleEntry<[]>
+  "typescript/no-unsafe-type-assertion"?: Linter.RuleEntry<[]>;
   /**
    * Require unary negation to take a number
    * @see https://typescript-eslint.io/rules/no-unsafe-unary-minus
    */
-  'typescript/no-unsafe-unary-minus'?: Linter.RuleEntry<[]>
+  "typescript/no-unsafe-unary-minus"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unused expressions
    * @see https://typescript-eslint.io/rules/no-unused-expressions
    */
-  'typescript/no-unused-expressions'?: Linter.RuleEntry<TypescriptNoUnusedExpressions>
+  "typescript/no-unused-expressions"?: Linter.RuleEntry<TypescriptNoUnusedExpressions>;
   /**
    * Disallow unused private class members
    * @see https://typescript-eslint.io/rules/no-unused-private-class-members
    */
-  'typescript/no-unused-private-class-members'?: Linter.RuleEntry<[]>
+  "typescript/no-unused-private-class-members"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unused variables
    * @see https://typescript-eslint.io/rules/no-unused-vars
    */
-  'typescript/no-unused-vars'?: Linter.RuleEntry<TypescriptNoUnusedVars>
+  "typescript/no-unused-vars"?: Linter.RuleEntry<TypescriptNoUnusedVars>;
   /**
    * Disallow the use of variables before they are defined
    * @see https://typescript-eslint.io/rules/no-use-before-define
    */
-  'typescript/no-use-before-define'?: Linter.RuleEntry<TypescriptNoUseBeforeDefine>
+  "typescript/no-use-before-define"?: Linter.RuleEntry<TypescriptNoUseBeforeDefine>;
   /**
    * Disallow unnecessary constructors
    * @see https://typescript-eslint.io/rules/no-useless-constructor
    */
-  'typescript/no-useless-constructor'?: Linter.RuleEntry<[]>
+  "typescript/no-useless-constructor"?: Linter.RuleEntry<[]>;
   /**
    * Disallow default values that will never be used
    * @see https://typescript-eslint.io/rules/no-useless-default-assignment
    */
-  'typescript/no-useless-default-assignment'?: Linter.RuleEntry<TypescriptNoUselessDefaultAssignment>
+  "typescript/no-useless-default-assignment"?: Linter.RuleEntry<TypescriptNoUselessDefaultAssignment>;
   /**
    * Disallow empty exports that don't change anything in a module file
    * @see https://typescript-eslint.io/rules/no-useless-empty-export
    */
-  'typescript/no-useless-empty-export'?: Linter.RuleEntry<[]>
+  "typescript/no-useless-empty-export"?: Linter.RuleEntry<[]>;
   /**
    * Disallow `require` statements except in import statements
    * @see https://typescript-eslint.io/rules/no-var-requires
    * @deprecated
    */
-  'typescript/no-var-requires'?: Linter.RuleEntry<TypescriptNoVarRequires>
+  "typescript/no-var-requires"?: Linter.RuleEntry<TypescriptNoVarRequires>;
   /**
    * Disallow using confusing built-in primitive class wrappers
    * @see https://typescript-eslint.io/rules/no-wrapper-object-types
    */
-  'typescript/no-wrapper-object-types'?: Linter.RuleEntry<[]>
+  "typescript/no-wrapper-object-types"?: Linter.RuleEntry<[]>;
   /**
    * Enforce non-null assertions over explicit type assertions
    * @see https://typescript-eslint.io/rules/non-nullable-type-assertion-style
    */
-  'typescript/non-nullable-type-assertion-style'?: Linter.RuleEntry<[]>
+  "typescript/non-nullable-type-assertion-style"?: Linter.RuleEntry<[]>;
   /**
    * Disallow throwing non-`Error` values as exceptions
    * @see https://typescript-eslint.io/rules/only-throw-error
    */
-  'typescript/only-throw-error'?: Linter.RuleEntry<TypescriptOnlyThrowError>
+  "typescript/only-throw-error"?: Linter.RuleEntry<TypescriptOnlyThrowError>;
   /**
    * Require or disallow parameter properties in class constructors
    * @see https://typescript-eslint.io/rules/parameter-properties
    */
-  'typescript/parameter-properties'?: Linter.RuleEntry<TypescriptParameterProperties>
+  "typescript/parameter-properties"?: Linter.RuleEntry<TypescriptParameterProperties>;
   /**
    * Enforce the use of `as const` over literal type
    * @see https://typescript-eslint.io/rules/prefer-as-const
    */
-  'typescript/prefer-as-const'?: Linter.RuleEntry<[]>
+  "typescript/prefer-as-const"?: Linter.RuleEntry<[]>;
   /**
    * Require destructuring from arrays and/or objects
    * @see https://typescript-eslint.io/rules/prefer-destructuring
    */
-  'typescript/prefer-destructuring'?: Linter.RuleEntry<TypescriptPreferDestructuring>
+  "typescript/prefer-destructuring"?: Linter.RuleEntry<TypescriptPreferDestructuring>;
   /**
    * Require each enum member value to be explicitly initialized
    * @see https://typescript-eslint.io/rules/prefer-enum-initializers
    */
-  'typescript/prefer-enum-initializers'?: Linter.RuleEntry<[]>
+  "typescript/prefer-enum-initializers"?: Linter.RuleEntry<[]>;
   /**
    * Enforce the use of Array.prototype.find() over Array.prototype.filter() followed by [0] when looking for a single result
    * @see https://typescript-eslint.io/rules/prefer-find
    */
-  'typescript/prefer-find'?: Linter.RuleEntry<[]>
+  "typescript/prefer-find"?: Linter.RuleEntry<[]>;
   /**
    * Enforce the use of `for-of` loop over the standard `for` loop where possible
    * @see https://typescript-eslint.io/rules/prefer-for-of
    */
-  'typescript/prefer-for-of'?: Linter.RuleEntry<[]>
+  "typescript/prefer-for-of"?: Linter.RuleEntry<[]>;
   /**
    * Enforce using function types instead of interfaces with call signatures
    * @see https://typescript-eslint.io/rules/prefer-function-type
    */
-  'typescript/prefer-function-type'?: Linter.RuleEntry<[]>
+  "typescript/prefer-function-type"?: Linter.RuleEntry<[]>;
   /**
    * Enforce `includes` method over `indexOf` method
    * @see https://typescript-eslint.io/rules/prefer-includes
    */
-  'typescript/prefer-includes'?: Linter.RuleEntry<[]>
+  "typescript/prefer-includes"?: Linter.RuleEntry<[]>;
   /**
    * Require all enum members to be literal values
    * @see https://typescript-eslint.io/rules/prefer-literal-enum-member
    */
-  'typescript/prefer-literal-enum-member'?: Linter.RuleEntry<TypescriptPreferLiteralEnumMember>
+  "typescript/prefer-literal-enum-member"?: Linter.RuleEntry<TypescriptPreferLiteralEnumMember>;
   /**
    * Require using `namespace` keyword over `module` keyword to declare custom TypeScript modules
    * @see https://typescript-eslint.io/rules/prefer-namespace-keyword
    */
-  'typescript/prefer-namespace-keyword'?: Linter.RuleEntry<[]>
+  "typescript/prefer-namespace-keyword"?: Linter.RuleEntry<[]>;
   /**
    * Enforce using the nullish coalescing operator instead of logical assignments or chaining
    * @see https://typescript-eslint.io/rules/prefer-nullish-coalescing
    */
-  'typescript/prefer-nullish-coalescing'?: Linter.RuleEntry<TypescriptPreferNullishCoalescing>
+  "typescript/prefer-nullish-coalescing"?: Linter.RuleEntry<TypescriptPreferNullishCoalescing>;
   /**
    * Enforce using concise optional chain expressions instead of chained logical ands, negated logical ors, or empty objects
    * @see https://typescript-eslint.io/rules/prefer-optional-chain
    */
-  'typescript/prefer-optional-chain'?: Linter.RuleEntry<TypescriptPreferOptionalChain>
+  "typescript/prefer-optional-chain"?: Linter.RuleEntry<TypescriptPreferOptionalChain>;
   /**
    * Require using Error objects as Promise rejection reasons
    * @see https://typescript-eslint.io/rules/prefer-promise-reject-errors
    */
-  'typescript/prefer-promise-reject-errors'?: Linter.RuleEntry<TypescriptPreferPromiseRejectErrors>
+  "typescript/prefer-promise-reject-errors"?: Linter.RuleEntry<TypescriptPreferPromiseRejectErrors>;
   /**
    * Require private members to be marked as `readonly` if they're never modified outside of the constructor
    * @see https://typescript-eslint.io/rules/prefer-readonly
    */
-  'typescript/prefer-readonly'?: Linter.RuleEntry<TypescriptPreferReadonly>
+  "typescript/prefer-readonly"?: Linter.RuleEntry<TypescriptPreferReadonly>;
   /**
    * Require function parameters to be typed as `readonly` to prevent accidental mutation of inputs
    * @see https://typescript-eslint.io/rules/prefer-readonly-parameter-types
    */
-  'typescript/prefer-readonly-parameter-types'?: Linter.RuleEntry<TypescriptPreferReadonlyParameterTypes>
+  "typescript/prefer-readonly-parameter-types"?: Linter.RuleEntry<TypescriptPreferReadonlyParameterTypes>;
   /**
    * Enforce using type parameter when calling `Array#reduce` instead of using a type assertion
    * @see https://typescript-eslint.io/rules/prefer-reduce-type-parameter
    */
-  'typescript/prefer-reduce-type-parameter'?: Linter.RuleEntry<[]>
+  "typescript/prefer-reduce-type-parameter"?: Linter.RuleEntry<[]>;
   /**
    * Enforce `RegExp#exec` over `String#match` if no global flag is provided
    * @see https://typescript-eslint.io/rules/prefer-regexp-exec
    */
-  'typescript/prefer-regexp-exec'?: Linter.RuleEntry<[]>
+  "typescript/prefer-regexp-exec"?: Linter.RuleEntry<[]>;
   /**
    * Enforce that `this` is used when only `this` type is returned
    * @see https://typescript-eslint.io/rules/prefer-return-this-type
    */
-  'typescript/prefer-return-this-type'?: Linter.RuleEntry<[]>
+  "typescript/prefer-return-this-type"?: Linter.RuleEntry<[]>;
   /**
    * Enforce using `String#startsWith` and `String#endsWith` over other equivalent methods of checking substrings
    * @see https://typescript-eslint.io/rules/prefer-string-starts-ends-with
    */
-  'typescript/prefer-string-starts-ends-with'?: Linter.RuleEntry<TypescriptPreferStringStartsEndsWith>
+  "typescript/prefer-string-starts-ends-with"?: Linter.RuleEntry<TypescriptPreferStringStartsEndsWith>;
   /**
    * Enforce using `@ts-expect-error` over `@ts-ignore`
    * @see https://typescript-eslint.io/rules/prefer-ts-expect-error
    * @deprecated
    */
-  'typescript/prefer-ts-expect-error'?: Linter.RuleEntry<[]>
+  "typescript/prefer-ts-expect-error"?: Linter.RuleEntry<[]>;
   /**
    * Require any function or method that returns a Promise to be marked async
    * @see https://typescript-eslint.io/rules/promise-function-async
    */
-  'typescript/promise-function-async'?: Linter.RuleEntry<TypescriptPromiseFunctionAsync>
+  "typescript/promise-function-async"?: Linter.RuleEntry<TypescriptPromiseFunctionAsync>;
   /**
    * Enforce that `get()` types should be assignable to their equivalent `set()` type
    * @see https://typescript-eslint.io/rules/related-getter-setter-pairs
    */
-  'typescript/related-getter-setter-pairs'?: Linter.RuleEntry<[]>
+  "typescript/related-getter-setter-pairs"?: Linter.RuleEntry<[]>;
   /**
    * Require `Array#sort` and `Array#toSorted` calls to always provide a `compareFunction`
    * @see https://typescript-eslint.io/rules/require-array-sort-compare
    */
-  'typescript/require-array-sort-compare'?: Linter.RuleEntry<TypescriptRequireArraySortCompare>
+  "typescript/require-array-sort-compare"?: Linter.RuleEntry<TypescriptRequireArraySortCompare>;
   /**
    * Disallow async functions which do not return promises and have no `await` expression
    * @see https://typescript-eslint.io/rules/require-await
    */
-  'typescript/require-await'?: Linter.RuleEntry<[]>
+  "typescript/require-await"?: Linter.RuleEntry<[]>;
   /**
    * Require both operands of addition to be the same type and be `bigint`, `number`, or `string`
    * @see https://typescript-eslint.io/rules/restrict-plus-operands
    */
-  'typescript/restrict-plus-operands'?: Linter.RuleEntry<TypescriptRestrictPlusOperands>
+  "typescript/restrict-plus-operands"?: Linter.RuleEntry<TypescriptRestrictPlusOperands>;
   /**
    * Enforce template literal expressions to be of `string` type
    * @see https://typescript-eslint.io/rules/restrict-template-expressions
    */
-  'typescript/restrict-template-expressions'?: Linter.RuleEntry<TypescriptRestrictTemplateExpressions>
+  "typescript/restrict-template-expressions"?: Linter.RuleEntry<TypescriptRestrictTemplateExpressions>;
   /**
    * Enforce consistent awaiting of returned promises
    * @see https://typescript-eslint.io/rules/return-await
    */
-  'typescript/return-await'?: Linter.RuleEntry<TypescriptReturnAwait>
+  "typescript/return-await"?: Linter.RuleEntry<TypescriptReturnAwait>;
   /**
    * Enforce constituents of a type union/intersection to be sorted alphabetically
    * @see https://typescript-eslint.io/rules/sort-type-constituents
    * @deprecated
    */
-  'typescript/sort-type-constituents'?: Linter.RuleEntry<TypescriptSortTypeConstituents>
+  "typescript/sort-type-constituents"?: Linter.RuleEntry<TypescriptSortTypeConstituents>;
   /**
    * Disallow certain types in boolean expressions
    * @see https://typescript-eslint.io/rules/strict-boolean-expressions
    */
-  'typescript/strict-boolean-expressions'?: Linter.RuleEntry<TypescriptStrictBooleanExpressions>
+  "typescript/strict-boolean-expressions"?: Linter.RuleEntry<TypescriptStrictBooleanExpressions>;
   /**
    * Disallow passing a value-returning function in a position accepting a void function
    * @see https://typescript-eslint.io/rules/strict-void-return
    */
-  'typescript/strict-void-return'?: Linter.RuleEntry<TypescriptStrictVoidReturn>
+  "typescript/strict-void-return"?: Linter.RuleEntry<TypescriptStrictVoidReturn>;
   /**
    * Require switch-case statements to be exhaustive
    * @see https://typescript-eslint.io/rules/switch-exhaustiveness-check
    */
-  'typescript/switch-exhaustiveness-check'?: Linter.RuleEntry<TypescriptSwitchExhaustivenessCheck>
+  "typescript/switch-exhaustiveness-check"?: Linter.RuleEntry<TypescriptSwitchExhaustivenessCheck>;
   /**
    * Disallow certain triple slash directives in favor of ES6-style import declarations
    * @see https://typescript-eslint.io/rules/triple-slash-reference
    */
-  'typescript/triple-slash-reference'?: Linter.RuleEntry<TypescriptTripleSlashReference>
+  "typescript/triple-slash-reference"?: Linter.RuleEntry<TypescriptTripleSlashReference>;
   /**
    * Require type annotations in certain places
    * @see https://typescript-eslint.io/rules/typedef
    * @deprecated
    */
-  'typescript/typedef'?: Linter.RuleEntry<TypescriptTypedef>
+  "typescript/typedef"?: Linter.RuleEntry<TypescriptTypedef>;
   /**
    * Enforce unbound methods are called with their expected scope
    * @see https://typescript-eslint.io/rules/unbound-method
    */
-  'typescript/unbound-method'?: Linter.RuleEntry<TypescriptUnboundMethod>
+  "typescript/unbound-method"?: Linter.RuleEntry<TypescriptUnboundMethod>;
   /**
    * Disallow two overloads that could be unified into one with a union or an optional/rest parameter
    * @see https://typescript-eslint.io/rules/unified-signatures
    */
-  'typescript/unified-signatures'?: Linter.RuleEntry<TypescriptUnifiedSignatures>
+  "typescript/unified-signatures"?: Linter.RuleEntry<TypescriptUnifiedSignatures>;
   /**
    * Enforce typing arguments in Promise rejection callbacks as `unknown`
    * @see https://typescript-eslint.io/rules/use-unknown-in-catch-callback-variable
    */
-  'typescript/use-unknown-in-catch-callback-variable'?: Linter.RuleEntry<[]>
+  "typescript/use-unknown-in-catch-callback-variable"?: Linter.RuleEntry<[]>;
   /**
    * Improve regexes by making them shorter, consistent, and safer.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/better-regex.md
    */
-  'unicorn/better-regex'?: Linter.RuleEntry<UnicornBetterRegex>
+  "unicorn/better-regex"?: Linter.RuleEntry<UnicornBetterRegex>;
   /**
    * Enforce a specific parameter name in catch clauses.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/catch-error-name.md
    */
-  'unicorn/catch-error-name'?: Linter.RuleEntry<UnicornCatchErrorName>
+  "unicorn/catch-error-name"?: Linter.RuleEntry<UnicornCatchErrorName>;
   /**
    * Enforce consistent assertion style with `node:assert`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-assert.md
    */
-  'unicorn/consistent-assert'?: Linter.RuleEntry<[]>
+  "unicorn/consistent-assert"?: Linter.RuleEntry<[]>;
   /**
    * Prefer passing `Date` directly to the constructor when cloning.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-date-clone.md
    */
-  'unicorn/consistent-date-clone'?: Linter.RuleEntry<[]>
+  "unicorn/consistent-date-clone"?: Linter.RuleEntry<[]>;
   /**
    * Use destructured variables over properties.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-destructuring.md
    */
-  'unicorn/consistent-destructuring'?: Linter.RuleEntry<[]>
+  "unicorn/consistent-destructuring"?: Linter.RuleEntry<[]>;
   /**
    * Prefer consistent types when spreading a ternary in an array literal.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-empty-array-spread.md
    */
-  'unicorn/consistent-empty-array-spread'?: Linter.RuleEntry<[]>
+  "unicorn/consistent-empty-array-spread"?: Linter.RuleEntry<[]>;
   /**
    * Enforce consistent style for element existence checks with `indexOf()`, `lastIndexOf()`, `findIndex()`, and `findLastIndex()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-existence-index-check.md
    */
-  'unicorn/consistent-existence-index-check'?: Linter.RuleEntry<[]>
+  "unicorn/consistent-existence-index-check"?: Linter.RuleEntry<[]>;
   /**
    * Move function definitions to the highest possible scope.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-function-scoping.md
    */
-  'unicorn/consistent-function-scoping'?: Linter.RuleEntry<UnicornConsistentFunctionScoping>
+  "unicorn/consistent-function-scoping"?: Linter.RuleEntry<UnicornConsistentFunctionScoping>;
   /**
    * Enforce consistent style for escaping `${` in template literals.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/consistent-template-literal-escape.md
    */
-  'unicorn/consistent-template-literal-escape'?: Linter.RuleEntry<[]>
+  "unicorn/consistent-template-literal-escape"?: Linter.RuleEntry<[]>;
   /**
    * Enforce correct `Error` subclassing.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/custom-error-definition.md
    */
-  'unicorn/custom-error-definition'?: Linter.RuleEntry<[]>
+  "unicorn/custom-error-definition"?: Linter.RuleEntry<[]>;
   /**
    * Enforce no spaces between braces.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/empty-brace-spaces.md
    */
-  'unicorn/empty-brace-spaces'?: Linter.RuleEntry<[]>
+  "unicorn/empty-brace-spaces"?: Linter.RuleEntry<[]>;
   /**
    * Enforce passing a `message` value when creating a built-in error.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/error-message.md
    */
-  'unicorn/error-message'?: Linter.RuleEntry<[]>
+  "unicorn/error-message"?: Linter.RuleEntry<[]>;
   /**
    * Require escape sequences to use uppercase or lowercase values.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/escape-case.md
    */
-  'unicorn/escape-case'?: Linter.RuleEntry<UnicornEscapeCase>
+  "unicorn/escape-case"?: Linter.RuleEntry<UnicornEscapeCase>;
   /**
    * Add expiration conditions to TODO comments.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/expiring-todo-comments.md
    */
-  'unicorn/expiring-todo-comments'?: Linter.RuleEntry<UnicornExpiringTodoComments>
+  "unicorn/expiring-todo-comments"?: Linter.RuleEntry<UnicornExpiringTodoComments>;
   /**
    * Enforce explicitly comparing the `length` or `size` property of a value.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/explicit-length-check.md
    */
-  'unicorn/explicit-length-check'?: Linter.RuleEntry<UnicornExplicitLengthCheck>
+  "unicorn/explicit-length-check"?: Linter.RuleEntry<UnicornExplicitLengthCheck>;
   /**
    * Enforce a case style for filenames.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/filename-case.md
    */
-  'unicorn/filename-case'?: Linter.RuleEntry<UnicornFilenameCase>
+  "unicorn/filename-case"?: Linter.RuleEntry<UnicornFilenameCase>;
   /**
    * Enforce specific import styles per module.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/import-style.md
    */
-  'unicorn/import-style'?: Linter.RuleEntry<UnicornImportStyle>
+  "unicorn/import-style"?: Linter.RuleEntry<UnicornImportStyle>;
   /**
    * Prevent usage of variables from outside the scope of isolated functions.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/isolated-functions.md
    */
-  'unicorn/isolated-functions'?: Linter.RuleEntry<UnicornIsolatedFunctions>
+  "unicorn/isolated-functions"?: Linter.RuleEntry<UnicornIsolatedFunctions>;
   /**
    * Enforce the use of `new` for all builtins, except `String`, `Number`, `Boolean`, `Symbol` and `BigInt`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/new-for-builtins.md
    */
-  'unicorn/new-for-builtins'?: Linter.RuleEntry<[]>
+  "unicorn/new-for-builtins"?: Linter.RuleEntry<[]>;
   /**
    * Enforce specifying rules to disable in `eslint-disable` comments.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-abusive-eslint-disable.md
    */
-  'unicorn/no-abusive-eslint-disable'?: Linter.RuleEntry<[]>
+  "unicorn/no-abusive-eslint-disable"?: Linter.RuleEntry<[]>;
   /**
    * Disallow recursive access to `this` within getters and setters.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-accessor-recursion.md
    */
-  'unicorn/no-accessor-recursion'?: Linter.RuleEntry<[]>
+  "unicorn/no-accessor-recursion"?: Linter.RuleEntry<[]>;
   /**
    * Disallow anonymous functions and classes as the default export.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-anonymous-default-export.md
    */
-  'unicorn/no-anonymous-default-export'?: Linter.RuleEntry<[]>
+  "unicorn/no-anonymous-default-export"?: Linter.RuleEntry<[]>;
   /**
    * Prevent passing a function reference directly to iterator methods.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-callback-reference.md
    */
-  'unicorn/no-array-callback-reference'?: Linter.RuleEntry<[]>
+  "unicorn/no-array-callback-reference"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `for…of` over the `forEach` method.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-for-each.md
    */
-  'unicorn/no-array-for-each'?: Linter.RuleEntry<[]>
+  "unicorn/no-array-for-each"?: Linter.RuleEntry<[]>;
   /**
    * Disallow using the `this` argument in array methods.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-method-this-argument.md
    */
-  'unicorn/no-array-method-this-argument'?: Linter.RuleEntry<[]>
+  "unicorn/no-array-method-this-argument"?: Linter.RuleEntry<[]>;
   /**
    * Replaced by `unicorn/prefer-single-call` which covers more cases.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/deleted-and-deprecated-rules.md#no-array-push-push
    * @deprecated
    */
-  'unicorn/no-array-push-push'?: Linter.RuleEntry<[]>
+  "unicorn/no-array-push-push"?: Linter.RuleEntry<[]>;
   /**
    * Disallow `Array#reduce()` and `Array#reduceRight()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-reduce.md
    */
-  'unicorn/no-array-reduce'?: Linter.RuleEntry<UnicornNoArrayReduce>
+  "unicorn/no-array-reduce"?: Linter.RuleEntry<UnicornNoArrayReduce>;
   /**
    * Prefer `Array#toReversed()` over `Array#reverse()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-reverse.md
    */
-  'unicorn/no-array-reverse'?: Linter.RuleEntry<UnicornNoArrayReverse>
+  "unicorn/no-array-reverse"?: Linter.RuleEntry<UnicornNoArrayReverse>;
   /**
    * Prefer `Array#toSorted()` over `Array#sort()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-array-sort.md
    */
-  'unicorn/no-array-sort'?: Linter.RuleEntry<UnicornNoArraySort>
+  "unicorn/no-array-sort"?: Linter.RuleEntry<UnicornNoArraySort>;
   /**
    * Disallow member access from await expression.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-await-expression-member.md
    */
-  'unicorn/no-await-expression-member'?: Linter.RuleEntry<[]>
+  "unicorn/no-await-expression-member"?: Linter.RuleEntry<[]>;
   /**
    * Disallow using `await` in `Promise` method parameters.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-await-in-promise-methods.md
    */
-  'unicorn/no-await-in-promise-methods'?: Linter.RuleEntry<[]>
+  "unicorn/no-await-in-promise-methods"?: Linter.RuleEntry<[]>;
   /**
    * Do not use leading/trailing space between `console.log` parameters.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-console-spaces.md
    */
-  'unicorn/no-console-spaces'?: Linter.RuleEntry<[]>
+  "unicorn/no-console-spaces"?: Linter.RuleEntry<[]>;
   /**
    * Do not use `document.cookie` directly.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-document-cookie.md
    */
-  'unicorn/no-document-cookie'?: Linter.RuleEntry<[]>
+  "unicorn/no-document-cookie"?: Linter.RuleEntry<[]>;
   /**
    * Disallow empty files.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-empty-file.md
    */
-  'unicorn/no-empty-file'?: Linter.RuleEntry<[]>
+  "unicorn/no-empty-file"?: Linter.RuleEntry<[]>;
   /**
    * Do not use a `for` loop that can be replaced with a `for-of` loop.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-for-loop.md
    */
-  'unicorn/no-for-loop'?: Linter.RuleEntry<[]>
+  "unicorn/no-for-loop"?: Linter.RuleEntry<[]>;
   /**
    * Enforce the use of Unicode escapes instead of hexadecimal escapes.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-hex-escape.md
    */
-  'unicorn/no-hex-escape'?: Linter.RuleEntry<[]>
+  "unicorn/no-hex-escape"?: Linter.RuleEntry<[]>;
   /**
    * Disallow immediate mutation after variable assignment.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-immediate-mutation.md
    */
-  'unicorn/no-immediate-mutation'?: Linter.RuleEntry<[]>
+  "unicorn/no-immediate-mutation"?: Linter.RuleEntry<[]>;
   /**
    * Replaced by `unicorn/no-instanceof-builtins` which covers more cases.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/deleted-and-deprecated-rules.md#no-instanceof-array
    * @deprecated
    */
-  'unicorn/no-instanceof-array'?: Linter.RuleEntry<[]>
+  "unicorn/no-instanceof-array"?: Linter.RuleEntry<[]>;
   /**
    * Disallow `instanceof` with built-in objects
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-instanceof-builtins.md
    */
-  'unicorn/no-instanceof-builtins'?: Linter.RuleEntry<UnicornNoInstanceofBuiltins>
+  "unicorn/no-instanceof-builtins"?: Linter.RuleEntry<UnicornNoInstanceofBuiltins>;
   /**
    * Disallow invalid options in `fetch()` and `new Request()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-invalid-fetch-options.md
    */
-  'unicorn/no-invalid-fetch-options'?: Linter.RuleEntry<[]>
+  "unicorn/no-invalid-fetch-options"?: Linter.RuleEntry<[]>;
   /**
    * Prevent calling `EventTarget#removeEventListener()` with the result of an expression.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-invalid-remove-event-listener.md
    */
-  'unicorn/no-invalid-remove-event-listener'?: Linter.RuleEntry<[]>
+  "unicorn/no-invalid-remove-event-listener"?: Linter.RuleEntry<[]>;
   /**
    * Disallow identifiers starting with `new` or `class`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-keyword-prefix.md
    */
-  'unicorn/no-keyword-prefix'?: Linter.RuleEntry<UnicornNoKeywordPrefix>
+  "unicorn/no-keyword-prefix"?: Linter.RuleEntry<UnicornNoKeywordPrefix>;
   /**
    * Replaced by `unicorn/no-unnecessary-slice-end` which covers more cases.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/deleted-and-deprecated-rules.md#no-length-as-slice-end
    * @deprecated
    */
-  'unicorn/no-length-as-slice-end'?: Linter.RuleEntry<[]>
+  "unicorn/no-length-as-slice-end"?: Linter.RuleEntry<[]>;
   /**
    * Disallow `if` statements as the only statement in `if` blocks without `else`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-lonely-if.md
    */
-  'unicorn/no-lonely-if'?: Linter.RuleEntry<[]>
+  "unicorn/no-lonely-if"?: Linter.RuleEntry<[]>;
   /**
    * Disallow a magic number as the `depth` argument in `Array#flat(…).`
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-magic-array-flat-depth.md
    */
-  'unicorn/no-magic-array-flat-depth'?: Linter.RuleEntry<[]>
+  "unicorn/no-magic-array-flat-depth"?: Linter.RuleEntry<[]>;
   /**
    * Disallow named usage of default import and export.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-named-default.md
    */
-  'unicorn/no-named-default'?: Linter.RuleEntry<[]>
+  "unicorn/no-named-default"?: Linter.RuleEntry<[]>;
   /**
    * Disallow negated conditions.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-negated-condition.md
    */
-  'unicorn/no-negated-condition'?: Linter.RuleEntry<[]>
+  "unicorn/no-negated-condition"?: Linter.RuleEntry<[]>;
   /**
    * Disallow negated expression in equality check.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-negation-in-equality-check.md
    */
-  'unicorn/no-negation-in-equality-check'?: Linter.RuleEntry<[]>
+  "unicorn/no-negation-in-equality-check"?: Linter.RuleEntry<[]>;
   /**
    * Disallow nested ternary expressions.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-nested-ternary.md
    */
-  'unicorn/no-nested-ternary'?: Linter.RuleEntry<[]>
+  "unicorn/no-nested-ternary"?: Linter.RuleEntry<[]>;
   /**
    * Disallow `new Array()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-new-array.md
    */
-  'unicorn/no-new-array'?: Linter.RuleEntry<[]>
+  "unicorn/no-new-array"?: Linter.RuleEntry<[]>;
   /**
    * Enforce the use of `Buffer.from()` and `Buffer.alloc()` instead of the deprecated `new Buffer()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-new-buffer.md
    */
-  'unicorn/no-new-buffer'?: Linter.RuleEntry<[]>
+  "unicorn/no-new-buffer"?: Linter.RuleEntry<[]>;
   /**
    * Disallow the use of the `null` literal.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-null.md
    */
-  'unicorn/no-null'?: Linter.RuleEntry<UnicornNoNull>
+  "unicorn/no-null"?: Linter.RuleEntry<UnicornNoNull>;
   /**
    * Disallow the use of objects as default parameters.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-object-as-default-parameter.md
    */
-  'unicorn/no-object-as-default-parameter'?: Linter.RuleEntry<[]>
+  "unicorn/no-object-as-default-parameter"?: Linter.RuleEntry<[]>;
   /**
    * Disallow `process.exit()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-process-exit.md
    */
-  'unicorn/no-process-exit'?: Linter.RuleEntry<[]>
+  "unicorn/no-process-exit"?: Linter.RuleEntry<[]>;
   /**
    * Disallow passing single-element arrays to `Promise` methods.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-single-promise-in-promise-methods.md
    */
-  'unicorn/no-single-promise-in-promise-methods'?: Linter.RuleEntry<[]>
+  "unicorn/no-single-promise-in-promise-methods"?: Linter.RuleEntry<[]>;
   /**
    * Disallow classes that only have static members.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-static-only-class.md
    */
-  'unicorn/no-static-only-class'?: Linter.RuleEntry<[]>
+  "unicorn/no-static-only-class"?: Linter.RuleEntry<[]>;
   /**
    * Disallow `then` property.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-thenable.md
    */
-  'unicorn/no-thenable'?: Linter.RuleEntry<[]>
+  "unicorn/no-thenable"?: Linter.RuleEntry<[]>;
   /**
    * Disallow assigning `this` to a variable.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-this-assignment.md
    */
-  'unicorn/no-this-assignment'?: Linter.RuleEntry<[]>
+  "unicorn/no-this-assignment"?: Linter.RuleEntry<[]>;
   /**
    * Disallow comparing `undefined` using `typeof`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-typeof-undefined.md
    */
-  'unicorn/no-typeof-undefined'?: Linter.RuleEntry<UnicornNoTypeofUndefined>
+  "unicorn/no-typeof-undefined"?: Linter.RuleEntry<UnicornNoTypeofUndefined>;
   /**
    * Disallow using `1` as the `depth` argument of `Array#flat()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-array-flat-depth.md
    */
-  'unicorn/no-unnecessary-array-flat-depth'?: Linter.RuleEntry<[]>
+  "unicorn/no-unnecessary-array-flat-depth"?: Linter.RuleEntry<[]>;
   /**
    * Disallow using `.length` or `Infinity` as the `deleteCount` or `skipCount` argument of `Array#{splice,toSpliced}()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-array-splice-count.md
    */
-  'unicorn/no-unnecessary-array-splice-count'?: Linter.RuleEntry<[]>
+  "unicorn/no-unnecessary-array-splice-count"?: Linter.RuleEntry<[]>;
   /**
    * Disallow awaiting non-promise values.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-await.md
    */
-  'unicorn/no-unnecessary-await'?: Linter.RuleEntry<[]>
+  "unicorn/no-unnecessary-await"?: Linter.RuleEntry<[]>;
   /**
    * Enforce the use of built-in methods instead of unnecessary polyfills.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-polyfills.md
    */
-  'unicorn/no-unnecessary-polyfills'?: Linter.RuleEntry<UnicornNoUnnecessaryPolyfills>
+  "unicorn/no-unnecessary-polyfills"?: Linter.RuleEntry<UnicornNoUnnecessaryPolyfills>;
   /**
    * Disallow using `.length` or `Infinity` as the `end` argument of `{Array,String,TypedArray}#slice()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unnecessary-slice-end.md
    */
-  'unicorn/no-unnecessary-slice-end'?: Linter.RuleEntry<[]>
+  "unicorn/no-unnecessary-slice-end"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unreadable array destructuring.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unreadable-array-destructuring.md
    */
-  'unicorn/no-unreadable-array-destructuring'?: Linter.RuleEntry<[]>
+  "unicorn/no-unreadable-array-destructuring"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unreadable IIFEs.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unreadable-iife.md
    */
-  'unicorn/no-unreadable-iife'?: Linter.RuleEntry<[]>
+  "unicorn/no-unreadable-iife"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unused object properties.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-unused-properties.md
    */
-  'unicorn/no-unused-properties'?: Linter.RuleEntry<[]>
+  "unicorn/no-unused-properties"?: Linter.RuleEntry<[]>;
   /**
    * Disallow useless values or fallbacks in `Set`, `Map`, `WeakSet`, or `WeakMap`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-collection-argument.md
    */
-  'unicorn/no-useless-collection-argument'?: Linter.RuleEntry<[]>
+  "unicorn/no-useless-collection-argument"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unnecessary `Error.captureStackTrace(…)`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-error-capture-stack-trace.md
    */
-  'unicorn/no-useless-error-capture-stack-trace'?: Linter.RuleEntry<[]>
+  "unicorn/no-useless-error-capture-stack-trace"?: Linter.RuleEntry<[]>;
   /**
    * Disallow useless fallback when spreading in object literals.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-fallback-in-spread.md
    */
-  'unicorn/no-useless-fallback-in-spread'?: Linter.RuleEntry<[]>
+  "unicorn/no-useless-fallback-in-spread"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unnecessary `.toArray()` on iterators.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-iterator-to-array.md
    */
-  'unicorn/no-useless-iterator-to-array'?: Linter.RuleEntry<[]>
+  "unicorn/no-useless-iterator-to-array"?: Linter.RuleEntry<[]>;
   /**
    * Disallow useless array length check.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-length-check.md
    */
-  'unicorn/no-useless-length-check'?: Linter.RuleEntry<[]>
+  "unicorn/no-useless-length-check"?: Linter.RuleEntry<[]>;
   /**
    * Disallow returning/yielding `Promise.resolve/reject()` in async functions or promise callbacks
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-promise-resolve-reject.md
    */
-  'unicorn/no-useless-promise-resolve-reject'?: Linter.RuleEntry<[]>
+  "unicorn/no-useless-promise-resolve-reject"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unnecessary spread.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-spread.md
    */
-  'unicorn/no-useless-spread'?: Linter.RuleEntry<[]>
+  "unicorn/no-useless-spread"?: Linter.RuleEntry<[]>;
   /**
    * Disallow useless case in switch statements.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-switch-case.md
    */
-  'unicorn/no-useless-switch-case'?: Linter.RuleEntry<[]>
+  "unicorn/no-useless-switch-case"?: Linter.RuleEntry<[]>;
   /**
    * Disallow useless `undefined`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-useless-undefined.md
    */
-  'unicorn/no-useless-undefined'?: Linter.RuleEntry<UnicornNoUselessUndefined>
+  "unicorn/no-useless-undefined"?: Linter.RuleEntry<UnicornNoUselessUndefined>;
   /**
    * Disallow number literals with zero fractions or dangling dots.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/no-zero-fractions.md
    */
-  'unicorn/no-zero-fractions'?: Linter.RuleEntry<[]>
+  "unicorn/no-zero-fractions"?: Linter.RuleEntry<[]>;
   /**
    * Enforce proper case for numeric literals.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/number-literal-case.md
    */
-  'unicorn/number-literal-case'?: Linter.RuleEntry<UnicornNumberLiteralCase>
+  "unicorn/number-literal-case"?: Linter.RuleEntry<UnicornNumberLiteralCase>;
   /**
    * Enforce the style of numeric separators by correctly grouping digits.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/numeric-separators-style.md
    */
-  'unicorn/numeric-separators-style'?: Linter.RuleEntry<UnicornNumericSeparatorsStyle>
+  "unicorn/numeric-separators-style"?: Linter.RuleEntry<UnicornNumericSeparatorsStyle>;
   /**
    * Prefer `.addEventListener()` and `.removeEventListener()` over `on`-functions.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-add-event-listener.md
    */
-  'unicorn/prefer-add-event-listener'?: Linter.RuleEntry<UnicornPreferAddEventListener>
+  "unicorn/prefer-add-event-listener"?: Linter.RuleEntry<UnicornPreferAddEventListener>;
   /**
    * Prefer `.find(…)` and `.findLast(…)` over the first or last element from `.filter(…)`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-find.md
    */
-  'unicorn/prefer-array-find'?: Linter.RuleEntry<UnicornPreferArrayFind>
+  "unicorn/prefer-array-find"?: Linter.RuleEntry<UnicornPreferArrayFind>;
   /**
    * Prefer `Array#flat()` over legacy techniques to flatten arrays.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-flat.md
    */
-  'unicorn/prefer-array-flat'?: Linter.RuleEntry<UnicornPreferArrayFlat>
+  "unicorn/prefer-array-flat"?: Linter.RuleEntry<UnicornPreferArrayFlat>;
   /**
    * Prefer `.flatMap(…)` over `.map(…).flat()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-flat-map.md
    */
-  'unicorn/prefer-array-flat-map'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-array-flat-map"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `Array#{indexOf,lastIndexOf}()` over `Array#{findIndex,findLastIndex}()` when looking for the index of an item.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-index-of.md
    */
-  'unicorn/prefer-array-index-of'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-array-index-of"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `.some(…)` over `.filter(…).length` check and `.{find,findLast,findIndex,findLastIndex}(…)`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-array-some.md
    */
-  'unicorn/prefer-array-some'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-array-some"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `.at()` method for index access and `String#charAt()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-at.md
    */
-  'unicorn/prefer-at'?: Linter.RuleEntry<UnicornPreferAt>
+  "unicorn/prefer-at"?: Linter.RuleEntry<UnicornPreferAt>;
   /**
    * Prefer `BigInt` literals over the constructor.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-bigint-literals.md
    */
-  'unicorn/prefer-bigint-literals'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-bigint-literals"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `Blob#arrayBuffer()` over `FileReader#readAsArrayBuffer(…)` and `Blob#text()` over `FileReader#readAsText(…)`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-blob-reading-methods.md
    */
-  'unicorn/prefer-blob-reading-methods'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-blob-reading-methods"?: Linter.RuleEntry<[]>;
   /**
    * Prefer class field declarations over `this` assignments in constructors.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-class-fields.md
    */
-  'unicorn/prefer-class-fields'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-class-fields"?: Linter.RuleEntry<[]>;
   /**
    * Prefer using `Element#classList.toggle()` to toggle class names.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-classlist-toggle.md
    */
-  'unicorn/prefer-classlist-toggle'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-classlist-toggle"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `String#codePointAt(…)` over `String#charCodeAt(…)` and `String.fromCodePoint(…)` over `String.fromCharCode(…)`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-code-point.md
    */
-  'unicorn/prefer-code-point'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-code-point"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `Date.now()` to get the number of milliseconds since the Unix Epoch.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-date-now.md
    */
-  'unicorn/prefer-date-now'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-date-now"?: Linter.RuleEntry<[]>;
   /**
    * Prefer default parameters over reassignment.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-default-parameters.md
    */
-  'unicorn/prefer-default-parameters'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-default-parameters"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `Node#append()` over `Node#appendChild()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-append.md
    */
-  'unicorn/prefer-dom-node-append'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-dom-node-append"?: Linter.RuleEntry<[]>;
   /**
    * Prefer using `.dataset` on DOM elements over calling attribute methods.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-dataset.md
    */
-  'unicorn/prefer-dom-node-dataset'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-dom-node-dataset"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `childNode.remove()` over `parentNode.removeChild(childNode)`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-remove.md
    */
-  'unicorn/prefer-dom-node-remove'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-dom-node-remove"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `.textContent` over `.innerText`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-dom-node-text-content.md
    */
-  'unicorn/prefer-dom-node-text-content'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-dom-node-text-content"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `EventTarget` over `EventEmitter`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-event-target.md
    */
-  'unicorn/prefer-event-target'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-event-target"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `export…from` when re-exporting.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-export-from.md
    */
-  'unicorn/prefer-export-from'?: Linter.RuleEntry<UnicornPreferExportFrom>
+  "unicorn/prefer-export-from"?: Linter.RuleEntry<UnicornPreferExportFrom>;
   /**
    * Prefer `globalThis` over `window`, `self`, and `global`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-global-this.md
    */
-  'unicorn/prefer-global-this'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-global-this"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `import.meta.{dirname,filename}` over legacy techniques for getting file paths.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-import-meta-properties.md
    */
-  'unicorn/prefer-import-meta-properties'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-import-meta-properties"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `.includes()` over `.indexOf()`, `.lastIndexOf()`, and `Array#some()` when checking for existence or non-existence.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-includes.md
    */
-  'unicorn/prefer-includes'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-includes"?: Linter.RuleEntry<[]>;
   /**
    * Prefer reading a JSON file as a buffer.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-json-parse-buffer.md
    */
-  'unicorn/prefer-json-parse-buffer'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-json-parse-buffer"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `KeyboardEvent#key` over `KeyboardEvent#keyCode`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-keyboard-event-key.md
    */
-  'unicorn/prefer-keyboard-event-key'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-keyboard-event-key"?: Linter.RuleEntry<[]>;
   /**
    * Prefer using a logical operator over a ternary.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-logical-operator-over-ternary.md
    */
-  'unicorn/prefer-logical-operator-over-ternary'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-logical-operator-over-ternary"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `Math.min()` and `Math.max()` over ternaries for simple comparisons.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-math-min-max.md
    */
-  'unicorn/prefer-math-min-max'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-math-min-max"?: Linter.RuleEntry<[]>;
   /**
    * Enforce the use of `Math.trunc` instead of bitwise operators.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-math-trunc.md
    */
-  'unicorn/prefer-math-trunc'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-math-trunc"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `.before()` over `.insertBefore()`, `.replaceWith()` over `.replaceChild()`, prefer one of `.before()`, `.after()`, `.append()` or `.prepend()` over `insertAdjacentText()` and `insertAdjacentElement()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-modern-dom-apis.md
    */
-  'unicorn/prefer-modern-dom-apis'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-modern-dom-apis"?: Linter.RuleEntry<[]>;
   /**
    * Prefer modern `Math` APIs over legacy patterns.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-modern-math-apis.md
    */
-  'unicorn/prefer-modern-math-apis'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-modern-math-apis"?: Linter.RuleEntry<[]>;
   /**
    * Prefer JavaScript modules (ESM) over CommonJS.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-module.md
    */
-  'unicorn/prefer-module'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-module"?: Linter.RuleEntry<[]>;
   /**
    * Prefer using `String`, `Number`, `BigInt`, `Boolean`, and `Symbol` directly.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-native-coercion-functions.md
    */
-  'unicorn/prefer-native-coercion-functions'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-native-coercion-functions"?: Linter.RuleEntry<[]>;
   /**
    * Prefer negative index over `.length - index` when possible.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-negative-index.md
    */
-  'unicorn/prefer-negative-index'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-negative-index"?: Linter.RuleEntry<[]>;
   /**
    * Prefer using the `node:` protocol when importing Node.js builtin modules.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-node-protocol.md
    */
-  'unicorn/prefer-node-protocol'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-node-protocol"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `Number` static properties over global ones.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-number-properties.md
    */
-  'unicorn/prefer-number-properties'?: Linter.RuleEntry<UnicornPreferNumberProperties>
+  "unicorn/prefer-number-properties"?: Linter.RuleEntry<UnicornPreferNumberProperties>;
   /**
    * Prefer using `Object.fromEntries(…)` to transform a list of key-value pairs into an object.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-object-from-entries.md
    */
-  'unicorn/prefer-object-from-entries'?: Linter.RuleEntry<UnicornPreferObjectFromEntries>
+  "unicorn/prefer-object-from-entries"?: Linter.RuleEntry<UnicornPreferObjectFromEntries>;
   /**
    * Prefer omitting the `catch` binding parameter.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-optional-catch-binding.md
    */
-  'unicorn/prefer-optional-catch-binding'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-optional-catch-binding"?: Linter.RuleEntry<[]>;
   /**
    * Prefer borrowing methods from the prototype instead of the instance.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-prototype-methods.md
    */
-  'unicorn/prefer-prototype-methods'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-prototype-methods"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `.querySelector()` over `.getElementById()`, `.querySelectorAll()` over `.getElementsByClassName()` and `.getElementsByTagName()` and `.getElementsByName()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-query-selector.md
    */
-  'unicorn/prefer-query-selector'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-query-selector"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `Reflect.apply()` over `Function#apply()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-reflect-apply.md
    */
-  'unicorn/prefer-reflect-apply'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-reflect-apply"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `RegExp#test()` over `String#match()` and `RegExp#exec()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-regexp-test.md
    */
-  'unicorn/prefer-regexp-test'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-regexp-test"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `Response.json()` over `new Response(JSON.stringify())`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-response-static-json.md
    */
-  'unicorn/prefer-response-static-json'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-response-static-json"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `Set#has()` over `Array#includes()` when checking for existence or non-existence.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-set-has.md
    */
-  'unicorn/prefer-set-has'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-set-has"?: Linter.RuleEntry<[]>;
   /**
    * Prefer using `Set#size` instead of `Array#length`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-set-size.md
    */
-  'unicorn/prefer-set-size'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-set-size"?: Linter.RuleEntry<[]>;
   /**
    * Prefer simple conditions first in logical expressions.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-simple-condition-first.md
    */
-  'unicorn/prefer-simple-condition-first'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-simple-condition-first"?: Linter.RuleEntry<[]>;
   /**
    * Enforce combining multiple `Array#push()`, `Element#classList.{add,remove}()`, and `importScripts()` into one call.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-single-call.md
    */
-  'unicorn/prefer-single-call'?: Linter.RuleEntry<UnicornPreferSingleCall>
+  "unicorn/prefer-single-call"?: Linter.RuleEntry<UnicornPreferSingleCall>;
   /**
    * Prefer the spread operator over `Array.from(…)`, `Array#concat(…)`, `Array#{slice,toSpliced}()` and `String#split('')`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-spread.md
    */
-  'unicorn/prefer-spread'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-spread"?: Linter.RuleEntry<[]>;
   /**
    * Prefer using the `String.raw` tag to avoid escaping `\`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-raw.md
    */
-  'unicorn/prefer-string-raw'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-string-raw"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `String#replaceAll()` over regex searches with the global flag.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-replace-all.md
    */
-  'unicorn/prefer-string-replace-all'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-string-replace-all"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `String#slice()` over `String#substr()` and `String#substring()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-slice.md
    */
-  'unicorn/prefer-string-slice'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-string-slice"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `String#startsWith()` & `String#endsWith()` over `RegExp#test()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-starts-ends-with.md
    */
-  'unicorn/prefer-string-starts-ends-with'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-string-starts-ends-with"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `String#trimStart()` / `String#trimEnd()` over `String#trimLeft()` / `String#trimRight()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-string-trim-start-end.md
    */
-  'unicorn/prefer-string-trim-start-end'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-string-trim-start-end"?: Linter.RuleEntry<[]>;
   /**
    * Prefer using `structuredClone` to create a deep clone.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-structured-clone.md
    */
-  'unicorn/prefer-structured-clone'?: Linter.RuleEntry<UnicornPreferStructuredClone>
+  "unicorn/prefer-structured-clone"?: Linter.RuleEntry<UnicornPreferStructuredClone>;
   /**
    * Prefer `switch` over multiple `else-if`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-switch.md
    */
-  'unicorn/prefer-switch'?: Linter.RuleEntry<UnicornPreferSwitch>
+  "unicorn/prefer-switch"?: Linter.RuleEntry<UnicornPreferSwitch>;
   /**
    * Prefer ternary expressions over simple `if-else` statements.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-ternary.md
    */
-  'unicorn/prefer-ternary'?: Linter.RuleEntry<UnicornPreferTernary>
+  "unicorn/prefer-ternary"?: Linter.RuleEntry<UnicornPreferTernary>;
   /**
    * Prefer top-level await over top-level promises and async function calls.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-top-level-await.md
    */
-  'unicorn/prefer-top-level-await'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-top-level-await"?: Linter.RuleEntry<[]>;
   /**
    * Enforce throwing `TypeError` in type checking conditions.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prefer-type-error.md
    */
-  'unicorn/prefer-type-error'?: Linter.RuleEntry<[]>
+  "unicorn/prefer-type-error"?: Linter.RuleEntry<[]>;
   /**
    * Prevent abbreviations.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/prevent-abbreviations.md
    */
-  'unicorn/prevent-abbreviations'?: Linter.RuleEntry<UnicornPreventAbbreviations>
+  "unicorn/prevent-abbreviations"?: Linter.RuleEntry<UnicornPreventAbbreviations>;
   /**
    * Enforce consistent relative URL style.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/relative-url-style.md
    */
-  'unicorn/relative-url-style'?: Linter.RuleEntry<UnicornRelativeUrlStyle>
+  "unicorn/relative-url-style"?: Linter.RuleEntry<UnicornRelativeUrlStyle>;
   /**
    * Enforce using the separator argument with `Array#join()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-array-join-separator.md
    */
-  'unicorn/require-array-join-separator'?: Linter.RuleEntry<[]>
+  "unicorn/require-array-join-separator"?: Linter.RuleEntry<[]>;
   /**
    * Require non-empty module attributes for imports and exports
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-module-attributes.md
    */
-  'unicorn/require-module-attributes'?: Linter.RuleEntry<[]>
+  "unicorn/require-module-attributes"?: Linter.RuleEntry<[]>;
   /**
    * Require non-empty specifier list in import and export statements.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-module-specifiers.md
    */
-  'unicorn/require-module-specifiers'?: Linter.RuleEntry<[]>
+  "unicorn/require-module-specifiers"?: Linter.RuleEntry<[]>;
   /**
    * Enforce using the digits argument with `Number#toFixed()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-number-to-fixed-digits-argument.md
    */
-  'unicorn/require-number-to-fixed-digits-argument'?: Linter.RuleEntry<[]>
+  "unicorn/require-number-to-fixed-digits-argument"?: Linter.RuleEntry<[]>;
   /**
    * Enforce using the `targetOrigin` argument with `window.postMessage()`.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/require-post-message-target-origin.md
    */
-  'unicorn/require-post-message-target-origin'?: Linter.RuleEntry<[]>
+  "unicorn/require-post-message-target-origin"?: Linter.RuleEntry<[]>;
   /**
    * Enforce better string content.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/string-content.md
    */
-  'unicorn/string-content'?: Linter.RuleEntry<UnicornStringContent>
+  "unicorn/string-content"?: Linter.RuleEntry<UnicornStringContent>;
   /**
    * Enforce consistent brace style for `case` clauses.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/switch-case-braces.md
    */
-  'unicorn/switch-case-braces'?: Linter.RuleEntry<UnicornSwitchCaseBraces>
+  "unicorn/switch-case-braces"?: Linter.RuleEntry<UnicornSwitchCaseBraces>;
   /**
    * Enforce consistent `break`/`return`/`continue`/`throw` position in `case` clauses.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/switch-case-break-position.md
    */
-  'unicorn/switch-case-break-position'?: Linter.RuleEntry<[]>
+  "unicorn/switch-case-break-position"?: Linter.RuleEntry<[]>;
   /**
    * Fix whitespace-insensitive template indentation.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/template-indent.md
    */
-  'unicorn/template-indent'?: Linter.RuleEntry<UnicornTemplateIndent>
+  "unicorn/template-indent"?: Linter.RuleEntry<UnicornTemplateIndent>;
   /**
    * Enforce consistent case for text encoding identifiers.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/text-encoding-identifier-case.md
    */
-  'unicorn/text-encoding-identifier-case'?: Linter.RuleEntry<UnicornTextEncodingIdentifierCase>
+  "unicorn/text-encoding-identifier-case"?: Linter.RuleEntry<UnicornTextEncodingIdentifierCase>;
   /**
    * Require `new` when creating an error.
    * @see https://github.com/sindresorhus/eslint-plugin-unicorn/blob/v64.0.0/docs/rules/throw-new-error.md
    */
-  'unicorn/throw-new-error'?: Linter.RuleEntry<[]>
+  "unicorn/throw-new-error"?: Linter.RuleEntry<[]>;
   /**
    * enforce using `.each` or `.for` consistently
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-each-for.md
    */
-  'vitest/consistent-each-for'?: Linter.RuleEntry<VitestConsistentEachFor>
+  "vitest/consistent-each-for"?: Linter.RuleEntry<VitestConsistentEachFor>;
   /**
    * require test file pattern
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-filename.md
    */
-  'vitest/consistent-test-filename'?: Linter.RuleEntry<VitestConsistentTestFilename>
+  "vitest/consistent-test-filename"?: Linter.RuleEntry<VitestConsistentTestFilename>;
   /**
    * enforce using test or it but not both
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-test-it.md
    */
-  'vitest/consistent-test-it'?: Linter.RuleEntry<VitestConsistentTestIt>
+  "vitest/consistent-test-it"?: Linter.RuleEntry<VitestConsistentTestIt>;
   /**
    * enforce using vitest or vi but not both
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/consistent-vitest-vi.md
    */
-  'vitest/consistent-vitest-vi'?: Linter.RuleEntry<VitestConsistentVitestVi>
+  "vitest/consistent-vitest-vi"?: Linter.RuleEntry<VitestConsistentVitestVi>;
   /**
    * enforce having expectation in test body
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/expect-expect.md
    */
-  'vitest/expect-expect'?: Linter.RuleEntry<VitestExpectExpect>
+  "vitest/expect-expect"?: Linter.RuleEntry<VitestExpectExpect>;
   /**
    * enforce hoisted APIs to be on top of the file
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/hoisted-apis-on-top.md
    */
-  'vitest/hoisted-apis-on-top'?: Linter.RuleEntry<[]>
+  "vitest/hoisted-apis-on-top"?: Linter.RuleEntry<[]>;
   /**
    * enforce a maximum number of expect per test
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/max-expects.md
    */
-  'vitest/max-expects'?: Linter.RuleEntry<VitestMaxExpects>
+  "vitest/max-expects"?: Linter.RuleEntry<VitestMaxExpects>;
   /**
    * require describe block to be less than set max value or default value
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/max-nested-describe.md
    */
-  'vitest/max-nested-describe'?: Linter.RuleEntry<VitestMaxNestedDescribe>
+  "vitest/max-nested-describe"?: Linter.RuleEntry<VitestMaxNestedDescribe>;
   /**
    * disallow alias methods
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-alias-methods.md
    */
-  'vitest/no-alias-methods'?: Linter.RuleEntry<[]>
+  "vitest/no-alias-methods"?: Linter.RuleEntry<[]>;
   /**
    * disallow commented out tests
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-commented-out-tests.md
    */
-  'vitest/no-commented-out-tests'?: Linter.RuleEntry<[]>
+  "vitest/no-commented-out-tests"?: Linter.RuleEntry<[]>;
   /**
    * disallow conditional expects
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-conditional-expect.md
    */
-  'vitest/no-conditional-expect'?: Linter.RuleEntry<VitestNoConditionalExpect>
+  "vitest/no-conditional-expect"?: Linter.RuleEntry<VitestNoConditionalExpect>;
   /**
    * disallow conditional tests
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-conditional-in-test.md
    */
-  'vitest/no-conditional-in-test'?: Linter.RuleEntry<[]>
+  "vitest/no-conditional-in-test"?: Linter.RuleEntry<[]>;
   /**
    * disallow conditional tests
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-conditional-tests.md
    */
-  'vitest/no-conditional-tests'?: Linter.RuleEntry<[]>
+  "vitest/no-conditional-tests"?: Linter.RuleEntry<[]>;
   /**
    * disallow disabled tests
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-disabled-tests.md
    */
-  'vitest/no-disabled-tests'?: Linter.RuleEntry<[]>
+  "vitest/no-disabled-tests"?: Linter.RuleEntry<[]>;
   /**
    * disallow using a callback in asynchronous tests and hooks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-done-callback.md
    * @deprecated
    */
-  'vitest/no-done-callback'?: Linter.RuleEntry<[]>
+  "vitest/no-done-callback"?: Linter.RuleEntry<[]>;
   /**
    * disallow duplicate hooks and teardown hooks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-duplicate-hooks.md
    */
-  'vitest/no-duplicate-hooks'?: Linter.RuleEntry<[]>
+  "vitest/no-duplicate-hooks"?: Linter.RuleEntry<[]>;
   /**
    * disallow focused tests
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-focused-tests.md
    */
-  'vitest/no-focused-tests'?: Linter.RuleEntry<VitestNoFocusedTests>
+  "vitest/no-focused-tests"?: Linter.RuleEntry<VitestNoFocusedTests>;
   /**
    * disallow setup and teardown hooks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-hooks.md
    */
-  'vitest/no-hooks'?: Linter.RuleEntry<VitestNoHooks>
+  "vitest/no-hooks"?: Linter.RuleEntry<VitestNoHooks>;
   /**
    * disallow identical titles
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-identical-title.md
    */
-  'vitest/no-identical-title'?: Linter.RuleEntry<[]>
+  "vitest/no-identical-title"?: Linter.RuleEntry<[]>;
   /**
    * disallow importing `node:test`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-import-node-test.md
    */
-  'vitest/no-import-node-test'?: Linter.RuleEntry<[]>
+  "vitest/no-import-node-test"?: Linter.RuleEntry<[]>;
   /**
    * disallow importing Vitest globals
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-importing-vitest-globals.md
    */
-  'vitest/no-importing-vitest-globals'?: Linter.RuleEntry<[]>
+  "vitest/no-importing-vitest-globals"?: Linter.RuleEntry<[]>;
   /**
    * disallow string interpolation in snapshots
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-interpolation-in-snapshots.md
    */
-  'vitest/no-interpolation-in-snapshots'?: Linter.RuleEntry<[]>
+  "vitest/no-interpolation-in-snapshots"?: Linter.RuleEntry<[]>;
   /**
    * disallow large snapshots
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-large-snapshots.md
    */
-  'vitest/no-large-snapshots'?: Linter.RuleEntry<VitestNoLargeSnapshots>
+  "vitest/no-large-snapshots"?: Linter.RuleEntry<VitestNoLargeSnapshots>;
   /**
    * disallow importing from __mocks__ directory
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-mocks-import.md
    */
-  'vitest/no-mocks-import'?: Linter.RuleEntry<[]>
+  "vitest/no-mocks-import"?: Linter.RuleEntry<[]>;
   /**
    * disallow the use of certain matchers
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-restricted-matchers.md
    */
-  'vitest/no-restricted-matchers'?: Linter.RuleEntry<VitestNoRestrictedMatchers>
+  "vitest/no-restricted-matchers"?: Linter.RuleEntry<VitestNoRestrictedMatchers>;
   /**
    * disallow specific `vi.` methods
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-restricted-vi-methods.md
    */
-  'vitest/no-restricted-vi-methods'?: Linter.RuleEntry<VitestNoRestrictedViMethods>
+  "vitest/no-restricted-vi-methods"?: Linter.RuleEntry<VitestNoRestrictedViMethods>;
   /**
    * disallow using `expect` outside of `it` or `test` blocks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-standalone-expect.md
    */
-  'vitest/no-standalone-expect'?: Linter.RuleEntry<VitestNoStandaloneExpect>
+  "vitest/no-standalone-expect"?: Linter.RuleEntry<VitestNoStandaloneExpect>;
   /**
    * disallow using the `f` and `x` prefixes in favour of `.only` and `.skip`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-test-prefixes.md
    */
-  'vitest/no-test-prefixes'?: Linter.RuleEntry<[]>
+  "vitest/no-test-prefixes"?: Linter.RuleEntry<[]>;
   /**
    * disallow return statements in tests
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-test-return-statement.md
    */
-  'vitest/no-test-return-statement'?: Linter.RuleEntry<[]>
+  "vitest/no-test-return-statement"?: Linter.RuleEntry<[]>;
   /**
    * Disallow unnecessary async function wrapper for expected promises
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/no-unneeded-async-expect-function.md
    */
-  'vitest/no-unneeded-async-expect-function'?: Linter.RuleEntry<[]>
+  "vitest/no-unneeded-async-expect-function"?: Linter.RuleEntry<[]>;
   /**
    * Enforce padding around `afterAll` blocks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-after-all-blocks.md
    */
-  'vitest/padding-around-after-all-blocks'?: Linter.RuleEntry<[]>
+  "vitest/padding-around-after-all-blocks"?: Linter.RuleEntry<[]>;
   /**
    * Enforce padding around `afterEach` blocks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-after-each-blocks.md
    */
-  'vitest/padding-around-after-each-blocks'?: Linter.RuleEntry<[]>
+  "vitest/padding-around-after-each-blocks"?: Linter.RuleEntry<[]>;
   /**
    * Enforce padding around vitest functions
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-all.md
    */
-  'vitest/padding-around-all'?: Linter.RuleEntry<[]>
+  "vitest/padding-around-all"?: Linter.RuleEntry<[]>;
   /**
    * Enforce padding around `beforeAll` blocks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-before-all-blocks.md
    */
-  'vitest/padding-around-before-all-blocks'?: Linter.RuleEntry<[]>
+  "vitest/padding-around-before-all-blocks"?: Linter.RuleEntry<[]>;
   /**
    * Enforce padding around `beforeEach` blocks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-before-each-blocks.md
    */
-  'vitest/padding-around-before-each-blocks'?: Linter.RuleEntry<[]>
+  "vitest/padding-around-before-each-blocks"?: Linter.RuleEntry<[]>;
   /**
    * Enforce padding around `describe` blocks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-describe-blocks.md
    */
-  'vitest/padding-around-describe-blocks'?: Linter.RuleEntry<[]>
+  "vitest/padding-around-describe-blocks"?: Linter.RuleEntry<[]>;
   /**
    * Enforce padding around `expect` groups
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-expect-groups.md
    */
-  'vitest/padding-around-expect-groups'?: Linter.RuleEntry<[]>
+  "vitest/padding-around-expect-groups"?: Linter.RuleEntry<[]>;
   /**
    * Enforce padding around `test` blocks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/padding-around-test-blocks.md
    */
-  'vitest/padding-around-test-blocks'?: Linter.RuleEntry<[]>
+  "vitest/padding-around-test-blocks"?: Linter.RuleEntry<[]>;
   /**
    * Prefer `toHaveBeenCalledExactlyOnceWith` over `toHaveBeenCalledOnce` and `toHaveBeenCalledWith`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-exactly-once-with.md
    */
-  'vitest/prefer-called-exactly-once-with'?: Linter.RuleEntry<[]>
+  "vitest/prefer-called-exactly-once-with"?: Linter.RuleEntry<[]>;
   /**
    * enforce using `toBeCalledOnce()` or `toHaveBeenCalledOnce()`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-once.md
    */
-  'vitest/prefer-called-once'?: Linter.RuleEntry<[]>
+  "vitest/prefer-called-once"?: Linter.RuleEntry<[]>;
   /**
    * enforce using `toBeCalledTimes(1)` or `toHaveBeenCalledTimes(1)`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-times.md
    */
-  'vitest/prefer-called-times'?: Linter.RuleEntry<[]>
+  "vitest/prefer-called-times"?: Linter.RuleEntry<[]>;
   /**
    * enforce using `toBeCalledWith()` or `toHaveBeenCalledWith()`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-called-with.md
    */
-  'vitest/prefer-called-with'?: Linter.RuleEntry<[]>
+  "vitest/prefer-called-with"?: Linter.RuleEntry<[]>;
   /**
    * enforce using the built-in comparison matchers
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-comparison-matcher.md
    */
-  'vitest/prefer-comparison-matcher'?: Linter.RuleEntry<[]>
+  "vitest/prefer-comparison-matcher"?: Linter.RuleEntry<[]>;
   /**
    * enforce using a function as a describe title over an equivalent string
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-describe-function-title.md
    */
-  'vitest/prefer-describe-function-title'?: Linter.RuleEntry<[]>
+  "vitest/prefer-describe-function-title"?: Linter.RuleEntry<[]>;
   /**
    * enforce using `each` rather than manual loops
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-each.md
    */
-  'vitest/prefer-each'?: Linter.RuleEntry<[]>
+  "vitest/prefer-each"?: Linter.RuleEntry<[]>;
   /**
    * enforce using the built-in equality matchers
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-equality-matcher.md
    */
-  'vitest/prefer-equality-matcher'?: Linter.RuleEntry<[]>
+  "vitest/prefer-equality-matcher"?: Linter.RuleEntry<[]>;
   /**
    * enforce using expect assertions instead of callbacks
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-assertions.md
    */
-  'vitest/prefer-expect-assertions'?: Linter.RuleEntry<VitestPreferExpectAssertions>
+  "vitest/prefer-expect-assertions"?: Linter.RuleEntry<VitestPreferExpectAssertions>;
   /**
    * enforce using `expect().resolves` over `expect(await ...)` syntax
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-resolves.md
    */
-  'vitest/prefer-expect-resolves'?: Linter.RuleEntry<[]>
+  "vitest/prefer-expect-resolves"?: Linter.RuleEntry<[]>;
   /**
    * enforce using `expect(...).toBeTypeOf(...)` instead of `expect(typeof ...).toBe(...)`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-expect-type-of.md
    */
-  'vitest/prefer-expect-type-of'?: Linter.RuleEntry<[]>
+  "vitest/prefer-expect-type-of"?: Linter.RuleEntry<[]>;
   /**
    * enforce having hooks in consistent order
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-hooks-in-order.md
    */
-  'vitest/prefer-hooks-in-order'?: Linter.RuleEntry<[]>
+  "vitest/prefer-hooks-in-order"?: Linter.RuleEntry<[]>;
   /**
    * enforce having hooks before any test cases
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-hooks-on-top.md
    */
-  'vitest/prefer-hooks-on-top'?: Linter.RuleEntry<[]>
+  "vitest/prefer-hooks-on-top"?: Linter.RuleEntry<[]>;
   /**
    * prefer dynamic import in mock
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-import-in-mock.md
    */
-  'vitest/prefer-import-in-mock'?: Linter.RuleEntry<VitestPreferImportInMock>
+  "vitest/prefer-import-in-mock"?: Linter.RuleEntry<VitestPreferImportInMock>;
   /**
    * enforce importing Vitest globals
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-importing-vitest-globals.md
    */
-  'vitest/prefer-importing-vitest-globals'?: Linter.RuleEntry<[]>
+  "vitest/prefer-importing-vitest-globals"?: Linter.RuleEntry<[]>;
   /**
    * enforce lowercase titles
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-lowercase-title.md
    */
-  'vitest/prefer-lowercase-title'?: Linter.RuleEntry<VitestPreferLowercaseTitle>
+  "vitest/prefer-lowercase-title"?: Linter.RuleEntry<VitestPreferLowercaseTitle>;
   /**
    * enforce mock resolved/rejected shorthands for promises
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-mock-promise-shorthand.md
    */
-  'vitest/prefer-mock-promise-shorthand'?: Linter.RuleEntry<[]>
+  "vitest/prefer-mock-promise-shorthand"?: Linter.RuleEntry<[]>;
   /**
    * Prefer mock return shorthands
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-mock-return-shorthand.md
    */
-  'vitest/prefer-mock-return-shorthand'?: Linter.RuleEntry<[]>
+  "vitest/prefer-mock-return-shorthand"?: Linter.RuleEntry<[]>;
   /**
    * enforce including a hint with external snapshots
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-snapshot-hint.md
    */
-  'vitest/prefer-snapshot-hint'?: Linter.RuleEntry<VitestPreferSnapshotHint>
+  "vitest/prefer-snapshot-hint"?: Linter.RuleEntry<VitestPreferSnapshotHint>;
   /**
    * enforce using `vi.spyOn`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-spy-on.md
    */
-  'vitest/prefer-spy-on'?: Linter.RuleEntry<[]>
+  "vitest/prefer-spy-on"?: Linter.RuleEntry<[]>;
   /**
    * enforce using `toBe(true)` and `toBe(false)` over matchers that coerce types to boolean
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-strict-boolean-matchers.md
    */
-  'vitest/prefer-strict-boolean-matchers'?: Linter.RuleEntry<[]>
+  "vitest/prefer-strict-boolean-matchers"?: Linter.RuleEntry<[]>;
   /**
    * enforce strict equal over equal
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-strict-equal.md
    */
-  'vitest/prefer-strict-equal'?: Linter.RuleEntry<[]>
+  "vitest/prefer-strict-equal"?: Linter.RuleEntry<[]>;
   /**
    * enforce using toBe()
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be.md
    */
-  'vitest/prefer-to-be'?: Linter.RuleEntry<[]>
+  "vitest/prefer-to-be"?: Linter.RuleEntry<[]>;
   /**
    * enforce using toBeFalsy()
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-falsy.md
    */
-  'vitest/prefer-to-be-falsy'?: Linter.RuleEntry<[]>
+  "vitest/prefer-to-be-falsy"?: Linter.RuleEntry<[]>;
   /**
    * enforce using toBeObject()
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-object.md
    */
-  'vitest/prefer-to-be-object'?: Linter.RuleEntry<[]>
+  "vitest/prefer-to-be-object"?: Linter.RuleEntry<[]>;
   /**
    * enforce using `toBeTruthy`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-be-truthy.md
    */
-  'vitest/prefer-to-be-truthy'?: Linter.RuleEntry<[]>
+  "vitest/prefer-to-be-truthy"?: Linter.RuleEntry<[]>;
   /**
    * enforce using toContain()
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-contain.md
    */
-  'vitest/prefer-to-contain'?: Linter.RuleEntry<[]>
+  "vitest/prefer-to-contain"?: Linter.RuleEntry<[]>;
   /**
    * Suggest using `toHaveBeenCalledTimes()`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-have-been-called-times.md
    */
-  'vitest/prefer-to-have-been-called-times'?: Linter.RuleEntry<[]>
+  "vitest/prefer-to-have-been-called-times"?: Linter.RuleEntry<[]>;
   /**
    * enforce using toHaveLength()
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-to-have-length.md
    */
-  'vitest/prefer-to-have-length'?: Linter.RuleEntry<[]>
+  "vitest/prefer-to-have-length"?: Linter.RuleEntry<[]>;
   /**
    * enforce using `test.todo`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-todo.md
    */
-  'vitest/prefer-todo'?: Linter.RuleEntry<[]>
+  "vitest/prefer-todo"?: Linter.RuleEntry<[]>;
   /**
    * require `vi.mocked()` over `fn as Mock`
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/prefer-vi-mocked.md
    */
-  'vitest/prefer-vi-mocked'?: Linter.RuleEntry<[]>
+  "vitest/prefer-vi-mocked"?: Linter.RuleEntry<[]>;
   /**
    * ensure that every `expect.poll` call is awaited
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-awaited-expect-poll.md
    */
-  'vitest/require-awaited-expect-poll'?: Linter.RuleEntry<[]>
+  "vitest/require-awaited-expect-poll"?: Linter.RuleEntry<[]>;
   /**
    * require setup and teardown to be within a hook
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-hook.md
    */
-  'vitest/require-hook'?: Linter.RuleEntry<VitestRequireHook>
+  "vitest/require-hook"?: Linter.RuleEntry<VitestRequireHook>;
   /**
    * require local Test Context for concurrent snapshot tests
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-local-test-context-for-concurrent-snapshots.md
    */
-  'vitest/require-local-test-context-for-concurrent-snapshots'?: Linter.RuleEntry<[]>
+  "vitest/require-local-test-context-for-concurrent-snapshots"?: Linter.RuleEntry<[]>;
   /**
    * enforce using type parameters with vitest mock functions
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-mock-type-parameters.md
    */
-  'vitest/require-mock-type-parameters'?: Linter.RuleEntry<VitestRequireMockTypeParameters>
+  "vitest/require-mock-type-parameters"?: Linter.RuleEntry<VitestRequireMockTypeParameters>;
   /**
    * require tests to declare a timeout
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-test-timeout.md
    */
-  'vitest/require-test-timeout'?: Linter.RuleEntry<[]>
+  "vitest/require-test-timeout"?: Linter.RuleEntry<[]>;
   /**
    * require toThrow() to be called with an error message
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-to-throw-message.md
    */
-  'vitest/require-to-throw-message'?: Linter.RuleEntry<[]>
+  "vitest/require-to-throw-message"?: Linter.RuleEntry<[]>;
   /**
    * enforce that all tests are in a top-level describe
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/require-top-level-describe.md
    */
-  'vitest/require-top-level-describe'?: Linter.RuleEntry<VitestRequireTopLevelDescribe>
+  "vitest/require-top-level-describe"?: Linter.RuleEntry<VitestRequireTopLevelDescribe>;
   /**
    * enforce unbound methods are called with their expected scope
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/unbound-method.md
    */
-  'vitest/unbound-method'?: Linter.RuleEntry<VitestUnboundMethod>
+  "vitest/unbound-method"?: Linter.RuleEntry<VitestUnboundMethod>;
   /**
    * enforce valid describe callback
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-describe-callback.md
    */
-  'vitest/valid-describe-callback'?: Linter.RuleEntry<[]>
+  "vitest/valid-describe-callback"?: Linter.RuleEntry<[]>;
   /**
    * enforce valid `expect()` usage
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-expect.md
    */
-  'vitest/valid-expect'?: Linter.RuleEntry<VitestValidExpect>
+  "vitest/valid-expect"?: Linter.RuleEntry<VitestValidExpect>;
   /**
    * require promises that have expectations in their chain to be valid
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-expect-in-promise.md
    */
-  'vitest/valid-expect-in-promise'?: Linter.RuleEntry<[]>
+  "vitest/valid-expect-in-promise"?: Linter.RuleEntry<[]>;
   /**
    * enforce valid titles
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/valid-title.md
    */
-  'vitest/valid-title'?: Linter.RuleEntry<VitestValidTitle>
+  "vitest/valid-title"?: Linter.RuleEntry<VitestValidTitle>;
   /**
    * disallow `.todo` usage
    * @see https://github.com/vitest-dev/eslint-plugin-vitest/blob/main/docs/rules/warn-todo.md
    */
-  'vitest/warn-todo'?: Linter.RuleEntry<[]>
+  "vitest/warn-todo"?: Linter.RuleEntry<[]>;
 }
 
 /* ======= Declarations ======= */
 // ----- import/consistent-type-specifier-style -----
-type ImportConsistentTypeSpecifierStyle = []|[("prefer-inline" | "prefer-top-level")]
+type ImportConsistentTypeSpecifierStyle = [] | ["prefer-inline" | "prefer-top-level"];
 // ----- import/dynamic-import-chunkname -----
-type ImportDynamicImportChunkname = []|[{
-  importFunctions?: string[]
-  allowEmpty?: boolean
-  webpackChunknameFormat?: string
-  [k: string]: unknown | undefined
-}]
+type ImportDynamicImportChunkname =
+  | []
+  | [
+      {
+        importFunctions?: string[];
+        allowEmpty?: boolean;
+        webpackChunknameFormat?: string;
+        [k: string]: unknown | undefined;
+      },
+    ];
 // ----- import/enforce-node-protocol-usage -----
-type ImportEnforceNodeProtocolUsage = [("always" | "never")]
+type ImportEnforceNodeProtocolUsage = ["always" | "never"];
 // ----- import/extensions -----
-type ImportExtensions = ([]|[("always" | "ignorePackages" | "never")] | []|[("always" | "ignorePackages" | "never")]|[("always" | "ignorePackages" | "never"), {
-  pattern?: {
-    [k: string]: ("always" | "ignorePackages" | "never")
-  }
-  checkTypeImports?: boolean
-  ignorePackages?: boolean
-  pathGroupOverrides?: {
-    pattern: string
-    patternOptions?: {
-      [k: string]: unknown | undefined
-    }
-    action: ("enforce" | "ignore")
-  }[]
-  [k: string]: unknown | undefined
-}] | []|[{
-  pattern?: {
-    [k: string]: ("always" | "ignorePackages" | "never")
-  }
-  checkTypeImports?: boolean
-  ignorePackages?: boolean
-  pathGroupOverrides?: {
-    pattern: string
-    patternOptions?: {
-      [k: string]: unknown | undefined
-    }
-    action: ("enforce" | "ignore")
-  }[]
-  [k: string]: unknown | undefined
-}] | []|[{
-  [k: string]: ("always" | "ignorePackages" | "never")
-}] | []|[("always" | "ignorePackages" | "never")]|[("always" | "ignorePackages" | "never"), {
-  [k: string]: ("always" | "ignorePackages" | "never")
-}])
+type ImportExtensions =
+  | []
+  | ["always" | "ignorePackages" | "never"]
+  | []
+  | ["always" | "ignorePackages" | "never"]
+  | [
+      "always" | "ignorePackages" | "never",
+      {
+        pattern?: {
+          [k: string]: "always" | "ignorePackages" | "never";
+        };
+        checkTypeImports?: boolean;
+        ignorePackages?: boolean;
+        pathGroupOverrides?: {
+          pattern: string;
+          patternOptions?: {
+            [k: string]: unknown | undefined;
+          };
+          action: "enforce" | "ignore";
+        }[];
+        [k: string]: unknown | undefined;
+      },
+    ]
+  | []
+  | [
+      {
+        pattern?: {
+          [k: string]: "always" | "ignorePackages" | "never";
+        };
+        checkTypeImports?: boolean;
+        ignorePackages?: boolean;
+        pathGroupOverrides?: {
+          pattern: string;
+          patternOptions?: {
+            [k: string]: unknown | undefined;
+          };
+          action: "enforce" | "ignore";
+        }[];
+        [k: string]: unknown | undefined;
+      },
+    ]
+  | []
+  | [
+      {
+        [k: string]: "always" | "ignorePackages" | "never";
+      },
+    ]
+  | []
+  | ["always" | "ignorePackages" | "never"]
+  | [
+      "always" | "ignorePackages" | "never",
+      {
+        [k: string]: "always" | "ignorePackages" | "never";
+      },
+    ];
 // ----- import/first -----
-type ImportFirst = []|[("absolute-first" | "disable-absolute-first")]
+type ImportFirst = [] | ["absolute-first" | "disable-absolute-first"];
 // ----- import/imports-first -----
-type ImportImportsFirst = []|[("absolute-first" | "disable-absolute-first")]
+type ImportImportsFirst = [] | ["absolute-first" | "disable-absolute-first"];
 // ----- import/max-dependencies -----
-type ImportMaxDependencies = []|[{
-  max?: number
-  ignoreTypeImports?: boolean
-}]
+type ImportMaxDependencies =
+  | []
+  | [
+      {
+        max?: number;
+        ignoreTypeImports?: boolean;
+      },
+    ];
 // ----- import/named -----
-type ImportNamed = []|[{
-  commonjs?: boolean
-}]
+type ImportNamed =
+  | []
+  | [
+      {
+        commonjs?: boolean;
+      },
+    ];
 // ----- import/namespace -----
-type ImportNamespace = []|[{
-  
-  allowComputed?: boolean
-}]
+type ImportNamespace =
+  | []
+  | [
+      {
+        allowComputed?: boolean;
+      },
+    ];
 // ----- import/newline-after-import -----
-type ImportNewlineAfterImport = []|[{
-  count?: number
-  exactCount?: boolean
-  considerComments?: boolean
-}]
+type ImportNewlineAfterImport =
+  | []
+  | [
+      {
+        count?: number;
+        exactCount?: boolean;
+        considerComments?: boolean;
+      },
+    ];
 // ----- import/no-absolute-path -----
-type ImportNoAbsolutePath = []|[{
-  commonjs?: boolean
-  amd?: boolean
-  esmodule?: boolean
-  
-  ignore?: [string, ...(string)[]]
-}]
+type ImportNoAbsolutePath =
+  | []
+  | [
+      {
+        commonjs?: boolean;
+        amd?: boolean;
+        esmodule?: boolean;
+
+        ignore?: [string, ...string[]];
+      },
+    ];
 // ----- import/no-anonymous-default-export -----
-type ImportNoAnonymousDefaultExport = []|[{
-  
-  allowArray?: boolean
-  
-  allowArrowFunction?: boolean
-  
-  allowCallExpression?: boolean
-  
-  allowAnonymousClass?: boolean
-  
-  allowAnonymousFunction?: boolean
-  
-  allowLiteral?: boolean
-  
-  allowObject?: boolean
-  
-  allowNew?: boolean
-}]
+type ImportNoAnonymousDefaultExport =
+  | []
+  | [
+      {
+        allowArray?: boolean;
+
+        allowArrowFunction?: boolean;
+
+        allowCallExpression?: boolean;
+
+        allowAnonymousClass?: boolean;
+
+        allowAnonymousFunction?: boolean;
+
+        allowLiteral?: boolean;
+
+        allowObject?: boolean;
+
+        allowNew?: boolean;
+      },
+    ];
 // ----- import/no-commonjs -----
-type ImportNoCommonjs = ([]|["allow-primitive-modules"] | []|[{
-  allowPrimitiveModules?: boolean
-  allowRequire?: boolean
-  allowConditionalRequire?: boolean
-}])
+type ImportNoCommonjs =
+  | []
+  | ["allow-primitive-modules"]
+  | []
+  | [
+      {
+        allowPrimitiveModules?: boolean;
+        allowRequire?: boolean;
+        allowConditionalRequire?: boolean;
+      },
+    ];
 // ----- import/no-cycle -----
-type ImportNoCycle = []|[{
-  commonjs?: boolean
-  amd?: boolean
-  esmodule?: boolean
-  
-  ignore?: [string, ...(string)[]]
-  maxDepth?: (number | "∞")
-  
-  ignoreExternal?: boolean
-  
-  allowUnsafeDynamicCyclicDependency?: boolean
-  
-  disableScc?: boolean
-}]
+type ImportNoCycle =
+  | []
+  | [
+      {
+        commonjs?: boolean;
+        amd?: boolean;
+        esmodule?: boolean;
+
+        ignore?: [string, ...string[]];
+        maxDepth?: number | "∞";
+
+        ignoreExternal?: boolean;
+
+        allowUnsafeDynamicCyclicDependency?: boolean;
+
+        disableScc?: boolean;
+      },
+    ];
 // ----- import/no-duplicates -----
-type ImportNoDuplicates = []|[{
-  considerQueryString?: boolean
-  "prefer-inline"?: boolean
-}]
+type ImportNoDuplicates =
+  | []
+  | [
+      {
+        considerQueryString?: boolean;
+        "prefer-inline"?: boolean;
+      },
+    ];
 // ----- import/no-dynamic-require -----
-type ImportNoDynamicRequire = []|[{
-  esmodule?: boolean
-}]
+type ImportNoDynamicRequire =
+  | []
+  | [
+      {
+        esmodule?: boolean;
+      },
+    ];
 // ----- import/no-extraneous-dependencies -----
-type ImportNoExtraneousDependencies = []|[{
-  devDependencies?: (boolean | unknown[])
-  optionalDependencies?: (boolean | unknown[])
-  peerDependencies?: (boolean | unknown[])
-  bundledDependencies?: (boolean | unknown[])
-  packageDir?: (string | unknown[])
-  includeInternal?: boolean
-  includeTypes?: boolean
-}]
+type ImportNoExtraneousDependencies =
+  | []
+  | [
+      {
+        devDependencies?: boolean | unknown[];
+        optionalDependencies?: boolean | unknown[];
+        peerDependencies?: boolean | unknown[];
+        bundledDependencies?: boolean | unknown[];
+        packageDir?: string | unknown[];
+        includeInternal?: boolean;
+        includeTypes?: boolean;
+      },
+    ];
 // ----- import/no-import-module-exports -----
-type ImportNoImportModuleExports = []|[{
-  exceptions?: unknown[]
-}]
+type ImportNoImportModuleExports =
+  | []
+  | [
+      {
+        exceptions?: unknown[];
+      },
+    ];
 // ----- import/no-internal-modules -----
-type ImportNoInternalModules = []|[({
-  allow?: string[]
-} | {
-  forbid?: string[]
-})]
+type ImportNoInternalModules =
+  | []
+  | [
+      | {
+          allow?: string[];
+        }
+      | {
+          forbid?: string[];
+        },
+    ];
 // ----- import/no-namespace -----
-type ImportNoNamespace = []|[{
-  ignore?: string[]
-  [k: string]: unknown | undefined
-}]
+type ImportNoNamespace =
+  | []
+  | [
+      {
+        ignore?: string[];
+        [k: string]: unknown | undefined;
+      },
+    ];
 // ----- import/no-nodejs-modules -----
-type ImportNoNodejsModules = []|[{
-  allow?: string[]
-}]
+type ImportNoNodejsModules =
+  | []
+  | [
+      {
+        allow?: string[];
+      },
+    ];
 // ----- import/no-relative-packages -----
-type ImportNoRelativePackages = []|[{
-  commonjs?: boolean
-  amd?: boolean
-  esmodule?: boolean
-  
-  ignore?: [string, ...(string)[]]
-}]
+type ImportNoRelativePackages =
+  | []
+  | [
+      {
+        commonjs?: boolean;
+        amd?: boolean;
+        esmodule?: boolean;
+
+        ignore?: [string, ...string[]];
+      },
+    ];
 // ----- import/no-relative-parent-imports -----
-type ImportNoRelativeParentImports = []|[{
-  commonjs?: boolean
-  amd?: boolean
-  esmodule?: boolean
-  
-  ignore?: [string, ...(string)[]]
-}]
+type ImportNoRelativeParentImports =
+  | []
+  | [
+      {
+        commonjs?: boolean;
+        amd?: boolean;
+        esmodule?: boolean;
+
+        ignore?: [string, ...string[]];
+      },
+    ];
 // ----- import/no-restricted-paths -----
-type ImportNoRestrictedPaths = []|[{
-  
-  zones?: [{
-    target?: (string | string[])
-    from?: (string | string[])
-    except?: string[]
-    message?: string
-  }, ...({
-    target?: (string | string[])
-    from?: (string | string[])
-    except?: string[]
-    message?: string
-  })[]]
-  basePath?: string
-}]
+type ImportNoRestrictedPaths =
+  | []
+  | [
+      {
+        zones?: [
+          {
+            target?: string | string[];
+            from?: string | string[];
+            except?: string[];
+            message?: string;
+          },
+          ...{
+            target?: string | string[];
+            from?: string | string[];
+            except?: string[];
+            message?: string;
+          }[],
+        ];
+        basePath?: string;
+      },
+    ];
 // ----- import/no-unassigned-import -----
-type ImportNoUnassignedImport = []|[{
-  devDependencies?: (boolean | unknown[])
-  optionalDependencies?: (boolean | unknown[])
-  peerDependencies?: (boolean | unknown[])
-  allow?: string[]
-}]
+type ImportNoUnassignedImport =
+  | []
+  | [
+      {
+        devDependencies?: boolean | unknown[];
+        optionalDependencies?: boolean | unknown[];
+        peerDependencies?: boolean | unknown[];
+        allow?: string[];
+      },
+    ];
 // ----- import/no-unresolved -----
-type ImportNoUnresolved = []|[{
-  commonjs?: boolean
-  amd?: boolean
-  esmodule?: boolean
-  
-  ignore?: [string, ...(string)[]]
-  caseSensitive?: boolean
-  caseSensitiveStrict?: boolean
-}]
+type ImportNoUnresolved =
+  | []
+  | [
+      {
+        commonjs?: boolean;
+        amd?: boolean;
+        esmodule?: boolean;
+
+        ignore?: [string, ...string[]];
+        caseSensitive?: boolean;
+        caseSensitiveStrict?: boolean;
+      },
+    ];
 // ----- import/no-unused-modules -----
-type ImportNoUnusedModules = []|[({
-  unusedExports: true
-  src?: {
-    [k: string]: unknown | undefined
-  }
-  [k: string]: unknown | undefined
-} | {
-  missingExports: true
-  [k: string]: unknown | undefined
-})]
+type ImportNoUnusedModules =
+  | []
+  | [
+      | {
+          unusedExports: true;
+          src?: {
+            [k: string]: unknown | undefined;
+          };
+          [k: string]: unknown | undefined;
+        }
+      | {
+          missingExports: true;
+          [k: string]: unknown | undefined;
+        },
+    ];
 // ----- import/no-useless-path-segments -----
-type ImportNoUselessPathSegments = []|[{
-  commonjs?: boolean
-  noUselessIndex?: boolean
-}]
+type ImportNoUselessPathSegments =
+  | []
+  | [
+      {
+        commonjs?: boolean;
+        noUselessIndex?: boolean;
+      },
+    ];
 // ----- import/order -----
-type ImportOrder = []|[{
-  groups?: (("builtin" | "external" | "internal" | "unknown" | "parent" | "sibling" | "index" | "object" | "type") | ("builtin" | "external" | "internal" | "unknown" | "parent" | "sibling" | "index" | "object" | "type")[])[]
-  pathGroupsExcludedImportTypes?: unknown[]
-  distinctGroup?: boolean
-  pathGroups?: {
-    pattern: string
-    patternOptions?: {
-      [k: string]: unknown | undefined
-    }
-    group: ("builtin" | "external" | "internal" | "unknown" | "parent" | "sibling" | "index" | "object" | "type")
-    position?: ("after" | "before")
-  }[]
-  "newlines-between"?: ("ignore" | "always" | "always-and-inside-groups" | "never")
-  "newlines-between-types"?: ("ignore" | "always" | "always-and-inside-groups" | "never")
-  consolidateIslands?: ("inside-groups" | "never")
-  sortTypesGroup?: boolean
-  named?: (boolean | {
-    enabled?: boolean
-    import?: boolean
-    export?: boolean
-    require?: boolean
-    cjsExports?: boolean
-    types?: ("mixed" | "types-first" | "types-last")
-  })
-  alphabetize?: {
-    caseInsensitive?: boolean
-    order?: ("ignore" | "asc" | "desc")
-    orderImportKind?: ("ignore" | "asc" | "desc")
-  }
-  warnOnUnassignedImports?: boolean
-}]
+type ImportOrder =
+  | []
+  | [
+      {
+        groups?: (
+          | (
+              | "builtin"
+              | "external"
+              | "internal"
+              | "unknown"
+              | "parent"
+              | "sibling"
+              | "index"
+              | "object"
+              | "type"
+            )
+          | (
+              | "builtin"
+              | "external"
+              | "internal"
+              | "unknown"
+              | "parent"
+              | "sibling"
+              | "index"
+              | "object"
+              | "type"
+            )[]
+        )[];
+        pathGroupsExcludedImportTypes?: unknown[];
+        distinctGroup?: boolean;
+        pathGroups?: {
+          pattern: string;
+          patternOptions?: {
+            [k: string]: unknown | undefined;
+          };
+          group:
+            | "builtin"
+            | "external"
+            | "internal"
+            | "unknown"
+            | "parent"
+            | "sibling"
+            | "index"
+            | "object"
+            | "type";
+          position?: "after" | "before";
+        }[];
+        "newlines-between"?: "ignore" | "always" | "always-and-inside-groups" | "never";
+        "newlines-between-types"?: "ignore" | "always" | "always-and-inside-groups" | "never";
+        consolidateIslands?: "inside-groups" | "never";
+        sortTypesGroup?: boolean;
+        named?:
+          | boolean
+          | {
+              enabled?: boolean;
+              import?: boolean;
+              export?: boolean;
+              require?: boolean;
+              cjsExports?: boolean;
+              types?: "mixed" | "types-first" | "types-last";
+            };
+        alphabetize?: {
+          caseInsensitive?: boolean;
+          order?: "ignore" | "asc" | "desc";
+          orderImportKind?: "ignore" | "asc" | "desc";
+        };
+        warnOnUnassignedImports?: boolean;
+      },
+    ];
 // ----- import/prefer-default-export -----
-type ImportPreferDefaultExport = []|[{
-  target?: ("single" | "any")
-}]
+type ImportPreferDefaultExport =
+  | []
+  | [
+      {
+        target?: "single" | "any";
+      },
+    ];
 // ----- jsdoc/check-alignment -----
-type JsdocCheckAlignment = []|[{
-  
-  innerIndent?: number
-}]
+type JsdocCheckAlignment =
+  | []
+  | [
+      {
+        innerIndent?: number;
+      },
+    ];
 // ----- jsdoc/check-examples -----
-type JsdocCheckExamples = []|[{
-  allowInlineConfig?: boolean
-  baseConfig?: {
-    [k: string]: unknown | undefined
-  }
-  captionRequired?: boolean
-  checkDefaults?: boolean
-  checkEslintrc?: boolean
-  checkParams?: boolean
-  checkProperties?: boolean
-  configFile?: string
-  exampleCodeRegex?: string
-  matchingFileName?: string
-  matchingFileNameDefaults?: string
-  matchingFileNameParams?: string
-  matchingFileNameProperties?: string
-  noDefaultExampleRules?: boolean
-  paddedIndent?: number
-  rejectExampleCodeRegex?: string
-  reportUnusedDisableDirectives?: boolean
-}]
+type JsdocCheckExamples =
+  | []
+  | [
+      {
+        allowInlineConfig?: boolean;
+        baseConfig?: {
+          [k: string]: unknown | undefined;
+        };
+        captionRequired?: boolean;
+        checkDefaults?: boolean;
+        checkEslintrc?: boolean;
+        checkParams?: boolean;
+        checkProperties?: boolean;
+        configFile?: string;
+        exampleCodeRegex?: string;
+        matchingFileName?: string;
+        matchingFileNameDefaults?: string;
+        matchingFileNameParams?: string;
+        matchingFileNameProperties?: string;
+        noDefaultExampleRules?: boolean;
+        paddedIndent?: number;
+        rejectExampleCodeRegex?: string;
+        reportUnusedDisableDirectives?: boolean;
+      },
+    ];
 // ----- jsdoc/check-indentation -----
-type JsdocCheckIndentation = []|[{
-  
-  allowIndentedSections?: boolean
-  
-  excludeTags?: string[]
-}]
+type JsdocCheckIndentation =
+  | []
+  | [
+      {
+        allowIndentedSections?: boolean;
+
+        excludeTags?: string[];
+      },
+    ];
 // ----- jsdoc/check-line-alignment -----
-type JsdocCheckLineAlignment = []|[("always" | "never" | "any")]|[("always" | "never" | "any"), {
-  
-  customSpacings?: {
-    
-    postDelimiter?: number
-    
-    postHyphen?: number
-    
-    postName?: number
-    
-    postTag?: number
-    
-    postType?: number
-  }
-  
-  disableWrapIndent?: boolean
-  
-  preserveMainDescriptionPostDelimiter?: boolean
-  
-  tags?: string[]
-  
-  wrapIndent?: string
-}]
+type JsdocCheckLineAlignment =
+  | []
+  | ["always" | "never" | "any"]
+  | [
+      "always" | "never" | "any",
+      {
+        customSpacings?: {
+          postDelimiter?: number;
+
+          postHyphen?: number;
+
+          postName?: number;
+
+          postTag?: number;
+
+          postType?: number;
+        };
+
+        disableWrapIndent?: boolean;
+
+        preserveMainDescriptionPostDelimiter?: boolean;
+
+        tags?: string[];
+
+        wrapIndent?: string;
+      },
+    ];
 // ----- jsdoc/check-param-names -----
-type JsdocCheckParamNames = []|[{
-  
-  allowExtraTrailingParamDocs?: boolean
-  
-  checkDestructured?: boolean
-  
-  checkRestProperty?: boolean
-  
-  checkTypesPattern?: string
-  
-  disableExtraPropertyReporting?: boolean
-  
-  disableMissingParamChecks?: boolean
-  
-  enableFixer?: boolean
-  
-  useDefaultObjectProperties?: boolean
-}]
+type JsdocCheckParamNames =
+  | []
+  | [
+      {
+        allowExtraTrailingParamDocs?: boolean;
+
+        checkDestructured?: boolean;
+
+        checkRestProperty?: boolean;
+
+        checkTypesPattern?: string;
+
+        disableExtraPropertyReporting?: boolean;
+
+        disableMissingParamChecks?: boolean;
+
+        enableFixer?: boolean;
+
+        useDefaultObjectProperties?: boolean;
+      },
+    ];
 // ----- jsdoc/check-property-names -----
-type JsdocCheckPropertyNames = []|[{
-  
-  enableFixer?: boolean
-}]
+type JsdocCheckPropertyNames =
+  | []
+  | [
+      {
+        enableFixer?: boolean;
+      },
+    ];
 // ----- jsdoc/check-tag-names -----
-type JsdocCheckTagNames = []|[{
-  
-  definedTags?: string[]
-  
-  enableFixer?: boolean
-  
-  inlineTags?: string[]
-  
-  jsxTags?: boolean
-  
-  typed?: boolean
-}]
+type JsdocCheckTagNames =
+  | []
+  | [
+      {
+        definedTags?: string[];
+
+        enableFixer?: boolean;
+
+        inlineTags?: string[];
+
+        jsxTags?: boolean;
+
+        typed?: boolean;
+      },
+    ];
 // ----- jsdoc/check-types -----
-type JsdocCheckTypes = []|[{
-  
-  exemptTagContexts?: {
-    
-    tag?: string
-    
-    types?: (boolean | string[])
-  }[]
-  
-  noDefaults?: boolean
-  
-  unifyParentAndChildTypeChecks?: boolean
-}]
+type JsdocCheckTypes =
+  | []
+  | [
+      {
+        exemptTagContexts?: {
+          tag?: string;
+
+          types?: boolean | string[];
+        }[];
+
+        noDefaults?: boolean;
+
+        unifyParentAndChildTypeChecks?: boolean;
+      },
+    ];
 // ----- jsdoc/check-values -----
-type JsdocCheckValues = []|[{
-  
-  allowedAuthors?: string[]
-  
-  allowedLicenses?: (string[] | boolean)
-  
-  licensePattern?: string
-  
-  numericOnlyVariation?: boolean
-}]
+type JsdocCheckValues =
+  | []
+  | [
+      {
+        allowedAuthors?: string[];
+
+        allowedLicenses?: string[] | boolean;
+
+        licensePattern?: string;
+
+        numericOnlyVariation?: boolean;
+      },
+    ];
 // ----- jsdoc/convert-to-jsdoc-comments -----
-type JsdocConvertToJsdocComments = []|[{
-  
-  allowedPrefixes?: string[]
-  
-  contexts?: (string | {
-    context?: string
-    inlineCommentBlock?: boolean
-  })[]
-  
-  contextsAfter?: (string | {
-    context?: string
-    inlineCommentBlock?: boolean
-  })[]
-  
-  contextsBeforeAndAfter?: (string | {
-    context?: string
-    inlineCommentBlock?: boolean
-  })[]
-  
-  enableFixer?: boolean
-  
-  enforceJsdocLineStyle?: ("multi" | "single")
-  
-  lineOrBlockStyle?: ("block" | "line" | "both")
-}]
+type JsdocConvertToJsdocComments =
+  | []
+  | [
+      {
+        allowedPrefixes?: string[];
+
+        contexts?: (
+          | string
+          | {
+              context?: string;
+              inlineCommentBlock?: boolean;
+            }
+        )[];
+
+        contextsAfter?: (
+          | string
+          | {
+              context?: string;
+              inlineCommentBlock?: boolean;
+            }
+        )[];
+
+        contextsBeforeAndAfter?: (
+          | string
+          | {
+              context?: string;
+              inlineCommentBlock?: boolean;
+            }
+        )[];
+
+        enableFixer?: boolean;
+
+        enforceJsdocLineStyle?: "multi" | "single";
+
+        lineOrBlockStyle?: "block" | "line" | "both";
+      },
+    ];
 // ----- jsdoc/empty-tags -----
-type JsdocEmptyTags = []|[{
-  
-  tags?: string[]
-}]
+type JsdocEmptyTags =
+  | []
+  | [
+      {
+        tags?: string[];
+      },
+    ];
 // ----- jsdoc/escape-inline-tags -----
-type JsdocEscapeInlineTags = []|[{
-  
-  allowedInlineTags?: string[]
-  
-  enableFixer?: boolean
-  
-  fixType?: ("backticks" | "backslash")
-}]
+type JsdocEscapeInlineTags =
+  | []
+  | [
+      {
+        allowedInlineTags?: string[];
+
+        enableFixer?: boolean;
+
+        fixType?: "backticks" | "backslash";
+      },
+    ];
 // ----- jsdoc/implements-on-classes -----
-type JsdocImplementsOnClasses = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-}]
+type JsdocImplementsOnClasses =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+      },
+    ];
 // ----- jsdoc/informative-docs -----
-type JsdocInformativeDocs = []|[{
-  
-  aliases?: {
-    [k: string]: string[]
-  }
-  
-  excludedTags?: string[]
-  
-  uselessWords?: string[]
-}]
+type JsdocInformativeDocs =
+  | []
+  | [
+      {
+        aliases?: {
+          [k: string]: string[];
+        };
+
+        excludedTags?: string[];
+
+        uselessWords?: string[];
+      },
+    ];
 // ----- jsdoc/lines-before-block -----
-type JsdocLinesBeforeBlock = []|[{
-  
-  checkBlockStarts?: boolean
-  
-  excludedTags?: string[]
-  
-  ignoreSameLine?: boolean
-  
-  ignoreSingleLines?: boolean
-  
-  lines?: number
-}]
+type JsdocLinesBeforeBlock =
+  | []
+  | [
+      {
+        checkBlockStarts?: boolean;
+
+        excludedTags?: string[];
+
+        ignoreSameLine?: boolean;
+
+        ignoreSingleLines?: boolean;
+
+        lines?: number;
+      },
+    ];
 // ----- jsdoc/match-description -----
-type JsdocMatchDescription = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  mainDescription?: (string | boolean | {
-    match?: (string | boolean)
-    message?: string
-  })
-  
-  matchDescription?: string
-  
-  message?: string
-  
-  nonemptyTags?: boolean
-  
-  tags?: {
-    [k: string]: (string | true | {
-      match?: (string | true)
-      message?: string
-    })
-  }
-}]
+type JsdocMatchDescription =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        mainDescription?:
+          | string
+          | boolean
+          | {
+              match?: string | boolean;
+              message?: string;
+            };
+
+        matchDescription?: string;
+
+        message?: string;
+
+        nonemptyTags?: boolean;
+
+        tags?: {
+          [k: string]:
+            | string
+            | true
+            | {
+                match?: string | true;
+                message?: string;
+              };
+        };
+      },
+    ];
 // ----- jsdoc/match-name -----
-type JsdocMatchName = []|[{
-  
-  match: {
-    
-    allowName?: string
-    
-    comment?: string
-    
-    context?: string
-    
-    disallowName?: string
-    
-    message?: string
-    
-    replacement?: string
-    
-    tags?: string[]
-  }[]
-}]
+type JsdocMatchName =
+  | []
+  | [
+      {
+        match: {
+          allowName?: string;
+
+          comment?: string;
+
+          context?: string;
+
+          disallowName?: string;
+
+          message?: string;
+
+          replacement?: string;
+
+          tags?: string[];
+        }[];
+      },
+    ];
 // ----- jsdoc/multiline-blocks -----
-type JsdocMultilineBlocks = []|[{
-  
-  allowMultipleTags?: boolean
-  
-  minimumLengthForMultiline?: number
-  
-  multilineTags?: ("*" | string[])
-  
-  noFinalLineText?: boolean
-  
-  noMultilineBlocks?: boolean
-  
-  noSingleLineBlocks?: boolean
-  
-  noZeroLineText?: boolean
-  
-  requireSingleLineUnderCount?: number
-  
-  singleLineTags?: string[]
-}]
+type JsdocMultilineBlocks =
+  | []
+  | [
+      {
+        allowMultipleTags?: boolean;
+
+        minimumLengthForMultiline?: number;
+
+        multilineTags?: "*" | string[];
+
+        noFinalLineText?: boolean;
+
+        noMultilineBlocks?: boolean;
+
+        noSingleLineBlocks?: boolean;
+
+        noZeroLineText?: boolean;
+
+        requireSingleLineUnderCount?: number;
+
+        singleLineTags?: string[];
+      },
+    ];
 // ----- jsdoc/no-bad-blocks -----
-type JsdocNoBadBlocks = []|[{
-  
-  ignore?: string[]
-  
-  preventAllMultiAsteriskBlocks?: boolean
-}]
+type JsdocNoBadBlocks =
+  | []
+  | [
+      {
+        ignore?: string[];
+
+        preventAllMultiAsteriskBlocks?: boolean;
+      },
+    ];
 // ----- jsdoc/no-blank-blocks -----
-type JsdocNoBlankBlocks = []|[{
-  
-  enableFixer?: boolean
-}]
+type JsdocNoBlankBlocks =
+  | []
+  | [
+      {
+        enableFixer?: boolean;
+      },
+    ];
 // ----- jsdoc/no-defaults -----
-type JsdocNoDefaults = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  noOptionalParamNames?: boolean
-}]
+type JsdocNoDefaults =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        noOptionalParamNames?: boolean;
+      },
+    ];
 // ----- jsdoc/no-missing-syntax -----
-type JsdocNoMissingSyntax = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-    message?: string
-    minimum?: number
-  })[]
-}]
+type JsdocNoMissingSyntax =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+              message?: string;
+              minimum?: number;
+            }
+        )[];
+      },
+    ];
 // ----- jsdoc/no-multi-asterisks -----
-type JsdocNoMultiAsterisks = []|[{
-  
-  allowWhitespace?: boolean
-  
-  preventAtEnd?: boolean
-  
-  preventAtMiddleLines?: boolean
-}]
+type JsdocNoMultiAsterisks =
+  | []
+  | [
+      {
+        allowWhitespace?: boolean;
+
+        preventAtEnd?: boolean;
+
+        preventAtMiddleLines?: boolean;
+      },
+    ];
 // ----- jsdoc/no-restricted-syntax -----
-type JsdocNoRestrictedSyntax = []|[{
-  
-  contexts: (string | {
-    comment?: string
-    context?: string
-    message?: string
-  })[]
-}]
+type JsdocNoRestrictedSyntax =
+  | []
+  | [
+      {
+        contexts: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+              message?: string;
+            }
+        )[];
+      },
+    ];
 // ----- jsdoc/no-types -----
-type JsdocNoTypes = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-}]
+type JsdocNoTypes =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+      },
+    ];
 // ----- jsdoc/no-undefined-types -----
-type JsdocNoUndefinedTypes = []|[{
-  
-  checkUsedTypedefs?: boolean
-  
-  definedTypes?: string[]
-  
-  disableReporting?: boolean
-  
-  markVariablesAsUsed?: boolean
-}]
+type JsdocNoUndefinedTypes =
+  | []
+  | [
+      {
+        checkUsedTypedefs?: boolean;
+
+        definedTypes?: string[];
+
+        disableReporting?: boolean;
+
+        markVariablesAsUsed?: boolean;
+      },
+    ];
 // ----- jsdoc/prefer-import-tag -----
-type JsdocPreferImportTag = []|[{
-  
-  enableFixer?: boolean
-  
-  exemptTypedefs?: boolean
-  
-  outputType?: ("named-import" | "namespaced-import")
-}]
+type JsdocPreferImportTag =
+  | []
+  | [
+      {
+        enableFixer?: boolean;
+
+        exemptTypedefs?: boolean;
+
+        outputType?: "named-import" | "namespaced-import";
+      },
+    ];
 // ----- jsdoc/require-asterisk-prefix -----
-type JsdocRequireAsteriskPrefix = []|[("always" | "never" | "any")]|[("always" | "never" | "any"), {
-  
-  tags?: {
-    
-    always?: string[]
-    
-    any?: string[]
-    
-    never?: string[]
-  }
-}]
+type JsdocRequireAsteriskPrefix =
+  | []
+  | ["always" | "never" | "any"]
+  | [
+      "always" | "never" | "any",
+      {
+        tags?: {
+          always?: string[];
+
+          any?: string[];
+
+          never?: string[];
+        };
+      },
+    ];
 // ----- jsdoc/require-description -----
-type JsdocRequireDescription = []|[{
-  
-  checkConstructors?: boolean
-  
-  checkGetters?: boolean
-  
-  checkSetters?: boolean
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  descriptionStyle?: ("body" | "tag" | "any")
-  
-  exemptedBy?: string[]
-}]
+type JsdocRequireDescription =
+  | []
+  | [
+      {
+        checkConstructors?: boolean;
+
+        checkGetters?: boolean;
+
+        checkSetters?: boolean;
+
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        descriptionStyle?: "body" | "tag" | "any";
+
+        exemptedBy?: string[];
+      },
+    ];
 // ----- jsdoc/require-description-complete-sentence -----
-type JsdocRequireDescriptionCompleteSentence = []|[{
-  
-  abbreviations?: string[]
-  
-  newlineBeforeCapsAssumesBadSentenceEnd?: boolean
-  
-  tags?: string[]
-}]
+type JsdocRequireDescriptionCompleteSentence =
+  | []
+  | [
+      {
+        abbreviations?: string[];
+
+        newlineBeforeCapsAssumesBadSentenceEnd?: boolean;
+
+        tags?: string[];
+      },
+    ];
 // ----- jsdoc/require-example -----
-type JsdocRequireExample = []|[{
-  
-  checkConstructors?: boolean
-  
-  checkGetters?: boolean
-  
-  checkSetters?: boolean
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  enableFixer?: boolean
-  
-  exemptedBy?: string[]
-  
-  exemptNoArguments?: boolean
-}]
+type JsdocRequireExample =
+  | []
+  | [
+      {
+        checkConstructors?: boolean;
+
+        checkGetters?: boolean;
+
+        checkSetters?: boolean;
+
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        enableFixer?: boolean;
+
+        exemptedBy?: string[];
+
+        exemptNoArguments?: boolean;
+      },
+    ];
 // ----- jsdoc/require-file-overview -----
-type JsdocRequireFileOverview = []|[{
-  
-  tags?: {
-    [k: string]: {
-      initialCommentsOnly?: boolean
-      mustExist?: boolean
-      preventDuplicates?: boolean
-    }
-  }
-}]
+type JsdocRequireFileOverview =
+  | []
+  | [
+      {
+        tags?: {
+          [k: string]: {
+            initialCommentsOnly?: boolean;
+            mustExist?: boolean;
+            preventDuplicates?: boolean;
+          };
+        };
+      },
+    ];
 // ----- jsdoc/require-hyphen-before-param-description -----
-type JsdocRequireHyphenBeforeParamDescription = []|[("always" | "never")]|[("always" | "never"), {
-  
-  tags?: ({
-    [k: string]: ("always" | "never")
-  } | "any")
-}]
+type JsdocRequireHyphenBeforeParamDescription =
+  | []
+  | ["always" | "never"]
+  | [
+      "always" | "never",
+      {
+        tags?:
+          | {
+              [k: string]: "always" | "never";
+            }
+          | "any";
+      },
+    ];
 // ----- jsdoc/require-jsdoc -----
-type JsdocRequireJsdoc = []|[{
-  
-  checkAllFunctionExpressions?: boolean
-  
-  checkConstructors?: boolean
-  
-  checkGetters?: (boolean | "no-setter")
-  
-  checkSetters?: (boolean | "no-getter")
-  
-  contexts?: (string | {
-    context?: string
-    inlineCommentBlock?: boolean
-    minLineCount?: number
-  })[]
-  
-  enableFixer?: boolean
-  
-  exemptEmptyConstructors?: boolean
-  
-  exemptEmptyFunctions?: boolean
-  
-  exemptOverloadedImplementations?: boolean
-  
-  fixerMessage?: string
-  
-  minLineCount?: number
-  
-  publicOnly?: (boolean | {
-    ancestorsOnly?: boolean
-    cjs?: boolean
-    esm?: boolean
-    window?: boolean
-  })
-  
-  require?: {
-    
-    ArrowFunctionExpression?: boolean
-    
-    ClassDeclaration?: boolean
-    
-    ClassExpression?: boolean
-    
-    FunctionDeclaration?: boolean
-    
-    FunctionExpression?: boolean
-    
-    MethodDefinition?: boolean
-  }
-  
-  skipInterveningOverloadedDeclarations?: boolean
-}]
+type JsdocRequireJsdoc =
+  | []
+  | [
+      {
+        checkAllFunctionExpressions?: boolean;
+
+        checkConstructors?: boolean;
+
+        checkGetters?: boolean | "no-setter";
+
+        checkSetters?: boolean | "no-getter";
+
+        contexts?: (
+          | string
+          | {
+              context?: string;
+              inlineCommentBlock?: boolean;
+              minLineCount?: number;
+            }
+        )[];
+
+        enableFixer?: boolean;
+
+        exemptEmptyConstructors?: boolean;
+
+        exemptEmptyFunctions?: boolean;
+
+        exemptOverloadedImplementations?: boolean;
+
+        fixerMessage?: string;
+
+        minLineCount?: number;
+
+        publicOnly?:
+          | boolean
+          | {
+              ancestorsOnly?: boolean;
+              cjs?: boolean;
+              esm?: boolean;
+              window?: boolean;
+            };
+
+        require?: {
+          ArrowFunctionExpression?: boolean;
+
+          ClassDeclaration?: boolean;
+
+          ClassExpression?: boolean;
+
+          FunctionDeclaration?: boolean;
+
+          FunctionExpression?: boolean;
+
+          MethodDefinition?: boolean;
+        };
+
+        skipInterveningOverloadedDeclarations?: boolean;
+      },
+    ];
 // ----- jsdoc/require-param -----
-type JsdocRequireParam = []|[{
-  
-  autoIncrementBase?: number
-  
-  checkConstructors?: boolean
-  
-  checkDestructured?: boolean
-  
-  checkDestructuredRoots?: boolean
-  
-  checkGetters?: boolean
-  
-  checkRestProperty?: boolean
-  
-  checkSetters?: boolean
-  
-  checkTypesPattern?: string
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  enableFixer?: boolean
-  
-  enableRestElementFixer?: boolean
-  
-  enableRootFixer?: boolean
-  
-  exemptedBy?: string[]
-  
-  ignoreWhenAllParamsMissing?: boolean
-  
-  interfaceExemptsParamsCheck?: boolean
-  
-  unnamedRootBase?: string[]
-  
-  useDefaultObjectProperties?: boolean
-}]
+type JsdocRequireParam =
+  | []
+  | [
+      {
+        autoIncrementBase?: number;
+
+        checkConstructors?: boolean;
+
+        checkDestructured?: boolean;
+
+        checkDestructuredRoots?: boolean;
+
+        checkGetters?: boolean;
+
+        checkRestProperty?: boolean;
+
+        checkSetters?: boolean;
+
+        checkTypesPattern?: string;
+
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        enableFixer?: boolean;
+
+        enableRestElementFixer?: boolean;
+
+        enableRootFixer?: boolean;
+
+        exemptedBy?: string[];
+
+        ignoreWhenAllParamsMissing?: boolean;
+
+        interfaceExemptsParamsCheck?: boolean;
+
+        unnamedRootBase?: string[];
+
+        useDefaultObjectProperties?: boolean;
+      },
+    ];
 // ----- jsdoc/require-param-description -----
-type JsdocRequireParamDescription = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  defaultDestructuredRootDescription?: string
-  
-  setDefaultDestructuredRootDescription?: boolean
-}]
+type JsdocRequireParamDescription =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        defaultDestructuredRootDescription?: string;
+
+        setDefaultDestructuredRootDescription?: boolean;
+      },
+    ];
 // ----- jsdoc/require-param-name -----
-type JsdocRequireParamName = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-}]
+type JsdocRequireParamName =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+      },
+    ];
 // ----- jsdoc/require-param-type -----
-type JsdocRequireParamType = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  defaultDestructuredRootType?: string
-  
-  setDefaultDestructuredRootType?: boolean
-}]
+type JsdocRequireParamType =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        defaultDestructuredRootType?: string;
+
+        setDefaultDestructuredRootType?: boolean;
+      },
+    ];
 // ----- jsdoc/require-rejects -----
-type JsdocRequireRejects = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  exemptedBy?: string[]
-}]
+type JsdocRequireRejects =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        exemptedBy?: string[];
+      },
+    ];
 // ----- jsdoc/require-returns -----
-type JsdocRequireReturns = []|[{
-  
-  checkConstructors?: boolean
-  
-  checkGetters?: boolean
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-    forceRequireReturn?: boolean
-  })[]
-  
-  enableFixer?: boolean
-  
-  exemptedBy?: string[]
-  
-  forceRequireReturn?: boolean
-  
-  forceReturnsWithAsync?: boolean
-  
-  publicOnly?: (boolean | {
-    ancestorsOnly?: boolean
-    cjs?: boolean
-    esm?: boolean
-    window?: boolean
-  })
-}]
+type JsdocRequireReturns =
+  | []
+  | [
+      {
+        checkConstructors?: boolean;
+
+        checkGetters?: boolean;
+
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+              forceRequireReturn?: boolean;
+            }
+        )[];
+
+        enableFixer?: boolean;
+
+        exemptedBy?: string[];
+
+        forceRequireReturn?: boolean;
+
+        forceReturnsWithAsync?: boolean;
+
+        publicOnly?:
+          | boolean
+          | {
+              ancestorsOnly?: boolean;
+              cjs?: boolean;
+              esm?: boolean;
+              window?: boolean;
+            };
+      },
+    ];
 // ----- jsdoc/require-returns-check -----
-type JsdocRequireReturnsCheck = []|[{
-  
-  exemptAsync?: boolean
-  
-  exemptGenerators?: boolean
-  
-  noNativeTypes?: boolean
-  
-  reportMissingReturnForUndefinedTypes?: boolean
-}]
+type JsdocRequireReturnsCheck =
+  | []
+  | [
+      {
+        exemptAsync?: boolean;
+
+        exemptGenerators?: boolean;
+
+        noNativeTypes?: boolean;
+
+        reportMissingReturnForUndefinedTypes?: boolean;
+      },
+    ];
 // ----- jsdoc/require-returns-description -----
-type JsdocRequireReturnsDescription = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-}]
+type JsdocRequireReturnsDescription =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+      },
+    ];
 // ----- jsdoc/require-returns-type -----
-type JsdocRequireReturnsType = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-}]
+type JsdocRequireReturnsType =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+      },
+    ];
 // ----- jsdoc/require-tags -----
-type JsdocRequireTags = []|[{
-  
-  tags?: (string | {
-    context?: string
-    tag?: string
-    [k: string]: unknown | undefined
-  })[]
-}]
+type JsdocRequireTags =
+  | []
+  | [
+      {
+        tags?: (
+          | string
+          | {
+              context?: string;
+              tag?: string;
+              [k: string]: unknown | undefined;
+            }
+        )[];
+      },
+    ];
 // ----- jsdoc/require-template -----
-type JsdocRequireTemplate = []|[{
-  
-  exemptedBy?: string[]
-  
-  requireSeparateTemplates?: boolean
-}]
+type JsdocRequireTemplate =
+  | []
+  | [
+      {
+        exemptedBy?: string[];
+
+        requireSeparateTemplates?: boolean;
+      },
+    ];
 // ----- jsdoc/require-throws -----
-type JsdocRequireThrows = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  exemptedBy?: string[]
-}]
+type JsdocRequireThrows =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        exemptedBy?: string[];
+      },
+    ];
 // ----- jsdoc/require-yields -----
-type JsdocRequireYields = []|[{
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  exemptedBy?: string[]
-  
-  forceRequireNext?: boolean
-  
-  forceRequireYields?: boolean
-  
-  next?: boolean
-  
-  nextWithGeneratorTag?: boolean
-  
-  withGeneratorTag?: boolean
-}]
+type JsdocRequireYields =
+  | []
+  | [
+      {
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        exemptedBy?: string[];
+
+        forceRequireNext?: boolean;
+
+        forceRequireYields?: boolean;
+
+        next?: boolean;
+
+        nextWithGeneratorTag?: boolean;
+
+        withGeneratorTag?: boolean;
+      },
+    ];
 // ----- jsdoc/require-yields-check -----
-type JsdocRequireYieldsCheck = []|[{
-  
-  checkGeneratorsOnly?: boolean
-  
-  contexts?: (string | {
-    comment?: string
-    context?: string
-  })[]
-  
-  next?: boolean
-}]
+type JsdocRequireYieldsCheck =
+  | []
+  | [
+      {
+        checkGeneratorsOnly?: boolean;
+
+        contexts?: (
+          | string
+          | {
+              comment?: string;
+              context?: string;
+            }
+        )[];
+
+        next?: boolean;
+      },
+    ];
 // ----- jsdoc/sort-tags -----
-type JsdocSortTags = []|[{
-  
-  alphabetizeExtras?: boolean
-  
-  linesBetween?: number
-  
-  reportIntraTagGroupSpacing?: boolean
-  
-  reportTagGroupSpacing?: boolean
-  
-  tagExceptions?: {
-    [k: string]: number
-  }
-  
-  tagSequence?: {
-    
-    tags?: string[]
-  }[]
-}]
+type JsdocSortTags =
+  | []
+  | [
+      {
+        alphabetizeExtras?: boolean;
+
+        linesBetween?: number;
+
+        reportIntraTagGroupSpacing?: boolean;
+
+        reportTagGroupSpacing?: boolean;
+
+        tagExceptions?: {
+          [k: string]: number;
+        };
+
+        tagSequence?: {
+          tags?: string[];
+        }[];
+      },
+    ];
 // ----- jsdoc/tag-lines -----
-type JsdocTagLines = []|[("always" | "any" | "never")]|[("always" | "any" | "never"), {
-  
-  applyToEndTag?: boolean
-  
-  count?: number
-  
-  endLines?: (number | null)
-  
-  maxBlockLines?: (number | null)
-  
-  startLines?: (number | null)
-  
-  startLinesWithNoTags?: number
-  
-  tags?: {
-    [k: string]: {
-      count?: number
-      lines?: ("always" | "never" | "any")
-    }
-  }
-}]
+type JsdocTagLines =
+  | []
+  | ["always" | "any" | "never"]
+  | [
+      "always" | "any" | "never",
+      {
+        applyToEndTag?: boolean;
+
+        count?: number;
+
+        endLines?: number | null;
+
+        maxBlockLines?: number | null;
+
+        startLines?: number | null;
+
+        startLinesWithNoTags?: number;
+
+        tags?: {
+          [k: string]: {
+            count?: number;
+            lines?: "always" | "never" | "any";
+          };
+        };
+      },
+    ];
 // ----- jsdoc/text-escaping -----
-type JsdocTextEscaping = []|[{
-  
-  escapeHTML?: boolean
-  
-  escapeMarkdown?: boolean
-}]
+type JsdocTextEscaping =
+  | []
+  | [
+      {
+        escapeHTML?: boolean;
+
+        escapeMarkdown?: boolean;
+      },
+    ];
 // ----- jsdoc/ts-method-signature-style -----
-type JsdocTsMethodSignatureStyle = []|[("method" | "property")]|[("method" | "property"), {
-  
-  enableFixer?: boolean
-}]
+type JsdocTsMethodSignatureStyle =
+  | []
+  | ["method" | "property"]
+  | [
+      "method" | "property",
+      {
+        enableFixer?: boolean;
+      },
+    ];
 // ----- jsdoc/ts-no-unnecessary-template-expression -----
-type JsdocTsNoUnnecessaryTemplateExpression = []|[{
-  
-  enableFixer?: boolean
-}]
+type JsdocTsNoUnnecessaryTemplateExpression =
+  | []
+  | [
+      {
+        enableFixer?: boolean;
+      },
+    ];
 // ----- jsdoc/ts-prefer-function-type -----
-type JsdocTsPreferFunctionType = []|[{
-  
-  enableFixer?: boolean
-}]
+type JsdocTsPreferFunctionType =
+  | []
+  | [
+      {
+        enableFixer?: boolean;
+      },
+    ];
 // ----- jsdoc/type-formatting -----
-type JsdocTypeFormatting = []|[{
-  
-  arrayBrackets?: ("angle" | "square")
-  
-  arrowFunctionPostReturnMarkerSpacing?: string
-  
-  arrowFunctionPreReturnMarkerSpacing?: string
-  
-  enableFixer?: boolean
-  
-  functionOrClassParameterSpacing?: string
-  
-  functionOrClassPostGenericSpacing?: string
-  
-  functionOrClassPostReturnMarkerSpacing?: string
-  
-  functionOrClassPreReturnMarkerSpacing?: string
-  
-  functionOrClassTypeParameterSpacing?: string
-  
-  genericAndTupleElementSpacing?: string
-  
-  genericDot?: boolean
-  
-  keyValuePostColonSpacing?: string
-  
-  keyValuePostKeySpacing?: string
-  
-  keyValuePostOptionalSpacing?: string
-  
-  keyValuePostVariadicSpacing?: string
-  
-  methodQuotes?: ("double" | "single")
-  
-  objectFieldIndent?: string
-  
-  objectFieldQuote?: ("double" | "single" | null)
-  
-  objectFieldSeparator?: ("comma" | "comma-and-linebreak" | "linebreak" | "semicolon" | "semicolon-and-linebreak")
-  
-  objectFieldSeparatorOptionalLinebreak?: boolean
-  
-  objectFieldSeparatorTrailingPunctuation?: boolean
-  
-  objectTypeBracketSpacing?: string
-  
-  parameterDefaultValueSpacing?: string
-  
-  postMethodNameSpacing?: string
-  
-  postNewSpacing?: string
-  
-  separatorForSingleObjectField?: boolean
-  
-  stringQuotes?: ("double" | "single")
-  
-  trailingPunctuationMultilineOnly?: boolean
-  
-  typeBracketSpacing?: string
-  
-  unionSpacing?: string
-}]
+type JsdocTypeFormatting =
+  | []
+  | [
+      {
+        arrayBrackets?: "angle" | "square";
+
+        arrowFunctionPostReturnMarkerSpacing?: string;
+
+        arrowFunctionPreReturnMarkerSpacing?: string;
+
+        enableFixer?: boolean;
+
+        functionOrClassParameterSpacing?: string;
+
+        functionOrClassPostGenericSpacing?: string;
+
+        functionOrClassPostReturnMarkerSpacing?: string;
+
+        functionOrClassPreReturnMarkerSpacing?: string;
+
+        functionOrClassTypeParameterSpacing?: string;
+
+        genericAndTupleElementSpacing?: string;
+
+        genericDot?: boolean;
+
+        keyValuePostColonSpacing?: string;
+
+        keyValuePostKeySpacing?: string;
+
+        keyValuePostOptionalSpacing?: string;
+
+        keyValuePostVariadicSpacing?: string;
+
+        methodQuotes?: "double" | "single";
+
+        objectFieldIndent?: string;
+
+        objectFieldQuote?: "double" | "single" | null;
+
+        objectFieldSeparator?:
+          | "comma"
+          | "comma-and-linebreak"
+          | "linebreak"
+          | "semicolon"
+          | "semicolon-and-linebreak";
+
+        objectFieldSeparatorOptionalLinebreak?: boolean;
+
+        objectFieldSeparatorTrailingPunctuation?: boolean;
+
+        objectTypeBracketSpacing?: string;
+
+        parameterDefaultValueSpacing?: string;
+
+        postMethodNameSpacing?: string;
+
+        postNewSpacing?: string;
+
+        separatorForSingleObjectField?: boolean;
+
+        stringQuotes?: "double" | "single";
+
+        trailingPunctuationMultilineOnly?: boolean;
+
+        typeBracketSpacing?: string;
+
+        unionSpacing?: string;
+      },
+    ];
 // ----- jsdoc/valid-types -----
-type JsdocValidTypes = []|[{
-  
-  allowEmptyNamepaths?: boolean
-}]
+type JsdocValidTypes =
+  | []
+  | [
+      {
+        allowEmptyNamepaths?: boolean;
+      },
+    ];
 // ----- promise/always-return -----
-type PromiseAlwaysReturn = []|[{
-  ignoreLastCallback?: boolean
-  ignoreAssignmentVariable?: string[]
-}]
+type PromiseAlwaysReturn =
+  | []
+  | [
+      {
+        ignoreLastCallback?: boolean;
+        ignoreAssignmentVariable?: string[];
+      },
+    ];
 // ----- promise/catch-or-return -----
-type PromiseCatchOrReturn = []|[{
-  allowFinally?: boolean
-  allowThen?: boolean
-  allowThenStrict?: boolean
-  terminationMethod?: (string | string[])
-}]
+type PromiseCatchOrReturn =
+  | []
+  | [
+      {
+        allowFinally?: boolean;
+        allowThen?: boolean;
+        allowThenStrict?: boolean;
+        terminationMethod?: string | string[];
+      },
+    ];
 // ----- promise/no-callback-in-promise -----
-type PromiseNoCallbackInPromise = []|[{
-  exceptions?: string[]
-  timeoutsErr?: boolean
-}]
+type PromiseNoCallbackInPromise =
+  | []
+  | [
+      {
+        exceptions?: string[];
+        timeoutsErr?: boolean;
+      },
+    ];
 // ----- promise/no-promise-in-callback -----
-type PromiseNoPromiseInCallback = []|[{
-  exemptDeclarations?: boolean
-}]
+type PromiseNoPromiseInCallback =
+  | []
+  | [
+      {
+        exemptDeclarations?: boolean;
+      },
+    ];
 // ----- promise/no-return-wrap -----
-type PromiseNoReturnWrap = []|[{
-  allowReject?: boolean
-}]
+type PromiseNoReturnWrap =
+  | []
+  | [
+      {
+        allowReject?: boolean;
+      },
+    ];
 // ----- promise/param-names -----
-type PromiseParamNames = []|[{
-  resolvePattern?: string
-  rejectPattern?: string
-}]
+type PromiseParamNames =
+  | []
+  | [
+      {
+        resolvePattern?: string;
+        rejectPattern?: string;
+      },
+    ];
 // ----- promise/prefer-await-to-then -----
-type PromisePreferAwaitToThen = []|[{
-  strict?: boolean
-  [k: string]: unknown | undefined
-}]
+type PromisePreferAwaitToThen =
+  | []
+  | [
+      {
+        strict?: boolean;
+        [k: string]: unknown | undefined;
+      },
+    ];
 // ----- promise/spec-only -----
-type PromiseSpecOnly = []|[{
-  allowedMethods?: string[]
-}]
+type PromiseSpecOnly =
+  | []
+  | [
+      {
+        allowedMethods?: string[];
+      },
+    ];
 // ----- promise/valid-params -----
-type PromiseValidParams = []|[{
-  exclude?: string[]
-}]
+type PromiseValidParams =
+  | []
+  | [
+      {
+        exclude?: string[];
+      },
+    ];
 // ----- typescript/array-type -----
-type TypescriptArrayType = []|[{
-  
-  default?: ("array" | "generic" | "array-simple")
-  
-  readonly?: ("array" | "generic" | "array-simple")
-}]
+type TypescriptArrayType =
+  | []
+  | [
+      {
+        default?: "array" | "generic" | "array-simple";
+
+        readonly?: "array" | "generic" | "array-simple";
+      },
+    ];
 // ----- typescript/ban-ts-comment -----
-type TypescriptBanTsComment = []|[{
-  
-  minimumDescriptionLength?: number
-  
-  "ts-check"?: (boolean | "allow-with-description" | {
-    descriptionFormat?: string
-  })
-  
-  "ts-expect-error"?: (boolean | "allow-with-description" | {
-    descriptionFormat?: string
-  })
-  
-  "ts-ignore"?: (boolean | "allow-with-description" | {
-    descriptionFormat?: string
-  })
-  
-  "ts-nocheck"?: (boolean | "allow-with-description" | {
-    descriptionFormat?: string
-  })
-}]
+type TypescriptBanTsComment =
+  | []
+  | [
+      {
+        minimumDescriptionLength?: number;
+
+        "ts-check"?:
+          | boolean
+          | "allow-with-description"
+          | {
+              descriptionFormat?: string;
+            };
+
+        "ts-expect-error"?:
+          | boolean
+          | "allow-with-description"
+          | {
+              descriptionFormat?: string;
+            };
+
+        "ts-ignore"?:
+          | boolean
+          | "allow-with-description"
+          | {
+              descriptionFormat?: string;
+            };
+
+        "ts-nocheck"?:
+          | boolean
+          | "allow-with-description"
+          | {
+              descriptionFormat?: string;
+            };
+      },
+    ];
 // ----- typescript/class-literal-property-style -----
-type TypescriptClassLiteralPropertyStyle = []|[("fields" | "getters")]
+type TypescriptClassLiteralPropertyStyle = [] | ["fields" | "getters"];
 // ----- typescript/class-methods-use-this -----
-type TypescriptClassMethodsUseThis = []|[{
-  
-  enforceForClassFields?: boolean
-  
-  exceptMethods?: string[]
-  
-  ignoreClassesThatImplementAnInterface?: (boolean | "public-fields")
-  
-  ignoreOverrideMethods?: boolean
-}]
+type TypescriptClassMethodsUseThis =
+  | []
+  | [
+      {
+        enforceForClassFields?: boolean;
+
+        exceptMethods?: string[];
+
+        ignoreClassesThatImplementAnInterface?: boolean | "public-fields";
+
+        ignoreOverrideMethods?: boolean;
+      },
+    ];
 // ----- typescript/consistent-generic-constructors -----
-type TypescriptConsistentGenericConstructors = []|[("type-annotation" | "constructor")]
+type TypescriptConsistentGenericConstructors = [] | ["type-annotation" | "constructor"];
 // ----- typescript/consistent-indexed-object-style -----
-type TypescriptConsistentIndexedObjectStyle = []|[("record" | "index-signature")]
+type TypescriptConsistentIndexedObjectStyle = [] | ["record" | "index-signature"];
 // ----- typescript/consistent-return -----
-type TypescriptConsistentReturn = []|[{
-  treatUndefinedAsUnspecified?: boolean
-}]
+type TypescriptConsistentReturn =
+  | []
+  | [
+      {
+        treatUndefinedAsUnspecified?: boolean;
+      },
+    ];
 // ----- typescript/consistent-type-assertions -----
-type TypescriptConsistentTypeAssertions = []|[({
-  
-  assertionStyle: "never"
-} | {
-  
-  arrayLiteralTypeAssertions?: ("allow" | "allow-as-parameter" | "never")
-  
-  assertionStyle?: ("as" | "angle-bracket")
-  
-  objectLiteralTypeAssertions?: ("allow" | "allow-as-parameter" | "never")
-})]
+type TypescriptConsistentTypeAssertions =
+  | []
+  | [
+      | {
+          assertionStyle: "never";
+        }
+      | {
+          arrayLiteralTypeAssertions?: "allow" | "allow-as-parameter" | "never";
+
+          assertionStyle?: "as" | "angle-bracket";
+
+          objectLiteralTypeAssertions?: "allow" | "allow-as-parameter" | "never";
+        },
+    ];
 // ----- typescript/consistent-type-definitions -----
-type TypescriptConsistentTypeDefinitions = []|[("interface" | "type")]
+type TypescriptConsistentTypeDefinitions = [] | ["interface" | "type"];
 // ----- typescript/consistent-type-exports -----
-type TypescriptConsistentTypeExports = []|[{
-  
-  fixMixedExportsWithInlineTypeSpecifier?: boolean
-}]
+type TypescriptConsistentTypeExports =
+  | []
+  | [
+      {
+        fixMixedExportsWithInlineTypeSpecifier?: boolean;
+      },
+    ];
 // ----- typescript/consistent-type-imports -----
-type TypescriptConsistentTypeImports = []|[{
-  
-  disallowTypeAnnotations?: boolean
-  
-  fixStyle?: ("separate-type-imports" | "inline-type-imports")
-  
-  prefer?: ("type-imports" | "no-type-imports")
-}]
+type TypescriptConsistentTypeImports =
+  | []
+  | [
+      {
+        disallowTypeAnnotations?: boolean;
+
+        fixStyle?: "separate-type-imports" | "inline-type-imports";
+
+        prefer?: "type-imports" | "no-type-imports";
+      },
+    ];
 // ----- typescript/dot-notation -----
-type TypescriptDotNotation = []|[{
-  
-  allowIndexSignaturePropertyAccess?: boolean
-  
-  allowKeywords?: boolean
-  
-  allowPattern?: string
-  
-  allowPrivateClassPropertyAccess?: boolean
-  
-  allowProtectedClassPropertyAccess?: boolean
-}]
+type TypescriptDotNotation =
+  | []
+  | [
+      {
+        allowIndexSignaturePropertyAccess?: boolean;
+
+        allowKeywords?: boolean;
+
+        allowPattern?: string;
+
+        allowPrivateClassPropertyAccess?: boolean;
+
+        allowProtectedClassPropertyAccess?: boolean;
+      },
+    ];
 // ----- typescript/explicit-function-return-type -----
-type TypescriptExplicitFunctionReturnType = []|[{
-  
-  allowConciseArrowFunctionExpressionsStartingWithVoid?: boolean
-  
-  allowDirectConstAssertionInArrowFunctions?: boolean
-  
-  allowedNames?: string[]
-  
-  allowExpressions?: boolean
-  
-  allowFunctionsWithoutTypeParameters?: boolean
-  
-  allowHigherOrderFunctions?: boolean
-  
-  allowIIFEs?: boolean
-  
-  allowTypedFunctionExpressions?: boolean
-}]
+type TypescriptExplicitFunctionReturnType =
+  | []
+  | [
+      {
+        allowConciseArrowFunctionExpressionsStartingWithVoid?: boolean;
+
+        allowDirectConstAssertionInArrowFunctions?: boolean;
+
+        allowedNames?: string[];
+
+        allowExpressions?: boolean;
+
+        allowFunctionsWithoutTypeParameters?: boolean;
+
+        allowHigherOrderFunctions?: boolean;
+
+        allowIIFEs?: boolean;
+
+        allowTypedFunctionExpressions?: boolean;
+      },
+    ];
 // ----- typescript/explicit-member-accessibility -----
-type TypescriptExplicitMemberAccessibility = []|[{
-  
-  accessibility?: ("explicit" | "no-public" | "off")
-  
-  ignoredMethodNames?: string[]
-  
-  overrides?: {
-    
-    accessors?: ("explicit" | "no-public" | "off")
-    
-    constructors?: ("explicit" | "no-public" | "off")
-    
-    methods?: ("explicit" | "no-public" | "off")
-    
-    parameterProperties?: ("explicit" | "no-public" | "off")
-    
-    properties?: ("explicit" | "no-public" | "off")
-  }
-}]
+type TypescriptExplicitMemberAccessibility =
+  | []
+  | [
+      {
+        accessibility?: "explicit" | "no-public" | "off";
+
+        ignoredMethodNames?: string[];
+
+        overrides?: {
+          accessors?: "explicit" | "no-public" | "off";
+
+          constructors?: "explicit" | "no-public" | "off";
+
+          methods?: "explicit" | "no-public" | "off";
+
+          parameterProperties?: "explicit" | "no-public" | "off";
+
+          properties?: "explicit" | "no-public" | "off";
+        };
+      },
+    ];
 // ----- typescript/explicit-module-boundary-types -----
-type TypescriptExplicitModuleBoundaryTypes = []|[{
-  
-  allowArgumentsExplicitlyTypedAsAny?: boolean
-  
-  allowDirectConstAssertionInArrowFunctions?: boolean
-  
-  allowedNames?: string[]
-  
-  allowHigherOrderFunctions?: boolean
-  
-  allowOverloadFunctions?: boolean
-  
-  allowTypedFunctionExpressions?: boolean
-}]
+type TypescriptExplicitModuleBoundaryTypes =
+  | []
+  | [
+      {
+        allowArgumentsExplicitlyTypedAsAny?: boolean;
+
+        allowDirectConstAssertionInArrowFunctions?: boolean;
+
+        allowedNames?: string[];
+
+        allowHigherOrderFunctions?: boolean;
+
+        allowOverloadFunctions?: boolean;
+
+        allowTypedFunctionExpressions?: boolean;
+      },
+    ];
 // ----- typescript/init-declarations -----
-type TypescriptInitDeclarations = ([]|["always"] | []|["never"]|["never", {
-  ignoreForLoopInit?: boolean
-}])
+type TypescriptInitDeclarations =
+  | []
+  | ["always"]
+  | []
+  | ["never"]
+  | [
+      "never",
+      {
+        ignoreForLoopInit?: boolean;
+      },
+    ];
 // ----- typescript/max-params -----
-type TypescriptMaxParams = []|[{
-  
-  countVoidThis?: boolean
-  
-  max?: number
-  
-  maximum?: number
-}]
+type TypescriptMaxParams =
+  | []
+  | [
+      {
+        countVoidThis?: boolean;
+
+        max?: number;
+
+        maximum?: number;
+      },
+    ];
 // ----- typescript/member-ordering -----
-type TypescriptMemberOrdering = []|[{
-  
-  classes?: ("never" | (("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization") | ("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization")[])[] | {
-    memberTypes?: ((("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization") | ("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization")[])[] | "never")
-    optionalityOrder?: ("optional-first" | "required-first")
-    order?: ("alphabetically" | "alphabetically-case-insensitive" | "as-written" | "natural" | "natural-case-insensitive")
-  })
-  
-  classExpressions?: ("never" | (("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization") | ("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization")[])[] | {
-    memberTypes?: ((("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization") | ("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization")[])[] | "never")
-    optionalityOrder?: ("optional-first" | "required-first")
-    order?: ("alphabetically" | "alphabetically-case-insensitive" | "as-written" | "natural" | "natural-case-insensitive")
-  })
-  
-  default?: ("never" | (("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization") | ("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization")[])[] | {
-    memberTypes?: ((("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization") | ("readonly-signature" | "signature" | "readonly-field" | "public-readonly-field" | "public-decorated-readonly-field" | "decorated-readonly-field" | "static-readonly-field" | "public-static-readonly-field" | "instance-readonly-field" | "public-instance-readonly-field" | "abstract-readonly-field" | "public-abstract-readonly-field" | "protected-readonly-field" | "protected-decorated-readonly-field" | "protected-static-readonly-field" | "protected-instance-readonly-field" | "protected-abstract-readonly-field" | "private-readonly-field" | "private-decorated-readonly-field" | "private-static-readonly-field" | "private-instance-readonly-field" | "#private-readonly-field" | "#private-static-readonly-field" | "#private-instance-readonly-field" | "field" | "public-field" | "public-decorated-field" | "decorated-field" | "static-field" | "public-static-field" | "instance-field" | "public-instance-field" | "abstract-field" | "public-abstract-field" | "protected-field" | "protected-decorated-field" | "protected-static-field" | "protected-instance-field" | "protected-abstract-field" | "private-field" | "private-decorated-field" | "private-static-field" | "private-instance-field" | "#private-field" | "#private-static-field" | "#private-instance-field" | "method" | "public-method" | "public-decorated-method" | "decorated-method" | "static-method" | "public-static-method" | "instance-method" | "public-instance-method" | "abstract-method" | "public-abstract-method" | "protected-method" | "protected-decorated-method" | "protected-static-method" | "protected-instance-method" | "protected-abstract-method" | "private-method" | "private-decorated-method" | "private-static-method" | "private-instance-method" | "#private-method" | "#private-static-method" | "#private-instance-method" | "call-signature" | "constructor" | "public-constructor" | "protected-constructor" | "private-constructor" | "accessor" | "public-accessor" | "public-decorated-accessor" | "decorated-accessor" | "static-accessor" | "public-static-accessor" | "instance-accessor" | "public-instance-accessor" | "abstract-accessor" | "public-abstract-accessor" | "protected-accessor" | "protected-decorated-accessor" | "protected-static-accessor" | "protected-instance-accessor" | "protected-abstract-accessor" | "private-accessor" | "private-decorated-accessor" | "private-static-accessor" | "private-instance-accessor" | "#private-accessor" | "#private-static-accessor" | "#private-instance-accessor" | "get" | "public-get" | "public-decorated-get" | "decorated-get" | "static-get" | "public-static-get" | "instance-get" | "public-instance-get" | "abstract-get" | "public-abstract-get" | "protected-get" | "protected-decorated-get" | "protected-static-get" | "protected-instance-get" | "protected-abstract-get" | "private-get" | "private-decorated-get" | "private-static-get" | "private-instance-get" | "#private-get" | "#private-static-get" | "#private-instance-get" | "set" | "public-set" | "public-decorated-set" | "decorated-set" | "static-set" | "public-static-set" | "instance-set" | "public-instance-set" | "abstract-set" | "public-abstract-set" | "protected-set" | "protected-decorated-set" | "protected-static-set" | "protected-instance-set" | "protected-abstract-set" | "private-set" | "private-decorated-set" | "private-static-set" | "private-instance-set" | "#private-set" | "#private-static-set" | "#private-instance-set" | "static-initialization" | "static-static-initialization" | "public-static-static-initialization" | "instance-static-initialization" | "public-instance-static-initialization" | "abstract-static-initialization" | "public-abstract-static-initialization" | "protected-static-static-initialization" | "protected-instance-static-initialization" | "protected-abstract-static-initialization" | "private-static-static-initialization" | "private-instance-static-initialization" | "#private-static-static-initialization" | "#private-instance-static-initialization")[])[] | "never")
-    optionalityOrder?: ("optional-first" | "required-first")
-    order?: ("alphabetically" | "alphabetically-case-insensitive" | "as-written" | "natural" | "natural-case-insensitive")
-  })
-  
-  interfaces?: ("never" | (("readonly-signature" | "signature" | "readonly-field" | "field" | "method" | "constructor") | ("readonly-signature" | "signature" | "readonly-field" | "field" | "method" | "constructor")[])[] | {
-    memberTypes?: ((("readonly-signature" | "signature" | "readonly-field" | "field" | "method" | "constructor") | ("readonly-signature" | "signature" | "readonly-field" | "field" | "method" | "constructor")[])[] | "never")
-    optionalityOrder?: ("optional-first" | "required-first")
-    order?: ("alphabetically" | "alphabetically-case-insensitive" | "as-written" | "natural" | "natural-case-insensitive")
-  })
-  
-  typeLiterals?: ("never" | (("readonly-signature" | "signature" | "readonly-field" | "field" | "method" | "constructor") | ("readonly-signature" | "signature" | "readonly-field" | "field" | "method" | "constructor")[])[] | {
-    memberTypes?: ((("readonly-signature" | "signature" | "readonly-field" | "field" | "method" | "constructor") | ("readonly-signature" | "signature" | "readonly-field" | "field" | "method" | "constructor")[])[] | "never")
-    optionalityOrder?: ("optional-first" | "required-first")
-    order?: ("alphabetically" | "alphabetically-case-insensitive" | "as-written" | "natural" | "natural-case-insensitive")
-  })
-}]
+type TypescriptMemberOrdering =
+  | []
+  | [
+      {
+        classes?:
+          | "never"
+          | (
+              | (
+                  | "readonly-signature"
+                  | "signature"
+                  | "readonly-field"
+                  | "public-readonly-field"
+                  | "public-decorated-readonly-field"
+                  | "decorated-readonly-field"
+                  | "static-readonly-field"
+                  | "public-static-readonly-field"
+                  | "instance-readonly-field"
+                  | "public-instance-readonly-field"
+                  | "abstract-readonly-field"
+                  | "public-abstract-readonly-field"
+                  | "protected-readonly-field"
+                  | "protected-decorated-readonly-field"
+                  | "protected-static-readonly-field"
+                  | "protected-instance-readonly-field"
+                  | "protected-abstract-readonly-field"
+                  | "private-readonly-field"
+                  | "private-decorated-readonly-field"
+                  | "private-static-readonly-field"
+                  | "private-instance-readonly-field"
+                  | "#private-readonly-field"
+                  | "#private-static-readonly-field"
+                  | "#private-instance-readonly-field"
+                  | "field"
+                  | "public-field"
+                  | "public-decorated-field"
+                  | "decorated-field"
+                  | "static-field"
+                  | "public-static-field"
+                  | "instance-field"
+                  | "public-instance-field"
+                  | "abstract-field"
+                  | "public-abstract-field"
+                  | "protected-field"
+                  | "protected-decorated-field"
+                  | "protected-static-field"
+                  | "protected-instance-field"
+                  | "protected-abstract-field"
+                  | "private-field"
+                  | "private-decorated-field"
+                  | "private-static-field"
+                  | "private-instance-field"
+                  | "#private-field"
+                  | "#private-static-field"
+                  | "#private-instance-field"
+                  | "method"
+                  | "public-method"
+                  | "public-decorated-method"
+                  | "decorated-method"
+                  | "static-method"
+                  | "public-static-method"
+                  | "instance-method"
+                  | "public-instance-method"
+                  | "abstract-method"
+                  | "public-abstract-method"
+                  | "protected-method"
+                  | "protected-decorated-method"
+                  | "protected-static-method"
+                  | "protected-instance-method"
+                  | "protected-abstract-method"
+                  | "private-method"
+                  | "private-decorated-method"
+                  | "private-static-method"
+                  | "private-instance-method"
+                  | "#private-method"
+                  | "#private-static-method"
+                  | "#private-instance-method"
+                  | "call-signature"
+                  | "constructor"
+                  | "public-constructor"
+                  | "protected-constructor"
+                  | "private-constructor"
+                  | "accessor"
+                  | "public-accessor"
+                  | "public-decorated-accessor"
+                  | "decorated-accessor"
+                  | "static-accessor"
+                  | "public-static-accessor"
+                  | "instance-accessor"
+                  | "public-instance-accessor"
+                  | "abstract-accessor"
+                  | "public-abstract-accessor"
+                  | "protected-accessor"
+                  | "protected-decorated-accessor"
+                  | "protected-static-accessor"
+                  | "protected-instance-accessor"
+                  | "protected-abstract-accessor"
+                  | "private-accessor"
+                  | "private-decorated-accessor"
+                  | "private-static-accessor"
+                  | "private-instance-accessor"
+                  | "#private-accessor"
+                  | "#private-static-accessor"
+                  | "#private-instance-accessor"
+                  | "get"
+                  | "public-get"
+                  | "public-decorated-get"
+                  | "decorated-get"
+                  | "static-get"
+                  | "public-static-get"
+                  | "instance-get"
+                  | "public-instance-get"
+                  | "abstract-get"
+                  | "public-abstract-get"
+                  | "protected-get"
+                  | "protected-decorated-get"
+                  | "protected-static-get"
+                  | "protected-instance-get"
+                  | "protected-abstract-get"
+                  | "private-get"
+                  | "private-decorated-get"
+                  | "private-static-get"
+                  | "private-instance-get"
+                  | "#private-get"
+                  | "#private-static-get"
+                  | "#private-instance-get"
+                  | "set"
+                  | "public-set"
+                  | "public-decorated-set"
+                  | "decorated-set"
+                  | "static-set"
+                  | "public-static-set"
+                  | "instance-set"
+                  | "public-instance-set"
+                  | "abstract-set"
+                  | "public-abstract-set"
+                  | "protected-set"
+                  | "protected-decorated-set"
+                  | "protected-static-set"
+                  | "protected-instance-set"
+                  | "protected-abstract-set"
+                  | "private-set"
+                  | "private-decorated-set"
+                  | "private-static-set"
+                  | "private-instance-set"
+                  | "#private-set"
+                  | "#private-static-set"
+                  | "#private-instance-set"
+                  | "static-initialization"
+                  | "static-static-initialization"
+                  | "public-static-static-initialization"
+                  | "instance-static-initialization"
+                  | "public-instance-static-initialization"
+                  | "abstract-static-initialization"
+                  | "public-abstract-static-initialization"
+                  | "protected-static-static-initialization"
+                  | "protected-instance-static-initialization"
+                  | "protected-abstract-static-initialization"
+                  | "private-static-static-initialization"
+                  | "private-instance-static-initialization"
+                  | "#private-static-static-initialization"
+                  | "#private-instance-static-initialization"
+                )
+              | (
+                  | "readonly-signature"
+                  | "signature"
+                  | "readonly-field"
+                  | "public-readonly-field"
+                  | "public-decorated-readonly-field"
+                  | "decorated-readonly-field"
+                  | "static-readonly-field"
+                  | "public-static-readonly-field"
+                  | "instance-readonly-field"
+                  | "public-instance-readonly-field"
+                  | "abstract-readonly-field"
+                  | "public-abstract-readonly-field"
+                  | "protected-readonly-field"
+                  | "protected-decorated-readonly-field"
+                  | "protected-static-readonly-field"
+                  | "protected-instance-readonly-field"
+                  | "protected-abstract-readonly-field"
+                  | "private-readonly-field"
+                  | "private-decorated-readonly-field"
+                  | "private-static-readonly-field"
+                  | "private-instance-readonly-field"
+                  | "#private-readonly-field"
+                  | "#private-static-readonly-field"
+                  | "#private-instance-readonly-field"
+                  | "field"
+                  | "public-field"
+                  | "public-decorated-field"
+                  | "decorated-field"
+                  | "static-field"
+                  | "public-static-field"
+                  | "instance-field"
+                  | "public-instance-field"
+                  | "abstract-field"
+                  | "public-abstract-field"
+                  | "protected-field"
+                  | "protected-decorated-field"
+                  | "protected-static-field"
+                  | "protected-instance-field"
+                  | "protected-abstract-field"
+                  | "private-field"
+                  | "private-decorated-field"
+                  | "private-static-field"
+                  | "private-instance-field"
+                  | "#private-field"
+                  | "#private-static-field"
+                  | "#private-instance-field"
+                  | "method"
+                  | "public-method"
+                  | "public-decorated-method"
+                  | "decorated-method"
+                  | "static-method"
+                  | "public-static-method"
+                  | "instance-method"
+                  | "public-instance-method"
+                  | "abstract-method"
+                  | "public-abstract-method"
+                  | "protected-method"
+                  | "protected-decorated-method"
+                  | "protected-static-method"
+                  | "protected-instance-method"
+                  | "protected-abstract-method"
+                  | "private-method"
+                  | "private-decorated-method"
+                  | "private-static-method"
+                  | "private-instance-method"
+                  | "#private-method"
+                  | "#private-static-method"
+                  | "#private-instance-method"
+                  | "call-signature"
+                  | "constructor"
+                  | "public-constructor"
+                  | "protected-constructor"
+                  | "private-constructor"
+                  | "accessor"
+                  | "public-accessor"
+                  | "public-decorated-accessor"
+                  | "decorated-accessor"
+                  | "static-accessor"
+                  | "public-static-accessor"
+                  | "instance-accessor"
+                  | "public-instance-accessor"
+                  | "abstract-accessor"
+                  | "public-abstract-accessor"
+                  | "protected-accessor"
+                  | "protected-decorated-accessor"
+                  | "protected-static-accessor"
+                  | "protected-instance-accessor"
+                  | "protected-abstract-accessor"
+                  | "private-accessor"
+                  | "private-decorated-accessor"
+                  | "private-static-accessor"
+                  | "private-instance-accessor"
+                  | "#private-accessor"
+                  | "#private-static-accessor"
+                  | "#private-instance-accessor"
+                  | "get"
+                  | "public-get"
+                  | "public-decorated-get"
+                  | "decorated-get"
+                  | "static-get"
+                  | "public-static-get"
+                  | "instance-get"
+                  | "public-instance-get"
+                  | "abstract-get"
+                  | "public-abstract-get"
+                  | "protected-get"
+                  | "protected-decorated-get"
+                  | "protected-static-get"
+                  | "protected-instance-get"
+                  | "protected-abstract-get"
+                  | "private-get"
+                  | "private-decorated-get"
+                  | "private-static-get"
+                  | "private-instance-get"
+                  | "#private-get"
+                  | "#private-static-get"
+                  | "#private-instance-get"
+                  | "set"
+                  | "public-set"
+                  | "public-decorated-set"
+                  | "decorated-set"
+                  | "static-set"
+                  | "public-static-set"
+                  | "instance-set"
+                  | "public-instance-set"
+                  | "abstract-set"
+                  | "public-abstract-set"
+                  | "protected-set"
+                  | "protected-decorated-set"
+                  | "protected-static-set"
+                  | "protected-instance-set"
+                  | "protected-abstract-set"
+                  | "private-set"
+                  | "private-decorated-set"
+                  | "private-static-set"
+                  | "private-instance-set"
+                  | "#private-set"
+                  | "#private-static-set"
+                  | "#private-instance-set"
+                  | "static-initialization"
+                  | "static-static-initialization"
+                  | "public-static-static-initialization"
+                  | "instance-static-initialization"
+                  | "public-instance-static-initialization"
+                  | "abstract-static-initialization"
+                  | "public-abstract-static-initialization"
+                  | "protected-static-static-initialization"
+                  | "protected-instance-static-initialization"
+                  | "protected-abstract-static-initialization"
+                  | "private-static-static-initialization"
+                  | "private-instance-static-initialization"
+                  | "#private-static-static-initialization"
+                  | "#private-instance-static-initialization"
+                )[]
+            )[]
+          | {
+              memberTypes?:
+                | (
+                    | (
+                        | "readonly-signature"
+                        | "signature"
+                        | "readonly-field"
+                        | "public-readonly-field"
+                        | "public-decorated-readonly-field"
+                        | "decorated-readonly-field"
+                        | "static-readonly-field"
+                        | "public-static-readonly-field"
+                        | "instance-readonly-field"
+                        | "public-instance-readonly-field"
+                        | "abstract-readonly-field"
+                        | "public-abstract-readonly-field"
+                        | "protected-readonly-field"
+                        | "protected-decorated-readonly-field"
+                        | "protected-static-readonly-field"
+                        | "protected-instance-readonly-field"
+                        | "protected-abstract-readonly-field"
+                        | "private-readonly-field"
+                        | "private-decorated-readonly-field"
+                        | "private-static-readonly-field"
+                        | "private-instance-readonly-field"
+                        | "#private-readonly-field"
+                        | "#private-static-readonly-field"
+                        | "#private-instance-readonly-field"
+                        | "field"
+                        | "public-field"
+                        | "public-decorated-field"
+                        | "decorated-field"
+                        | "static-field"
+                        | "public-static-field"
+                        | "instance-field"
+                        | "public-instance-field"
+                        | "abstract-field"
+                        | "public-abstract-field"
+                        | "protected-field"
+                        | "protected-decorated-field"
+                        | "protected-static-field"
+                        | "protected-instance-field"
+                        | "protected-abstract-field"
+                        | "private-field"
+                        | "private-decorated-field"
+                        | "private-static-field"
+                        | "private-instance-field"
+                        | "#private-field"
+                        | "#private-static-field"
+                        | "#private-instance-field"
+                        | "method"
+                        | "public-method"
+                        | "public-decorated-method"
+                        | "decorated-method"
+                        | "static-method"
+                        | "public-static-method"
+                        | "instance-method"
+                        | "public-instance-method"
+                        | "abstract-method"
+                        | "public-abstract-method"
+                        | "protected-method"
+                        | "protected-decorated-method"
+                        | "protected-static-method"
+                        | "protected-instance-method"
+                        | "protected-abstract-method"
+                        | "private-method"
+                        | "private-decorated-method"
+                        | "private-static-method"
+                        | "private-instance-method"
+                        | "#private-method"
+                        | "#private-static-method"
+                        | "#private-instance-method"
+                        | "call-signature"
+                        | "constructor"
+                        | "public-constructor"
+                        | "protected-constructor"
+                        | "private-constructor"
+                        | "accessor"
+                        | "public-accessor"
+                        | "public-decorated-accessor"
+                        | "decorated-accessor"
+                        | "static-accessor"
+                        | "public-static-accessor"
+                        | "instance-accessor"
+                        | "public-instance-accessor"
+                        | "abstract-accessor"
+                        | "public-abstract-accessor"
+                        | "protected-accessor"
+                        | "protected-decorated-accessor"
+                        | "protected-static-accessor"
+                        | "protected-instance-accessor"
+                        | "protected-abstract-accessor"
+                        | "private-accessor"
+                        | "private-decorated-accessor"
+                        | "private-static-accessor"
+                        | "private-instance-accessor"
+                        | "#private-accessor"
+                        | "#private-static-accessor"
+                        | "#private-instance-accessor"
+                        | "get"
+                        | "public-get"
+                        | "public-decorated-get"
+                        | "decorated-get"
+                        | "static-get"
+                        | "public-static-get"
+                        | "instance-get"
+                        | "public-instance-get"
+                        | "abstract-get"
+                        | "public-abstract-get"
+                        | "protected-get"
+                        | "protected-decorated-get"
+                        | "protected-static-get"
+                        | "protected-instance-get"
+                        | "protected-abstract-get"
+                        | "private-get"
+                        | "private-decorated-get"
+                        | "private-static-get"
+                        | "private-instance-get"
+                        | "#private-get"
+                        | "#private-static-get"
+                        | "#private-instance-get"
+                        | "set"
+                        | "public-set"
+                        | "public-decorated-set"
+                        | "decorated-set"
+                        | "static-set"
+                        | "public-static-set"
+                        | "instance-set"
+                        | "public-instance-set"
+                        | "abstract-set"
+                        | "public-abstract-set"
+                        | "protected-set"
+                        | "protected-decorated-set"
+                        | "protected-static-set"
+                        | "protected-instance-set"
+                        | "protected-abstract-set"
+                        | "private-set"
+                        | "private-decorated-set"
+                        | "private-static-set"
+                        | "private-instance-set"
+                        | "#private-set"
+                        | "#private-static-set"
+                        | "#private-instance-set"
+                        | "static-initialization"
+                        | "static-static-initialization"
+                        | "public-static-static-initialization"
+                        | "instance-static-initialization"
+                        | "public-instance-static-initialization"
+                        | "abstract-static-initialization"
+                        | "public-abstract-static-initialization"
+                        | "protected-static-static-initialization"
+                        | "protected-instance-static-initialization"
+                        | "protected-abstract-static-initialization"
+                        | "private-static-static-initialization"
+                        | "private-instance-static-initialization"
+                        | "#private-static-static-initialization"
+                        | "#private-instance-static-initialization"
+                      )
+                    | (
+                        | "readonly-signature"
+                        | "signature"
+                        | "readonly-field"
+                        | "public-readonly-field"
+                        | "public-decorated-readonly-field"
+                        | "decorated-readonly-field"
+                        | "static-readonly-field"
+                        | "public-static-readonly-field"
+                        | "instance-readonly-field"
+                        | "public-instance-readonly-field"
+                        | "abstract-readonly-field"
+                        | "public-abstract-readonly-field"
+                        | "protected-readonly-field"
+                        | "protected-decorated-readonly-field"
+                        | "protected-static-readonly-field"
+                        | "protected-instance-readonly-field"
+                        | "protected-abstract-readonly-field"
+                        | "private-readonly-field"
+                        | "private-decorated-readonly-field"
+                        | "private-static-readonly-field"
+                        | "private-instance-readonly-field"
+                        | "#private-readonly-field"
+                        | "#private-static-readonly-field"
+                        | "#private-instance-readonly-field"
+                        | "field"
+                        | "public-field"
+                        | "public-decorated-field"
+                        | "decorated-field"
+                        | "static-field"
+                        | "public-static-field"
+                        | "instance-field"
+                        | "public-instance-field"
+                        | "abstract-field"
+                        | "public-abstract-field"
+                        | "protected-field"
+                        | "protected-decorated-field"
+                        | "protected-static-field"
+                        | "protected-instance-field"
+                        | "protected-abstract-field"
+                        | "private-field"
+                        | "private-decorated-field"
+                        | "private-static-field"
+                        | "private-instance-field"
+                        | "#private-field"
+                        | "#private-static-field"
+                        | "#private-instance-field"
+                        | "method"
+                        | "public-method"
+                        | "public-decorated-method"
+                        | "decorated-method"
+                        | "static-method"
+                        | "public-static-method"
+                        | "instance-method"
+                        | "public-instance-method"
+                        | "abstract-method"
+                        | "public-abstract-method"
+                        | "protected-method"
+                        | "protected-decorated-method"
+                        | "protected-static-method"
+                        | "protected-instance-method"
+                        | "protected-abstract-method"
+                        | "private-method"
+                        | "private-decorated-method"
+                        | "private-static-method"
+                        | "private-instance-method"
+                        | "#private-method"
+                        | "#private-static-method"
+                        | "#private-instance-method"
+                        | "call-signature"
+                        | "constructor"
+                        | "public-constructor"
+                        | "protected-constructor"
+                        | "private-constructor"
+                        | "accessor"
+                        | "public-accessor"
+                        | "public-decorated-accessor"
+                        | "decorated-accessor"
+                        | "static-accessor"
+                        | "public-static-accessor"
+                        | "instance-accessor"
+                        | "public-instance-accessor"
+                        | "abstract-accessor"
+                        | "public-abstract-accessor"
+                        | "protected-accessor"
+                        | "protected-decorated-accessor"
+                        | "protected-static-accessor"
+                        | "protected-instance-accessor"
+                        | "protected-abstract-accessor"
+                        | "private-accessor"
+                        | "private-decorated-accessor"
+                        | "private-static-accessor"
+                        | "private-instance-accessor"
+                        | "#private-accessor"
+                        | "#private-static-accessor"
+                        | "#private-instance-accessor"
+                        | "get"
+                        | "public-get"
+                        | "public-decorated-get"
+                        | "decorated-get"
+                        | "static-get"
+                        | "public-static-get"
+                        | "instance-get"
+                        | "public-instance-get"
+                        | "abstract-get"
+                        | "public-abstract-get"
+                        | "protected-get"
+                        | "protected-decorated-get"
+                        | "protected-static-get"
+                        | "protected-instance-get"
+                        | "protected-abstract-get"
+                        | "private-get"
+                        | "private-decorated-get"
+                        | "private-static-get"
+                        | "private-instance-get"
+                        | "#private-get"
+                        | "#private-static-get"
+                        | "#private-instance-get"
+                        | "set"
+                        | "public-set"
+                        | "public-decorated-set"
+                        | "decorated-set"
+                        | "static-set"
+                        | "public-static-set"
+                        | "instance-set"
+                        | "public-instance-set"
+                        | "abstract-set"
+                        | "public-abstract-set"
+                        | "protected-set"
+                        | "protected-decorated-set"
+                        | "protected-static-set"
+                        | "protected-instance-set"
+                        | "protected-abstract-set"
+                        | "private-set"
+                        | "private-decorated-set"
+                        | "private-static-set"
+                        | "private-instance-set"
+                        | "#private-set"
+                        | "#private-static-set"
+                        | "#private-instance-set"
+                        | "static-initialization"
+                        | "static-static-initialization"
+                        | "public-static-static-initialization"
+                        | "instance-static-initialization"
+                        | "public-instance-static-initialization"
+                        | "abstract-static-initialization"
+                        | "public-abstract-static-initialization"
+                        | "protected-static-static-initialization"
+                        | "protected-instance-static-initialization"
+                        | "protected-abstract-static-initialization"
+                        | "private-static-static-initialization"
+                        | "private-instance-static-initialization"
+                        | "#private-static-static-initialization"
+                        | "#private-instance-static-initialization"
+                      )[]
+                  )[]
+                | "never";
+              optionalityOrder?: "optional-first" | "required-first";
+              order?:
+                | "alphabetically"
+                | "alphabetically-case-insensitive"
+                | "as-written"
+                | "natural"
+                | "natural-case-insensitive";
+            };
+
+        classExpressions?:
+          | "never"
+          | (
+              | (
+                  | "readonly-signature"
+                  | "signature"
+                  | "readonly-field"
+                  | "public-readonly-field"
+                  | "public-decorated-readonly-field"
+                  | "decorated-readonly-field"
+                  | "static-readonly-field"
+                  | "public-static-readonly-field"
+                  | "instance-readonly-field"
+                  | "public-instance-readonly-field"
+                  | "abstract-readonly-field"
+                  | "public-abstract-readonly-field"
+                  | "protected-readonly-field"
+                  | "protected-decorated-readonly-field"
+                  | "protected-static-readonly-field"
+                  | "protected-instance-readonly-field"
+                  | "protected-abstract-readonly-field"
+                  | "private-readonly-field"
+                  | "private-decorated-readonly-field"
+                  | "private-static-readonly-field"
+                  | "private-instance-readonly-field"
+                  | "#private-readonly-field"
+                  | "#private-static-readonly-field"
+                  | "#private-instance-readonly-field"
+                  | "field"
+                  | "public-field"
+                  | "public-decorated-field"
+                  | "decorated-field"
+                  | "static-field"
+                  | "public-static-field"
+                  | "instance-field"
+                  | "public-instance-field"
+                  | "abstract-field"
+                  | "public-abstract-field"
+                  | "protected-field"
+                  | "protected-decorated-field"
+                  | "protected-static-field"
+                  | "protected-instance-field"
+                  | "protected-abstract-field"
+                  | "private-field"
+                  | "private-decorated-field"
+                  | "private-static-field"
+                  | "private-instance-field"
+                  | "#private-field"
+                  | "#private-static-field"
+                  | "#private-instance-field"
+                  | "method"
+                  | "public-method"
+                  | "public-decorated-method"
+                  | "decorated-method"
+                  | "static-method"
+                  | "public-static-method"
+                  | "instance-method"
+                  | "public-instance-method"
+                  | "abstract-method"
+                  | "public-abstract-method"
+                  | "protected-method"
+                  | "protected-decorated-method"
+                  | "protected-static-method"
+                  | "protected-instance-method"
+                  | "protected-abstract-method"
+                  | "private-method"
+                  | "private-decorated-method"
+                  | "private-static-method"
+                  | "private-instance-method"
+                  | "#private-method"
+                  | "#private-static-method"
+                  | "#private-instance-method"
+                  | "call-signature"
+                  | "constructor"
+                  | "public-constructor"
+                  | "protected-constructor"
+                  | "private-constructor"
+                  | "accessor"
+                  | "public-accessor"
+                  | "public-decorated-accessor"
+                  | "decorated-accessor"
+                  | "static-accessor"
+                  | "public-static-accessor"
+                  | "instance-accessor"
+                  | "public-instance-accessor"
+                  | "abstract-accessor"
+                  | "public-abstract-accessor"
+                  | "protected-accessor"
+                  | "protected-decorated-accessor"
+                  | "protected-static-accessor"
+                  | "protected-instance-accessor"
+                  | "protected-abstract-accessor"
+                  | "private-accessor"
+                  | "private-decorated-accessor"
+                  | "private-static-accessor"
+                  | "private-instance-accessor"
+                  | "#private-accessor"
+                  | "#private-static-accessor"
+                  | "#private-instance-accessor"
+                  | "get"
+                  | "public-get"
+                  | "public-decorated-get"
+                  | "decorated-get"
+                  | "static-get"
+                  | "public-static-get"
+                  | "instance-get"
+                  | "public-instance-get"
+                  | "abstract-get"
+                  | "public-abstract-get"
+                  | "protected-get"
+                  | "protected-decorated-get"
+                  | "protected-static-get"
+                  | "protected-instance-get"
+                  | "protected-abstract-get"
+                  | "private-get"
+                  | "private-decorated-get"
+                  | "private-static-get"
+                  | "private-instance-get"
+                  | "#private-get"
+                  | "#private-static-get"
+                  | "#private-instance-get"
+                  | "set"
+                  | "public-set"
+                  | "public-decorated-set"
+                  | "decorated-set"
+                  | "static-set"
+                  | "public-static-set"
+                  | "instance-set"
+                  | "public-instance-set"
+                  | "abstract-set"
+                  | "public-abstract-set"
+                  | "protected-set"
+                  | "protected-decorated-set"
+                  | "protected-static-set"
+                  | "protected-instance-set"
+                  | "protected-abstract-set"
+                  | "private-set"
+                  | "private-decorated-set"
+                  | "private-static-set"
+                  | "private-instance-set"
+                  | "#private-set"
+                  | "#private-static-set"
+                  | "#private-instance-set"
+                  | "static-initialization"
+                  | "static-static-initialization"
+                  | "public-static-static-initialization"
+                  | "instance-static-initialization"
+                  | "public-instance-static-initialization"
+                  | "abstract-static-initialization"
+                  | "public-abstract-static-initialization"
+                  | "protected-static-static-initialization"
+                  | "protected-instance-static-initialization"
+                  | "protected-abstract-static-initialization"
+                  | "private-static-static-initialization"
+                  | "private-instance-static-initialization"
+                  | "#private-static-static-initialization"
+                  | "#private-instance-static-initialization"
+                )
+              | (
+                  | "readonly-signature"
+                  | "signature"
+                  | "readonly-field"
+                  | "public-readonly-field"
+                  | "public-decorated-readonly-field"
+                  | "decorated-readonly-field"
+                  | "static-readonly-field"
+                  | "public-static-readonly-field"
+                  | "instance-readonly-field"
+                  | "public-instance-readonly-field"
+                  | "abstract-readonly-field"
+                  | "public-abstract-readonly-field"
+                  | "protected-readonly-field"
+                  | "protected-decorated-readonly-field"
+                  | "protected-static-readonly-field"
+                  | "protected-instance-readonly-field"
+                  | "protected-abstract-readonly-field"
+                  | "private-readonly-field"
+                  | "private-decorated-readonly-field"
+                  | "private-static-readonly-field"
+                  | "private-instance-readonly-field"
+                  | "#private-readonly-field"
+                  | "#private-static-readonly-field"
+                  | "#private-instance-readonly-field"
+                  | "field"
+                  | "public-field"
+                  | "public-decorated-field"
+                  | "decorated-field"
+                  | "static-field"
+                  | "public-static-field"
+                  | "instance-field"
+                  | "public-instance-field"
+                  | "abstract-field"
+                  | "public-abstract-field"
+                  | "protected-field"
+                  | "protected-decorated-field"
+                  | "protected-static-field"
+                  | "protected-instance-field"
+                  | "protected-abstract-field"
+                  | "private-field"
+                  | "private-decorated-field"
+                  | "private-static-field"
+                  | "private-instance-field"
+                  | "#private-field"
+                  | "#private-static-field"
+                  | "#private-instance-field"
+                  | "method"
+                  | "public-method"
+                  | "public-decorated-method"
+                  | "decorated-method"
+                  | "static-method"
+                  | "public-static-method"
+                  | "instance-method"
+                  | "public-instance-method"
+                  | "abstract-method"
+                  | "public-abstract-method"
+                  | "protected-method"
+                  | "protected-decorated-method"
+                  | "protected-static-method"
+                  | "protected-instance-method"
+                  | "protected-abstract-method"
+                  | "private-method"
+                  | "private-decorated-method"
+                  | "private-static-method"
+                  | "private-instance-method"
+                  | "#private-method"
+                  | "#private-static-method"
+                  | "#private-instance-method"
+                  | "call-signature"
+                  | "constructor"
+                  | "public-constructor"
+                  | "protected-constructor"
+                  | "private-constructor"
+                  | "accessor"
+                  | "public-accessor"
+                  | "public-decorated-accessor"
+                  | "decorated-accessor"
+                  | "static-accessor"
+                  | "public-static-accessor"
+                  | "instance-accessor"
+                  | "public-instance-accessor"
+                  | "abstract-accessor"
+                  | "public-abstract-accessor"
+                  | "protected-accessor"
+                  | "protected-decorated-accessor"
+                  | "protected-static-accessor"
+                  | "protected-instance-accessor"
+                  | "protected-abstract-accessor"
+                  | "private-accessor"
+                  | "private-decorated-accessor"
+                  | "private-static-accessor"
+                  | "private-instance-accessor"
+                  | "#private-accessor"
+                  | "#private-static-accessor"
+                  | "#private-instance-accessor"
+                  | "get"
+                  | "public-get"
+                  | "public-decorated-get"
+                  | "decorated-get"
+                  | "static-get"
+                  | "public-static-get"
+                  | "instance-get"
+                  | "public-instance-get"
+                  | "abstract-get"
+                  | "public-abstract-get"
+                  | "protected-get"
+                  | "protected-decorated-get"
+                  | "protected-static-get"
+                  | "protected-instance-get"
+                  | "protected-abstract-get"
+                  | "private-get"
+                  | "private-decorated-get"
+                  | "private-static-get"
+                  | "private-instance-get"
+                  | "#private-get"
+                  | "#private-static-get"
+                  | "#private-instance-get"
+                  | "set"
+                  | "public-set"
+                  | "public-decorated-set"
+                  | "decorated-set"
+                  | "static-set"
+                  | "public-static-set"
+                  | "instance-set"
+                  | "public-instance-set"
+                  | "abstract-set"
+                  | "public-abstract-set"
+                  | "protected-set"
+                  | "protected-decorated-set"
+                  | "protected-static-set"
+                  | "protected-instance-set"
+                  | "protected-abstract-set"
+                  | "private-set"
+                  | "private-decorated-set"
+                  | "private-static-set"
+                  | "private-instance-set"
+                  | "#private-set"
+                  | "#private-static-set"
+                  | "#private-instance-set"
+                  | "static-initialization"
+                  | "static-static-initialization"
+                  | "public-static-static-initialization"
+                  | "instance-static-initialization"
+                  | "public-instance-static-initialization"
+                  | "abstract-static-initialization"
+                  | "public-abstract-static-initialization"
+                  | "protected-static-static-initialization"
+                  | "protected-instance-static-initialization"
+                  | "protected-abstract-static-initialization"
+                  | "private-static-static-initialization"
+                  | "private-instance-static-initialization"
+                  | "#private-static-static-initialization"
+                  | "#private-instance-static-initialization"
+                )[]
+            )[]
+          | {
+              memberTypes?:
+                | (
+                    | (
+                        | "readonly-signature"
+                        | "signature"
+                        | "readonly-field"
+                        | "public-readonly-field"
+                        | "public-decorated-readonly-field"
+                        | "decorated-readonly-field"
+                        | "static-readonly-field"
+                        | "public-static-readonly-field"
+                        | "instance-readonly-field"
+                        | "public-instance-readonly-field"
+                        | "abstract-readonly-field"
+                        | "public-abstract-readonly-field"
+                        | "protected-readonly-field"
+                        | "protected-decorated-readonly-field"
+                        | "protected-static-readonly-field"
+                        | "protected-instance-readonly-field"
+                        | "protected-abstract-readonly-field"
+                        | "private-readonly-field"
+                        | "private-decorated-readonly-field"
+                        | "private-static-readonly-field"
+                        | "private-instance-readonly-field"
+                        | "#private-readonly-field"
+                        | "#private-static-readonly-field"
+                        | "#private-instance-readonly-field"
+                        | "field"
+                        | "public-field"
+                        | "public-decorated-field"
+                        | "decorated-field"
+                        | "static-field"
+                        | "public-static-field"
+                        | "instance-field"
+                        | "public-instance-field"
+                        | "abstract-field"
+                        | "public-abstract-field"
+                        | "protected-field"
+                        | "protected-decorated-field"
+                        | "protected-static-field"
+                        | "protected-instance-field"
+                        | "protected-abstract-field"
+                        | "private-field"
+                        | "private-decorated-field"
+                        | "private-static-field"
+                        | "private-instance-field"
+                        | "#private-field"
+                        | "#private-static-field"
+                        | "#private-instance-field"
+                        | "method"
+                        | "public-method"
+                        | "public-decorated-method"
+                        | "decorated-method"
+                        | "static-method"
+                        | "public-static-method"
+                        | "instance-method"
+                        | "public-instance-method"
+                        | "abstract-method"
+                        | "public-abstract-method"
+                        | "protected-method"
+                        | "protected-decorated-method"
+                        | "protected-static-method"
+                        | "protected-instance-method"
+                        | "protected-abstract-method"
+                        | "private-method"
+                        | "private-decorated-method"
+                        | "private-static-method"
+                        | "private-instance-method"
+                        | "#private-method"
+                        | "#private-static-method"
+                        | "#private-instance-method"
+                        | "call-signature"
+                        | "constructor"
+                        | "public-constructor"
+                        | "protected-constructor"
+                        | "private-constructor"
+                        | "accessor"
+                        | "public-accessor"
+                        | "public-decorated-accessor"
+                        | "decorated-accessor"
+                        | "static-accessor"
+                        | "public-static-accessor"
+                        | "instance-accessor"
+                        | "public-instance-accessor"
+                        | "abstract-accessor"
+                        | "public-abstract-accessor"
+                        | "protected-accessor"
+                        | "protected-decorated-accessor"
+                        | "protected-static-accessor"
+                        | "protected-instance-accessor"
+                        | "protected-abstract-accessor"
+                        | "private-accessor"
+                        | "private-decorated-accessor"
+                        | "private-static-accessor"
+                        | "private-instance-accessor"
+                        | "#private-accessor"
+                        | "#private-static-accessor"
+                        | "#private-instance-accessor"
+                        | "get"
+                        | "public-get"
+                        | "public-decorated-get"
+                        | "decorated-get"
+                        | "static-get"
+                        | "public-static-get"
+                        | "instance-get"
+                        | "public-instance-get"
+                        | "abstract-get"
+                        | "public-abstract-get"
+                        | "protected-get"
+                        | "protected-decorated-get"
+                        | "protected-static-get"
+                        | "protected-instance-get"
+                        | "protected-abstract-get"
+                        | "private-get"
+                        | "private-decorated-get"
+                        | "private-static-get"
+                        | "private-instance-get"
+                        | "#private-get"
+                        | "#private-static-get"
+                        | "#private-instance-get"
+                        | "set"
+                        | "public-set"
+                        | "public-decorated-set"
+                        | "decorated-set"
+                        | "static-set"
+                        | "public-static-set"
+                        | "instance-set"
+                        | "public-instance-set"
+                        | "abstract-set"
+                        | "public-abstract-set"
+                        | "protected-set"
+                        | "protected-decorated-set"
+                        | "protected-static-set"
+                        | "protected-instance-set"
+                        | "protected-abstract-set"
+                        | "private-set"
+                        | "private-decorated-set"
+                        | "private-static-set"
+                        | "private-instance-set"
+                        | "#private-set"
+                        | "#private-static-set"
+                        | "#private-instance-set"
+                        | "static-initialization"
+                        | "static-static-initialization"
+                        | "public-static-static-initialization"
+                        | "instance-static-initialization"
+                        | "public-instance-static-initialization"
+                        | "abstract-static-initialization"
+                        | "public-abstract-static-initialization"
+                        | "protected-static-static-initialization"
+                        | "protected-instance-static-initialization"
+                        | "protected-abstract-static-initialization"
+                        | "private-static-static-initialization"
+                        | "private-instance-static-initialization"
+                        | "#private-static-static-initialization"
+                        | "#private-instance-static-initialization"
+                      )
+                    | (
+                        | "readonly-signature"
+                        | "signature"
+                        | "readonly-field"
+                        | "public-readonly-field"
+                        | "public-decorated-readonly-field"
+                        | "decorated-readonly-field"
+                        | "static-readonly-field"
+                        | "public-static-readonly-field"
+                        | "instance-readonly-field"
+                        | "public-instance-readonly-field"
+                        | "abstract-readonly-field"
+                        | "public-abstract-readonly-field"
+                        | "protected-readonly-field"
+                        | "protected-decorated-readonly-field"
+                        | "protected-static-readonly-field"
+                        | "protected-instance-readonly-field"
+                        | "protected-abstract-readonly-field"
+                        | "private-readonly-field"
+                        | "private-decorated-readonly-field"
+                        | "private-static-readonly-field"
+                        | "private-instance-readonly-field"
+                        | "#private-readonly-field"
+                        | "#private-static-readonly-field"
+                        | "#private-instance-readonly-field"
+                        | "field"
+                        | "public-field"
+                        | "public-decorated-field"
+                        | "decorated-field"
+                        | "static-field"
+                        | "public-static-field"
+                        | "instance-field"
+                        | "public-instance-field"
+                        | "abstract-field"
+                        | "public-abstract-field"
+                        | "protected-field"
+                        | "protected-decorated-field"
+                        | "protected-static-field"
+                        | "protected-instance-field"
+                        | "protected-abstract-field"
+                        | "private-field"
+                        | "private-decorated-field"
+                        | "private-static-field"
+                        | "private-instance-field"
+                        | "#private-field"
+                        | "#private-static-field"
+                        | "#private-instance-field"
+                        | "method"
+                        | "public-method"
+                        | "public-decorated-method"
+                        | "decorated-method"
+                        | "static-method"
+                        | "public-static-method"
+                        | "instance-method"
+                        | "public-instance-method"
+                        | "abstract-method"
+                        | "public-abstract-method"
+                        | "protected-method"
+                        | "protected-decorated-method"
+                        | "protected-static-method"
+                        | "protected-instance-method"
+                        | "protected-abstract-method"
+                        | "private-method"
+                        | "private-decorated-method"
+                        | "private-static-method"
+                        | "private-instance-method"
+                        | "#private-method"
+                        | "#private-static-method"
+                        | "#private-instance-method"
+                        | "call-signature"
+                        | "constructor"
+                        | "public-constructor"
+                        | "protected-constructor"
+                        | "private-constructor"
+                        | "accessor"
+                        | "public-accessor"
+                        | "public-decorated-accessor"
+                        | "decorated-accessor"
+                        | "static-accessor"
+                        | "public-static-accessor"
+                        | "instance-accessor"
+                        | "public-instance-accessor"
+                        | "abstract-accessor"
+                        | "public-abstract-accessor"
+                        | "protected-accessor"
+                        | "protected-decorated-accessor"
+                        | "protected-static-accessor"
+                        | "protected-instance-accessor"
+                        | "protected-abstract-accessor"
+                        | "private-accessor"
+                        | "private-decorated-accessor"
+                        | "private-static-accessor"
+                        | "private-instance-accessor"
+                        | "#private-accessor"
+                        | "#private-static-accessor"
+                        | "#private-instance-accessor"
+                        | "get"
+                        | "public-get"
+                        | "public-decorated-get"
+                        | "decorated-get"
+                        | "static-get"
+                        | "public-static-get"
+                        | "instance-get"
+                        | "public-instance-get"
+                        | "abstract-get"
+                        | "public-abstract-get"
+                        | "protected-get"
+                        | "protected-decorated-get"
+                        | "protected-static-get"
+                        | "protected-instance-get"
+                        | "protected-abstract-get"
+                        | "private-get"
+                        | "private-decorated-get"
+                        | "private-static-get"
+                        | "private-instance-get"
+                        | "#private-get"
+                        | "#private-static-get"
+                        | "#private-instance-get"
+                        | "set"
+                        | "public-set"
+                        | "public-decorated-set"
+                        | "decorated-set"
+                        | "static-set"
+                        | "public-static-set"
+                        | "instance-set"
+                        | "public-instance-set"
+                        | "abstract-set"
+                        | "public-abstract-set"
+                        | "protected-set"
+                        | "protected-decorated-set"
+                        | "protected-static-set"
+                        | "protected-instance-set"
+                        | "protected-abstract-set"
+                        | "private-set"
+                        | "private-decorated-set"
+                        | "private-static-set"
+                        | "private-instance-set"
+                        | "#private-set"
+                        | "#private-static-set"
+                        | "#private-instance-set"
+                        | "static-initialization"
+                        | "static-static-initialization"
+                        | "public-static-static-initialization"
+                        | "instance-static-initialization"
+                        | "public-instance-static-initialization"
+                        | "abstract-static-initialization"
+                        | "public-abstract-static-initialization"
+                        | "protected-static-static-initialization"
+                        | "protected-instance-static-initialization"
+                        | "protected-abstract-static-initialization"
+                        | "private-static-static-initialization"
+                        | "private-instance-static-initialization"
+                        | "#private-static-static-initialization"
+                        | "#private-instance-static-initialization"
+                      )[]
+                  )[]
+                | "never";
+              optionalityOrder?: "optional-first" | "required-first";
+              order?:
+                | "alphabetically"
+                | "alphabetically-case-insensitive"
+                | "as-written"
+                | "natural"
+                | "natural-case-insensitive";
+            };
+
+        default?:
+          | "never"
+          | (
+              | (
+                  | "readonly-signature"
+                  | "signature"
+                  | "readonly-field"
+                  | "public-readonly-field"
+                  | "public-decorated-readonly-field"
+                  | "decorated-readonly-field"
+                  | "static-readonly-field"
+                  | "public-static-readonly-field"
+                  | "instance-readonly-field"
+                  | "public-instance-readonly-field"
+                  | "abstract-readonly-field"
+                  | "public-abstract-readonly-field"
+                  | "protected-readonly-field"
+                  | "protected-decorated-readonly-field"
+                  | "protected-static-readonly-field"
+                  | "protected-instance-readonly-field"
+                  | "protected-abstract-readonly-field"
+                  | "private-readonly-field"
+                  | "private-decorated-readonly-field"
+                  | "private-static-readonly-field"
+                  | "private-instance-readonly-field"
+                  | "#private-readonly-field"
+                  | "#private-static-readonly-field"
+                  | "#private-instance-readonly-field"
+                  | "field"
+                  | "public-field"
+                  | "public-decorated-field"
+                  | "decorated-field"
+                  | "static-field"
+                  | "public-static-field"
+                  | "instance-field"
+                  | "public-instance-field"
+                  | "abstract-field"
+                  | "public-abstract-field"
+                  | "protected-field"
+                  | "protected-decorated-field"
+                  | "protected-static-field"
+                  | "protected-instance-field"
+                  | "protected-abstract-field"
+                  | "private-field"
+                  | "private-decorated-field"
+                  | "private-static-field"
+                  | "private-instance-field"
+                  | "#private-field"
+                  | "#private-static-field"
+                  | "#private-instance-field"
+                  | "method"
+                  | "public-method"
+                  | "public-decorated-method"
+                  | "decorated-method"
+                  | "static-method"
+                  | "public-static-method"
+                  | "instance-method"
+                  | "public-instance-method"
+                  | "abstract-method"
+                  | "public-abstract-method"
+                  | "protected-method"
+                  | "protected-decorated-method"
+                  | "protected-static-method"
+                  | "protected-instance-method"
+                  | "protected-abstract-method"
+                  | "private-method"
+                  | "private-decorated-method"
+                  | "private-static-method"
+                  | "private-instance-method"
+                  | "#private-method"
+                  | "#private-static-method"
+                  | "#private-instance-method"
+                  | "call-signature"
+                  | "constructor"
+                  | "public-constructor"
+                  | "protected-constructor"
+                  | "private-constructor"
+                  | "accessor"
+                  | "public-accessor"
+                  | "public-decorated-accessor"
+                  | "decorated-accessor"
+                  | "static-accessor"
+                  | "public-static-accessor"
+                  | "instance-accessor"
+                  | "public-instance-accessor"
+                  | "abstract-accessor"
+                  | "public-abstract-accessor"
+                  | "protected-accessor"
+                  | "protected-decorated-accessor"
+                  | "protected-static-accessor"
+                  | "protected-instance-accessor"
+                  | "protected-abstract-accessor"
+                  | "private-accessor"
+                  | "private-decorated-accessor"
+                  | "private-static-accessor"
+                  | "private-instance-accessor"
+                  | "#private-accessor"
+                  | "#private-static-accessor"
+                  | "#private-instance-accessor"
+                  | "get"
+                  | "public-get"
+                  | "public-decorated-get"
+                  | "decorated-get"
+                  | "static-get"
+                  | "public-static-get"
+                  | "instance-get"
+                  | "public-instance-get"
+                  | "abstract-get"
+                  | "public-abstract-get"
+                  | "protected-get"
+                  | "protected-decorated-get"
+                  | "protected-static-get"
+                  | "protected-instance-get"
+                  | "protected-abstract-get"
+                  | "private-get"
+                  | "private-decorated-get"
+                  | "private-static-get"
+                  | "private-instance-get"
+                  | "#private-get"
+                  | "#private-static-get"
+                  | "#private-instance-get"
+                  | "set"
+                  | "public-set"
+                  | "public-decorated-set"
+                  | "decorated-set"
+                  | "static-set"
+                  | "public-static-set"
+                  | "instance-set"
+                  | "public-instance-set"
+                  | "abstract-set"
+                  | "public-abstract-set"
+                  | "protected-set"
+                  | "protected-decorated-set"
+                  | "protected-static-set"
+                  | "protected-instance-set"
+                  | "protected-abstract-set"
+                  | "private-set"
+                  | "private-decorated-set"
+                  | "private-static-set"
+                  | "private-instance-set"
+                  | "#private-set"
+                  | "#private-static-set"
+                  | "#private-instance-set"
+                  | "static-initialization"
+                  | "static-static-initialization"
+                  | "public-static-static-initialization"
+                  | "instance-static-initialization"
+                  | "public-instance-static-initialization"
+                  | "abstract-static-initialization"
+                  | "public-abstract-static-initialization"
+                  | "protected-static-static-initialization"
+                  | "protected-instance-static-initialization"
+                  | "protected-abstract-static-initialization"
+                  | "private-static-static-initialization"
+                  | "private-instance-static-initialization"
+                  | "#private-static-static-initialization"
+                  | "#private-instance-static-initialization"
+                )
+              | (
+                  | "readonly-signature"
+                  | "signature"
+                  | "readonly-field"
+                  | "public-readonly-field"
+                  | "public-decorated-readonly-field"
+                  | "decorated-readonly-field"
+                  | "static-readonly-field"
+                  | "public-static-readonly-field"
+                  | "instance-readonly-field"
+                  | "public-instance-readonly-field"
+                  | "abstract-readonly-field"
+                  | "public-abstract-readonly-field"
+                  | "protected-readonly-field"
+                  | "protected-decorated-readonly-field"
+                  | "protected-static-readonly-field"
+                  | "protected-instance-readonly-field"
+                  | "protected-abstract-readonly-field"
+                  | "private-readonly-field"
+                  | "private-decorated-readonly-field"
+                  | "private-static-readonly-field"
+                  | "private-instance-readonly-field"
+                  | "#private-readonly-field"
+                  | "#private-static-readonly-field"
+                  | "#private-instance-readonly-field"
+                  | "field"
+                  | "public-field"
+                  | "public-decorated-field"
+                  | "decorated-field"
+                  | "static-field"
+                  | "public-static-field"
+                  | "instance-field"
+                  | "public-instance-field"
+                  | "abstract-field"
+                  | "public-abstract-field"
+                  | "protected-field"
+                  | "protected-decorated-field"
+                  | "protected-static-field"
+                  | "protected-instance-field"
+                  | "protected-abstract-field"
+                  | "private-field"
+                  | "private-decorated-field"
+                  | "private-static-field"
+                  | "private-instance-field"
+                  | "#private-field"
+                  | "#private-static-field"
+                  | "#private-instance-field"
+                  | "method"
+                  | "public-method"
+                  | "public-decorated-method"
+                  | "decorated-method"
+                  | "static-method"
+                  | "public-static-method"
+                  | "instance-method"
+                  | "public-instance-method"
+                  | "abstract-method"
+                  | "public-abstract-method"
+                  | "protected-method"
+                  | "protected-decorated-method"
+                  | "protected-static-method"
+                  | "protected-instance-method"
+                  | "protected-abstract-method"
+                  | "private-method"
+                  | "private-decorated-method"
+                  | "private-static-method"
+                  | "private-instance-method"
+                  | "#private-method"
+                  | "#private-static-method"
+                  | "#private-instance-method"
+                  | "call-signature"
+                  | "constructor"
+                  | "public-constructor"
+                  | "protected-constructor"
+                  | "private-constructor"
+                  | "accessor"
+                  | "public-accessor"
+                  | "public-decorated-accessor"
+                  | "decorated-accessor"
+                  | "static-accessor"
+                  | "public-static-accessor"
+                  | "instance-accessor"
+                  | "public-instance-accessor"
+                  | "abstract-accessor"
+                  | "public-abstract-accessor"
+                  | "protected-accessor"
+                  | "protected-decorated-accessor"
+                  | "protected-static-accessor"
+                  | "protected-instance-accessor"
+                  | "protected-abstract-accessor"
+                  | "private-accessor"
+                  | "private-decorated-accessor"
+                  | "private-static-accessor"
+                  | "private-instance-accessor"
+                  | "#private-accessor"
+                  | "#private-static-accessor"
+                  | "#private-instance-accessor"
+                  | "get"
+                  | "public-get"
+                  | "public-decorated-get"
+                  | "decorated-get"
+                  | "static-get"
+                  | "public-static-get"
+                  | "instance-get"
+                  | "public-instance-get"
+                  | "abstract-get"
+                  | "public-abstract-get"
+                  | "protected-get"
+                  | "protected-decorated-get"
+                  | "protected-static-get"
+                  | "protected-instance-get"
+                  | "protected-abstract-get"
+                  | "private-get"
+                  | "private-decorated-get"
+                  | "private-static-get"
+                  | "private-instance-get"
+                  | "#private-get"
+                  | "#private-static-get"
+                  | "#private-instance-get"
+                  | "set"
+                  | "public-set"
+                  | "public-decorated-set"
+                  | "decorated-set"
+                  | "static-set"
+                  | "public-static-set"
+                  | "instance-set"
+                  | "public-instance-set"
+                  | "abstract-set"
+                  | "public-abstract-set"
+                  | "protected-set"
+                  | "protected-decorated-set"
+                  | "protected-static-set"
+                  | "protected-instance-set"
+                  | "protected-abstract-set"
+                  | "private-set"
+                  | "private-decorated-set"
+                  | "private-static-set"
+                  | "private-instance-set"
+                  | "#private-set"
+                  | "#private-static-set"
+                  | "#private-instance-set"
+                  | "static-initialization"
+                  | "static-static-initialization"
+                  | "public-static-static-initialization"
+                  | "instance-static-initialization"
+                  | "public-instance-static-initialization"
+                  | "abstract-static-initialization"
+                  | "public-abstract-static-initialization"
+                  | "protected-static-static-initialization"
+                  | "protected-instance-static-initialization"
+                  | "protected-abstract-static-initialization"
+                  | "private-static-static-initialization"
+                  | "private-instance-static-initialization"
+                  | "#private-static-static-initialization"
+                  | "#private-instance-static-initialization"
+                )[]
+            )[]
+          | {
+              memberTypes?:
+                | (
+                    | (
+                        | "readonly-signature"
+                        | "signature"
+                        | "readonly-field"
+                        | "public-readonly-field"
+                        | "public-decorated-readonly-field"
+                        | "decorated-readonly-field"
+                        | "static-readonly-field"
+                        | "public-static-readonly-field"
+                        | "instance-readonly-field"
+                        | "public-instance-readonly-field"
+                        | "abstract-readonly-field"
+                        | "public-abstract-readonly-field"
+                        | "protected-readonly-field"
+                        | "protected-decorated-readonly-field"
+                        | "protected-static-readonly-field"
+                        | "protected-instance-readonly-field"
+                        | "protected-abstract-readonly-field"
+                        | "private-readonly-field"
+                        | "private-decorated-readonly-field"
+                        | "private-static-readonly-field"
+                        | "private-instance-readonly-field"
+                        | "#private-readonly-field"
+                        | "#private-static-readonly-field"
+                        | "#private-instance-readonly-field"
+                        | "field"
+                        | "public-field"
+                        | "public-decorated-field"
+                        | "decorated-field"
+                        | "static-field"
+                        | "public-static-field"
+                        | "instance-field"
+                        | "public-instance-field"
+                        | "abstract-field"
+                        | "public-abstract-field"
+                        | "protected-field"
+                        | "protected-decorated-field"
+                        | "protected-static-field"
+                        | "protected-instance-field"
+                        | "protected-abstract-field"
+                        | "private-field"
+                        | "private-decorated-field"
+                        | "private-static-field"
+                        | "private-instance-field"
+                        | "#private-field"
+                        | "#private-static-field"
+                        | "#private-instance-field"
+                        | "method"
+                        | "public-method"
+                        | "public-decorated-method"
+                        | "decorated-method"
+                        | "static-method"
+                        | "public-static-method"
+                        | "instance-method"
+                        | "public-instance-method"
+                        | "abstract-method"
+                        | "public-abstract-method"
+                        | "protected-method"
+                        | "protected-decorated-method"
+                        | "protected-static-method"
+                        | "protected-instance-method"
+                        | "protected-abstract-method"
+                        | "private-method"
+                        | "private-decorated-method"
+                        | "private-static-method"
+                        | "private-instance-method"
+                        | "#private-method"
+                        | "#private-static-method"
+                        | "#private-instance-method"
+                        | "call-signature"
+                        | "constructor"
+                        | "public-constructor"
+                        | "protected-constructor"
+                        | "private-constructor"
+                        | "accessor"
+                        | "public-accessor"
+                        | "public-decorated-accessor"
+                        | "decorated-accessor"
+                        | "static-accessor"
+                        | "public-static-accessor"
+                        | "instance-accessor"
+                        | "public-instance-accessor"
+                        | "abstract-accessor"
+                        | "public-abstract-accessor"
+                        | "protected-accessor"
+                        | "protected-decorated-accessor"
+                        | "protected-static-accessor"
+                        | "protected-instance-accessor"
+                        | "protected-abstract-accessor"
+                        | "private-accessor"
+                        | "private-decorated-accessor"
+                        | "private-static-accessor"
+                        | "private-instance-accessor"
+                        | "#private-accessor"
+                        | "#private-static-accessor"
+                        | "#private-instance-accessor"
+                        | "get"
+                        | "public-get"
+                        | "public-decorated-get"
+                        | "decorated-get"
+                        | "static-get"
+                        | "public-static-get"
+                        | "instance-get"
+                        | "public-instance-get"
+                        | "abstract-get"
+                        | "public-abstract-get"
+                        | "protected-get"
+                        | "protected-decorated-get"
+                        | "protected-static-get"
+                        | "protected-instance-get"
+                        | "protected-abstract-get"
+                        | "private-get"
+                        | "private-decorated-get"
+                        | "private-static-get"
+                        | "private-instance-get"
+                        | "#private-get"
+                        | "#private-static-get"
+                        | "#private-instance-get"
+                        | "set"
+                        | "public-set"
+                        | "public-decorated-set"
+                        | "decorated-set"
+                        | "static-set"
+                        | "public-static-set"
+                        | "instance-set"
+                        | "public-instance-set"
+                        | "abstract-set"
+                        | "public-abstract-set"
+                        | "protected-set"
+                        | "protected-decorated-set"
+                        | "protected-static-set"
+                        | "protected-instance-set"
+                        | "protected-abstract-set"
+                        | "private-set"
+                        | "private-decorated-set"
+                        | "private-static-set"
+                        | "private-instance-set"
+                        | "#private-set"
+                        | "#private-static-set"
+                        | "#private-instance-set"
+                        | "static-initialization"
+                        | "static-static-initialization"
+                        | "public-static-static-initialization"
+                        | "instance-static-initialization"
+                        | "public-instance-static-initialization"
+                        | "abstract-static-initialization"
+                        | "public-abstract-static-initialization"
+                        | "protected-static-static-initialization"
+                        | "protected-instance-static-initialization"
+                        | "protected-abstract-static-initialization"
+                        | "private-static-static-initialization"
+                        | "private-instance-static-initialization"
+                        | "#private-static-static-initialization"
+                        | "#private-instance-static-initialization"
+                      )
+                    | (
+                        | "readonly-signature"
+                        | "signature"
+                        | "readonly-field"
+                        | "public-readonly-field"
+                        | "public-decorated-readonly-field"
+                        | "decorated-readonly-field"
+                        | "static-readonly-field"
+                        | "public-static-readonly-field"
+                        | "instance-readonly-field"
+                        | "public-instance-readonly-field"
+                        | "abstract-readonly-field"
+                        | "public-abstract-readonly-field"
+                        | "protected-readonly-field"
+                        | "protected-decorated-readonly-field"
+                        | "protected-static-readonly-field"
+                        | "protected-instance-readonly-field"
+                        | "protected-abstract-readonly-field"
+                        | "private-readonly-field"
+                        | "private-decorated-readonly-field"
+                        | "private-static-readonly-field"
+                        | "private-instance-readonly-field"
+                        | "#private-readonly-field"
+                        | "#private-static-readonly-field"
+                        | "#private-instance-readonly-field"
+                        | "field"
+                        | "public-field"
+                        | "public-decorated-field"
+                        | "decorated-field"
+                        | "static-field"
+                        | "public-static-field"
+                        | "instance-field"
+                        | "public-instance-field"
+                        | "abstract-field"
+                        | "public-abstract-field"
+                        | "protected-field"
+                        | "protected-decorated-field"
+                        | "protected-static-field"
+                        | "protected-instance-field"
+                        | "protected-abstract-field"
+                        | "private-field"
+                        | "private-decorated-field"
+                        | "private-static-field"
+                        | "private-instance-field"
+                        | "#private-field"
+                        | "#private-static-field"
+                        | "#private-instance-field"
+                        | "method"
+                        | "public-method"
+                        | "public-decorated-method"
+                        | "decorated-method"
+                        | "static-method"
+                        | "public-static-method"
+                        | "instance-method"
+                        | "public-instance-method"
+                        | "abstract-method"
+                        | "public-abstract-method"
+                        | "protected-method"
+                        | "protected-decorated-method"
+                        | "protected-static-method"
+                        | "protected-instance-method"
+                        | "protected-abstract-method"
+                        | "private-method"
+                        | "private-decorated-method"
+                        | "private-static-method"
+                        | "private-instance-method"
+                        | "#private-method"
+                        | "#private-static-method"
+                        | "#private-instance-method"
+                        | "call-signature"
+                        | "constructor"
+                        | "public-constructor"
+                        | "protected-constructor"
+                        | "private-constructor"
+                        | "accessor"
+                        | "public-accessor"
+                        | "public-decorated-accessor"
+                        | "decorated-accessor"
+                        | "static-accessor"
+                        | "public-static-accessor"
+                        | "instance-accessor"
+                        | "public-instance-accessor"
+                        | "abstract-accessor"
+                        | "public-abstract-accessor"
+                        | "protected-accessor"
+                        | "protected-decorated-accessor"
+                        | "protected-static-accessor"
+                        | "protected-instance-accessor"
+                        | "protected-abstract-accessor"
+                        | "private-accessor"
+                        | "private-decorated-accessor"
+                        | "private-static-accessor"
+                        | "private-instance-accessor"
+                        | "#private-accessor"
+                        | "#private-static-accessor"
+                        | "#private-instance-accessor"
+                        | "get"
+                        | "public-get"
+                        | "public-decorated-get"
+                        | "decorated-get"
+                        | "static-get"
+                        | "public-static-get"
+                        | "instance-get"
+                        | "public-instance-get"
+                        | "abstract-get"
+                        | "public-abstract-get"
+                        | "protected-get"
+                        | "protected-decorated-get"
+                        | "protected-static-get"
+                        | "protected-instance-get"
+                        | "protected-abstract-get"
+                        | "private-get"
+                        | "private-decorated-get"
+                        | "private-static-get"
+                        | "private-instance-get"
+                        | "#private-get"
+                        | "#private-static-get"
+                        | "#private-instance-get"
+                        | "set"
+                        | "public-set"
+                        | "public-decorated-set"
+                        | "decorated-set"
+                        | "static-set"
+                        | "public-static-set"
+                        | "instance-set"
+                        | "public-instance-set"
+                        | "abstract-set"
+                        | "public-abstract-set"
+                        | "protected-set"
+                        | "protected-decorated-set"
+                        | "protected-static-set"
+                        | "protected-instance-set"
+                        | "protected-abstract-set"
+                        | "private-set"
+                        | "private-decorated-set"
+                        | "private-static-set"
+                        | "private-instance-set"
+                        | "#private-set"
+                        | "#private-static-set"
+                        | "#private-instance-set"
+                        | "static-initialization"
+                        | "static-static-initialization"
+                        | "public-static-static-initialization"
+                        | "instance-static-initialization"
+                        | "public-instance-static-initialization"
+                        | "abstract-static-initialization"
+                        | "public-abstract-static-initialization"
+                        | "protected-static-static-initialization"
+                        | "protected-instance-static-initialization"
+                        | "protected-abstract-static-initialization"
+                        | "private-static-static-initialization"
+                        | "private-instance-static-initialization"
+                        | "#private-static-static-initialization"
+                        | "#private-instance-static-initialization"
+                      )[]
+                  )[]
+                | "never";
+              optionalityOrder?: "optional-first" | "required-first";
+              order?:
+                | "alphabetically"
+                | "alphabetically-case-insensitive"
+                | "as-written"
+                | "natural"
+                | "natural-case-insensitive";
+            };
+
+        interfaces?:
+          | "never"
+          | (
+              | (
+                  | "readonly-signature"
+                  | "signature"
+                  | "readonly-field"
+                  | "field"
+                  | "method"
+                  | "constructor"
+                )
+              | (
+                  | "readonly-signature"
+                  | "signature"
+                  | "readonly-field"
+                  | "field"
+                  | "method"
+                  | "constructor"
+                )[]
+            )[]
+          | {
+              memberTypes?:
+                | (
+                    | (
+                        | "readonly-signature"
+                        | "signature"
+                        | "readonly-field"
+                        | "field"
+                        | "method"
+                        | "constructor"
+                      )
+                    | (
+                        | "readonly-signature"
+                        | "signature"
+                        | "readonly-field"
+                        | "field"
+                        | "method"
+                        | "constructor"
+                      )[]
+                  )[]
+                | "never";
+              optionalityOrder?: "optional-first" | "required-first";
+              order?:
+                | "alphabetically"
+                | "alphabetically-case-insensitive"
+                | "as-written"
+                | "natural"
+                | "natural-case-insensitive";
+            };
+
+        typeLiterals?:
+          | "never"
+          | (
+              | (
+                  | "readonly-signature"
+                  | "signature"
+                  | "readonly-field"
+                  | "field"
+                  | "method"
+                  | "constructor"
+                )
+              | (
+                  | "readonly-signature"
+                  | "signature"
+                  | "readonly-field"
+                  | "field"
+                  | "method"
+                  | "constructor"
+                )[]
+            )[]
+          | {
+              memberTypes?:
+                | (
+                    | (
+                        | "readonly-signature"
+                        | "signature"
+                        | "readonly-field"
+                        | "field"
+                        | "method"
+                        | "constructor"
+                      )
+                    | (
+                        | "readonly-signature"
+                        | "signature"
+                        | "readonly-field"
+                        | "field"
+                        | "method"
+                        | "constructor"
+                      )[]
+                  )[]
+                | "never";
+              optionalityOrder?: "optional-first" | "required-first";
+              order?:
+                | "alphabetically"
+                | "alphabetically-case-insensitive"
+                | "as-written"
+                | "natural"
+                | "natural-case-insensitive";
+            };
+      },
+    ];
 // ----- typescript/method-signature-style -----
-type TypescriptMethodSignatureStyle = []|[("property" | "method")]
+type TypescriptMethodSignatureStyle = [] | ["property" | "method"];
 // ----- typescript/naming-convention -----
-type _TypescriptNamingConventionFormatOptionsConfig = (_TypescriptNamingConventionPredefinedFormats[] | null)
-type _TypescriptNamingConventionPredefinedFormats = ("camelCase" | "strictCamelCase" | "PascalCase" | "StrictPascalCase" | "snake_case" | "UPPER_CASE")
-type _TypescriptNamingConventionUnderscoreOptions = ("forbid" | "allow" | "require" | "requireDouble" | "allowDouble" | "allowSingleOrDouble")
-type _TypescriptNamingConvention_PrefixSuffixConfig = string[]
-type _TypescriptNamingConventionTypeModifiers = ("boolean" | "string" | "number" | "function" | "array")
-type TypescriptNamingConvention = ({
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  modifiers?: ("const" | "readonly" | "static" | "public" | "protected" | "private" | "#private" | "abstract" | "destructured" | "global" | "exported" | "unused" | "requiresQuotes" | "override" | "async" | "default" | "namespace")[]
-  selector: ("default" | "variableLike" | "memberLike" | "typeLike" | "method" | "property" | "accessor" | "variable" | "function" | "parameter" | "parameterProperty" | "classicAccessor" | "enumMember" | "classMethod" | "objectLiteralMethod" | "typeMethod" | "classProperty" | "objectLiteralProperty" | "typeProperty" | "autoAccessor" | "class" | "interface" | "typeAlias" | "enum" | "typeParameter" | "import")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "default"
-  modifiers?: ("const" | "readonly" | "static" | "public" | "protected" | "private" | "#private" | "abstract" | "destructured" | "global" | "exported" | "unused" | "requiresQuotes" | "override" | "async" | "default" | "namespace")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "variableLike"
-  modifiers?: ("unused" | "async")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "variable"
-  modifiers?: ("const" | "destructured" | "exported" | "global" | "unused" | "async")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "function"
-  modifiers?: ("exported" | "global" | "unused" | "async")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "parameter"
-  modifiers?: ("destructured" | "unused")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "memberLike"
-  modifiers?: ("abstract" | "private" | "#private" | "protected" | "public" | "readonly" | "requiresQuotes" | "static" | "override" | "async")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "classProperty"
-  modifiers?: ("abstract" | "private" | "#private" | "protected" | "public" | "readonly" | "requiresQuotes" | "static" | "override")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "objectLiteralProperty"
-  modifiers?: ("public" | "requiresQuotes")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "typeProperty"
-  modifiers?: ("public" | "readonly" | "requiresQuotes")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "parameterProperty"
-  modifiers?: ("private" | "protected" | "public" | "readonly")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "property"
-  modifiers?: ("abstract" | "private" | "#private" | "protected" | "public" | "readonly" | "requiresQuotes" | "static" | "override" | "async")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "classMethod"
-  modifiers?: ("abstract" | "private" | "#private" | "protected" | "public" | "requiresQuotes" | "static" | "override" | "async")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "objectLiteralMethod"
-  modifiers?: ("public" | "requiresQuotes" | "async")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "typeMethod"
-  modifiers?: ("public" | "requiresQuotes")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "method"
-  modifiers?: ("abstract" | "private" | "#private" | "protected" | "public" | "requiresQuotes" | "static" | "override" | "async")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "classicAccessor"
-  modifiers?: ("abstract" | "private" | "protected" | "public" | "requiresQuotes" | "static" | "override")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "autoAccessor"
-  modifiers?: ("abstract" | "private" | "protected" | "public" | "requiresQuotes" | "static" | "override")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "accessor"
-  modifiers?: ("abstract" | "private" | "protected" | "public" | "requiresQuotes" | "static" | "override")[]
-  types?: _TypescriptNamingConventionTypeModifiers[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "enumMember"
-  modifiers?: ("requiresQuotes")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "typeLike"
-  modifiers?: ("abstract" | "exported" | "unused")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "class"
-  modifiers?: ("abstract" | "exported" | "unused")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "interface"
-  modifiers?: ("exported" | "unused")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "typeAlias"
-  modifiers?: ("exported" | "unused")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "enum"
-  modifiers?: ("exported" | "unused")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "typeParameter"
-  modifiers?: ("unused")[]
-} | {
-  custom?: _TypescriptNamingConvention_MatchRegexConfig
-  failureMessage?: string
-  format: _TypescriptNamingConventionFormatOptionsConfig
-  leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  prefix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  suffix?: _TypescriptNamingConvention_PrefixSuffixConfig
-  trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions
-  filter?: (string | _TypescriptNamingConvention_MatchRegexConfig)
-  selector: "import"
-  modifiers?: ("default" | "namespace")[]
-})[]
+type _TypescriptNamingConventionFormatOptionsConfig =
+  | _TypescriptNamingConventionPredefinedFormats[]
+  | null;
+type _TypescriptNamingConventionPredefinedFormats =
+  | "camelCase"
+  | "strictCamelCase"
+  | "PascalCase"
+  | "StrictPascalCase"
+  | "snake_case"
+  | "UPPER_CASE";
+type _TypescriptNamingConventionUnderscoreOptions =
+  | "forbid"
+  | "allow"
+  | "require"
+  | "requireDouble"
+  | "allowDouble"
+  | "allowSingleOrDouble";
+type _TypescriptNamingConvention_PrefixSuffixConfig = string[];
+type _TypescriptNamingConventionTypeModifiers =
+  | "boolean"
+  | "string"
+  | "number"
+  | "function"
+  | "array";
+type TypescriptNamingConvention = (
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      modifiers?: (
+        | "const"
+        | "readonly"
+        | "static"
+        | "public"
+        | "protected"
+        | "private"
+        | "#private"
+        | "abstract"
+        | "destructured"
+        | "global"
+        | "exported"
+        | "unused"
+        | "requiresQuotes"
+        | "override"
+        | "async"
+        | "default"
+        | "namespace"
+      )[];
+      selector: (
+        | "default"
+        | "variableLike"
+        | "memberLike"
+        | "typeLike"
+        | "method"
+        | "property"
+        | "accessor"
+        | "variable"
+        | "function"
+        | "parameter"
+        | "parameterProperty"
+        | "classicAccessor"
+        | "enumMember"
+        | "classMethod"
+        | "objectLiteralMethod"
+        | "typeMethod"
+        | "classProperty"
+        | "objectLiteralProperty"
+        | "typeProperty"
+        | "autoAccessor"
+        | "class"
+        | "interface"
+        | "typeAlias"
+        | "enum"
+        | "typeParameter"
+        | "import"
+      )[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "default";
+      modifiers?: (
+        | "const"
+        | "readonly"
+        | "static"
+        | "public"
+        | "protected"
+        | "private"
+        | "#private"
+        | "abstract"
+        | "destructured"
+        | "global"
+        | "exported"
+        | "unused"
+        | "requiresQuotes"
+        | "override"
+        | "async"
+        | "default"
+        | "namespace"
+      )[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "variableLike";
+      modifiers?: ("unused" | "async")[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "variable";
+      modifiers?: ("const" | "destructured" | "exported" | "global" | "unused" | "async")[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "function";
+      modifiers?: ("exported" | "global" | "unused" | "async")[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "parameter";
+      modifiers?: ("destructured" | "unused")[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "memberLike";
+      modifiers?: (
+        | "abstract"
+        | "private"
+        | "#private"
+        | "protected"
+        | "public"
+        | "readonly"
+        | "requiresQuotes"
+        | "static"
+        | "override"
+        | "async"
+      )[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "classProperty";
+      modifiers?: (
+        | "abstract"
+        | "private"
+        | "#private"
+        | "protected"
+        | "public"
+        | "readonly"
+        | "requiresQuotes"
+        | "static"
+        | "override"
+      )[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "objectLiteralProperty";
+      modifiers?: ("public" | "requiresQuotes")[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "typeProperty";
+      modifiers?: ("public" | "readonly" | "requiresQuotes")[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "parameterProperty";
+      modifiers?: ("private" | "protected" | "public" | "readonly")[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "property";
+      modifiers?: (
+        | "abstract"
+        | "private"
+        | "#private"
+        | "protected"
+        | "public"
+        | "readonly"
+        | "requiresQuotes"
+        | "static"
+        | "override"
+        | "async"
+      )[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "classMethod";
+      modifiers?: (
+        | "abstract"
+        | "private"
+        | "#private"
+        | "protected"
+        | "public"
+        | "requiresQuotes"
+        | "static"
+        | "override"
+        | "async"
+      )[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "objectLiteralMethod";
+      modifiers?: ("public" | "requiresQuotes" | "async")[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "typeMethod";
+      modifiers?: ("public" | "requiresQuotes")[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "method";
+      modifiers?: (
+        | "abstract"
+        | "private"
+        | "#private"
+        | "protected"
+        | "public"
+        | "requiresQuotes"
+        | "static"
+        | "override"
+        | "async"
+      )[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "classicAccessor";
+      modifiers?: (
+        | "abstract"
+        | "private"
+        | "protected"
+        | "public"
+        | "requiresQuotes"
+        | "static"
+        | "override"
+      )[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "autoAccessor";
+      modifiers?: (
+        | "abstract"
+        | "private"
+        | "protected"
+        | "public"
+        | "requiresQuotes"
+        | "static"
+        | "override"
+      )[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "accessor";
+      modifiers?: (
+        | "abstract"
+        | "private"
+        | "protected"
+        | "public"
+        | "requiresQuotes"
+        | "static"
+        | "override"
+      )[];
+      types?: _TypescriptNamingConventionTypeModifiers[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "enumMember";
+      modifiers?: "requiresQuotes"[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "typeLike";
+      modifiers?: ("abstract" | "exported" | "unused")[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "class";
+      modifiers?: ("abstract" | "exported" | "unused")[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "interface";
+      modifiers?: ("exported" | "unused")[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "typeAlias";
+      modifiers?: ("exported" | "unused")[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "enum";
+      modifiers?: ("exported" | "unused")[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "typeParameter";
+      modifiers?: "unused"[];
+    }
+  | {
+      custom?: _TypescriptNamingConvention_MatchRegexConfig;
+      failureMessage?: string;
+      format: _TypescriptNamingConventionFormatOptionsConfig;
+      leadingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      prefix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      suffix?: _TypescriptNamingConvention_PrefixSuffixConfig;
+      trailingUnderscore?: _TypescriptNamingConventionUnderscoreOptions;
+      filter?: string | _TypescriptNamingConvention_MatchRegexConfig;
+      selector: "import";
+      modifiers?: ("default" | "namespace")[];
+    }
+)[];
 interface _TypescriptNamingConvention_MatchRegexConfig {
-  match: boolean
-  regex: string
+  match: boolean;
+  regex: string;
 }
 // ----- typescript/no-base-to-string -----
-type TypescriptNoBaseToString = []|[{
-  
-  checkUnknown?: boolean
-  
-  ignoredTypeNames?: string[]
-}]
+type TypescriptNoBaseToString =
+  | []
+  | [
+      {
+        checkUnknown?: boolean;
+
+        ignoredTypeNames?: string[];
+      },
+    ];
 // ----- typescript/no-confusing-void-expression -----
-type TypescriptNoConfusingVoidExpression = []|[{
-  
-  ignoreArrowShorthand?: boolean
-  
-  ignoreVoidOperator?: boolean
-  
-  ignoreVoidReturningFunctions?: boolean
-}]
+type TypescriptNoConfusingVoidExpression =
+  | []
+  | [
+      {
+        ignoreArrowShorthand?: boolean;
+
+        ignoreVoidOperator?: boolean;
+
+        ignoreVoidReturningFunctions?: boolean;
+      },
+    ];
 // ----- typescript/no-deprecated -----
-type TypescriptNoDeprecated = []|[{
-  
-  allow?: (string | {
-    from: "file"
-    name: (string | [string, ...(string)[]])
-    path?: string
-  } | {
-    from: "lib"
-    name: (string | [string, ...(string)[]])
-  } | {
-    from: "package"
-    name: (string | [string, ...(string)[]])
-    package: string
-  })[]
-}]
+type TypescriptNoDeprecated =
+  | []
+  | [
+      {
+        allow?: (
+          | string
+          | {
+              from: "file";
+              name: string | [string, ...string[]];
+              path?: string;
+            }
+          | {
+              from: "lib";
+              name: string | [string, ...string[]];
+            }
+          | {
+              from: "package";
+              name: string | [string, ...string[]];
+              package: string;
+            }
+        )[];
+      },
+    ];
 // ----- typescript/no-duplicate-type-constituents -----
-type TypescriptNoDuplicateTypeConstituents = []|[{
-  
-  ignoreIntersections?: boolean
-  
-  ignoreUnions?: boolean
-}]
+type TypescriptNoDuplicateTypeConstituents =
+  | []
+  | [
+      {
+        ignoreIntersections?: boolean;
+
+        ignoreUnions?: boolean;
+      },
+    ];
 // ----- typescript/no-empty-function -----
-type TypescriptNoEmptyFunction = []|[{
-  
-  allow?: ("functions" | "arrowFunctions" | "generatorFunctions" | "methods" | "generatorMethods" | "getters" | "setters" | "constructors" | "private-constructors" | "protected-constructors" | "asyncFunctions" | "asyncMethods" | "decoratedFunctions" | "overrideMethods")[]
-}]
+type TypescriptNoEmptyFunction =
+  | []
+  | [
+      {
+        allow?: (
+          | "functions"
+          | "arrowFunctions"
+          | "generatorFunctions"
+          | "methods"
+          | "generatorMethods"
+          | "getters"
+          | "setters"
+          | "constructors"
+          | "private-constructors"
+          | "protected-constructors"
+          | "asyncFunctions"
+          | "asyncMethods"
+          | "decoratedFunctions"
+          | "overrideMethods"
+        )[];
+      },
+    ];
 // ----- typescript/no-empty-interface -----
-type TypescriptNoEmptyInterface = []|[{
-  
-  allowSingleExtends?: boolean
-}]
+type TypescriptNoEmptyInterface =
+  | []
+  | [
+      {
+        allowSingleExtends?: boolean;
+      },
+    ];
 // ----- typescript/no-empty-object-type -----
-type TypescriptNoEmptyObjectType = []|[{
-  
-  allowInterfaces?: ("always" | "never" | "with-single-extends")
-  
-  allowObjectTypes?: ("always" | "never")
-  
-  allowWithName?: string
-}]
+type TypescriptNoEmptyObjectType =
+  | []
+  | [
+      {
+        allowInterfaces?: "always" | "never" | "with-single-extends";
+
+        allowObjectTypes?: "always" | "never";
+
+        allowWithName?: string;
+      },
+    ];
 // ----- typescript/no-explicit-any -----
-type TypescriptNoExplicitAny = []|[{
-  
-  fixToUnknown?: boolean
-  
-  ignoreRestArgs?: boolean
-}]
+type TypescriptNoExplicitAny =
+  | []
+  | [
+      {
+        fixToUnknown?: boolean;
+
+        ignoreRestArgs?: boolean;
+      },
+    ];
 // ----- typescript/no-extraneous-class -----
-type TypescriptNoExtraneousClass = []|[{
-  
-  allowConstructorOnly?: boolean
-  
-  allowEmpty?: boolean
-  
-  allowStaticOnly?: boolean
-  
-  allowWithDecorator?: boolean
-}]
+type TypescriptNoExtraneousClass =
+  | []
+  | [
+      {
+        allowConstructorOnly?: boolean;
+
+        allowEmpty?: boolean;
+
+        allowStaticOnly?: boolean;
+
+        allowWithDecorator?: boolean;
+      },
+    ];
 // ----- typescript/no-floating-promises -----
-type TypescriptNoFloatingPromises = []|[{
-  
-  allowForKnownSafeCalls?: (string | {
-    from: "file"
-    name: (string | [string, ...(string)[]])
-    path?: string
-  } | {
-    from: "lib"
-    name: (string | [string, ...(string)[]])
-  } | {
-    from: "package"
-    name: (string | [string, ...(string)[]])
-    package: string
-  })[]
-  
-  allowForKnownSafePromises?: (string | {
-    from: "file"
-    name: (string | [string, ...(string)[]])
-    path?: string
-  } | {
-    from: "lib"
-    name: (string | [string, ...(string)[]])
-  } | {
-    from: "package"
-    name: (string | [string, ...(string)[]])
-    package: string
-  })[]
-  
-  checkThenables?: boolean
-  
-  ignoreIIFE?: boolean
-  
-  ignoreVoid?: boolean
-}]
+type TypescriptNoFloatingPromises =
+  | []
+  | [
+      {
+        allowForKnownSafeCalls?: (
+          | string
+          | {
+              from: "file";
+              name: string | [string, ...string[]];
+              path?: string;
+            }
+          | {
+              from: "lib";
+              name: string | [string, ...string[]];
+            }
+          | {
+              from: "package";
+              name: string | [string, ...string[]];
+              package: string;
+            }
+        )[];
+
+        allowForKnownSafePromises?: (
+          | string
+          | {
+              from: "file";
+              name: string | [string, ...string[]];
+              path?: string;
+            }
+          | {
+              from: "lib";
+              name: string | [string, ...string[]];
+            }
+          | {
+              from: "package";
+              name: string | [string, ...string[]];
+              package: string;
+            }
+        )[];
+
+        checkThenables?: boolean;
+
+        ignoreIIFE?: boolean;
+
+        ignoreVoid?: boolean;
+      },
+    ];
 // ----- typescript/no-inferrable-types -----
-type TypescriptNoInferrableTypes = []|[{
-  
-  ignoreParameters?: boolean
-  
-  ignoreProperties?: boolean
-}]
+type TypescriptNoInferrableTypes =
+  | []
+  | [
+      {
+        ignoreParameters?: boolean;
+
+        ignoreProperties?: boolean;
+      },
+    ];
 // ----- typescript/no-invalid-this -----
-type TypescriptNoInvalidThis = []|[{
-  capIsConstructor?: boolean
-}]
+type TypescriptNoInvalidThis =
+  | []
+  | [
+      {
+        capIsConstructor?: boolean;
+      },
+    ];
 // ----- typescript/no-invalid-void-type -----
-type TypescriptNoInvalidVoidType = []|[{
-  
-  allowAsThisParameter?: boolean
-  
-  allowInGenericTypeArguments?: (boolean | [string, ...(string)[]])
-}]
+type TypescriptNoInvalidVoidType =
+  | []
+  | [
+      {
+        allowAsThisParameter?: boolean;
+
+        allowInGenericTypeArguments?: boolean | [string, ...string[]];
+      },
+    ];
 // ----- typescript/no-magic-numbers -----
-type TypescriptNoMagicNumbers = []|[{
-  detectObjects?: boolean
-  enforceConst?: boolean
-  ignore?: (number | string)[]
-  ignoreArrayIndexes?: boolean
-  ignoreDefaultValues?: boolean
-  ignoreClassFieldInitialValues?: boolean
-  
-  ignoreEnums?: boolean
-  
-  ignoreNumericLiteralTypes?: boolean
-  
-  ignoreReadonlyClassProperties?: boolean
-  
-  ignoreTypeIndexes?: boolean
-}]
+type TypescriptNoMagicNumbers =
+  | []
+  | [
+      {
+        detectObjects?: boolean;
+        enforceConst?: boolean;
+        ignore?: (number | string)[];
+        ignoreArrayIndexes?: boolean;
+        ignoreDefaultValues?: boolean;
+        ignoreClassFieldInitialValues?: boolean;
+
+        ignoreEnums?: boolean;
+
+        ignoreNumericLiteralTypes?: boolean;
+
+        ignoreReadonlyClassProperties?: boolean;
+
+        ignoreTypeIndexes?: boolean;
+      },
+    ];
 // ----- typescript/no-meaningless-void-operator -----
-type TypescriptNoMeaninglessVoidOperator = []|[{
-  
-  checkNever?: boolean
-}]
+type TypescriptNoMeaninglessVoidOperator =
+  | []
+  | [
+      {
+        checkNever?: boolean;
+      },
+    ];
 // ----- typescript/no-misused-promises -----
-type TypescriptNoMisusedPromises = []|[{
-  
-  checksConditionals?: boolean
-  
-  checksSpreads?: boolean
-  
-  checksVoidReturn?: (boolean | {
-    
-    arguments?: boolean
-    
-    attributes?: boolean
-    
-    inheritedMethods?: boolean
-    
-    properties?: boolean
-    
-    returns?: boolean
-    
-    variables?: boolean
-  })
-}]
+type TypescriptNoMisusedPromises =
+  | []
+  | [
+      {
+        checksConditionals?: boolean;
+
+        checksSpreads?: boolean;
+
+        checksVoidReturn?:
+          | boolean
+          | {
+              arguments?: boolean;
+
+              attributes?: boolean;
+
+              inheritedMethods?: boolean;
+
+              properties?: boolean;
+
+              returns?: boolean;
+
+              variables?: boolean;
+            };
+      },
+    ];
 // ----- typescript/no-misused-spread -----
-type TypescriptNoMisusedSpread = []|[{
-  
-  allow?: (string | {
-    from: "file"
-    name: (string | [string, ...(string)[]])
-    path?: string
-  } | {
-    from: "lib"
-    name: (string | [string, ...(string)[]])
-  } | {
-    from: "package"
-    name: (string | [string, ...(string)[]])
-    package: string
-  })[]
-}]
+type TypescriptNoMisusedSpread =
+  | []
+  | [
+      {
+        allow?: (
+          | string
+          | {
+              from: "file";
+              name: string | [string, ...string[]];
+              path?: string;
+            }
+          | {
+              from: "lib";
+              name: string | [string, ...string[]];
+            }
+          | {
+              from: "package";
+              name: string | [string, ...string[]];
+              package: string;
+            }
+        )[];
+      },
+    ];
 // ----- typescript/no-namespace -----
-type TypescriptNoNamespace = []|[{
-  
-  allowDeclarations?: boolean
-  
-  allowDefinitionFiles?: boolean
-}]
+type TypescriptNoNamespace =
+  | []
+  | [
+      {
+        allowDeclarations?: boolean;
+
+        allowDefinitionFiles?: boolean;
+      },
+    ];
 // ----- typescript/no-redeclare -----
-type TypescriptNoRedeclare = []|[{
-  
-  builtinGlobals?: boolean
-  
-  ignoreDeclarationMerge?: boolean
-}]
+type TypescriptNoRedeclare =
+  | []
+  | [
+      {
+        builtinGlobals?: boolean;
+
+        ignoreDeclarationMerge?: boolean;
+      },
+    ];
 // ----- typescript/no-require-imports -----
-type TypescriptNoRequireImports = []|[{
-  
-  allow?: string[]
-  
-  allowAsImport?: boolean
-}]
+type TypescriptNoRequireImports =
+  | []
+  | [
+      {
+        allow?: string[];
+
+        allowAsImport?: boolean;
+      },
+    ];
 // ----- typescript/no-restricted-imports -----
-type TypescriptNoRestrictedImports = ((string | {
-  name: string
-  message?: string
-  importNames?: string[]
-  allowImportNames?: string[]
-  
-  allowTypeImports?: boolean
-})[] | []|[{
-  paths?: (string | {
-    name: string
-    message?: string
-    importNames?: string[]
-    allowImportNames?: string[]
-    
-    allowTypeImports?: boolean
-  })[]
-  patterns?: (string[] | {
-    
-    importNames?: [string, ...(string)[]]
-    
-    allowImportNames?: [string, ...(string)[]]
-    
-    group?: [string, ...(string)[]]
-    regex?: string
-    importNamePattern?: string
-    allowImportNamePattern?: string
-    message?: string
-    caseSensitive?: boolean
-    
-    allowTypeImports?: boolean
-  }[])
-}])
+type TypescriptNoRestrictedImports =
+  | (
+      | string
+      | {
+          name: string;
+          message?: string;
+          importNames?: string[];
+          allowImportNames?: string[];
+
+          allowTypeImports?: boolean;
+        }
+    )[]
+  | []
+  | [
+      {
+        paths?: (
+          | string
+          | {
+              name: string;
+              message?: string;
+              importNames?: string[];
+              allowImportNames?: string[];
+
+              allowTypeImports?: boolean;
+            }
+        )[];
+        patterns?:
+          | string[]
+          | {
+              importNames?: [string, ...string[]];
+
+              allowImportNames?: [string, ...string[]];
+
+              group?: [string, ...string[]];
+              regex?: string;
+              importNamePattern?: string;
+              allowImportNamePattern?: string;
+              message?: string;
+              caseSensitive?: boolean;
+
+              allowTypeImports?: boolean;
+            }[];
+      },
+    ];
 // ----- typescript/no-restricted-types -----
-type TypescriptNoRestrictedTypes = []|[{
-  
-  types?: {
-    [k: string]: (true | string | {
-      
-      fixWith?: string
-      
-      message?: string
-      
-      suggest?: string[]
-    }) | undefined
-  }
-}]
+type TypescriptNoRestrictedTypes =
+  | []
+  | [
+      {
+        types?: {
+          [k: string]:
+            | (
+                | true
+                | string
+                | {
+                    fixWith?: string;
+
+                    message?: string;
+
+                    suggest?: string[];
+                  }
+              )
+            | undefined;
+        };
+      },
+    ];
 // ----- typescript/no-shadow -----
-type TypescriptNoShadow = []|[{
-  
-  allow?: string[]
-  
-  builtinGlobals?: boolean
-  
-  hoist?: ("all" | "functions" | "functions-and-types" | "never" | "types")
-  
-  ignoreFunctionTypeParameterNameValueShadow?: boolean
-  
-  ignoreOnInitialization?: boolean
-  
-  ignoreTypeValueShadow?: boolean
-}]
+type TypescriptNoShadow =
+  | []
+  | [
+      {
+        allow?: string[];
+
+        builtinGlobals?: boolean;
+
+        hoist?: "all" | "functions" | "functions-and-types" | "never" | "types";
+
+        ignoreFunctionTypeParameterNameValueShadow?: boolean;
+
+        ignoreOnInitialization?: boolean;
+
+        ignoreTypeValueShadow?: boolean;
+      },
+    ];
 // ----- typescript/no-this-alias -----
-type TypescriptNoThisAlias = []|[{
-  
-  allowDestructuring?: boolean
-  
-  allowedNames?: string[]
-}]
+type TypescriptNoThisAlias =
+  | []
+  | [
+      {
+        allowDestructuring?: boolean;
+
+        allowedNames?: string[];
+      },
+    ];
 // ----- typescript/no-type-alias -----
-type TypescriptNoTypeAlias = []|[{
-  
-  allowAliases?: ("always" | "never" | "in-unions" | "in-intersections" | "in-unions-and-intersections")
-  
-  allowCallbacks?: ("always" | "never")
-  
-  allowConditionalTypes?: ("always" | "never")
-  
-  allowConstructors?: ("always" | "never")
-  
-  allowGenerics?: ("always" | "never")
-  
-  allowLiterals?: ("always" | "never" | "in-unions" | "in-intersections" | "in-unions-and-intersections")
-  
-  allowMappedTypes?: ("always" | "never" | "in-unions" | "in-intersections" | "in-unions-and-intersections")
-  
-  allowTupleTypes?: ("always" | "never" | "in-unions" | "in-intersections" | "in-unions-and-intersections")
-}]
+type TypescriptNoTypeAlias =
+  | []
+  | [
+      {
+        allowAliases?:
+          | "always"
+          | "never"
+          | "in-unions"
+          | "in-intersections"
+          | "in-unions-and-intersections";
+
+        allowCallbacks?: "always" | "never";
+
+        allowConditionalTypes?: "always" | "never";
+
+        allowConstructors?: "always" | "never";
+
+        allowGenerics?: "always" | "never";
+
+        allowLiterals?:
+          | "always"
+          | "never"
+          | "in-unions"
+          | "in-intersections"
+          | "in-unions-and-intersections";
+
+        allowMappedTypes?:
+          | "always"
+          | "never"
+          | "in-unions"
+          | "in-intersections"
+          | "in-unions-and-intersections";
+
+        allowTupleTypes?:
+          | "always"
+          | "never"
+          | "in-unions"
+          | "in-intersections"
+          | "in-unions-and-intersections";
+      },
+    ];
 // ----- typescript/no-unnecessary-boolean-literal-compare -----
-type TypescriptNoUnnecessaryBooleanLiteralCompare = []|[{
-  
-  allowComparingNullableBooleansToFalse?: boolean
-  
-  allowComparingNullableBooleansToTrue?: boolean
-  
-  allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean
-}]
+type TypescriptNoUnnecessaryBooleanLiteralCompare =
+  | []
+  | [
+      {
+        allowComparingNullableBooleansToFalse?: boolean;
+
+        allowComparingNullableBooleansToTrue?: boolean;
+
+        allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
+      },
+    ];
 // ----- typescript/no-unnecessary-condition -----
-type TypescriptNoUnnecessaryCondition = []|[{
-  
-  allowConstantLoopConditions?: (boolean | ("always" | "never" | "only-allowed-literals"))
-  
-  allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean
-  
-  checkTypePredicates?: boolean
-}]
+type TypescriptNoUnnecessaryCondition =
+  | []
+  | [
+      {
+        allowConstantLoopConditions?: boolean | ("always" | "never" | "only-allowed-literals");
+
+        allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
+
+        checkTypePredicates?: boolean;
+      },
+    ];
 // ----- typescript/no-unnecessary-type-assertion -----
-type TypescriptNoUnnecessaryTypeAssertion = []|[{
-  
-  checkLiteralConstAssertions?: boolean
-  
-  typesToIgnore?: string[]
-}]
+type TypescriptNoUnnecessaryTypeAssertion =
+  | []
+  | [
+      {
+        checkLiteralConstAssertions?: boolean;
+
+        typesToIgnore?: string[];
+      },
+    ];
 // ----- typescript/no-unsafe-member-access -----
-type TypescriptNoUnsafeMemberAccess = []|[{
-  
-  allowOptionalChaining?: boolean
-}]
+type TypescriptNoUnsafeMemberAccess =
+  | []
+  | [
+      {
+        allowOptionalChaining?: boolean;
+      },
+    ];
 // ----- typescript/no-unused-expressions -----
-type TypescriptNoUnusedExpressions = []|[{
-  allowShortCircuit?: boolean
-  allowTernary?: boolean
-  allowTaggedTemplates?: boolean
-  enforceForJSX?: boolean
-  ignoreDirectives?: boolean
-}]
+type TypescriptNoUnusedExpressions =
+  | []
+  | [
+      {
+        allowShortCircuit?: boolean;
+        allowTernary?: boolean;
+        allowTaggedTemplates?: boolean;
+        enforceForJSX?: boolean;
+        ignoreDirectives?: boolean;
+      },
+    ];
 // ----- typescript/no-unused-vars -----
-type TypescriptNoUnusedVars = []|[(("all" | "local") | {
-  
-  args?: ("all" | "after-used" | "none")
-  
-  argsIgnorePattern?: string
-  
-  caughtErrors?: ("all" | "none")
-  
-  caughtErrorsIgnorePattern?: string
-  
-  destructuredArrayIgnorePattern?: string
-  
-  enableAutofixRemoval?: {
-    
-    imports?: boolean
-  }
-  
-  ignoreClassWithStaticInitBlock?: boolean
-  
-  ignoreRestSiblings?: boolean
-  
-  ignoreUsingDeclarations?: boolean
-  
-  reportUsedIgnorePattern?: boolean
-  
-  vars?: ("all" | "local")
-  
-  varsIgnorePattern?: string
-})]
+type TypescriptNoUnusedVars =
+  | []
+  | [
+      | ("all" | "local")
+      | {
+          args?: "all" | "after-used" | "none";
+
+          argsIgnorePattern?: string;
+
+          caughtErrors?: "all" | "none";
+
+          caughtErrorsIgnorePattern?: string;
+
+          destructuredArrayIgnorePattern?: string;
+
+          enableAutofixRemoval?: {
+            imports?: boolean;
+          };
+
+          ignoreClassWithStaticInitBlock?: boolean;
+
+          ignoreRestSiblings?: boolean;
+
+          ignoreUsingDeclarations?: boolean;
+
+          reportUsedIgnorePattern?: boolean;
+
+          vars?: "all" | "local";
+
+          varsIgnorePattern?: string;
+        },
+    ];
 // ----- typescript/no-use-before-define -----
-type TypescriptNoUseBeforeDefine = []|[("nofunc" | {
-  
-  allowNamedExports?: boolean
-  
-  classes?: boolean
-  
-  enums?: boolean
-  
-  functions?: boolean
-  
-  ignoreTypeReferences?: boolean
-  
-  typedefs?: boolean
-  
-  variables?: boolean
-})]
+type TypescriptNoUseBeforeDefine =
+  | []
+  | [
+      | "nofunc"
+      | {
+          allowNamedExports?: boolean;
+
+          classes?: boolean;
+
+          enums?: boolean;
+
+          functions?: boolean;
+
+          ignoreTypeReferences?: boolean;
+
+          typedefs?: boolean;
+
+          variables?: boolean;
+        },
+    ];
 // ----- typescript/no-useless-default-assignment -----
-type TypescriptNoUselessDefaultAssignment = []|[{
-  
-  allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean
-}]
+type TypescriptNoUselessDefaultAssignment =
+  | []
+  | [
+      {
+        allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
+      },
+    ];
 // ----- typescript/no-var-requires -----
-type TypescriptNoVarRequires = []|[{
-  
-  allow?: string[]
-}]
+type TypescriptNoVarRequires =
+  | []
+  | [
+      {
+        allow?: string[];
+      },
+    ];
 // ----- typescript/only-throw-error -----
-type TypescriptOnlyThrowError = []|[{
-  
-  allow?: (string | {
-    from: "file"
-    name: (string | [string, ...(string)[]])
-    path?: string
-  } | {
-    from: "lib"
-    name: (string | [string, ...(string)[]])
-  } | {
-    from: "package"
-    name: (string | [string, ...(string)[]])
-    package: string
-  })[]
-  
-  allowRethrowing?: boolean
-  
-  allowThrowingAny?: boolean
-  
-  allowThrowingUnknown?: boolean
-}]
+type TypescriptOnlyThrowError =
+  | []
+  | [
+      {
+        allow?: (
+          | string
+          | {
+              from: "file";
+              name: string | [string, ...string[]];
+              path?: string;
+            }
+          | {
+              from: "lib";
+              name: string | [string, ...string[]];
+            }
+          | {
+              from: "package";
+              name: string | [string, ...string[]];
+              package: string;
+            }
+        )[];
+
+        allowRethrowing?: boolean;
+
+        allowThrowingAny?: boolean;
+
+        allowThrowingUnknown?: boolean;
+      },
+    ];
 // ----- typescript/parameter-properties -----
-type TypescriptParameterProperties = []|[{
-  
-  allow?: ("readonly" | "private" | "protected" | "public" | "private readonly" | "protected readonly" | "public readonly")[]
-  
-  prefer?: ("class-property" | "parameter-property")
-}]
+type TypescriptParameterProperties =
+  | []
+  | [
+      {
+        allow?: (
+          | "readonly"
+          | "private"
+          | "protected"
+          | "public"
+          | "private readonly"
+          | "protected readonly"
+          | "public readonly"
+        )[];
+
+        prefer?: "class-property" | "parameter-property";
+      },
+    ];
 // ----- typescript/prefer-destructuring -----
-type TypescriptPreferDestructuring = []|[({
-  AssignmentExpression?: {
-    array?: boolean
-    object?: boolean
-  }
-  VariableDeclarator?: {
-    array?: boolean
-    object?: boolean
-  }
-} | {
-  array?: boolean
-  object?: boolean
-})]|[({
-  AssignmentExpression?: {
-    array?: boolean
-    object?: boolean
-  }
-  VariableDeclarator?: {
-    array?: boolean
-    object?: boolean
-  }
-} | {
-  array?: boolean
-  object?: boolean
-}), {
-  
-  enforceForDeclarationWithTypeAnnotation?: boolean
-  
-  enforceForRenamedProperties?: boolean
-}]
+type TypescriptPreferDestructuring =
+  | []
+  | [
+      | {
+          AssignmentExpression?: {
+            array?: boolean;
+            object?: boolean;
+          };
+          VariableDeclarator?: {
+            array?: boolean;
+            object?: boolean;
+          };
+        }
+      | {
+          array?: boolean;
+          object?: boolean;
+        },
+    ]
+  | [
+      (
+        | {
+            AssignmentExpression?: {
+              array?: boolean;
+              object?: boolean;
+            };
+            VariableDeclarator?: {
+              array?: boolean;
+              object?: boolean;
+            };
+          }
+        | {
+            array?: boolean;
+            object?: boolean;
+          }
+      ),
+      {
+        enforceForDeclarationWithTypeAnnotation?: boolean;
+
+        enforceForRenamedProperties?: boolean;
+      },
+    ];
 // ----- typescript/prefer-literal-enum-member -----
-type TypescriptPreferLiteralEnumMember = []|[{
-  
-  allowBitwiseExpressions?: boolean
-}]
+type TypescriptPreferLiteralEnumMember =
+  | []
+  | [
+      {
+        allowBitwiseExpressions?: boolean;
+      },
+    ];
 // ----- typescript/prefer-nullish-coalescing -----
-type TypescriptPreferNullishCoalescing = []|[{
-  
-  allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean
-  
-  ignoreBooleanCoercion?: boolean
-  
-  ignoreConditionalTests?: boolean
-  
-  ignoreIfStatements?: boolean
-  
-  ignoreMixedLogicalExpressions?: boolean
-  
-  ignorePrimitives?: ({
-    
-    bigint?: boolean
-    
-    boolean?: boolean
-    
-    number?: boolean
-    
-    string?: boolean
-  } | true)
-  
-  ignoreTernaryTests?: boolean
-}]
+type TypescriptPreferNullishCoalescing =
+  | []
+  | [
+      {
+        allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
+
+        ignoreBooleanCoercion?: boolean;
+
+        ignoreConditionalTests?: boolean;
+
+        ignoreIfStatements?: boolean;
+
+        ignoreMixedLogicalExpressions?: boolean;
+
+        ignorePrimitives?:
+          | {
+              bigint?: boolean;
+
+              boolean?: boolean;
+
+              number?: boolean;
+
+              string?: boolean;
+            }
+          | true;
+
+        ignoreTernaryTests?: boolean;
+      },
+    ];
 // ----- typescript/prefer-optional-chain -----
-type TypescriptPreferOptionalChain = []|[{
-  
-  allowPotentiallyUnsafeFixesThatModifyTheReturnTypeIKnowWhatImDoing?: boolean
-  
-  checkAny?: boolean
-  
-  checkBigInt?: boolean
-  
-  checkBoolean?: boolean
-  
-  checkNumber?: boolean
-  
-  checkString?: boolean
-  
-  checkUnknown?: boolean
-  
-  requireNullish?: boolean
-}]
+type TypescriptPreferOptionalChain =
+  | []
+  | [
+      {
+        allowPotentiallyUnsafeFixesThatModifyTheReturnTypeIKnowWhatImDoing?: boolean;
+
+        checkAny?: boolean;
+
+        checkBigInt?: boolean;
+
+        checkBoolean?: boolean;
+
+        checkNumber?: boolean;
+
+        checkString?: boolean;
+
+        checkUnknown?: boolean;
+
+        requireNullish?: boolean;
+      },
+    ];
 // ----- typescript/prefer-promise-reject-errors -----
-type TypescriptPreferPromiseRejectErrors = []|[{
-  
-  allow?: (string | {
-    from: "file"
-    name: (string | [string, ...(string)[]])
-    path?: string
-  } | {
-    from: "lib"
-    name: (string | [string, ...(string)[]])
-  } | {
-    from: "package"
-    name: (string | [string, ...(string)[]])
-    package: string
-  })[]
-  
-  allowEmptyReject?: boolean
-  
-  allowThrowingAny?: boolean
-  
-  allowThrowingUnknown?: boolean
-}]
+type TypescriptPreferPromiseRejectErrors =
+  | []
+  | [
+      {
+        allow?: (
+          | string
+          | {
+              from: "file";
+              name: string | [string, ...string[]];
+              path?: string;
+            }
+          | {
+              from: "lib";
+              name: string | [string, ...string[]];
+            }
+          | {
+              from: "package";
+              name: string | [string, ...string[]];
+              package: string;
+            }
+        )[];
+
+        allowEmptyReject?: boolean;
+
+        allowThrowingAny?: boolean;
+
+        allowThrowingUnknown?: boolean;
+      },
+    ];
 // ----- typescript/prefer-readonly -----
-type TypescriptPreferReadonly = []|[{
-  
-  onlyInlineLambdas?: boolean
-}]
+type TypescriptPreferReadonly =
+  | []
+  | [
+      {
+        onlyInlineLambdas?: boolean;
+      },
+    ];
 // ----- typescript/prefer-readonly-parameter-types -----
-type TypescriptPreferReadonlyParameterTypes = []|[{
-  
-  allow?: (string | {
-    from: "file"
-    name: (string | [string, ...(string)[]])
-    path?: string
-  } | {
-    from: "lib"
-    name: (string | [string, ...(string)[]])
-  } | {
-    from: "package"
-    name: (string | [string, ...(string)[]])
-    package: string
-  })[]
-  
-  checkParameterProperties?: boolean
-  
-  ignoreInferredTypes?: boolean
-  
-  treatMethodsAsReadonly?: boolean
-}]
+type TypescriptPreferReadonlyParameterTypes =
+  | []
+  | [
+      {
+        allow?: (
+          | string
+          | {
+              from: "file";
+              name: string | [string, ...string[]];
+              path?: string;
+            }
+          | {
+              from: "lib";
+              name: string | [string, ...string[]];
+            }
+          | {
+              from: "package";
+              name: string | [string, ...string[]];
+              package: string;
+            }
+        )[];
+
+        checkParameterProperties?: boolean;
+
+        ignoreInferredTypes?: boolean;
+
+        treatMethodsAsReadonly?: boolean;
+      },
+    ];
 // ----- typescript/prefer-string-starts-ends-with -----
-type TypescriptPreferStringStartsEndsWith = []|[{
-  
-  allowSingleElementEquality?: ("always" | "never")
-}]
+type TypescriptPreferStringStartsEndsWith =
+  | []
+  | [
+      {
+        allowSingleElementEquality?: "always" | "never";
+      },
+    ];
 // ----- typescript/promise-function-async -----
-type TypescriptPromiseFunctionAsync = []|[{
-  
-  allowAny?: boolean
-  
-  allowedPromiseNames?: string[]
-  
-  checkArrowFunctions?: boolean
-  
-  checkFunctionDeclarations?: boolean
-  
-  checkFunctionExpressions?: boolean
-  
-  checkMethodDeclarations?: boolean
-}]
+type TypescriptPromiseFunctionAsync =
+  | []
+  | [
+      {
+        allowAny?: boolean;
+
+        allowedPromiseNames?: string[];
+
+        checkArrowFunctions?: boolean;
+
+        checkFunctionDeclarations?: boolean;
+
+        checkFunctionExpressions?: boolean;
+
+        checkMethodDeclarations?: boolean;
+      },
+    ];
 // ----- typescript/require-array-sort-compare -----
-type TypescriptRequireArraySortCompare = []|[{
-  
-  ignoreStringArrays?: boolean
-}]
+type TypescriptRequireArraySortCompare =
+  | []
+  | [
+      {
+        ignoreStringArrays?: boolean;
+      },
+    ];
 // ----- typescript/restrict-plus-operands -----
-type TypescriptRestrictPlusOperands = []|[{
-  
-  allowAny?: boolean
-  
-  allowBoolean?: boolean
-  
-  allowNullish?: boolean
-  
-  allowNumberAndString?: boolean
-  
-  allowRegExp?: boolean
-  
-  skipCompoundAssignments?: boolean
-}]
+type TypescriptRestrictPlusOperands =
+  | []
+  | [
+      {
+        allowAny?: boolean;
+
+        allowBoolean?: boolean;
+
+        allowNullish?: boolean;
+
+        allowNumberAndString?: boolean;
+
+        allowRegExp?: boolean;
+
+        skipCompoundAssignments?: boolean;
+      },
+    ];
 // ----- typescript/restrict-template-expressions -----
-type TypescriptRestrictTemplateExpressions = []|[{
-  
-  allowAny?: boolean
-  
-  allowArray?: boolean
-  
-  allowBoolean?: boolean
-  
-  allowNullish?: boolean
-  
-  allowNumber?: boolean
-  
-  allowRegExp?: boolean
-  
-  allowNever?: boolean
-  
-  allow?: (string | {
-    from: "file"
-    name: (string | [string, ...(string)[]])
-    path?: string
-  } | {
-    from: "lib"
-    name: (string | [string, ...(string)[]])
-  } | {
-    from: "package"
-    name: (string | [string, ...(string)[]])
-    package: string
-  })[]
-}]
+type TypescriptRestrictTemplateExpressions =
+  | []
+  | [
+      {
+        allowAny?: boolean;
+
+        allowArray?: boolean;
+
+        allowBoolean?: boolean;
+
+        allowNullish?: boolean;
+
+        allowNumber?: boolean;
+
+        allowRegExp?: boolean;
+
+        allowNever?: boolean;
+
+        allow?: (
+          | string
+          | {
+              from: "file";
+              name: string | [string, ...string[]];
+              path?: string;
+            }
+          | {
+              from: "lib";
+              name: string | [string, ...string[]];
+            }
+          | {
+              from: "package";
+              name: string | [string, ...string[]];
+              package: string;
+            }
+        )[];
+      },
+    ];
 // ----- typescript/return-await -----
-type TypescriptReturnAwait = []|[(("always" | "error-handling-correctness-only" | "in-try-catch" | "never") & string)]
+type TypescriptReturnAwait =
+  | []
+  | [("always" | "error-handling-correctness-only" | "in-try-catch" | "never") & string];
 // ----- typescript/sort-type-constituents -----
-type TypescriptSortTypeConstituents = []|[{
-  
-  caseSensitive?: boolean
-  
-  checkIntersections?: boolean
-  
-  checkUnions?: boolean
-  
-  groupOrder?: ("conditional" | "function" | "import" | "intersection" | "keyword" | "nullish" | "literal" | "named" | "object" | "operator" | "tuple" | "union")[]
-}]
+type TypescriptSortTypeConstituents =
+  | []
+  | [
+      {
+        caseSensitive?: boolean;
+
+        checkIntersections?: boolean;
+
+        checkUnions?: boolean;
+
+        groupOrder?: (
+          | "conditional"
+          | "function"
+          | "import"
+          | "intersection"
+          | "keyword"
+          | "nullish"
+          | "literal"
+          | "named"
+          | "object"
+          | "operator"
+          | "tuple"
+          | "union"
+        )[];
+      },
+    ];
 // ----- typescript/strict-boolean-expressions -----
-type TypescriptStrictBooleanExpressions = []|[{
-  
-  allowAny?: boolean
-  
-  allowNullableBoolean?: boolean
-  
-  allowNullableEnum?: boolean
-  
-  allowNullableNumber?: boolean
-  
-  allowNullableObject?: boolean
-  
-  allowNullableString?: boolean
-  
-  allowNumber?: boolean
-  
-  allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean
-  
-  allowString?: boolean
-}]
+type TypescriptStrictBooleanExpressions =
+  | []
+  | [
+      {
+        allowAny?: boolean;
+
+        allowNullableBoolean?: boolean;
+
+        allowNullableEnum?: boolean;
+
+        allowNullableNumber?: boolean;
+
+        allowNullableObject?: boolean;
+
+        allowNullableString?: boolean;
+
+        allowNumber?: boolean;
+
+        allowRuleToRunWithoutStrictNullChecksIKnowWhatIAmDoing?: boolean;
+
+        allowString?: boolean;
+      },
+    ];
 // ----- typescript/strict-void-return -----
-type TypescriptStrictVoidReturn = []|[{
-  
-  allowReturnAny?: boolean
-}]
+type TypescriptStrictVoidReturn =
+  | []
+  | [
+      {
+        allowReturnAny?: boolean;
+      },
+    ];
 // ----- typescript/switch-exhaustiveness-check -----
-type TypescriptSwitchExhaustivenessCheck = []|[{
-  
-  allowDefaultCaseForExhaustiveSwitch?: boolean
-  
-  considerDefaultExhaustiveForUnions?: boolean
-  
-  defaultCaseCommentPattern?: string
-  
-  requireDefaultForNonUnion?: boolean
-}]
+type TypescriptSwitchExhaustivenessCheck =
+  | []
+  | [
+      {
+        allowDefaultCaseForExhaustiveSwitch?: boolean;
+
+        considerDefaultExhaustiveForUnions?: boolean;
+
+        defaultCaseCommentPattern?: string;
+
+        requireDefaultForNonUnion?: boolean;
+      },
+    ];
 // ----- typescript/triple-slash-reference -----
-type TypescriptTripleSlashReference = []|[{
-  
-  lib?: ("always" | "never")
-  
-  path?: ("always" | "never")
-  
-  types?: ("always" | "never" | "prefer-import")
-}]
+type TypescriptTripleSlashReference =
+  | []
+  | [
+      {
+        lib?: "always" | "never";
+
+        path?: "always" | "never";
+
+        types?: "always" | "never" | "prefer-import";
+      },
+    ];
 // ----- typescript/typedef -----
-type TypescriptTypedef = []|[{
-  
-  arrayDestructuring?: boolean
-  
-  arrowParameter?: boolean
-  
-  memberVariableDeclaration?: boolean
-  
-  objectDestructuring?: boolean
-  
-  parameter?: boolean
-  
-  propertyDeclaration?: boolean
-  
-  variableDeclaration?: boolean
-  
-  variableDeclarationIgnoreFunction?: boolean
-}]
+type TypescriptTypedef =
+  | []
+  | [
+      {
+        arrayDestructuring?: boolean;
+
+        arrowParameter?: boolean;
+
+        memberVariableDeclaration?: boolean;
+
+        objectDestructuring?: boolean;
+
+        parameter?: boolean;
+
+        propertyDeclaration?: boolean;
+
+        variableDeclaration?: boolean;
+
+        variableDeclarationIgnoreFunction?: boolean;
+      },
+    ];
 // ----- typescript/unbound-method -----
-type TypescriptUnboundMethod = []|[{
-  
-  ignoreStatic?: boolean
-}]
+type TypescriptUnboundMethod =
+  | []
+  | [
+      {
+        ignoreStatic?: boolean;
+      },
+    ];
 // ----- typescript/unified-signatures -----
-type TypescriptUnifiedSignatures = []|[{
-  
-  ignoreDifferentlyNamedParameters?: boolean
-  
-  ignoreOverloadsWithDifferentJSDoc?: boolean
-}]
+type TypescriptUnifiedSignatures =
+  | []
+  | [
+      {
+        ignoreDifferentlyNamedParameters?: boolean;
+
+        ignoreOverloadsWithDifferentJSDoc?: boolean;
+      },
+    ];
 // ----- unicorn/better-regex -----
-type UnicornBetterRegex = []|[{
-  
-  sortCharacterClasses?: boolean
-}]
+type UnicornBetterRegex =
+  | []
+  | [
+      {
+        sortCharacterClasses?: boolean;
+      },
+    ];
 // ----- unicorn/catch-error-name -----
-type UnicornCatchErrorName = []|[{
-  
-  name?: string
-  
-  ignore?: unknown[]
-}]
+type UnicornCatchErrorName =
+  | []
+  | [
+      {
+        name?: string;
+
+        ignore?: unknown[];
+      },
+    ];
 // ----- unicorn/consistent-function-scoping -----
-type UnicornConsistentFunctionScoping = []|[{
-  
-  checkArrowFunctions?: boolean
-}]
+type UnicornConsistentFunctionScoping =
+  | []
+  | [
+      {
+        checkArrowFunctions?: boolean;
+      },
+    ];
 // ----- unicorn/escape-case -----
-type UnicornEscapeCase = []|[("uppercase" | "lowercase")]
+type UnicornEscapeCase = [] | ["uppercase" | "lowercase"];
 // ----- unicorn/expiring-todo-comments -----
-type UnicornExpiringTodoComments = []|[{
-  
-  terms?: string[]
-  
-  ignore?: unknown[]
-  
-  ignoreDates?: boolean
-  
-  ignoreDatesOnPullRequests?: boolean
-  
-  allowWarningComments?: boolean
-  
-  date?: string
-}]
+type UnicornExpiringTodoComments =
+  | []
+  | [
+      {
+        terms?: string[];
+
+        ignore?: unknown[];
+
+        ignoreDates?: boolean;
+
+        ignoreDatesOnPullRequests?: boolean;
+
+        allowWarningComments?: boolean;
+
+        date?: string;
+      },
+    ];
 // ----- unicorn/explicit-length-check -----
-type UnicornExplicitLengthCheck = []|[{
-  "non-zero"?: ("greater-than" | "not-equal")
-}]
+type UnicornExplicitLengthCheck =
+  | []
+  | [
+      {
+        "non-zero"?: "greater-than" | "not-equal";
+      },
+    ];
 // ----- unicorn/filename-case -----
-type UnicornFilenameCase = []|[({
-  
-  case?: ("camelCase" | "snakeCase" | "kebabCase" | "pascalCase")
-  
-  ignore?: unknown[]
-  
-  multipleFileExtensions?: boolean
-} | {
-  
-  cases?: {
-    
-    camelCase?: boolean
-    
-    snakeCase?: boolean
-    
-    kebabCase?: boolean
-    
-    pascalCase?: boolean
-  }
-  
-  ignore?: unknown[]
-  
-  multipleFileExtensions?: boolean
-})]
+type UnicornFilenameCase =
+  | []
+  | [
+      | {
+          case?: "camelCase" | "snakeCase" | "kebabCase" | "pascalCase";
+
+          ignore?: unknown[];
+
+          multipleFileExtensions?: boolean;
+        }
+      | {
+          cases?: {
+            camelCase?: boolean;
+
+            snakeCase?: boolean;
+
+            kebabCase?: boolean;
+
+            pascalCase?: boolean;
+          };
+
+          ignore?: unknown[];
+
+          multipleFileExtensions?: boolean;
+        },
+    ];
 // ----- unicorn/import-style -----
-type UnicornImportStyle = []|[{
-  
-  checkImport?: boolean
-  
-  checkDynamicImport?: boolean
-  
-  checkExportFrom?: boolean
-  
-  checkRequire?: boolean
-  
-  extendDefaultStyles?: boolean
-  styles?: _UnicornImportStyle_ModuleStyles
-}]
-type _UnicornImportStyleStyles = (false | _UnicornImportStyle_BooleanObject) | undefined
+type UnicornImportStyle =
+  | []
+  | [
+      {
+        checkImport?: boolean;
+
+        checkDynamicImport?: boolean;
+
+        checkExportFrom?: boolean;
+
+        checkRequire?: boolean;
+
+        extendDefaultStyles?: boolean;
+        styles?: _UnicornImportStyle_ModuleStyles;
+      },
+    ];
+type _UnicornImportStyleStyles = (false | _UnicornImportStyle_BooleanObject) | undefined;
 interface _UnicornImportStyle_ModuleStyles {
-  [k: string]: _UnicornImportStyleStyles | undefined
+  [k: string]: _UnicornImportStyleStyles | undefined;
 }
 interface _UnicornImportStyle_BooleanObject {
-  [k: string]: boolean | undefined
+  [k: string]: boolean | undefined;
 }
 // ----- unicorn/isolated-functions -----
-type UnicornIsolatedFunctions = []|[{
-  
-  overrideGlobals?: {
-    [k: string]: (boolean | ("readonly" | "writable" | "writeable" | "off")) | undefined
-  }
-  
-  functions?: string[]
-  
-  selectors?: string[]
-  
-  comments?: string[]
-}]
+type UnicornIsolatedFunctions =
+  | []
+  | [
+      {
+        overrideGlobals?: {
+          [k: string]: (boolean | ("readonly" | "writable" | "writeable" | "off")) | undefined;
+        };
+
+        functions?: string[];
+
+        selectors?: string[];
+
+        comments?: string[];
+      },
+    ];
 // ----- unicorn/no-array-reduce -----
-type UnicornNoArrayReduce = []|[{
-  
-  allowSimpleOperations?: boolean
-}]
+type UnicornNoArrayReduce =
+  | []
+  | [
+      {
+        allowSimpleOperations?: boolean;
+      },
+    ];
 // ----- unicorn/no-array-reverse -----
-type UnicornNoArrayReverse = []|[{
-  allowExpressionStatement?: boolean
-}]
+type UnicornNoArrayReverse =
+  | []
+  | [
+      {
+        allowExpressionStatement?: boolean;
+      },
+    ];
 // ----- unicorn/no-array-sort -----
-type UnicornNoArraySort = []|[{
-  allowExpressionStatement?: boolean
-}]
+type UnicornNoArraySort =
+  | []
+  | [
+      {
+        allowExpressionStatement?: boolean;
+      },
+    ];
 // ----- unicorn/no-instanceof-builtins -----
-type UnicornNoInstanceofBuiltins = []|[{
-  useErrorIsError?: boolean
-  strategy?: ("loose" | "strict")
-  include?: string[]
-  exclude?: string[]
-}]
+type UnicornNoInstanceofBuiltins =
+  | []
+  | [
+      {
+        useErrorIsError?: boolean;
+        strategy?: "loose" | "strict";
+        include?: string[];
+        exclude?: string[];
+      },
+    ];
 // ----- unicorn/no-keyword-prefix -----
-type UnicornNoKeywordPrefix = []|[{
-  
-  disallowedPrefixes?: []|[string]
-  
-  checkProperties?: boolean
-  
-  onlyCamelCase?: boolean
-}]
+type UnicornNoKeywordPrefix =
+  | []
+  | [
+      {
+        disallowedPrefixes?: [] | [string];
+
+        checkProperties?: boolean;
+
+        onlyCamelCase?: boolean;
+      },
+    ];
 // ----- unicorn/no-null -----
-type UnicornNoNull = []|[{
-  
-  checkStrictEquality?: boolean
-}]
+type UnicornNoNull =
+  | []
+  | [
+      {
+        checkStrictEquality?: boolean;
+      },
+    ];
 // ----- unicorn/no-typeof-undefined -----
-type UnicornNoTypeofUndefined = []|[{
-  
-  checkGlobalVariables?: boolean
-}]
+type UnicornNoTypeofUndefined =
+  | []
+  | [
+      {
+        checkGlobalVariables?: boolean;
+      },
+    ];
 // ----- unicorn/no-unnecessary-polyfills -----
-type UnicornNoUnnecessaryPolyfills = []|[{
-  
-  targets: (string | unknown[] | {
-    [k: string]: unknown | undefined
-  })
-}]
+type UnicornNoUnnecessaryPolyfills =
+  | []
+  | [
+      {
+        targets:
+          | string
+          | unknown[]
+          | {
+              [k: string]: unknown | undefined;
+            };
+      },
+    ];
 // ----- unicorn/no-useless-undefined -----
-type UnicornNoUselessUndefined = []|[{
-  
-  checkArguments?: boolean
-  
-  checkArrowFunctionBody?: boolean
-}]
+type UnicornNoUselessUndefined =
+  | []
+  | [
+      {
+        checkArguments?: boolean;
+
+        checkArrowFunctionBody?: boolean;
+      },
+    ];
 // ----- unicorn/number-literal-case -----
-type UnicornNumberLiteralCase = []|[{
-  hexadecimalValue?: ("uppercase" | "lowercase")
-}]
+type UnicornNumberLiteralCase =
+  | []
+  | [
+      {
+        hexadecimalValue?: "uppercase" | "lowercase";
+      },
+    ];
 // ----- unicorn/numeric-separators-style -----
-type UnicornNumericSeparatorsStyle = []|[{
-  binary?: {
-    
-    onlyIfContainsSeparator?: boolean
-    
-    minimumDigits?: number
-    
-    groupLength?: number
-  }
-  octal?: {
-    
-    onlyIfContainsSeparator?: boolean
-    
-    minimumDigits?: number
-    
-    groupLength?: number
-  }
-  hexadecimal?: {
-    
-    onlyIfContainsSeparator?: boolean
-    
-    minimumDigits?: number
-    
-    groupLength?: number
-  }
-  number?: {
-    
-    onlyIfContainsSeparator?: boolean
-    
-    minimumDigits?: number
-    
-    groupLength?: number
-  }
-  
-  onlyIfContainsSeparator?: boolean
-}]
+type UnicornNumericSeparatorsStyle =
+  | []
+  | [
+      {
+        binary?: {
+          onlyIfContainsSeparator?: boolean;
+
+          minimumDigits?: number;
+
+          groupLength?: number;
+        };
+        octal?: {
+          onlyIfContainsSeparator?: boolean;
+
+          minimumDigits?: number;
+
+          groupLength?: number;
+        };
+        hexadecimal?: {
+          onlyIfContainsSeparator?: boolean;
+
+          minimumDigits?: number;
+
+          groupLength?: number;
+        };
+        number?: {
+          onlyIfContainsSeparator?: boolean;
+
+          minimumDigits?: number;
+
+          groupLength?: number;
+        };
+
+        onlyIfContainsSeparator?: boolean;
+      },
+    ];
 // ----- unicorn/prefer-add-event-listener -----
-type UnicornPreferAddEventListener = []|[{
-  
-  excludedPackages?: string[]
-}]
+type UnicornPreferAddEventListener =
+  | []
+  | [
+      {
+        excludedPackages?: string[];
+      },
+    ];
 // ----- unicorn/prefer-array-find -----
-type UnicornPreferArrayFind = []|[{
-  
-  checkFromLast?: boolean
-}]
+type UnicornPreferArrayFind =
+  | []
+  | [
+      {
+        checkFromLast?: boolean;
+      },
+    ];
 // ----- unicorn/prefer-array-flat -----
-type UnicornPreferArrayFlat = []|[{
-  
-  functions?: unknown[]
-}]
+type UnicornPreferArrayFlat =
+  | []
+  | [
+      {
+        functions?: unknown[];
+      },
+    ];
 // ----- unicorn/prefer-at -----
-type UnicornPreferAt = []|[{
-  
-  getLastElementFunctions?: unknown[]
-  
-  checkAllIndexAccess?: boolean
-}]
+type UnicornPreferAt =
+  | []
+  | [
+      {
+        getLastElementFunctions?: unknown[];
+
+        checkAllIndexAccess?: boolean;
+      },
+    ];
 // ----- unicorn/prefer-export-from -----
-type UnicornPreferExportFrom = []|[{
-  
-  ignoreUsedVariables?: boolean
-}]
+type UnicornPreferExportFrom =
+  | []
+  | [
+      {
+        ignoreUsedVariables?: boolean;
+      },
+    ];
 // ----- unicorn/prefer-number-properties -----
-type UnicornPreferNumberProperties = []|[{
-  
-  checkInfinity?: boolean
-  
-  checkNaN?: boolean
-}]
+type UnicornPreferNumberProperties =
+  | []
+  | [
+      {
+        checkInfinity?: boolean;
+
+        checkNaN?: boolean;
+      },
+    ];
 // ----- unicorn/prefer-object-from-entries -----
-type UnicornPreferObjectFromEntries = []|[{
-  
-  functions?: unknown[]
-}]
+type UnicornPreferObjectFromEntries =
+  | []
+  | [
+      {
+        functions?: unknown[];
+      },
+    ];
 // ----- unicorn/prefer-single-call -----
-type UnicornPreferSingleCall = []|[{
-  
-  ignore?: unknown[]
-}]
+type UnicornPreferSingleCall =
+  | []
+  | [
+      {
+        ignore?: unknown[];
+      },
+    ];
 // ----- unicorn/prefer-structured-clone -----
-type UnicornPreferStructuredClone = []|[{
-  
-  functions?: unknown[]
-}]
+type UnicornPreferStructuredClone =
+  | []
+  | [
+      {
+        functions?: unknown[];
+      },
+    ];
 // ----- unicorn/prefer-switch -----
-type UnicornPreferSwitch = []|[{
-  
-  minimumCases?: number
-  
-  emptyDefaultCase?: ("no-default-comment" | "do-nothing-comment" | "no-default-case")
-}]
+type UnicornPreferSwitch =
+  | []
+  | [
+      {
+        minimumCases?: number;
+
+        emptyDefaultCase?: "no-default-comment" | "do-nothing-comment" | "no-default-case";
+      },
+    ];
 // ----- unicorn/prefer-ternary -----
-type UnicornPreferTernary = []|[("always" | "only-single-line")]
+type UnicornPreferTernary = [] | ["always" | "only-single-line"];
 // ----- unicorn/prevent-abbreviations -----
-type UnicornPreventAbbreviations = []|[{
-  
-  checkProperties?: boolean
-  
-  checkVariables?: boolean
-  
-  checkDefaultAndNamespaceImports?: (boolean | string)
-  
-  checkShorthandImports?: (boolean | string)
-  
-  checkShorthandProperties?: boolean
-  
-  checkFilenames?: boolean
-  
-  extendDefaultReplacements?: boolean
-  replacements?: _UnicornPreventAbbreviations_Abbreviations
-  
-  extendDefaultAllowList?: boolean
-  allowList?: _UnicornPreventAbbreviations_BooleanObject
-  
-  ignore?: unknown[]
-}]
-type _UnicornPreventAbbreviationsReplacements = (false | _UnicornPreventAbbreviations_BooleanObject) | undefined
+type UnicornPreventAbbreviations =
+  | []
+  | [
+      {
+        checkProperties?: boolean;
+
+        checkVariables?: boolean;
+
+        checkDefaultAndNamespaceImports?: boolean | string;
+
+        checkShorthandImports?: boolean | string;
+
+        checkShorthandProperties?: boolean;
+
+        checkFilenames?: boolean;
+
+        extendDefaultReplacements?: boolean;
+        replacements?: _UnicornPreventAbbreviations_Abbreviations;
+
+        extendDefaultAllowList?: boolean;
+        allowList?: _UnicornPreventAbbreviations_BooleanObject;
+
+        ignore?: unknown[];
+      },
+    ];
+type _UnicornPreventAbbreviationsReplacements =
+  | (false | _UnicornPreventAbbreviations_BooleanObject)
+  | undefined;
 interface _UnicornPreventAbbreviations_Abbreviations {
-  [k: string]: _UnicornPreventAbbreviationsReplacements | undefined
+  [k: string]: _UnicornPreventAbbreviationsReplacements | undefined;
 }
 interface _UnicornPreventAbbreviations_BooleanObject {
-  [k: string]: boolean | undefined
+  [k: string]: boolean | undefined;
 }
 interface _UnicornPreventAbbreviations_BooleanObject {
-  [k: string]: boolean | undefined
+  [k: string]: boolean | undefined;
 }
 // ----- unicorn/relative-url-style -----
-type UnicornRelativeUrlStyle = []|[("never" | "always")]
+type UnicornRelativeUrlStyle = [] | ["never" | "always"];
 // ----- unicorn/string-content -----
-type UnicornStringContent = []|[{
-  
-  patterns?: {
-    [k: string]: (string | {
-      suggest: string
-      fix?: boolean
-      message?: string
-    }) | undefined
-  }
-}]
+type UnicornStringContent =
+  | []
+  | [
+      {
+        patterns?: {
+          [k: string]:
+            | (
+                | string
+                | {
+                    suggest: string;
+                    fix?: boolean;
+                    message?: string;
+                  }
+              )
+            | undefined;
+        };
+      },
+    ];
 // ----- unicorn/switch-case-braces -----
-type UnicornSwitchCaseBraces = []|[("always" | "avoid")]
+type UnicornSwitchCaseBraces = [] | ["always" | "avoid"];
 // ----- unicorn/template-indent -----
-type UnicornTemplateIndent = []|[{
-  
-  indent?: (string | number)
-  
-  tags?: string[]
-  
-  functions?: string[]
-  
-  selectors?: string[]
-  
-  comments?: string[]
-}]
+type UnicornTemplateIndent =
+  | []
+  | [
+      {
+        indent?: string | number;
+
+        tags?: string[];
+
+        functions?: string[];
+
+        selectors?: string[];
+
+        comments?: string[];
+      },
+    ];
 // ----- unicorn/text-encoding-identifier-case -----
-type UnicornTextEncodingIdentifierCase = []|[{
-  
-  withDash?: boolean
-}]
+type UnicornTextEncodingIdentifierCase =
+  | []
+  | [
+      {
+        withDash?: boolean;
+      },
+    ];
 // ----- vitest/consistent-each-for -----
-type VitestConsistentEachFor = []|[{
-  
-  test?: ("each" | "for")
-  
-  it?: ("each" | "for")
-  
-  describe?: ("each" | "for")
-  
-  suite?: ("each" | "for")
-}]
+type VitestConsistentEachFor =
+  | []
+  | [
+      {
+        test?: "each" | "for";
+
+        it?: "each" | "for";
+
+        describe?: "each" | "for";
+
+        suite?: "each" | "for";
+      },
+    ];
 // ----- vitest/consistent-test-filename -----
-type VitestConsistentTestFilename = []|[{
-  
-  pattern?: string
-  
-  allTestPattern?: string
-}]
+type VitestConsistentTestFilename =
+  | []
+  | [
+      {
+        pattern?: string;
+
+        allTestPattern?: string;
+      },
+    ];
 // ----- vitest/consistent-test-it -----
-type VitestConsistentTestIt = []|[{
-  
-  fn?: ("test" | "it")
-  
-  withinDescribe?: ("test" | "it")
-}]
+type VitestConsistentTestIt =
+  | []
+  | [
+      {
+        fn?: "test" | "it";
+
+        withinDescribe?: "test" | "it";
+      },
+    ];
 // ----- vitest/consistent-vitest-vi -----
-type VitestConsistentVitestVi = []|[{
-  
-  fn?: ("vi" | "vitest")
-}]
+type VitestConsistentVitestVi =
+  | []
+  | [
+      {
+        fn?: "vi" | "vitest";
+      },
+    ];
 // ----- vitest/expect-expect -----
-type VitestExpectExpect = []|[{
-  
-  assertFunctionNames?: string[]
-  
-  additionalTestBlockFunctions?: string[]
-}]
+type VitestExpectExpect =
+  | []
+  | [
+      {
+        assertFunctionNames?: string[];
+
+        additionalTestBlockFunctions?: string[];
+      },
+    ];
 // ----- vitest/max-expects -----
-type VitestMaxExpects = []|[{
-  
-  max?: number
-}]
+type VitestMaxExpects =
+  | []
+  | [
+      {
+        max?: number;
+      },
+    ];
 // ----- vitest/max-nested-describe -----
-type VitestMaxNestedDescribe = []|[{
-  
-  max?: number
-}]
+type VitestMaxNestedDescribe =
+  | []
+  | [
+      {
+        max?: number;
+      },
+    ];
 // ----- vitest/no-conditional-expect -----
-type VitestNoConditionalExpect = []|[{
-  
-  expectAssertions?: boolean
-}]
+type VitestNoConditionalExpect =
+  | []
+  | [
+      {
+        expectAssertions?: boolean;
+      },
+    ];
 // ----- vitest/no-focused-tests -----
-type VitestNoFocusedTests = []|[{
-  
-  fixable?: boolean
-}]
+type VitestNoFocusedTests =
+  | []
+  | [
+      {
+        fixable?: boolean;
+      },
+    ];
 // ----- vitest/no-hooks -----
-type VitestNoHooks = []|[{
-  
-  allow?: ("beforeAll" | "beforeEach" | "afterAll" | "afterEach")[]
-}]
+type VitestNoHooks =
+  | []
+  | [
+      {
+        allow?: ("beforeAll" | "beforeEach" | "afterAll" | "afterEach")[];
+      },
+    ];
 // ----- vitest/no-large-snapshots -----
-type VitestNoLargeSnapshots = []|[{
-  
-  maxSize?: number
-  
-  inlineMaxSize?: number
-  
-  allowedSnapshots?: {
-    [k: string]: unknown[] | undefined
-  }
-}]
+type VitestNoLargeSnapshots =
+  | []
+  | [
+      {
+        maxSize?: number;
+
+        inlineMaxSize?: number;
+
+        allowedSnapshots?: {
+          [k: string]: unknown[] | undefined;
+        };
+      },
+    ];
 // ----- vitest/no-restricted-matchers -----
-type VitestNoRestrictedMatchers = []|[{
-  [k: string]: (string | null) | undefined
-}]
+type VitestNoRestrictedMatchers =
+  | []
+  | [
+      {
+        [k: string]: (string | null) | undefined;
+      },
+    ];
 // ----- vitest/no-restricted-vi-methods -----
-type VitestNoRestrictedViMethods = []|[{
-  [k: string]: (string | null) | undefined
-}]
+type VitestNoRestrictedViMethods =
+  | []
+  | [
+      {
+        [k: string]: (string | null) | undefined;
+      },
+    ];
 // ----- vitest/no-standalone-expect -----
-type VitestNoStandaloneExpect = []|[{
-  
-  additionalTestBlockFunctions?: string[]
-}]
+type VitestNoStandaloneExpect =
+  | []
+  | [
+      {
+        additionalTestBlockFunctions?: string[];
+      },
+    ];
 // ----- vitest/prefer-expect-assertions -----
-type VitestPreferExpectAssertions = []|[{
-  
-  onlyFunctionsWithAsyncKeyword?: boolean
-  
-  onlyFunctionsWithExpectInLoop?: boolean
-  
-  onlyFunctionsWithExpectInCallback?: boolean
-}]
+type VitestPreferExpectAssertions =
+  | []
+  | [
+      {
+        onlyFunctionsWithAsyncKeyword?: boolean;
+
+        onlyFunctionsWithExpectInLoop?: boolean;
+
+        onlyFunctionsWithExpectInCallback?: boolean;
+      },
+    ];
 // ----- vitest/prefer-import-in-mock -----
-type VitestPreferImportInMock = []|[{
-  
-  fixable?: boolean
-}]
+type VitestPreferImportInMock =
+  | []
+  | [
+      {
+        fixable?: boolean;
+      },
+    ];
 // ----- vitest/prefer-lowercase-title -----
-type VitestPreferLowercaseTitle = []|[{
-  
-  ignore?: ("describe" | "test" | "it")[]
-  
-  allowedPrefixes?: string[]
-  
-  ignoreTopLevelDescribe?: boolean
-  
-  lowercaseFirstCharacterOnly?: boolean
-}]
+type VitestPreferLowercaseTitle =
+  | []
+  | [
+      {
+        ignore?: ("describe" | "test" | "it")[];
+
+        allowedPrefixes?: string[];
+
+        ignoreTopLevelDescribe?: boolean;
+
+        lowercaseFirstCharacterOnly?: boolean;
+      },
+    ];
 // ----- vitest/prefer-snapshot-hint -----
-type VitestPreferSnapshotHint = []|[("always" | "multi")]
+type VitestPreferSnapshotHint = [] | ["always" | "multi"];
 // ----- vitest/require-hook -----
-type VitestRequireHook = []|[{
-  
-  allowedFunctionCalls?: string[]
-}]
+type VitestRequireHook =
+  | []
+  | [
+      {
+        allowedFunctionCalls?: string[];
+      },
+    ];
 // ----- vitest/require-mock-type-parameters -----
-type VitestRequireMockTypeParameters = []|[{
-  
-  checkImportFunctions?: boolean
-}]
+type VitestRequireMockTypeParameters =
+  | []
+  | [
+      {
+        checkImportFunctions?: boolean;
+      },
+    ];
 // ----- vitest/require-top-level-describe -----
-type VitestRequireTopLevelDescribe = []|[{
-  
-  maxNumberOfTopLevelDescribes?: number
-}]
+type VitestRequireTopLevelDescribe =
+  | []
+  | [
+      {
+        maxNumberOfTopLevelDescribes?: number;
+      },
+    ];
 // ----- vitest/unbound-method -----
-type VitestUnboundMethod = []|[{
-  
-  ignoreStatic?: boolean
-}]
+type VitestUnboundMethod =
+  | []
+  | [
+      {
+        ignoreStatic?: boolean;
+      },
+    ];
 // ----- vitest/valid-expect -----
-type VitestValidExpect = []|[{
-  
-  alwaysAwait?: boolean
-  
-  asyncMatchers?: string[]
-  
-  minArgs?: number
-  
-  maxArgs?: number
-}]
+type VitestValidExpect =
+  | []
+  | [
+      {
+        alwaysAwait?: boolean;
+
+        asyncMatchers?: string[];
+
+        minArgs?: number;
+
+        maxArgs?: number;
+      },
+    ];
 // ----- vitest/valid-title -----
-type VitestValidTitle = []|[{
-  
-  ignoreTypeOfDescribeName?: boolean
-  
-  allowArguments?: boolean
-  
-  disallowedWords?: string[]
-  [k: string]: (string | [string]|[string, string] | {
-    [k: string]: (string | [string]|[string, string]) | undefined
-  })
-}]
+type VitestValidTitle =
+  | []
+  | [
+      {
+        ignoreTypeOfDescribeName?: boolean;
+
+        allowArguments?: boolean;
+
+        disallowedWords?: string[];
+        [k: string]:
+          | string
+          | [string]
+          | [string, string]
+          | {
+              [k: string]: (string | [string] | [string, string]) | undefined;
+            };
+      },
+    ];
