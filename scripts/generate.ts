@@ -83,7 +83,7 @@ const knownRules = new Set<string>();
 for (const line of dummyRuleMapBody.split("\n")) {
   const match = /^\s*(?:"([^"]+)"|([a-zA-Z_$][\w$-]*))\?:/.exec(line);
   const name = match?.[1] ?? match?.[2];
-  if (name) {
+  if (name !== undefined && name !== "") {
     knownRules.add(name);
   }
 }

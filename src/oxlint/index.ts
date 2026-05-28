@@ -77,6 +77,14 @@ export const asa1984 = (overrides: OxlintConfig = {}): OxlintConfig =>
       "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
       "import/exports-last": "error",
       "import/first": "error",
+      "import/no-cycle": "error",
+      "import/no-self-import": "error",
+
+      "typescript/consistent-type-imports": [
+        "error",
+        { fixStyle: "separate-type-imports", prefer: "type-imports" },
+      ],
+      "typescript/strict-boolean-expressions": "error",
 
       ...overrides.rules,
     },
