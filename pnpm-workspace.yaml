@@ -1,3 +1,4 @@
 allowBuilds:
+  esbuild: false # transitive dep of eslint-plugin-jsdoc; not needed at runtime
   tldjs: false # dependency of rulesync, but we don't require it to be built
 saveExact: true

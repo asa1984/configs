@@ -1,10 +1,18 @@
-import type { OxlintConfig } from "oxlint";
+import type { OxlintConfig as BaseOxlintConfig } from "oxlint";
 
 import { defineConfig } from "oxlint";
 
+import type { RuleOptions } from "./rules.generated.js";
+
+import { recommended } from "./recommended.generated.ts";
+
 const stripMerged = (overrides: OxlintConfig): OxlintConfig => {
-  const { categories: _c, options: _o, plugins: _p, rules: _r, ...rest } = overrides;
+  const { categories: _c, env: _e, options: _o, plugins: _p, rules: _r, ...rest } = overrides;
   return rest;
+};
+
+export type OxlintConfig = Omit<BaseOxlintConfig, "rules"> & {
+  rules?: Partial<RuleOptions> & BaseOxlintConfig["rules"];
 };
 
 export const asa1984 = (overrides: OxlintConfig = {}): OxlintConfig =>
@@ -13,12 +21,18 @@ export const asa1984 = (overrides: OxlintConfig = {}): OxlintConfig =>
       correctness: "error",
       ...overrides.categories,
     },
+    env: {
+      browser: true,
+      es2024: true,
+      node: true,
+      ...overrides.env,
+    },
     options: {
       typeAware: true,
       ...overrides.options,
     },
-    plugins: Array.from(
-      new Set([
+    plugins: [
+      ...new Set([
         "eslint",
         "import",
         "jsdoc",
@@ -28,9 +42,11 @@ export const asa1984 = (overrides: OxlintConfig = {}): OxlintConfig =>
         "unicorn",
         "vitest",
         ...(overrides.plugins ?? []),
-      ]),
-    ),
+      ] as const),
+    ],
     rules: {
+      ...recommended,
+
       curly: "error",
       eqeqeq: ["error", "smart"],
       "func-style": ["error", "expression"],
@@ -65,4 +81,4 @@ export const asa1984 = (overrides: OxlintConfig = {}): OxlintConfig =>
       ...overrides.rules,
     },
     ...stripMerged(overrides),
-  });
+  }) as OxlintConfig;
