@@ -15,7 +15,7 @@
         { pkgs, ... }:
         let
           sharedPackages = with pkgs; [
-            nodejs-slim
+            nodejs_latest
             corepack
             pinact
           ];
@@ -23,9 +23,6 @@
         {
           devShells = {
             default = pkgs.mkShell {
-              packages = sharedPackages;
-            };
-            ci = pkgs.mkShell {
               packages = sharedPackages;
             };
           };
