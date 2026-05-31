@@ -25,14 +25,7 @@ import {
 } from "@asa1984/configs/oxlint";
 
 export default defineConfig({
-  extends: [
-    javascript(),
-    typescript(),
-    imports(),
-    unicorn(),
-    sorting(),
-    node(),
-  ],
+  extends: [javascript(), typescript(), imports(), unicorn(), sorting(), node()],
 
   // any other oxlint config property is merged on top of `extends`
   ignorePatterns: ["dist/**"],
@@ -62,9 +55,9 @@ Merge semantics: `defineConfig` merges the `extends` fragments via `mergeConfigs
 
 ```ts
 // oxfmt.config.ts
-import { asa1984 } from "@asa1984/configs/oxfmt";
+import { defineConfig } from "@asa1984/configs/oxfmt";
 
-export default asa1984();
+export default defineConfig();
 ```
 
 ### TypeScript
@@ -72,6 +65,6 @@ export default asa1984();
 ```json
 // tsconfig.json
 {
-  "extends": "./src/tsconfig/base.json"
+  "extends": "@asa1984/configs/tsconfig"
 }
 ```
