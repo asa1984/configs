@@ -1,92 +1,44 @@
-import type { OxlintConfig as BaseOxlintConfig } from "oxlint";
+import { defineConfig as defineOxlintConfig } from "oxlint";
 
-import { defineConfig } from "oxlint";
+import type { Config, OxlintConfig, Rules } from "./types.js";
 
-import type { RuleOptions } from "./rules.generated.js";
+import { mergeConfigs } from "./merge.ts";
+import {
+  browser,
+  imports,
+  javascript,
+  jsdoc,
+  node,
+  oxc,
+  promise,
+  sorting,
+  typescript,
+  unicorn,
+  vitest,
+  worker,
+} from "./units.ts";
 
-import { recommended } from "./recommended.generated.ts";
-
-const stripMerged = (overrides: OxlintConfig): OxlintConfig => {
-  const { categories: _c, env: _e, options: _o, plugins: _p, rules: _r, ...rest } = overrides;
-  return rest;
+// Merge the fragments in `config.extends` (builders or raw configs), then let
+// the config's own properties win, into one validated oxlint config.
+const defineConfig = (config: Config): OxlintConfig => {
+  const { extends: extendsConfigs = [], ...rest } = config;
+  return defineOxlintConfig(mergeConfigs([...extendsConfigs, rest]));
 };
 
-export type OxlintConfig = Omit<BaseOxlintConfig, "rules"> & {
-  rules?: Partial<RuleOptions> & BaseOxlintConfig["rules"];
+export type { Config, OxlintConfig, Rules };
+export {
+  browser,
+  defineConfig,
+  imports,
+  javascript,
+  jsdoc,
+  mergeConfigs,
+  node,
+  oxc,
+  promise,
+  sorting,
+  typescript,
+  unicorn,
+  vitest,
+  worker,
 };
-
-export const asa1984 = (overrides: OxlintConfig = {}): OxlintConfig =>
-  defineConfig({
-    categories: {
-      correctness: "error",
-      ...overrides.categories,
-    },
-    env: {
-      browser: true,
-      es2024: true,
-      node: true,
-      ...overrides.env,
-    },
-    options: {
-      typeAware: true,
-      ...overrides.options,
-    },
-    plugins: [
-      ...new Set([
-        "eslint",
-        "import",
-        "jsdoc",
-        "oxc",
-        "promise",
-        "typescript",
-        "unicorn",
-        "vitest",
-        ...(overrides.plugins ?? []),
-      ] as const),
-    ],
-    rules: {
-      ...recommended,
-
-      curly: "error",
-      eqeqeq: ["error", "smart"],
-      "func-style": ["error", "expression"],
-      "prefer-const": ["error", { destructuring: "all" }],
-      "prefer-destructuring": [
-        "error",
-        {
-          VariableDeclarator: { array: false, object: true },
-        },
-      ],
-      "sort-imports": [
-        "error",
-        {
-          ignoreCase: true,
-          ignoreDeclarationSort: true,
-        },
-      ],
-      "sort-keys": [
-        "error",
-        "asc",
-        {
-          allowLineSeparatedGroups: true,
-          caseSensitive: false,
-          natural: true,
-        },
-      ],
-
-      "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
-      "import/exports-last": "error",
-      "import/first": "error",
-      "import/no-cycle": "error",
-      "import/no-self-import": "error",
-
-      "typescript/consistent-type-imports": [
-        "error",
-        { fixStyle: "separate-type-imports", prefer: "type-imports" },
-      ],
-      "typescript/strict-boolean-expressions": "error",
-
-      ...overrides.rules,
-    },
-    ...stripMerged(overrides),
-  }) as OxlintConfig;

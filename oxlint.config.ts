@@ -1,5 +1,27 @@
-import { asa1984 } from "./src/oxlint/index.ts";
+import {
+  defineConfig,
+  imports,
+  javascript,
+  jsdoc,
+  node,
+  oxc,
+  promise,
+  sorting,
+  typescript,
+  unicorn,
+} from "./src/oxlint/index.ts";
 
-export default asa1984({
+export default defineConfig({
+  extends: [
+    javascript(),
+    typescript(),
+    imports(),
+    unicorn(),
+    jsdoc(),
+    promise(),
+    oxc(),
+    sorting(),
+    node(),
+  ],
   ignorePatterns: ["src/oxlint/*.generated.ts"],
 });
