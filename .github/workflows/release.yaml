@@ -1,35 +1,30 @@
 name: release
 on:
-  release:
-    types: [published]
+  push:
+    branches: [main]
 concurrency:
-  group: ${{ github.workflow }}-${{ github.event.release.tag_name }}
+  group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
+permissions: {}
 jobs:
-  verify:
+  release-please:
     runs-on: ubuntu-slim
+    permissions:
+      contents: write
+      pull-requests: write
+    outputs:
+      release_created: ${{ steps.release.outputs.release_created }}
+      tag_name: ${{ steps.release.outputs.tag_name }}
     steps:
-      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+      - uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5.0.0
+        id: release
         with:
-          ref: ${{ github.event.release.tag_name }}
-      - uses: ./.github/actions/setup
-      - name: Verify release tag matches package versions
-        run: |
-          set -euo pipefail
-          TAG="${GITHUB_REF_NAME#v}"
-          PKG=$(node -p "require('./package.json').version")
-          JSR=$(node -p "require('./jsr.json').version")
-          echo "tag=$TAG pkg=$PKG jsr=$JSR"
-          if [ "$TAG" != "$PKG" ] || [ "$TAG" != "$JSR" ]; then
-            echo "::error::Tag/package/jsr versions do not match (tag=$TAG, package.json=$PKG, jsr.json=$JSR)"
-            exit 1
-          fi
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm build
-      - run: pnpm typecheck
-      - run: pnpm lint
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+
   publish-npm:
-    needs: verify
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release_created }}
     runs-on: ubuntu-slim
     permissions:
       contents: read
@@ -37,14 +32,16 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          ref: ${{ github.event.release.tag_name }}
+          ref: ${{ needs.release-please.outputs.tag_name }}
       - uses: ./.github/actions/setup
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - name: Publish to npm
         run: pnpm publish --no-git-checks
+
   publish-jsr:
-    needs: verify
+    needs: release-please
+    if: ${{ needs.release-please.outputs.release_created }}
     runs-on: ubuntu-slim
     permissions:
       contents: read
@@ -52,7 +49,7 @@ jobs:
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
         with:
-          ref: ${{ github.event.release.tag_name }}
+          ref: ${{ needs.release-please.outputs.tag_name }}
       - uses: ./.github/actions/setup
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
