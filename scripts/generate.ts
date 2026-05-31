@@ -6,6 +6,7 @@ import jsdocPlugin from "eslint-plugin-jsdoc";
 import promise from "eslint-plugin-promise";
 import unicorn from "eslint-plugin-unicorn";
 import { pluginsToRulesDTS } from "eslint-typegen/core";
+import { execFileSync } from "node:child_process";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
 import { dirname, resolve } from "node:path";
@@ -143,6 +144,14 @@ declare namespace Linter {
 const dts = rawDts.replace(/^import type \{ Linter \} from ['"]eslint['"]\n?/m, linterShim);
 
 await writeFile(resolve(outDir, "rules.generated.ts"), `${banner}\n// @ts-nocheck\n${dts}`, "utf8");
+
+// Format the just-written files with the project's oxfmt config so the output
+// matches the committed (formatted) files and `pnpm build` stays idempotent.
+execFileSync(
+  "oxfmt",
+  [resolve(outDir, "recommended.generated.ts"), resolve(outDir, "rules.generated.ts")],
+  { stdio: "inherit" },
+);
 
 console.log(`✔ wrote recommended.generated.ts (${String(sortedKeys.length)} rules)`);
 console.log(`✔ wrote rules.generated.ts`);
