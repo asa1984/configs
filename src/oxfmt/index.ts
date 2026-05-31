@@ -1,9 +1,9 @@
 import type { OxfmtConfig } from "oxfmt";
 
-import { defineConfig } from "oxfmt";
+import { defineConfig as defineOxfmtConfig } from "oxfmt";
 
-export const asa1984 = (overrides: OxfmtConfig = {}): OxfmtConfig =>
-  defineConfig({
+export const defineConfig = (overrides: OxfmtConfig = {}): OxfmtConfig =>
+  defineOxfmtConfig({
     sortImports: {
       groups: [
         "type-import",

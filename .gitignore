@@ -1,3 +1,4 @@
 *.tsbuildinfo
+.direnv
 dist
 node_modules

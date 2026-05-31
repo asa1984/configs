@@ -1,68 +1,44 @@
-import type { OxlintConfig } from "oxlint";
+import { defineConfig as defineOxlintConfig } from "oxlint";
 
-import { defineConfig } from "oxlint";
+import type { Config, OxlintConfig, Rules } from "./types.js";
 
-const stripMerged = (overrides: OxlintConfig): OxlintConfig => {
-  const { categories: _c, options: _o, plugins: _p, rules: _r, ...rest } = overrides;
-  return rest;
+import { mergeConfigs } from "./merge.ts";
+import {
+  browser,
+  imports,
+  javascript,
+  jsdoc,
+  node,
+  oxc,
+  promise,
+  sorting,
+  typescript,
+  unicorn,
+  vitest,
+  worker,
+} from "./units.ts";
+
+// Merge the fragments in `config.extends` (builders or raw configs), then let
+// the config's own properties win, into one validated oxlint config.
+const defineConfig = (config: Config): OxlintConfig => {
+  const { extends: extendsConfigs = [], ...rest } = config;
+  return defineOxlintConfig(mergeConfigs([...extendsConfigs, rest]));
 };
 
-export const asa1984 = (overrides: OxlintConfig = {}): OxlintConfig =>
-  defineConfig({
-    categories: {
-      correctness: "error",
-      ...overrides.categories,
-    },
-    options: {
-      typeAware: true,
-      ...overrides.options,
-    },
-    plugins: Array.from(
-      new Set([
-        "eslint",
-        "import",
-        "jsdoc",
-        "oxc",
-        "promise",
-        "typescript",
-        "unicorn",
-        "vitest",
-        ...(overrides.plugins ?? []),
-      ]),
-    ),
-    rules: {
-      curly: "error",
-      eqeqeq: ["error", "smart"],
-      "func-style": ["error", "expression"],
-      "prefer-const": ["error", { destructuring: "all" }],
-      "prefer-destructuring": [
-        "error",
-        {
-          VariableDeclarator: { array: false, object: true },
-        },
-      ],
-      "sort-imports": [
-        "error",
-        {
-          ignoreCase: true,
-          ignoreDeclarationSort: true,
-        },
-      ],
-      "sort-keys": [
-        "error",
-        "asc",
-        {
-          allowLineSeparatedGroups: true,
-          caseSensitive: false,
-          natural: true,
-        },
-      ],
-
-      "import/consistent-type-specifier-style": ["error", "prefer-top-level"],
-      "import/exports-last": "error",
-      "import/first": "error",
-
-      ...overrides.rules,
-    },
-    ...stripMerged(overrides),
-  });
+export type { Config, OxlintConfig, Rules };
+export {
+  browser,
+  defineConfig,
+  imports,
+  javascript,
+  jsdoc,
+  mergeConfigs,
+  node,
+  oxc,
+  promise,
+  sorting,
+  typescript,
+  unicorn,
+  vitest,
+  worker,
+};
