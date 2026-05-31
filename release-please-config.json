@@ -4,6 +4,7 @@
     ".": {
       "release-type": "node",
       "package-name": "@asa1984/configs",
+      "bump-minor-pre-major": true,
       "extra-files": [
         {
           "type": "json",
