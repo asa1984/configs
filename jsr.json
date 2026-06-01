@@ -1,13 +1,19 @@
 {
   "$schema": "https://jsr.io/schema/config-file.v1.json",
   "name": "@asa1984/configs",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "license": "MIT",
   "exports": {
     "./oxlint": "./src/oxlint/index.ts",
     "./oxfmt": "./src/oxfmt/index.ts"
   },
   "publish": {
-    "include": ["src/oxlint/**/*.ts", "src/oxfmt/**/*.ts", "README.md", "LICENSE", "jsr.json"]
+    "include": [
+      "src/oxlint/**/*.ts",
+      "src/oxfmt/**/*.ts",
+      "README.md",
+      "LICENSE",
+      "jsr.json"
+    ]
   }
 }
