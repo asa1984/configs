@@ -51,8 +51,8 @@ importers:
         specifier: 0.23.0
         version: 0.23.0
       rulesync:
-        specifier: 8.21.0
-        version: 8.21.0(valibot@1.4.1(typescript@6.0.3))
+        specifier: 8.22.0
+        version: 8.22.0(valibot@1.4.1(typescript@6.0.3))
 
 packages:
 
@@ -1938,8 +1938,8 @@ packages:
     resolution: {integrity: sha512-nLTrUKm2UyiL7rlhapu/Zl45FwNgkZGaCpZbIHajDYgwlJCOzLSk+cIPAnsEqV955GjILJnKbdQC1nVPz+gAYQ==}
     engines: {node: '>= 18'}
 
-  rulesync@8.21.0:
-    resolution: {integrity: sha512-CesPQRnK+HZ3YvGFUq1pvVgxDwf4l/29PLoOKwA/5flneOvN4ccVEIsX6u6VBEfYKZnv59dxGAySbrYdwdy23Q==}
+  rulesync@8.22.0:
+    resolution: {integrity: sha512-1MjMGblycn2osJYNnpWKRMbbvoMXAfKZp1e0oqHht0TelMBXudVPo1wOmwq/cWQ866u/OAXWYOVyFQLe77lxGQ==}
     engines: {node: '>=22.0.0', pnpm: '>=10'}
     hasBin: true
 
@@ -4281,7 +4281,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  rulesync@8.21.0(valibot@1.4.1(typescript@6.0.3)):
+  rulesync@8.22.0(valibot@1.4.1(typescript@6.0.3)):
     dependencies:
       '@modelcontextprotocol/sdk': 1.27.1(zod@4.3.6)
       '@octokit/request-error': 7.1.0
