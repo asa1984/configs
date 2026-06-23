@@ -42,7 +42,7 @@
     "@eslint/js": "10.0.1",
     "@types/node": "25.9.4",
     "@typescript-eslint/eslint-plugin": "8.61.1",
-    "@typescript/native-preview": "7.0.0-dev.20260619.1",
+    "@typescript/native-preview": "7.0.0-dev.20260620.1",
     "@vitest/eslint-plugin": "1.6.20",
     "eslint-plugin-import": "2.32.0",
     "eslint-plugin-jsdoc": "63.0.6",
