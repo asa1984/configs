@@ -53,7 +53,7 @@
     "oxfmt": "0.61.0",
     "oxlint": "1.66.0",
     "oxlint-tsgolint": "0.23.0",
-    "rulesync": "8.32.0"
+    "rulesync": "14.2.0"
   },
   "peerDependencies": {
     "oxfmt": ">=0.51.0",
