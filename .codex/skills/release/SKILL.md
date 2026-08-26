@@ -2,6 +2,7 @@
 name: release
 description: Cut a new release of @asa1984/configs to npm and JSR via release-please.
 ---
+
 # Release `@asa1984/configs`
 
 Releases are automated with [release-please](https://github.com/googleapis/release-please). Versioning, the `CHANGELOG.md`, the git tag, and the GitHub Release are all derived from [Conventional Commits](https://www.conventionalcommits.org/) merged into `main` — there is **no manual version bump**.

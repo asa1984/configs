@@ -46,7 +46,7 @@ const mergeTwo = (a: OxlintConfig, b: OxlintConfig): OxlintConfig => {
     out["rules"] = { ...a.rules, ...b.rules };
   }
 
-  return out as OxlintConfig;
+  return out;
 };
 
 // Merge oxlint config fragments left-to-right. Scalar fields and rules let the

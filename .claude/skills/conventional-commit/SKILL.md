@@ -6,6 +6,7 @@ description: >-
   messages in line with the Conventional Commits specification, including
   instructions, examples, and validation.
 ---
+
 ### Instructions
 
 ```xml
