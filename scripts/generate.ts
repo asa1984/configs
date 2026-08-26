@@ -9,11 +9,11 @@ import { pluginsToRulesDTS } from "eslint-typegen/core";
 import { execFileSync } from "node:child_process";
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { createRequire } from "node:module";
-import { dirname, resolve } from "node:path";
+import path from "node:path";
 import { fileURLToPath } from "node:url";
 
-const __dirname = dirname(fileURLToPath(import.meta.url));
-const outDir = resolve(__dirname, "../src/oxlint");
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const outDir = path.resolve(__dirname, "../src/oxlint");
 
 type RuleEntry = unknown;
 type RuleMap = Record<string, RuleEntry>;
@@ -36,7 +36,7 @@ const tsEslintRecommendedOverrides = (tseslint.configs["eslint-recommended"]?.ov
   ?.rules ?? {}) as RuleMap;
 
 const sources: Array<{ from: string; rules: RuleMap; to: string }> = [
-  { from: "", rules: js.configs.recommended.rules as RuleMap, to: "" },
+  { from: "", rules: js.configs.recommended.rules, to: "" },
   {
     from: "import",
     rules: importPlugin.configs.recommended.rules as RuleMap,
@@ -49,13 +49,13 @@ const sources: Array<{ from: string; rules: RuleMap; to: string }> = [
   },
   {
     from: "promise",
-    rules: (promise.configs["flat/recommended"]?.rules ?? {}) as RuleMap,
+    rules: promise.configs["flat/recommended"]?.rules ?? {},
     to: "promise",
   },
   { from: "", rules: tsEslintRecommendedOverrides, to: "" },
   {
     from: "@typescript-eslint",
-    rules: (tseslint.configs["strict-type-checked"]?.rules ?? {}) as RuleMap,
+    rules: tseslint.configs["strict-type-checked"]?.rules ?? {},
     to: "typescript",
   },
   {
@@ -65,7 +65,7 @@ const sources: Array<{ from: string; rules: RuleMap; to: string }> = [
   },
   {
     from: "vitest",
-    rules: vitest.configs.recommended.rules as RuleMap,
+    rules: vitest.configs.recommended.rules,
     to: "vitest",
   },
 ];
@@ -77,7 +77,7 @@ for (const { from, to, rules } of sources) {
 
 const require = createRequire(import.meta.url);
 const oxlintPkgPath = require.resolve("oxlint/package.json");
-const oxlintDtsPath = resolve(dirname(oxlintPkgPath), "dist/index.d.ts");
+const oxlintDtsPath = path.resolve(path.dirname(oxlintPkgPath), "dist/index.d.ts");
 const oxlintDts = await readFile(oxlintDtsPath, "utf8");
 const dummyRuleMapBody = /interface DummyRuleMap \{([\s\S]*?)\n\}/.exec(oxlintDts)?.[1] ?? "";
 const knownRules = new Set<string>();
@@ -114,16 +114,16 @@ export const recommended = ${JSON.stringify(sortedRecommended, undefined, 2)} sa
 `;
 
 await mkdir(outDir, { recursive: true });
-await writeFile(resolve(outDir, "recommended.generated.ts"), recommendedFile, "utf8");
+await writeFile(path.resolve(outDir, "recommended.generated.ts"), recommendedFile, "utf8");
 
 const rawDts = await pluginsToRulesDTS(
   {
-    import: importPlugin as never,
-    jsdoc: jsdocPlugin as never,
+    import: importPlugin,
+    jsdoc: jsdocPlugin,
     promise: promise as never,
     typescript: tseslint as never,
-    unicorn: unicorn as never,
-    vitest: vitest as never,
+    unicorn: unicorn,
+    vitest: vitest,
   },
   {
     exportTypeName: "RuleOptions",
@@ -143,13 +143,17 @@ declare namespace Linter {
 
 const dts = rawDts.replace(/^import type \{ Linter \} from ['"]eslint['"]\n?/m, linterShim);
 
-await writeFile(resolve(outDir, "rules.generated.ts"), `${banner}\n// @ts-nocheck\n${dts}`, "utf8");
+await writeFile(
+  path.resolve(outDir, "rules.generated.ts"),
+  `${banner}\n// @ts-nocheck\n${dts}`,
+  "utf8",
+);
 
 // Format the just-written files with the project's oxfmt config so the output
 // matches the committed (formatted) files and `pnpm build` stays idempotent.
 execFileSync(
   "oxfmt",
-  [resolve(outDir, "recommended.generated.ts"), resolve(outDir, "rules.generated.ts")],
+  [path.resolve(outDir, "recommended.generated.ts"), path.resolve(outDir, "rules.generated.ts")],
   { stdio: "inherit" },
 );
 

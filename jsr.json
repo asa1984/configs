@@ -8,12 +8,6 @@
     "./oxfmt": "./src/oxfmt/index.ts"
   },
   "publish": {
-    "include": [
-      "src/oxlint/**/*.ts",
-      "src/oxfmt/**/*.ts",
-      "README.md",
-      "LICENSE",
-      "jsr.json"
-    ]
+    "include": ["src/oxlint/**/*.ts", "src/oxfmt/**/*.ts", "README.md", "LICENSE", "jsr.json"]
   }
 }
