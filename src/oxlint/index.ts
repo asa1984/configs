@@ -11,18 +11,6 @@ const defineConfig = (config: Config): OxlintConfig => {
 
 export type { Config, OxlintConfig, Rules } from "./types.js";
 export { mergeConfigs } from "./merge.ts";
-export {
-  browser,
-  imports,
-  javascript,
-  jsdoc,
-  node,
-  oxc,
-  promise,
-  sorting,
-  typescript,
-  unicorn,
-  vitest,
-  worker,
-} from "./units.ts";
+export type { ReactOptions } from "./units.ts";
+export { browser, javascript, node, react, sorting, typescript, vitest, worker } from "./units.ts";
 export { defineConfig };

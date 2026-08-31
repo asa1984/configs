@@ -1,27 +1,6 @@
-import {
-  defineConfig,
-  imports,
-  javascript,
-  jsdoc,
-  node,
-  oxc,
-  promise,
-  sorting,
-  typescript,
-  unicorn,
-} from "./src/oxlint/index.ts";
+import { defineConfig, javascript, node, sorting, typescript } from "./src/oxlint/index.ts";
 
 export default defineConfig({
-  extends: [
-    javascript(),
-    typescript(),
-    imports(),
-    unicorn(),
-    jsdoc(),
-    promise(),
-    oxc(),
-    sorting(),
-    node(),
-  ],
+  extends: [javascript(), typescript(), sorting(), node()],
   ignorePatterns: ["src/oxlint/*.generated.ts"],
 });

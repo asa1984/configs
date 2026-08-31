@@ -4,6 +4,9 @@ import vitest from "@vitest/eslint-plugin";
 import importPlugin from "eslint-plugin-import";
 import jsdocPlugin from "eslint-plugin-jsdoc";
 import promise from "eslint-plugin-promise";
+import reactPlugin from "eslint-plugin-react";
+import reactHooks from "eslint-plugin-react-hooks";
+import reactPerf from "eslint-plugin-react-perf";
 import unicorn from "eslint-plugin-unicorn";
 import { pluginsToRulesDTS } from "eslint-typegen/core";
 import { execFileSync } from "node:child_process";
@@ -25,6 +28,23 @@ const renamePrefix = (rules: RuleMap, from: string, to: string): RuleMap => {
       out[to ? `${to}/${name}` : name] = value;
     } else if (from && name.startsWith(`${from}/`)) {
       out[`${to}/${name.slice(from.length + 1)}`] = value;
+    } else {
+      out[name] = value;
+    }
+  }
+  return out;
+};
+
+// Some plugins (react, react-perf) publish numeric severities; normalize to
+// the string form so the generated file stays uniform.
+const severityNames = ["off", "warn", "error"] as const;
+const normalizeSeverities = (rules: RuleMap): RuleMap => {
+  const out: RuleMap = {};
+  for (const [name, value] of Object.entries(rules)) {
+    if (typeof value === "number") {
+      out[name] = severityNames[value] ?? value;
+    } else if (Array.isArray(value) && typeof value[0] === "number") {
+      out[name] = [severityNames[value[0]] ?? value[0], ...(value as unknown[]).slice(1)];
     } else {
       out[name] = value;
     }
@@ -59,6 +79,29 @@ const sources: Array<{ from: string; rules: RuleMap; to: string }> = [
     to: "typescript",
   },
   {
+    from: "react",
+    rules: reactPlugin.configs.flat["recommended"]?.rules ?? {},
+    to: "react",
+  },
+  // Modern JSX runtime: turns off react-in-jsx-scope / jsx-uses-react.
+  {
+    from: "react",
+    rules: reactPlugin.configs.flat["jsx-runtime"]?.rules ?? {},
+    to: "react",
+  },
+  // eslint-plugin-react-hooks v7 recommended includes the React Compiler
+  // powered rules; oxlint hosts them all under the `react/` prefix.
+  {
+    from: "react-hooks",
+    rules: reactHooks.configs.recommended.rules,
+    to: "react",
+  },
+  {
+    from: "react-perf",
+    rules: reactPerf.configs["recommended"]?.rules ?? {},
+    to: "react-perf",
+  },
+  {
     from: "unicorn",
     rules: unicorn.configs.recommended.rules as RuleMap,
     to: "unicorn",
@@ -72,7 +115,7 @@ const sources: Array<{ from: string; rules: RuleMap; to: string }> = [
 
 const recommended: RuleMap = {};
 for (const { from, to, rules } of sources) {
-  Object.assign(recommended, renamePrefix(rules, from, to));
+  Object.assign(recommended, normalizeSeverities(renamePrefix(rules, from, to)));
 }
 
 const require = createRequire(import.meta.url);
@@ -122,8 +165,8 @@ const rawDts = await pluginsToRulesDTS(
     jsdoc: jsdocPlugin,
     promise: promise as never,
     typescript: tseslint as never,
-    unicorn: unicorn,
-    vitest: vitest,
+    unicorn,
+    vitest,
   },
   {
     exportTypeName: "RuleOptions",
