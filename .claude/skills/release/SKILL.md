@@ -38,6 +38,18 @@ So the only manual action per release is **merging the Release PR**. The version
 - **JSR**: create the `@asa1984/configs` package on https://jsr.io and link this GitHub repository so OIDC publish is authorized.
 - **GitHub**: in repo Settings → Actions → General, enable **"Allow GitHub Actions to create and approve pull requests"** so release-please can open the Release PR.
 
+## If publish fails after the release was created
+
+Publish failures cannot roll back the tag / GitHub Release, so the pipeline is built to make them recoverable instead:
+
+- **Content failures are caught before release**: `pre-merge-check` dry-runs both `pnpm publish` and `jsr publish` on every PR and push to `main`, so a Release PR can only merge green if both registries would accept the content.
+- **Transient failures**: use "Re-run failed jobs" on the failed `release` workflow run — the `release-please` job's outputs are preserved, so only the failed publish re-runs.
+- **Anything else** (or if the whole run was re-run and `release_created` was lost): trigger the `release` workflow manually via `workflow_dispatch` with the existing tag (e.g. `v0.3.0`). Both publish steps are idempotent — they skip a registry that already has the version — so re-publishing a half-shipped release is safe.
+
+```sh
+gh workflow run release --field tag=v0.3.0
+```
+
 ## Verifying locally before release
 
 ```sh

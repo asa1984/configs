@@ -16,5 +16,7 @@ jobs:
       - run: pnpm build
       - run: pnpm typecheck
       - run: pnpm lint
+      - name: Dry-run npm publish
+        run: pnpm publish --dry-run --no-git-checks
       - name: Dry-run JSR publish
         run: pnpm jsr publish --dry-run

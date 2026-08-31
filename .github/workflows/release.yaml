@@ -2,12 +2,21 @@ name: release
 on:
   push:
     branches: [main]
+  # Recovery path: re-publish an existing release tag when a publish job
+  # failed after the release was created (both publish steps are idempotent
+  # and skip registries that already have the version).
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Existing release tag to (re-)publish, e.g. v0.3.0"
+        required: true
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: false
 permissions: {}
 jobs:
   release-please:
+    if: ${{ github.event_name == 'push' }}
     runs-on: ubuntu-slim
     permissions:
       contents: write
@@ -24,7 +33,7 @@ jobs:
 
   publish-npm:
     needs: release-please
-    if: ${{ needs.release-please.outputs.release_created }}
+    if: ${{ !cancelled() && (needs.release-please.outputs.release_created == 'true' || github.event_name == 'workflow_dispatch') }}
     runs-on: ubuntu-slim
     permissions:
       contents: read
@@ -32,16 +41,22 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ needs.release-please.outputs.tag_name }}
+          ref: ${{ inputs.tag || needs.release-please.outputs.tag_name }}
       - uses: ./.github/actions/setup
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - name: Publish to npm
-        run: pnpm publish --no-git-checks
+        run: |
+          version="$(node -p "require('./package.json').version")"
+          if npm view "@asa1984/configs@${version}" version > /dev/null 2>&1; then
+            echo "@asa1984/configs@${version} is already on npm; skipping"
+          else
+            pnpm publish --no-git-checks
+          fi
 
   publish-jsr:
     needs: release-please
-    if: ${{ needs.release-please.outputs.release_created }}
+    if: ${{ !cancelled() && (needs.release-please.outputs.release_created == 'true' || github.event_name == 'workflow_dispatch') }}
     runs-on: ubuntu-slim
     permissions:
       contents: read
@@ -49,9 +64,15 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          ref: ${{ needs.release-please.outputs.tag_name }}
+          ref: ${{ inputs.tag || needs.release-please.outputs.tag_name }}
       - uses: ./.github/actions/setup
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
       - name: Publish to JSR
-        run: pnpm jsr publish
+        run: |
+          version="$(node -p "require('./jsr.json').version")"
+          if curl -fsSL --head "https://jsr.io/@asa1984/configs/${version}_meta.json" > /dev/null 2>&1; then
+            echo "@asa1984/configs@${version} is already on JSR; skipping"
+          else
+            pnpm jsr publish
+          fi
