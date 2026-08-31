@@ -1,14 +1,12 @@
-import { defineConfig as defineOxlintConfig } from "oxlint";
-
 import type { Config, OxlintConfig } from "./types.js";
 
 import { mergeConfigs } from "./merge.ts";
 
 // Merge the fragments in `config.extends` (builders or raw configs), then let
-// the config's own properties win, into one validated oxlint config.
+// the config's own properties win, into a single oxlint config.
 const defineConfig = (config: Config): OxlintConfig => {
   const { extends: extendsConfigs = [], ...rest } = config;
-  return defineOxlintConfig(mergeConfigs([...extendsConfigs, rest]));
+  return mergeConfigs([...extendsConfigs, rest]);
 };
 
 export type { Config, OxlintConfig, Rules } from "./types.js";

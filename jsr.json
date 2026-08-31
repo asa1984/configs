@@ -5,9 +5,17 @@
   "license": "MIT",
   "exports": {
     "./oxlint": "./src/oxlint/index.ts",
-    "./oxfmt": "./src/oxfmt/index.ts"
+    "./oxfmt": "./src/oxfmt/index.ts",
+    "./vite-plus": "./src/vite-plus/index.ts"
   },
   "publish": {
-    "include": ["src/oxlint/**/*.ts", "src/oxfmt/**/*.ts", "README.md", "LICENSE", "jsr.json"]
+    "include": [
+      "src/oxlint/**/*.ts",
+      "src/oxfmt/**/*.ts",
+      "src/vite-plus/**/*.ts",
+      "README.md",
+      "LICENSE",
+      "jsr.json"
+    ]
   }
 }

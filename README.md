@@ -60,6 +60,50 @@ import { defineConfig } from "@asa1984/configs/oxfmt";
 export default defineConfig();
 ```
 
+### Vite+
+
+[Vite+](https://viteplus.dev) projects keep lint/format configuration in the `lint` and `fmt` blocks of `vite.config.ts`. The dedicated entry point wraps vite-plus's `defineConfig` and applies the same fragment model to those blocks; every other block passes through untouched.
+
+```ts
+// vite.config.ts
+import {
+  browser,
+  defineConfig,
+  imports,
+  javascript,
+  sorting,
+  typescript,
+  unicorn,
+} from "@asa1984/configs/vite-plus";
+
+export default defineConfig({
+  lint: {
+    extends: [javascript(), typescript(), imports(), unicorn(), sorting(), browser()],
+
+    // any other oxlint config property is merged on top of `extends`;
+    // `typeCheck` enables the type-aware path for `vp lint` / `vp check`
+    options: { typeCheck: true },
+  },
+  fmt: {}, // shared oxfmt defaults; pass overrides here, or omit the block entirely
+
+  // any other vite-plus config property passes through
+  test: {},
+});
+```
+
+Only the object form of vite-plus's `defineConfig` is supported (not the function forms). The block factories `lint` and `fmt` are also exported, for use with vite-plus's own `defineConfig`:
+
+```ts
+// vite.config.ts
+import { defineConfig } from "vite-plus";
+import { fmt, javascript, lint, typescript } from "@asa1984/configs/vite-plus";
+
+export default defineConfig({
+  lint: lint({ extends: [javascript(), typescript()] }),
+  fmt: fmt(),
+});
+```
+
 ### TypeScript
 
 ```json

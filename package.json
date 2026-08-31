@@ -22,6 +22,10 @@
       "types": "./dist/oxfmt/index.d.ts",
       "default": "./dist/oxfmt/index.js"
     },
+    "./vite-plus": {
+      "types": "./dist/vite-plus/index.d.ts",
+      "default": "./dist/vite-plus/index.js"
+    },
     "./tsconfig": "./src/tsconfig/base.json",
     "./package.json": "./package.json"
   },
@@ -54,17 +58,22 @@
     "oxlint": "1.80.0",
     "oxlint-tsgolint": "7.0.2001",
     "rulesync": "8.32.0",
-    "typescript": "npm:@typescript/typescript6@6.0.2"
+    "typescript": "npm:@typescript/typescript6@6.0.2",
+    "vite-plus": "0.3.0"
   },
   "peerDependencies": {
     "oxfmt": ">=0.51.0",
-    "oxlint": ">=1.66.0"
+    "oxlint": ">=1.66.0",
+    "vite-plus": ">=0.3.0"
   },
   "peerDependenciesMeta": {
     "oxfmt": {
       "optional": true
     },
     "oxlint": {
+      "optional": true
+    },
+    "vite-plus": {
       "optional": true
     }
   },
