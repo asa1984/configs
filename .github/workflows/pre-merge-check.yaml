@@ -12,11 +12,24 @@ jobs:
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
       - uses: ./.github/actions/setup
-      - run: pnpm install --frozen-lockfile
       - run: pnpm build
-      - run: pnpm typecheck
-      - run: pnpm lint
-      - name: Dry-run npm publish
-        run: pnpm publish --dry-run --no-git-checks
-      - name: Dry-run JSR publish
-        run: pnpm jsr publish --dry-run
+      # Everything below only reads the build output, so run it in parallel.
+      # The npm dry-run uses --ignore-scripts to skip prepublishOnly, which
+      # would otherwise rebuild (and rewrite files the other tasks read).
+      - name: Typecheck, lint, and publish dry-runs (parallel)
+        run: |
+          run() { local name=$1; shift; (set +e; "$@" > "$RUNNER_TEMP/$name.log" 2>&1; echo $? > "$RUNNER_TEMP/$name.exit") & }
+          run typecheck pnpm typecheck
+          run lint pnpm lint
+          run npm-dry-run pnpm publish --dry-run --no-git-checks --ignore-scripts
+          run jsr-dry-run pnpm jsr publish --dry-run
+          wait
+          fail=0
+          for name in typecheck lint npm-dry-run jsr-dry-run; do
+            code=$(cat "$RUNNER_TEMP/$name.exit")
+            echo "::group::$name (exit $code)"
+            cat "$RUNNER_TEMP/$name.log"
+            echo "::endgroup::"
+            if [ "$code" != "0" ]; then fail=1; fi
+          done
+          exit "$fail"

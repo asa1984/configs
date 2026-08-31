@@ -43,8 +43,8 @@ jobs:
         with:
           ref: ${{ inputs.tag || needs.release-please.outputs.tag_name }}
       - uses: ./.github/actions/setup
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm build
+      # No explicit build: `pnpm publish` runs prepublishOnly (pnpm build)
+      # itself, and the skip path needs no build at all.
       - name: Publish to npm
         run: |
           version="$(node -p "require('./package.json').version")"
@@ -66,8 +66,7 @@ jobs:
         with:
           ref: ${{ inputs.tag || needs.release-please.outputs.tag_name }}
       - uses: ./.github/actions/setup
-      - run: pnpm install --frozen-lockfile
-      - run: pnpm build
+      # No build: JSR publishes the TypeScript sources listed in jsr.json.
       - name: Publish to JSR
         run: |
           version="$(node -p "require('./jsr.json').version")"

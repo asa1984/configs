@@ -1,23 +1,42 @@
 name: Setup
-description: Setup CI environment
+description: Setup CI environment and install dependencies
 runs:
   using: composite
   steps:
     - name: Install Nix
       uses: DeterminateSystems/nix-installer-action@ef8a148080ab6020fd15196c2084a2eea5ff2d25 # v22
     - uses: DeterminateSystems/magic-nix-cache-action@908b263ff629f4cc17666315b7fd3ec127c6244d # main
-    - name: Install CI tools
-      shell: bash
-      run: nix profile install .#ci
-    - name: Enable corepack
+    # Start the (network-bound) nix install in the background so it overlaps
+    # with the pnpm store cache restore below; the last step joins on it.
+    - name: Install CI tools (background)
       shell: bash
       run: |
-        mkdir -p "$HOME/.local/bin"
-        corepack enable --install-directory "$HOME/.local/bin"
-        echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+        (
+          set +e
+          nix profile install .#ci
+          echo $? > "$RUNNER_TEMP/nix-install.exit"
+        ) > "$RUNNER_TEMP/nix-install.log" 2>&1 &
     - name: Cache pnpm store
       uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
       with:
         path: ~/.local/share/pnpm/store
         key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
         restore-keys: ${{ runner.os }}-pnpm-store-
+    - name: Enable corepack and install dependencies
+      shell: bash
+      run: |
+        SECONDS=0
+        until [ -f "$RUNNER_TEMP/nix-install.exit" ]; do
+          if [ "$SECONDS" -gt 600 ]; then
+            echo "timed out waiting for nix profile install" >&2
+            exit 1
+          fi
+          sleep 1
+        done
+        cat "$RUNNER_TEMP/nix-install.log"
+        [ "$(cat "$RUNNER_TEMP/nix-install.exit")" = "0" ]
+        mkdir -p "$HOME/.local/bin"
+        corepack enable --install-directory "$HOME/.local/bin"
+        echo "$HOME/.local/bin" >> "$GITHUB_PATH"
+        export PATH="$HOME/.local/bin:$PATH"
+        pnpm install --frozen-lockfile
