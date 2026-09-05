@@ -21,8 +21,8 @@ importers:
         specifier: npm:typescript@7.0.2
         version: typescript@7.0.2
       '@vitest/eslint-plugin':
-        specifier: 1.6.20
-        version: 1.6.20(@typescript-eslint/eslint-plugin@8.63.0(@typescript-eslint/parser@8.68.0(@typescript/typescript6@6.0.2)(eslint@10.9.1))(@typescript/typescript6@6.0.2)(eslint@10.9.1))(@typescript/typescript6@6.0.2)(eslint@10.9.1)(vitest@4.1.11(@types/node@25.9.5)(@vitest/browser-preview@4.1.11)(vite@8.2.2(@types/node@25.9.5)))
+        specifier: 1.6.27
+        version: 1.6.27(@typescript-eslint/eslint-plugin@8.63.0(@typescript-eslint/parser@8.68.0(@typescript/typescript6@6.0.2)(eslint@10.9.1))(@typescript/typescript6@6.0.2)(eslint@10.9.1))(@typescript/typescript6@6.0.2)(eslint@10.9.1)(vitest@4.1.11(@types/node@25.9.5)(@vitest/browser-preview@4.1.11)(vite@8.2.2(@types/node@25.9.5)))
       eslint-plugin-import:
         specifier: 2.32.0
         version: 2.32.0(@typescript-eslint/parser@8.68.0(@typescript/typescript6@6.0.2)(eslint@10.9.1))(eslint@10.9.1)
@@ -1266,8 +1266,8 @@ packages:
     peerDependencies:
       vitest: 4.1.11
 
-  '@vitest/eslint-plugin@1.6.20':
-    resolution: {integrity: sha512-xRwWHFG0Utp6hXtbGiWk4VdKXCGdExD8kbWrrmFEiG5dk8anOJ+vbWbeOa8EbkocKQRTsx7JAWETccZiBgFp/Q==}
+  '@vitest/eslint-plugin@1.6.27':
+    resolution: {integrity: sha512-X1RCAfwbatG4GFbJ/1PIHP9MSZMt0JJThqbYID+vS4L783k6QGlLPe421wQE8dHXuGCcenVLsydiM4qzsYWxhg==}
     engines: {node: '>=18'}
     peerDependencies:
       '@typescript-eslint/eslint-plugin': '*'
@@ -4377,7 +4377,7 @@ snapshots:
   '@typescript-eslint/project-service@8.63.0(@typescript/typescript6@6.0.2)':
     dependencies:
       '@typescript-eslint/tsconfig-utils': 8.63.0(@typescript/typescript6@6.0.2)
-      '@typescript-eslint/types': 8.63.0
+      '@typescript-eslint/types': 8.68.0
       debug: 4.4.3
       typescript: '@typescript/typescript6@6.0.2'
     transitivePeerDependencies:
@@ -4585,7 +4585,7 @@ snapshots:
       - utf-8-validate
       - vite
 
-  '@vitest/eslint-plugin@1.6.20(@typescript-eslint/eslint-plugin@8.63.0(@typescript-eslint/parser@8.68.0(@typescript/typescript6@6.0.2)(eslint@10.9.1))(@typescript/typescript6@6.0.2)(eslint@10.9.1))(@typescript/typescript6@6.0.2)(eslint@10.9.1)(vitest@4.1.11(@types/node@25.9.5)(@vitest/browser-preview@4.1.11)(vite@8.2.2(@types/node@25.9.5)))':
+  '@vitest/eslint-plugin@1.6.27(@typescript-eslint/eslint-plugin@8.63.0(@typescript-eslint/parser@8.68.0(@typescript/typescript6@6.0.2)(eslint@10.9.1))(@typescript/typescript6@6.0.2)(eslint@10.9.1))(@typescript/typescript6@6.0.2)(eslint@10.9.1)(vitest@4.1.11(@types/node@25.9.5)(@vitest/browser-preview@4.1.11)(vite@8.2.2(@types/node@25.9.5)))':
     dependencies:
       '@typescript-eslint/scope-manager': 8.68.0
       '@typescript-eslint/utils': 8.68.0(@typescript/typescript6@6.0.2)(eslint@10.9.1)
