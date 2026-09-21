@@ -59,7 +59,7 @@
     "jsr": "0.14.3",
     "oxfmt": "0.67.0",
     "oxlint": "1.82.0",
-    "oxlint-tsgolint": "7.0.2001",
+    "oxlint-tsgolint": "7.0.2002",
     "rulesync": "8.32.0",
     "typescript": "npm:@typescript/typescript6@6.0.2",
     "vite-plus": "0.3.3"
