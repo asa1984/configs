@@ -60,7 +60,7 @@
     "oxfmt": "0.70.0",
     "oxlint": "1.85.0",
     "oxlint-tsgolint": "7.0.2003",
-    "rulesync": "8.32.0",
+    "rulesync": "16.39.1",
     "typescript": "npm:@typescript/typescript6@6.0.2",
     "vite-plus": "0.3.3"
   },
